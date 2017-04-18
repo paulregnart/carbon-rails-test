@@ -428,6 +428,601 @@
     console.error("LiveReactload ::", msg);
   }
 })({
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/button/button.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _link = require('./../link');\n\nvar _link2 = _interopRequireDefault(_link);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * A button widget.\n *\n * == How to use a Button in a component:\n *\n * In your file:\n *\n *   import Button from 'carbon/lib/components/button';\n *\n * To render the Button:\n *\n *   <Button>Save</Button>\n *\n *  ### Themes\n *\n *  Currently available button themese are blue(default), green, red, magenta, grey & white.\n *\n * For additional properties specific to this component, see propTypes and defaultProps.\n *\n * @class Button\n * @constructor\n */\nvar Button = function (_React$Component) {\n  _inherits(Button, _React$Component);\n\n  function Button() {\n    _classCallCheck(this, Button);\n\n    return _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).apply(this, arguments));\n  }\n\n  _createClass(Button, [{\n    key: 'render',\n\n\n    /**\n     * Renders the component with props.\n     *\n     * @method render\n     * @return {Object} JSX\n     */\n    value: function render() {\n      return this.element;\n    }\n  }, {\n    key: 'element',\n\n\n    /**\n     * Build the element to render.\n     *\n     * @method element\n     * @return {Object} JSX\n     */\n    get: function get() {\n      var props = _objectWithoutProperties(this.props, []),\n          el = props.href || props.to ? _link2.default : 'button';\n\n\n      props.className = (0, _classnames2.default)('carbon-button', 'carbon-button--' + this.props.as, 'carbon-button--' + this.props.theme, 'carbon-button--' + this.props.size, props.className, {\n        'carbon-button--disabled': this.props.disabled\n      });\n\n      return _react2.default.createElement(el, props, this.props.children);\n    }\n  }]);\n\n  return Button;\n}(_react2.default.Component);\n\nButton.propTypes = {\n  /**\n   * Customizes the appearance, can be set to 'primary' or 'secondary'.\n   *\n   * @property as\n   * @type {String|Array}\n   * @default 'secondary'\n   */\n  as: _react2.default.PropTypes.string,\n\n  /**\n   * A required prop. This is what the button will display.\n   *\n   * @property children\n   * @type {Multiple}\n   */\n  children: _react2.default.PropTypes.node.isRequired,\n\n  /**\n   * Gives the button a disabled state.\n   *\n   * @property disabled\n   * @type {Boolean}\n   * @default false\n   */\n  disabled: _react2.default.PropTypes.bool,\n\n  /**\n   * Gives the button a color.\n   *\n   * @property theme\n   * @type {String}\n   * @default blue\n   */\n  theme: _react2.default.PropTypes.string,\n\n  /**\n   * Determines size of button.\n   *\n   * @property size\n   * @type {String}\n   * @default medium\n   */\n  size: _react2.default.PropTypes.string\n};\nButton.defaultProps = {\n  as: 'secondary',\n  size: 'medium',\n  theme: 'blue',\n  disabled: false\n};\nexports.default = Button;",
+    {
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "./../link": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/link/link.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/button/button.js",
+      "hash": "6ea629cf88b0936f3ca88ad5832be83d",
+      "browserifyId": 1,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form-summary/form-summary.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _i18nJs = require('i18n-js');\n\nvar _i18nJs2 = _interopRequireDefault(_i18nJs);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _icon = require('./../../icon');\n\nvar _icon2 = _interopRequireDefault(_icon);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar FormSummary = function FormSummary(props) {\n  return _react2.default.createElement(\n    'div',\n    { className: 'carbon-form-summary' },\n    summary(props, 'error'),\n    summary(props, 'warning')\n  );\n};\n\nFormSummary.propTypes = {\n  errors: _react2.default.PropTypes.number.isRequired,\n  warnings: _react2.default.PropTypes.number.isRequired\n};\n\n/**\n * builds a summary in JSX\n *\n * @param {object} props\n * @param {string} key\n * @return {JSX}\n */\nvar summary = function summary(props, key) {\n  if (props[pluralize(key)] > 0) {\n    return _react2.default.createElement(\n      'span',\n      { className: 'carbon-form-summary__summary carbon-form-summary__' + key + '-summary' },\n      _react2.default.createElement(_icon2.default, { className: 'carbon-form-summary__icon', type: '' + key }),\n      _react2.default.createElement('span', { className: 'carbon-form-summary__text', dangerouslySetInnerHTML: { __html: translation(props, key) } })\n    );\n  }\n};\n\n/**\n * Returns the default translation set\n *\n * @param {number} errorCount\n * @param {number} warningCount\n * @return {object} default translations\n */\nvar defaultTranslations = function defaultTranslations(errorCount, warningCount) {\n  return {\n    errors: {\n      defaultValue: {\n        one: 'There is ' + errorCount + ' error',\n        other: 'There are ' + errorCount + ' errors'\n      },\n      count: parseInt(errorCount)\n    },\n    warnings: {\n      defaultValue: {\n        one: 'There is ' + warningCount + ' warning',\n        other: 'There are ' + warningCount + ' warnings'\n      },\n      count: parseInt(warningCount)\n    },\n    errors_and_warnings: {\n      defaultValue: {\n        one: 'and ' + warningCount + ' warning',\n        other: 'and ' + warningCount + ' warnings'\n      },\n      count: parseInt(warningCount)\n    }\n  };\n};\n\n/**\n * Adds an 's' to pluralise (keys will always be error or warning)\n *\n * @param {string} key\n * @return {string} pluralized key\n */\nvar pluralize = function pluralize(key) {\n  return key + 's';\n};\n\n/**\n * finds the correct translation key\n *\n * @param {object} props\n * @param {string} key\n * @return {string} correct key\n */\nvar translationKey = function translationKey(props, key) {\n  return warningAppend(props, key) ? 'errors_and_warnings' : pluralize(key);\n};\n\n/**\n * gets the correct translation\n *\n * @param {object} props\n * @param {string} key\n * @return {string} correct translation\n */\nvar translation = function translation(props, key) {\n  key = translationKey(props, key);\n\n  var defaultTranslation = defaultTranslations(props.errors, props.warnings)[key],\n      location = 'errors.messages.form_summary.' + key;\n\n  return _i18nJs2.default.t(location, defaultTranslation);\n};\n\n/**\n * decides whether the warning message should be appended to the sentence or output as a sentence on it's own\n *\n * @param {object} props\n * @param {string} key\n * @return {boolean} true if the warning message needs to be appended\n */\nvar warningAppend = function warningAppend(props, key) {\n  return props.errors > 0 && props.warnings > 0 && key === 'warning';\n};\n\nexports.default = FormSummary;",
+    {
+      "./../../icon": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "i18n-js": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/i18n-js/app/assets/javascripts/i18n.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form-summary/form-summary.js",
+      "hash": "4ef8a5e65e64a6dbc8c4038010597c2e",
+      "browserifyId": 2,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _button = require('./../button');\n\nvar _button2 = _interopRequireDefault(_button);\n\nvar _i18nJs = require('i18n-js');\n\nvar _i18nJs2 = _interopRequireDefault(_i18nJs);\n\nvar _formSerialize = require('form-serialize');\n\nvar _formSerialize2 = _interopRequireDefault(_formSerialize);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _lodash = require('lodash');\n\nvar _formSummary = require('./form-summary');\n\nvar _formSummary2 = _interopRequireDefault(_formSummary);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * A Form widget.\n *\n * == How to use a Form in a component:\n *\n * In your file\n *\n *   import Form from 'carbon/lib/components/form';\n *\n * To render a Form:\n *\n *   <Form>\n *     <Textbox />\n *     <Textbox />\n *     <Date />\n *   </Form>\n *\n * Form provides the ability to hook into the form handle submission method.\n * By passing afterFormValidation or beforeFormValidation you can add custom\n * validation logic and prevent the form submission using ev.preventDefault()\n *\n * @class Form\n * @constructor\n */\nvar Form = function (_React$Component) {\n  _inherits(Form, _React$Component);\n\n  function Form() {\n    var _ref;\n\n    var _temp, _this, _ret;\n\n    _classCallCheck(this, Form);\n\n    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Form.__proto__ || Object.getPrototypeOf(Form)).call.apply(_ref, [this].concat(args))), _this), _this._document = document, _this._window = window, _this.getChildContext = function () {\n      return {\n        form: {\n          attachToForm: _this.attachToForm,\n          detachFromForm: _this.detachFromForm,\n          getActiveInput: _this.getActiveInput,\n          incrementErrorCount: _this.incrementErrorCount,\n          decrementErrorCount: _this.decrementErrorCount,\n          incrementWarningCount: _this.incrementWarningCount,\n          decrementWarningCount: _this.decrementWarningCount,\n          inputs: _this.inputs,\n          setActiveInput: _this.setActiveInput,\n          validate: _this.validate\n        }\n      };\n    }, _this.getActiveInput = function () {\n      return _this.activeInput;\n    }, _this.setActiveInput = function (input) {\n      if (input !== _this.activeInput && _this.activeInputExistsAndHasValidation()) {\n        _this.activeInput.immediatelyHideMessage();\n      }\n      _this.activeInput = input;\n    }, _this.activeInputExistsAndHasValidation = function () {\n      return _this.activeInput && _this.activeInput.immediatelyHideMessage;\n    }, _this.state = {\n      /**\n       * Tracks the number of errors in the form\n       *\n       * @property errorCount\n       * @type {Number}\n       */\n      errorCount: 0,\n\n      /**\n       * Tracks the number of warnings in the form\n       *\n       * @property warningCount\n       * @type {Number}\n       */\n      warningCount: 0\n    }, _this.inputs = {}, _this.errorCount = 0, _this.warningCount = 0, _this.incrementErrorCount = function () {\n      _this.errorCount += 1;\n      _this.setState({ errorCount: _this.errorCount });\n    }, _this.decrementErrorCount = function () {\n      _this.errorCount -= 1;\n      _this.setState({ errorCount: _this.errorCount });\n    }, _this.incrementWarningCount = function () {\n      _this.warningCount += 1;\n      _this.setState({ warningCount: _this.warningCount });\n    }, _this.decrementWarningCount = function () {\n      _this.warningCount -= 1;\n      _this.setState({ warningCount: _this.warningCount });\n    }, _this.attachToForm = function (component) {\n      _this.inputs[component._guid] = component;\n    }, _this.detachFromForm = function (component) {\n      delete _this.inputs[component._guid];\n    }, _this.handleOnSubmit = function (ev) {\n      if (_this.props.beforeFormValidation) {\n        _this.props.beforeFormValidation(ev);\n      }\n\n      var valid = _this.validate();\n\n      if (!valid) {\n        ev.preventDefault();\n      }\n\n      if (_this.props.afterFormValidation) {\n        _this.props.afterFormValidation(ev, valid);\n      }\n\n      if (valid && _this.props.onSubmit) {\n        _this.props.onSubmit(ev);\n      }\n    }, _this.validate = function () {\n      var valid = true,\n          errors = 0;\n\n      for (var key in _this.inputs) {\n        var input = _this.inputs[key];\n\n        if (!input.props.disabled && !input.validate()) {\n          valid = false;\n          errors++;\n        }\n      }\n\n      if (!valid) {\n        _this.setState({ errorCount: errors });\n      }\n\n      return valid;\n    }, _this.serialize = function (opts) {\n      return (0, _formSerialize2.default)(_this.refs.form, opts);\n    }, _this.htmlProps = function () {\n      var props = _objectWithoutProperties(_this.props, []);\n\n      delete props.onSubmit;\n      props.className = _this.mainClasses;\n      return props;\n    }, _this.cancelForm = function () {\n      if (_this.props.onCancel) {\n        _this.props.onCancel();\n      } else if (_this.context.modal) {\n        _this.context.modal.onCancel();\n      } else {\n        // history comes from react router\n        if (!_this._window.history) {\n          throw new Error('History is not defined. This is normally configured by the react router');\n        }\n        _this._window.history.back();\n      }\n    }, _temp), _possibleConstructorReturn(_this, _ret);\n  }\n  /**\n   * stores the document - allows us to override it different contexts, such as\n   * when running tests.\n   *\n   * @property _document\n   * @type {document}\n   */\n\n\n  /**\n   * stores the window - allows us to override it different contexts, such as\n   * when running tests.\n   *\n   * @property _window\n   * @type {window}\n   */\n\n\n  /**\n   * Returns form object to child components.\n   *\n   * @method getChildContext\n   * @return {void}\n   */\n\n\n  /**\n   * Gets the current active input.\n   *\n   * @method getActiveInput\n   * @return {Object} the currently active component\n   */\n\n\n  /**\n   * Sets the active input, calling the hide method if the input is\n   * different from the last (so as to instantly) switch.\n   *\n   * @method setActiveInput\n   * @param {Input} input sends itself through\n   * @return {void}\n   */\n\n\n  /**\n   * @method activeInputHasValidation\n   * @param {}\n   * @return {Boolean} active input exists and is decorated with validation\n   */\n\n\n  /**\n   * Stores references to the inputs in the form\n   *\n   * @property inputs\n   * @type {Object}\n   */\n\n\n  /**\n   * Tracks current errorCount\n   * Need to track separately from state due to async nature of setState\n   *\n   * @property errorCount\n   * @type {Number}\n   */\n\n\n  /**\n   * Tracks current warningCount\n   * Need to track separately from state due to async nature of setState\n   *\n   * @property errorCount\n   * @type {Number}\n   */\n\n\n  _createClass(Form, [{\n    key: 'componentDidMount',\n\n\n    /**\n     * Runs once the component has mounted.\n     *\n     * @method componentDidMount\n     * @return {void}\n     */\n    value: function componentDidMount() {\n      if (this.props.validateOnMount) {\n        this.validate();\n      }\n    }\n\n    /**\n     * Increase current error count in state by 1.\n     *\n     * @method incrementErrorCount\n     * @return {void}\n     */\n\n\n    /**\n     * Decreases the current error count in state by 1.\n     *\n     * @method decrementErrorCount\n     * @return {void}\n     */\n\n\n    /**\n     * Increase current warning count in state by 1.\n     *\n     * @method incrementWarningCount\n     * @return {void}\n     */\n\n\n    /**\n     * Decreases the current warning count in state by 1.\n     *\n     * @method decrementWarningCount\n     * @return {void}\n     */\n\n\n    /**\n     * Attaches child component to form.\n     *\n     * @method attachToForm\n     * @param {Object} component Component to attach\n     * @return {void}\n     */\n\n\n    /**\n     * Detaches child component from form.\n     *\n     * @method detachFromFormToForm\n     * @param {Object} component Component to detach\n     * @return {void}\n     */\n\n\n    /**\n     * Handles submit and runs validation.\n     *\n     * @method handleOnSubmit\n     * @param {Object} ev event\n     * @return {void}\n     */\n\n\n    /**\n     * Validates any inputs in the form which have validations.\n     *\n     * @method validate\n     * @return {Boolean} valid status\n     */\n\n\n    /**\n     * Serializes the inputs in the form ready for submission via AJAX\n     * https://www.npmjs.com/package/form-serialize\n     *\n     * @method serialize\n     * @param {Object} opts options to pass to serialize\n     * @return {Object} Serialized object of fields\n     */\n\n\n    /**\n     * Separates and returns HTML specific props\n     *\n     * @method htmlProps\n     * @return {Object} props for form element\n     */\n\n\n    /**\n     * Redirects to the previous page; uses React Router history, or uses modalcancel handler.\n     *\n     * @method cancelForm\n     * @return {void}\n     */\n\n  }, {\n    key: 'render',\n\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     * @return {Object} JSX form\n     */\n    value: function render() {\n      var cancelButton = void 0,\n          saveButton = void 0;\n\n      if (this.props.cancel) {\n        cancelButton = this.cancelButton;\n      }\n\n      if (this.props.save) {\n        saveButton = this.saveButton;\n      }\n\n      return _react2.default.createElement(\n        'form',\n        _extends({ onSubmit: this.handleOnSubmit }, this.htmlProps(), { ref: 'form' }),\n        generateCSRFToken(this._document),\n        this.props.children,\n        _react2.default.createElement(\n          'div',\n          { className: this.buttonClasses },\n          saveButton,\n          cancelButton,\n          this.additionalActions\n        )\n      );\n    }\n  }, {\n    key: 'mainClasses',\n\n\n    /**\n     * Main class getter\n     *\n     * @method mainClasses\n     * @return {String} Main className\n     */\n    get: function get() {\n      return (0, _classnames2.default)('carbon-form', this.props.className);\n    }\n  }, {\n    key: 'buttonClasses',\n    get: function get() {\n      return (0, _classnames2.default)('carbon-form__buttons', 'carbon-form__buttons--' + this.props.buttonAlign);\n    }\n\n    /**\n     * Gets the cancel button for the form\n     *\n     * @method cancelButton\n     * @return {Object} JSX cancel button\n     */\n\n  }, {\n    key: 'cancelButton',\n    get: function get() {\n      var cancelClasses = \"carbon-form__cancel\",\n          cancelProps = (0, _lodash.assign)({}, this.props.cancelButtonProps, { type: 'button', onClick: this.cancelForm });\n\n      return _react2.default.createElement(\n        'div',\n        { className: cancelClasses },\n        _react2.default.createElement(\n          _button2.default,\n          cancelProps,\n          this.props.cancelText || _i18nJs2.default.t('actions.cancel', { defaultValue: 'Cancel' })\n        )\n      );\n    }\n  }, {\n    key: 'additionalActions',\n    get: function get() {\n      if (!this.props.additionalActions) {\n        return null;\n      }\n\n      return _react2.default.createElement(\n        'div',\n        { className: 'carbon-form__additional-actions' },\n        this.props.additionalActions\n      );\n    }\n\n    /**\n     * Gets the save button for the form\n     * @method saveButton\n     * @return {Object} JSX save button\n     */\n\n  }, {\n    key: 'saveButton',\n    get: function get() {\n      var saveClasses = (0, _classnames2.default)(\"carbon-form__save\", {\n        \"carbon-form__save--invalid\": this.state.errorCount || this.state.warningCount\n      }),\n          saveProps = (0, _lodash.assign)({}, this.props.saveButtonProps, { as: 'primary', disabled: this.props.saving });\n\n      return _react2.default.createElement(\n        'div',\n        { className: saveClasses },\n        _react2.default.createElement(_formSummary2.default, { errors: this.state.errorCount, warnings: this.state.warningCount }),\n        _react2.default.createElement(\n          _button2.default,\n          saveProps,\n          this.props.saveText || _i18nJs2.default.t('actions.save', { defaultValue: 'Save' })\n        )\n      );\n    }\n  }]);\n\n  return Form;\n}(_react2.default.Component);\n\n/**\n * Creates and returns CSRF token for input field\n *\n * @private\n * @method generateCSRFToken\n * @param {Object} doc DOM object\n * @return {Object} JSX hidden CSRF token\n */\n\n\nForm.propTypes = {\n  /**\n   * currently active input which is used to track which error message to show on the form\n   *\n   * @property activeInput\n   * @type {Input}\n   * @default null\n   */\n  activeInput: _react2.default.PropTypes.element,\n\n  /**\n   * Cancel button is shown if true\n   *\n   * @property cancel\n   * @type {Boolean}\n   * @default true\n   */\n  cancel: _react2.default.PropTypes.bool,\n\n  /**\n   * Custom function that is called immediately\n   * after the form validates\n   *\n   * @property afterFormValidation\n   * @type {Function}\n   */\n  afterFormValidation: _react2.default.PropTypes.func,\n\n  /**\n   * Custom function that is called immediately\n   * before the form validates\n   *\n   * @property beforeFormValidation\n   * @type {Function}\n   */\n  beforeFormValidation: _react2.default.PropTypes.func,\n\n  /**\n   * Determines if the form is in a saving state\n   *\n   * @property saving\n   * @type {Boolean}\n   * @default false\n   */\n  saving: _react2.default.PropTypes.bool,\n\n  /**\n   * If true, will validate the form on mount\n   *\n   * @property validateOnMount\n   * @type {Boolean}\n   * @default false\n   */\n  validateOnMount: _react2.default.PropTypes.bool,\n\n  /**\n   * Text for the cancel button\n   *\n   * @property cancelText\n   * @type {String}\n   * @default \"Cancel\"\n   */\n  cancelText: _react2.default.PropTypes.string,\n\n  /**\n   * Properties for the cancel button\n   *\n   * @property cancelButtonProps\n   * @type {Object}\n   */\n  cancelButtonProps: _react2.default.PropTypes.object,\n\n  /**\n   * Text for the save button\n   *\n   * @property saveText\n   * @type {String}\n   * @default \"Save\"\n   */\n  saveText: _react2.default.PropTypes.string,\n\n  /**\n   * Properties for the save button\n   *\n   * @property saveButtonProps\n   * @type {Object}\n   */\n  saveButtonProps: _react2.default.PropTypes.object,\n\n  /**\n   * Custom function for Cancel button onClick\n   *\n   * @property onCancel\n   * @type {Function}\n   */\n  onCancel: _react2.default.PropTypes.func,\n\n  /**\n   * Hide or show the save button\n   *\n   * @property saveFalse\n   * @type {Boolean}\n   */\n  save: _react2.default.PropTypes.bool,\n\n  /**\n   * Additional actions rendered next to the save and cancel buttons\n   *\n   * @property additionalActions\n   * @type {String|JSX}\n   */\n  additionalActions: _react2.default.PropTypes.node,\n\n  /**\n   * Custom callback for when form will submit\n   *\n   * @property onSubmit\n   * @type {Function}\n   */\n  onSubmit: _react2.default.PropTypes.func\n};\nForm.defaultProps = {\n  activeInput: null,\n  buttonAlign: 'right',\n  cancel: true,\n  save: true,\n  saving: false,\n  validateOnMount: false\n};\nForm.childContextTypes = {\n  /**\n   * Defines a context object for child components of the form component.\n   * https://facebook.github.io/react/docs/context.html\n   *\n   * @property form\n   * @type {Object}\n   */\n  form: _react2.default.PropTypes.object\n};\nForm.contextTypes = {\n  modal: _react2.default.PropTypes.object\n};\nfunction generateCSRFToken(doc) {\n  var meta = doc.getElementsByTagName('meta'),\n      csrfAttr = void 0,\n      csrfValue = void 0;\n\n  for (var i = 0; i < meta.length; i++) {\n    var item = meta[i];\n\n    if (item.getAttribute('name') === 'csrf-param') {\n      csrfAttr = item.getAttribute('content');\n    } else if (item.getAttribute('name') === 'csrf-token') {\n      csrfValue = item.getAttribute('content');\n    }\n  }\n\n  return _react2.default.createElement('input', { type: 'hidden', name: csrfAttr, value: csrfValue, readOnly: 'true' });\n}\n\nexports.default = Form;",
+    {
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "form-serialize": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/form-serialize/index.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "i18n-js": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/i18n-js/app/assets/javascripts/i18n.js",
+      "./form-summary": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form-summary/form-summary.js",
+      "./../button": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/button/button.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form.js",
+      "hash": "b051061c1786f70ec9b19e069f233258",
+      "browserifyId": 3,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/help/help.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _class, _temp;\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _icon = require('./../icon');\n\nvar _icon2 = _interopRequireDefault(_icon);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _tooltipDecorator = require('./../../utils/decorators/tooltip-decorator');\n\nvar _tooltipDecorator2 = _interopRequireDefault(_tooltipDecorator);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * A Help widget.\n *\n * == How to use a Help in a component:\n *\n * In your file\n *\n *   import Help from 'carbon/lib/components/help';\n *\n * To render a help component:\n *\n *   <Help>{ this.props.helpMessage }</Help>\n *\n *  You can also pass additional props of tooltipPosition and tooltipAlign.\n *\n * @class Help\n * @constructor\n * @decorators {TooltipDecorator}\n */\nvar Help = (0, _tooltipDecorator2.default)((_temp = _class = function (_React$Component) {\n  _inherits(Help, _React$Component);\n\n  function Help() {\n    _classCallCheck(this, Help);\n\n    return _possibleConstructorReturn(this, (Help.__proto__ || Object.getPrototypeOf(Help)).apply(this, arguments));\n  }\n\n  _createClass(Help, [{\n    key: 'render',\n\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     * @return {Object} JSX\n     */\n    value: function render() {\n      return _react2.default.createElement(\n        'a',\n        { className: this.mainClasses, href: this.props.href, target: '_blank' },\n        _react2.default.createElement(_icon2.default, {\n          type: 'help',\n          tooltipMessage: this.props.children,\n          tooltipPosition: this.props.tooltipPosition,\n          tooltipAlign: this.props.tooltipAlign\n        })\n      );\n    }\n  }, {\n    key: 'mainClasses',\n\n\n    /**\n     * Return component classes\n     *\n     * @method mainClasses\n     * @return {String} classes\n     */\n    get: function get() {\n      return (0, _classnames2.default)('carbon-help', { 'carbon-help__href': this.props.href }, this.props.className);\n    }\n  }]);\n\n  return Help;\n}(_react2.default.Component), _class.propTypes = {\n  /**\n   * Message to display in tooltip\n   *\n   * @property children\n   * @type {String}\n   */\n  children: _react2.default.PropTypes.string,\n\n  /**\n   * Position of tooltip relative to target\n   *\n   * @property tooltipPosition\n   * @type {String} Options: { top, bottom, right, left }\n   * @default top\n   */\n  tooltipPosition: _react2.default.PropTypes.string,\n\n  /**\n   * Aligment of pointer\n   *\n   * @property tooltipAlign\n   * @type {String} Options: { top, bottom, right, left, center }\n   * @default center\n   */\n  tooltipAlign: _react2.default.PropTypes.string,\n\n  /**\n   * A path for the anchor\n   *\n   * @property href\n   * @type {String}\n   */\n  href: _react2.default.PropTypes.string\n}, _class.defaultProps = {\n  tooltipPosition: 'top',\n  tooltipAlign: 'center'\n}, _temp));\n\nexports.default = Help;",
+    {
+      "./../icon": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js",
+      "./../../utils/decorators/tooltip-decorator": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/tooltip-decorator/tooltip-decorator.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/help/help.js",
+      "hash": "752c995d160f76601f3fb97fdb7c2773",
+      "browserifyId": 4,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _class, _temp2;\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _tooltipDecorator = require('./../../utils/decorators/tooltip-decorator');\n\nvar _tooltipDecorator2 = _interopRequireDefault(_tooltipDecorator);\n\nvar _icons = require('./icons');\n\nvar _icons2 = _interopRequireDefault(_icons);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * An Icon widget.\n *\n * == How to use an Icon in a component:\n *\n * In your file\n *\n *   import Icon from 'carbon/lib/components/icon';\n *\n * To render an Icon:\n *\n *   <Icon type='foo' />\n *\n * 'type' is a required prop\n *\n * This widget follows this pattern: https://facebook.github.io/react/blog/2015/09/10/react-v0.14-rc1.html#stateless-function-components\n *\n * For information on how to use the Tooltip Decorator see the decorator docs.\n *\n * @class Icon\n * @constructor\n */\nvar Icon = (0, _tooltipDecorator2.default)((_temp2 = _class = function (_React$Component) {\n  _inherits(Icon, _React$Component);\n\n  function Icon() {\n    var _ref;\n\n    var _temp, _this, _ret;\n\n    _classCallCheck(this, Icon);\n\n    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Icon.__proto__ || Object.getPrototypeOf(Icon)).call.apply(_ref, [this].concat(args))), _this), _this.iconSvgHTML = function () {\n      if (_this.renderIcon) {\n        return _react2.default.createElement('span', { className: 'carbon-icon__svg-icon', dangerouslySetInnerHTML: _this.renderIcon });\n      }\n    }, _temp), _possibleConstructorReturn(_this, _ret);\n  }\n\n  _createClass(Icon, [{\n    key: 'render',\n\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     * @return {Object} JSX\n     */\n    value: function render() {\n      var _this2 = this;\n\n      return _react2.default.createElement(\n        'span',\n        _extends({\n          className: this.mainClasses\n        }, this.componentProps, {\n          ref: function ref(comp) {\n            return _this2._target = comp;\n          }\n        }),\n        this.iconSvgHTML(),\n        this.tooltipHTML\n      );\n    }\n  }, {\n    key: 'renderIcon',\n\n\n    /**\n     * Checks if we have an SVG available, otherwise will fall back\n     * to using the icon font.\n     *\n     * @method renderIcon\n     * @return {HTML}\n     */\n    get: function get() {\n      return _icons2.default[this.type];\n    }\n\n    /**\n     * Return component props\n     *\n     * @method componentProps\n     * @return {Object} props\n     */\n\n  }, {\n    key: 'componentProps',\n    get: function get() {\n      var props = _objectWithoutProperties(this.props, []);\n\n      delete props.className;\n      delete props.bgSize;\n      delete props.bgShape;\n      delete props.bgTheme;\n      props.type = this.type;\n\n      return props;\n    }\n\n    /**\n     * Return component classes\n     *\n     * @method mainClasses\n     * @return {String} classes\n     */\n\n  }, {\n    key: 'mainClasses',\n    get: function get() {\n      var _classNames2;\n\n      var icon = this.renderIcon,\n          hasShape = this.props.bgShape || this.props.bgTheme;\n\n      var classes = (0, _classnames2.default)('carbon-icon', this.props.className, _defineProperty({}, 'icon-' + this.type, !icon), (_classNames2 = {\n        'carbon-icon--shape': hasShape\n      }, _defineProperty(_classNames2, 'carbon-icon--' + this.props.bgSize, hasShape), _defineProperty(_classNames2, 'carbon-icon--' + this.props.bgShape, this.props.bgShape), _defineProperty(_classNames2, 'carbon-icon--' + this.props.bgTheme, this.props.bgTheme), _classNames2));\n      return classes;\n    }\n\n    /**\n     * Return Icon type with overrides\n     *\n     * @method type\n     * @return {String} icon type\n     */\n\n  }, {\n    key: 'type',\n    get: function get() {\n      // switch tweaks icon names for actual icons in the set\n      switch (this.props.type) {\n        case 'help':\n          return 'question';\n        case 'maintenance':\n          return 'settings';\n        case 'new':\n          return 'gift';\n        case 'success':\n          return 'tick';\n        default:\n          return this.props.type;\n      }\n    }\n  }]);\n\n  return Icon;\n}(_react2.default.Component), _class.propTypes = {\n  /**\n   * Icon type\n   *\n   * @property  type\n   * @type      {String}\n   */\n  type: _react2.default.PropTypes.string.isRequired,\n\n  /**\n   * Background size\n   *\n   * @property  bgSize\n   * @type      {String}\n   * @default   'small'\n   */\n  bgSize: _react2.default.PropTypes.oneOf(['small', 'medium', 'large']),\n\n  /**\n   * Background shape\n   *\n   * @property  bgShape\n   * @type      {String}\n   */\n  bgShape: _react2.default.PropTypes.oneOf(['square', 'rounded-rect', 'circle']),\n\n  /**\n   * Background color theme\n   *\n   * @property  bgTheme\n   * @type      {String}\n   */\n  bgTheme: _react2.default.PropTypes.string\n}, _class.defaultProps = {\n  bgSize: 'small'\n}, _temp2));\n\nexports.default = Icon;",
+    {
+      "./icons": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/icons.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "./../../utils/decorators/tooltip-decorator": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/tooltip-decorator/tooltip-decorator.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js",
+      "hash": "908ce748706b6288f36c6c69c44fdc58",
+      "browserifyId": 5,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/icons.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _basket = require('./svgs/basket');\n\nvar _basket2 = _interopRequireDefault(_basket);\n\nvar _bin = require('./svgs/bin');\n\nvar _bin2 = _interopRequireDefault(_bin);\n\nvar _business = require('./svgs/business');\n\nvar _business2 = _interopRequireDefault(_business);\n\nvar _csv = require('./svgs/csv');\n\nvar _csv2 = _interopRequireDefault(_csv);\n\nvar _chevron = require('./svgs/chevron');\n\nvar _chevron2 = _interopRequireDefault(_chevron);\n\nvar _completed = require('./svgs/completed');\n\nvar _completed2 = _interopRequireDefault(_completed);\n\nvar _draft = require('./svgs/draft');\n\nvar _draft2 = _interopRequireDefault(_draft);\n\nvar _dribbble = require('./svgs/dribbble');\n\nvar _dribbble2 = _interopRequireDefault(_dribbble);\n\nvar _edit = require('./svgs/edit');\n\nvar _edit2 = _interopRequireDefault(_edit);\n\nvar _email = require('./svgs/email');\n\nvar _email2 = _interopRequireDefault(_email);\n\nvar _externalLink = require('./svgs/external-link');\n\nvar _externalLink2 = _interopRequireDefault(_externalLink);\n\nvar _github = require('./svgs/github');\n\nvar _github2 = _interopRequireDefault(_github);\n\nvar _individual = require('./svgs/individual');\n\nvar _individual2 = _interopRequireDefault(_individual);\n\nvar _key = require('./svgs/key');\n\nvar _key2 = _interopRequireDefault(_key);\n\nvar _location = require('./svgs/location');\n\nvar _location2 = _interopRequireDefault(_location);\n\nvar _message = require('./svgs/message');\n\nvar _message2 = _interopRequireDefault(_message);\n\nvar _minus = require('./svgs/minus');\n\nvar _minus2 = _interopRequireDefault(_minus);\n\nvar _mobile = require('./svgs/mobile');\n\nvar _mobile2 = _interopRequireDefault(_mobile);\n\nvar _pdf = require('./svgs/pdf');\n\nvar _pdf2 = _interopRequireDefault(_pdf);\n\nvar _paperclip = require('./svgs/paperclip');\n\nvar _paperclip2 = _interopRequireDefault(_paperclip);\n\nvar _payment = require('./svgs/payment');\n\nvar _payment2 = _interopRequireDefault(_payment);\n\nvar _phone = require('./svgs/phone');\n\nvar _phone2 = _interopRequireDefault(_phone);\n\nvar _plus = require('./svgs/plus');\n\nvar _plus2 = _interopRequireDefault(_plus);\n\nvar _print = require('./svgs/print');\n\nvar _print2 = _interopRequireDefault(_print);\n\nvar _processing = require('./svgs/processing');\n\nvar _processing2 = _interopRequireDefault(_processing);\n\nvar _progress = require('./svgs/progress');\n\nvar _progress2 = _interopRequireDefault(_progress);\n\nvar _refresh = require('./svgs/refresh');\n\nvar _refresh2 = _interopRequireDefault(_refresh);\n\nvar _remove = require('./svgs/remove');\n\nvar _remove2 = _interopRequireDefault(_remove);\n\nvar _sortDown = require('./svgs/sort-down');\n\nvar _sortDown2 = _interopRequireDefault(_sortDown);\n\nvar _sortUp = require('./svgs/sort-up');\n\nvar _sortUp2 = _interopRequireDefault(_sortUp);\n\nvar _submitted = require('./svgs/submitted');\n\nvar _submitted2 = _interopRequireDefault(_submitted);\n\nvar _sync = require('./svgs/sync');\n\nvar _sync2 = _interopRequireDefault(_sync);\n\nvar _twitter = require('./svgs/twitter');\n\nvar _twitter2 = _interopRequireDefault(_twitter);\n\nvar _whiteTick = require('./svgs/white-tick');\n\nvar _whiteTick2 = _interopRequireDefault(_whiteTick);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = {\n  basket: _basket2.default,\n  bin: _bin2.default,\n  business: _business2.default,\n  csv: _csv2.default,\n  chevron: _chevron2.default,\n  completed: _completed2.default,\n  draft: _draft2.default,\n  dribbble: _dribbble2.default,\n  edit: _edit2.default,\n  email: _email2.default,\n  'external-link': _externalLink2.default,\n  github: _github2.default,\n  individual: _individual2.default,\n  key: _key2.default,\n  location: _location2.default,\n  message: _message2.default,\n  minus: _minus2.default,\n  mobile: _mobile2.default,\n  pdf: _pdf2.default,\n  paperclip: _paperclip2.default,\n  payment: _payment2.default,\n  phone: _phone2.default,\n  plus: _plus2.default,\n  print: _print2.default,\n  processing: _processing2.default,\n  progress: _progress2.default,\n  refresh: _refresh2.default,\n  remove: _remove2.default,\n  'sort-down': _sortDown2.default,\n  'sort-up': _sortUp2.default,\n  submitted: _submitted2.default,\n  sync: _sync2.default,\n  twitter: _twitter2.default,\n  'white-tick': _whiteTick2.default\n};",
+    {
+      "./svgs/bin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/bin/bin.js",
+      "./svgs/business": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/business/business.js",
+      "./svgs/basket": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/basket/basket.js",
+      "./svgs/csv": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/csv/csv.js",
+      "./svgs/chevron": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/chevron/chevron.js",
+      "./svgs/completed": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/completed/completed.js",
+      "./svgs/draft": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/draft/draft.js",
+      "./svgs/dribbble": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/dribbble/dribbble.js",
+      "./svgs/edit": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/edit/edit.js",
+      "./svgs/email": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/email/email.js",
+      "./svgs/external-link": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/external-link/external-link.js",
+      "./svgs/github": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/github/github.js",
+      "./svgs/individual": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/individual/individual.js",
+      "./svgs/key": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/key/key.js",
+      "./svgs/location": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/location/location.js",
+      "./svgs/message": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/message/message.js",
+      "./svgs/minus": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/minus/minus.js",
+      "./svgs/mobile": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/mobile/mobile.js",
+      "./svgs/paperclip": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/paperclip/paperclip.js",
+      "./svgs/pdf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/pdf/pdf.js",
+      "./svgs/payment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/payment/payment.js",
+      "./svgs/phone": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/phone/phone.js",
+      "./svgs/plus": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/plus/plus.js",
+      "./svgs/print": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/print/print.js",
+      "./svgs/processing": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/processing/processing.js",
+      "./svgs/progress": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/progress/progress.js",
+      "./svgs/refresh": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/refresh/refresh.js",
+      "./svgs/remove": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/remove/remove.js",
+      "./svgs/sort-down": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-down/sort-down.js",
+      "./svgs/sort-up": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-up/sort-up.js",
+      "./svgs/submitted": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/submitted/submitted.js",
+      "./svgs/sync": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sync/sync.js",
+      "./svgs/twitter": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/twitter/twitter.js",
+      "./svgs/white-tick": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/white-tick/white-tick.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/icons.js",
+      "hash": "8ee87bc367d7fa7d34194278361e1568",
+      "browserifyId": 6,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/basket/basket.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = {\n    __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--basket\" width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\">' + '<g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">' + '<g fill=\"currentColor\">' + '<g>' + '<path d=\"M0.337342083,6.94077572 C0.151033195,6.42119964 0.444630861,6 1.00087166,6 L14.9991283,6 C15.5518945,6 15.8532955,6.4296875 15.6787991,6.94077572 L12.9069874,15.0592243 C12.729593,15.5788004 12.139475,16 11.5882418,16 L4.58333108,16 C4.03240239,16 3.43170968,15.5703125 3.24844436,15.0592243 L0.337342083,6.94077572 Z\"></path>' + '<path d=\"M11.2490328,9.98677324 L13.3894251,7.19607664 C13.7305431,6.75131854 13.6812982,6.0812921 13.2881596,5.68815351 L8.71184039,1.11183429 C8.32258606,0.722579956 7.6812982,0.718695695 7.28815961,1.11183429 L2.71184039,5.68815351 C2.32258606,6.07740784 2.27628578,6.74998266 2.61710155,7.18171568 L7.4694029,13.3284345 C7.56110619,13.4446008 7.6681764,13.5290423 7.78226818,13.5817768 L4.21712756,7.84506121 C3.92708311,7.37834679 4.00177955,6.66917891 4.37457806,6.27111536 L7.31737756,3.12887854 C7.69437952,2.72632667 8.30939903,2.72345739 8.68749905,3.11874485 L11.7124949,6.28124905 C12.0921901,6.67820424 12.2392384,7.41716468 12.0433089,7.92560655 L11.2490328,9.98677324 Z\"></path>' + '</g>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/basket/basket.js",
+      "hash": "ba1d768580d19d3688935e4df81156e9",
+      "browserifyId": 7,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/bin/bin.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = {\n    __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--bin\" width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\">' + '<g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">' + '<g fill=\"currentColor\">' + '<path d=\"M2.17748666,5.97617662 C2.07946348,5.43704916 2.44483697,5 2.9955775,5 L12.0044225,5 C12.5542648,5 12.9191206,5.44483697 12.8225133,5.97617662 L11.1774867,15.0238234 C11.0794635,15.5629508 10.5621186,16 9.99707067,16 L5.00292933,16 C4.44902676,16 3.91912055,15.555163 3.82251334,15.0238234 L2.17748666,5.97617662 Z M1,3 C1,2.44771525 1.44748943,2 1.99850233,2 L13.0014977,2 C13.5529553,2 14,2.44386482 14,3 C14,3.55228475 13.5525106,4 13.0014977,4 L1.99850233,4 C1.44704472,4 1,3.55613518 1,3 Z\"></path>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/bin/bin.js",
+      "hash": "4724cd1d8a91faeeeb480e6337919398",
+      "browserifyId": 8,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/business/business.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--business\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path id=\"business\" fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M14 8v7.002c0 .55-.456.998-1.002.998H3.002C2.45 16 2 15.554 2 15.002V8H0l2-5h12l2 5h-2zM4 10h2v6H4v-6zm4 0h4v3H8v-3zM3 1c0-.552.456-1 .995-1h8.01c.55 0 .995.444.995 1v1H3V1z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/business/business.js",
+      "hash": "3d10f4d76b02deafa736e34c9baba667",
+      "browserifyId": 9,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/chevron/chevron.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--chevron\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '  <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7.3 8.01l4.845-4.43c.395-.384.396-1.01.002-1.4l-.77-.87c-.393-.388-1.038-.404-1.455-.02L3.358 7.317c-.41.377-.45 1.027-.03 1.37l6.598 6.02c.41.375 1.058.36 1.452-.028l.776-.788c.393-.388.39-1.014-.007-1.397L7.3 8.01z\" />' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/chevron/chevron.js",
+      "hash": "c0d4a1753928ea077f2c5bd8b36a0e35",
+      "browserifyId": 10,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/completed/completed.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--completed\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2.9 8.3c-.404-.396-1.043-.4-1.445-.024L.318 9.5c-.407.38-.41.998-.017 1.39l3.92 3.803c.4.398 1.04.405 1.447.03l10.1-9.98c.312-.368.308-.9-.012-1.255L14.63 2.262c-.395-.36-1.05-.35-1.443.04L5.03 10.52 2.9 8.3z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/completed/completed.js",
+      "hash": "da91c4652f149395590db448885883d4",
+      "browserifyId": 11,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/csv/csv.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--csv\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M1 1c0-.552.45-1 1.007-1h11.986C14.55 0 15 .445 15 1v14c0 .552-.45 1-1.007 1H2.007C1.45 16 1 15.555 1 15V1zm2 3h3V2H3v2zm0 3h3V5H3v2zm0 7h3V8H3v6zM7 4h6V2H7v2zm0 3h6V5H7v2zm0 7h6V8H7v6z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/csv/csv.js",
+      "hash": "b1efd0a214b26581f2133658c086dd49",
+      "browserifyId": 12,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/draft/draft.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--draft\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\">' + '<path fill-rule=\"evenodd\" d=\"M8,3 L4,3 L0,7 L0,15.0024554 C0,15.553384 0.455760956,16 1.00247329,16 L10.9975267,16 C11.5511774,16 12,15.5525106 12,15.0014977 L12,9 L10,11 L10,14 L2.08544922,14 L2.00960243,7.78663113 L4.82801467,4.99486944 L6.00415335,4.99584665 L8,3 L8,3 L8,3 Z M4.00366225,12 L4,9.75 L6.25,12 L4.00366225,12 L4.00366225,12 Z M7.000366,11.25 L14.500366,3.75 L12.250366,1.5 L4.750366,9 L7.000366,11.25 L7.000366,11.25 Z M13,0.75 L15.25,3 L16,2.25 L13.7823792,0.0323791504 L13.75,0 L13,0.75 L13,0.75 Z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/draft/draft.js",
+      "hash": "f8070bff03207750bd911d9e9638a77a",
+      "browserifyId": 13,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/dribbble/dribbble.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--dribbble\" xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"30\" viewBox=\"0 0 30 30\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M30 15c0 1.016-.103 2.03-.306 3.02-.198.964-.49 1.912-.875 2.818-.376.89-.84 1.748-1.384 2.548-.536.794-1.152 1.54-1.83 2.22-.68.676-1.426 1.292-2.22 1.83-.8.54-1.658 1.006-2.548 1.383-.906.382-1.854.675-2.817.872-.988.204-2.005.308-3.02.308-1.017 0-2.034-.104-3.02-.308-.966-.197-1.914-.49-2.82-.873-.89-.378-1.747-.843-2.55-1.383-.792-.54-1.54-1.155-2.217-1.83-.678-.68-1.295-1.427-1.83-2.22-.54-.8-1.007-1.66-1.384-2.55C.794 19.933.5 18.985.302 18.02.103 17.03 0 16.015 0 15c0-1.017.103-2.033.303-3.02.2-.965.492-1.914.876-2.82.376-.89.842-1.748 1.382-2.548.536-.795 1.153-1.54 1.83-2.22.68-.676 1.426-1.29 2.22-1.83.8-.54 1.66-1.006 2.548-1.384.906-.383 1.854-.677 2.82-.873C12.965.103 13.982 0 15 0c1.015 0 2.032.103 3.02.305.964.196 1.912.49 2.82.873.888.378 1.745.843 2.547 1.385.793.538 1.54 1.153 2.22 1.83.677.68 1.293 1.424 1.83 2.22.542.8 1.007 1.658 1.382 2.548.383.906.676 1.855.874 2.82.203.987.306 2.003.306 3.02zM9.534 3.414C5.96 5.1 3.294 8.392 2.464 12.36c.338.002 5.676.07 11.826-1.565-2.217-3.94-4.586-7.153-4.756-7.38zm5.818 9.354C8.756 14.742 2.427 14.6 2.2 14.59c-.004.14-.01.272-.01.41 0 3.29 1.24 6.29 3.28 8.56-.003-.008 3.503-6.226 10.416-8.462.167-.055.337-.105.505-.154-.32-.728-.67-1.457-1.038-2.176zm8.107-7.382C21.203 3.398 18.242 2.19 15 2.19c-1.042 0-2.052.127-3.02.36.193.258 2.6 3.45 4.79 7.472 4.833-1.812 6.658-4.59 6.69-4.636zm-6.196 11.68l-.085.03c-7.56 2.633-10.027 7.943-10.054 8C9.3 26.79 12.028 27.81 15 27.81c1.773 0 3.463-.363 5-1.017-.19-1.12-.933-5.042-2.736-9.726zm4.894 8.557c2.876-1.94 4.92-5.023 5.49-8.593-.265-.085-3.85-1.22-7.984-.556 1.68 4.617 2.363 8.377 2.494 9.15zM17.756 11.93c.297.612.585 1.234.85 1.86.095.223.187.442.278.662 4.4-.554 8.736.378 8.92.416-.028-3.036-1.115-5.823-2.912-8.005-.024.034-2.08 3.003-7.136 5.068z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/dribbble/dribbble.js",
+      "hash": "4edd4ae104f74fd4593d9d3f0c609484",
+      "browserifyId": 14,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/edit/edit.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--edit\" width=\"13px\" height=\"13px\" viewBox=\"0 0 13 13\">' + '<g id=\"edit-copy__icon\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">' + '<g transform=\"translate(-673.000000, -259.000000)\">' + '<g transform=\"translate(673.000000, 258.000000)\">' + '<path fill=\"currentColor\" d=\"M0.0048828125,14 L0,11 L3,14 L0.0048828125,14 Z M1.00048828,10 L4.00048828,13 L11.0004883,6 L8.00048828,3 L1.00048828,10 Z M9,2 L12,5 L13,4 L10,1 L9,2 Z\"/>' + '</g>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/edit/edit.js",
+      "hash": "029f926fa7328cf78eabb6227edbaadb",
+      "browserifyId": 15,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/email/email.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--email\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M.2696 1C.6154.402 1.259 0 1.994 0h12.012c.7358 0 1.3785.4027 1.724 1H16v8.9916C16 11.1006 15.1055 12 14.006 12H1.994C.893 12 0 11.098 0 9.9915V1h.2696zM2 3.01l5.1497 2.355c.502.2296 1.311.2344 1.8196.0048L14 3.0993v1.741L8.924 6.919c-.5103.209-1.3446.2047-1.843-.001L2 4.8197v-1.81z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/email/email.js",
+      "hash": "7b62337bfc426b1ecbd70fc1525930bf",
+      "browserifyId": 16,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/external-link/external-link.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--external-link\" width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M7 0H1.994C.894 0 0 .893 0 1.994v12.012C0 15.106.893 16 1.994 16h12.012c1.1 0 1.994-.893 1.994-1.994V9h-2v3.998C14 13.55 13.544 14 12.998 14H3.002C2.45 14 2 13.544 2 12.998V3.002C2 2.45 2.456 2 3.002 2H7V0zm8.414 2H16V0H9v2h3.586l-8.243 8.243 1.414 1.414L14 3.414V7h2V2h-.586z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/external-link/external-link.js",
+      "hash": "5d10635921111e574b3f64bd38d5ab31",
+      "browserifyId": 17,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/github/github.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--github\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M16 0C7.163 0 0 7.345 0 16.405c0 7.248 4.584 13.397 10.942 15.566.8.152 1.092-.355 1.092-.79 0-.388-.013-1.42-.02-2.79-4.452.992-5.39-2.2-5.39-2.2-.73-1.894-1.778-2.4-1.778-2.4-1.452-1.016.11-.996.11-.996 1.606.116 2.45 1.69 2.45 1.69 1.428 2.508 3.746 1.784 4.658 1.364.145-1.06.56-1.783 1.015-2.193-3.553-.413-7.29-1.82-7.29-8.108 0-1.79.625-3.256 1.648-4.402-.165-.415-.714-2.083.158-4.34 0 0 1.342-.442 4.4 1.68C13.27 8.122 14.64 7.94 16 7.934c1.36.007 2.728.188 4.006.553C23.06 6.363 24.4 6.804 24.4 6.804c.875 2.258.326 3.926.162 4.34 1.025 1.147 1.644 2.613 1.644 4.403 0 6.303-3.74 7.69-7.305 8.095.575.507 1.086 1.508 1.086 3.04 0 2.19-.02 3.96-.02 4.498 0 .44.29.95 1.1.79C27.42 29.796 32 23.65 32 16.405 32 7.345 24.836 0 16 0\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/github/github.js",
+      "hash": "72753c8134f87998b743ae5113187177",
+      "browserifyId": 18,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/individual/individual.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--individual\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M15.986 12.256c.007-.05.012-.1.014-.15-.083-1.704-3.886-4.195-8.03-4.195-4.143 0-7.946 2.493-7.97 4.35 0 .078.01.153.022.228l-.016 2.51C.003 15.558.448 16 1 16h14c.555 0 1-.45 1-1.003v-2.74h-.014zM8 6c1.657 0 3-1.343 3-3S9.657 0 8 0 5 1.343 5 3s1.343 3 3 3z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/individual/individual.js",
+      "hash": "d163006e8c77c7bfed071c381351c0c0",
+      "browserifyId": 19,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/key/key.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--key\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M9.71 9.314C9.896 9.84 10 10.41 10 11c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5c.59 0 1.156.102 1.682.29L12.64.36c.2-.2.576-.36.855-.36h2.01c.273 0 .495.218.495.5v2.032c0 .276-.23.497-.504.492l-.99-.016c-.278-.004-.504.206-.504.497v.99c0 .28-.214.505-.505.505h-.992c-.28 0-.505.214-.505.505v.99c0 .28-.15.658-.35.86l-1.94 1.96zM4.5 13c.828 0 1.5-.672 1.5-1.5S5.328 10 4.5 10 3 10.672 3 11.5 3.672 13 4.5 13z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/key/key.js",
+      "hash": "1c732dac1bdd4f4dea8333df206c5e66",
+      "browserifyId": 20,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/location/location.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--location\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path d=\"M9 7.87c.344-.2.623-.505.798-.87H10V5h-.322c-.172-.27-.404-.495-.678-.656V4H7v.344c-.274.16-.506.387-.678.656H6v2h.202c.175.365.454.67.798.87V8h.26c.23.093.48.144.74.144s.51-.05.74-.144H9v-.13zm4.688.188c.202-.612.312-1.268.312-1.95C14 2.735 11.314 0 8 0S2 2.735 2 6.108c0 .695.114 1.364.324 1.986-.018.01-.026.02-.022.03.964 2.935 5.693 7.376 5.693 7.376s4.61-4.35 5.687-7.376c.008-.023.01-.045.006-.066z\" fill=\"currentColor\" fill-rule=\"evenodd\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/location/location.js",
+      "hash": "93b5ef1eefe313059c922e49c8dc972b",
+      "browserifyId": 21,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/message/message.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--message\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M0 3.002C0 2.45.445 2 1 2h14c.552 0 1 .456 1 1.002v9.996C16 13.55 15.555 14 15 14H1c-.552 0-1-.456-1-1.002V3.002zM0 4l7.067 2.832c.515.207 1.34.21 1.866 0L16 4v2L8.946 8.844c-.514.207-1.34.21-1.85.006L0 6V4z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/message/message.js",
+      "hash": "ed3b2ea13a1688acd25dcac4701f8fd2",
+      "browserifyId": 22,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/minus/minus.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--minus\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\">' + '<rect width=\"16\" height=\"4\" x=\"0\" y=\"6\" fill=\"currentColor\" fill-rule=\"evenodd\" rx=\"1\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/minus/minus.js",
+      "hash": "ff35663b6a48f1bfda991aa469e3fc99",
+      "browserifyId": 23,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/mobile/mobile.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--mobile\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path d=\"M2 1c0-.552.456-1 1.002-1h9.996C13.55 0 14 .445 14 1v14c0 .552-.456 1-1.002 1H3.002C2.45 16 2 15.555 2 15V1zm2 1h8v10H4V2zm3 11h2v2H7v-2z\" fill=\"currentColor\" fill-rule=\"evenodd\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/mobile/mobile.js",
+      "hash": "091a6a47efd94359645d54b4e4e9bf9f",
+      "browserifyId": 24,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/paperclip/paperclip.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--paperclip\" width=\"19px\" height=\"20px\" viewBox=\"0 0 19 20\">' + '<g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">' + '<g id=\"paperclip\" transform=\"translate(-1186.000000, -662.000000)\" stroke=\"#255BC7\">' + '<path d=\"M1188.29912,679.541094 C1186.56693,677.808725 1186.56693,674.990161 1188.2993,673.258149 L1197.61304,663.944766 C1198.2222,663.335424 1199.03162,663 1199.89199,663 C1200.75237,663 1201.56196,663.335424 1202.17112,663.944766 C1202.78672,664.560545 1203.12233,665.369961 1203.12233,666.230513 C1203.12233,667.091066 1202.78672,667.900482 1202.17738,668.509645 L1193.58813,677.098541 L1193.47263,677.202065 C1192.77693,677.888647 1191.65265,677.885787 1190.96088,677.194555 C1190.61115,676.844827 1190.42574,676.397476 1190.42574,675.921696 C1190.42574,675.446273 1190.61133,674.998922 1190.94801,674.662246 L1195.41169,670.198745 C1195.55133,670.059104 1195.77768,670.059104 1195.91732,670.198745 C1196.05697,670.338386 1196.05697,670.564744 1195.91732,670.704385 L1191.45364,675.167886 C1191.25196,675.369748 1191.14093,675.637229 1191.14093,675.921875 C1191.14093,676.206342 1191.25196,676.474001 1191.45364,676.675864 C1191.88204,677.104263 1192.55861,677.103905 1192.97432,676.688737 L1201.67174,668.004006 C1202.14591,667.529835 1202.40714,666.899931 1202.40714,666.230513 C1202.40714,665.561096 1202.14591,664.931192 1201.67174,664.4572 C1201.19131,663.976234 1200.56141,663.71519 1199.89199,663.71519 C1199.22258,663.71519 1198.59267,663.976234 1198.11868,664.450405 L1188.80494,673.763968 C1187.35149,675.217234 1187.35149,677.58201 1188.80476,679.035454 C1190.25785,680.488363 1192.6228,680.488899 1194.07643,679.035454 L1203.38963,669.721714 C1203.52927,669.582073 1203.75563,669.582073 1203.89527,669.721714 C1204.03491,669.861354 1204.03491,670.087712 1203.89527,670.227353 L1194.58206,679.541094 C1193.71597,680.407189 1192.5781,680.840237 1191.44059,680.840237 C1190.3029,680.840237 1189.16504,680.407189 1188.29912,679.541094 Z\" id=\"Shape\"></path>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/paperclip/paperclip.js",
+      "hash": "d8eda6943c17bffa3fc3728da8e189a7",
+      "browserifyId": 25,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/payment/payment.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--payment\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M16 5V3.002C16 2.456 15.552 2 15 2H1c-.555 0-1 .45-1 1.002V5h16zm0 2v5.998C16 13.55 15.555 14 15 14H1c-.552 0-1-.456-1-1.002V7h16z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/payment/payment.js",
+      "hash": "d77406f0b29c915ceb1dfc4bc837c36a",
+      "browserifyId": 26,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/pdf/pdf.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--pdf\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M15 1c0-.552-.456-1-.995-1H5L1 4v10.998C1 15.55 1.45 16 2.007 16h11.986C14.55 16 15 15.555 15 15V1zM4 8h8v1H4V8zm0-3h8v1H4V5zm0 6h8v1H4v-1z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/pdf/pdf.js",
+      "hash": "3d69acc3f02500f0a5bfe5690a7c6688",
+      "browserifyId": 27,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/phone/phone.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--phone\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path d=\"M12.01.01c-.333-.036-.518.038-1 0l-2 5c.15-.314 2 2 2 2-.684 1.834-2.166 3.334-4 4l-2-2c-.166.186-5 2-5 2 .038.482-.036.667 0 1l2 4c7.297-.925 13.075-6.684 14-14-.055-.296-4-2-4-2z\" fill=\"currentColor\" fill-rule=\"evenodd\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/phone/phone.js",
+      "hash": "3092df7951f724a03f51bc498c62d166",
+      "browserifyId": 28,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/plus/plus.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--plus\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\">' + '<path fill-rule=\"evenodd\" d=\"M10 6V0H6v6H0v4h6v6h4v-6h6V6h-6z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/plus/plus.js",
+      "hash": "25a0a17b51084c4020fc40f40f92d4ad",
+      "browserifyId": 29,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/print/print.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--print\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M14 12h1c.555 0 1-.446 1-.997V4.997C16 4.453 15.552 4 15 4H1c-.555 0-1 .446-1 .997v6.006C0 11.547.448 12 1 12h1v3.01c0 .54.45.99 1.002.99h9.996c.546 0 1.002-.444 1.002-.99V12zM3 0h10v3H3V0zm9 6h2v1h-2V6zm-8 4h8v4H4v-4z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/print/print.js",
+      "hash": "619a2ee7ed51473061951bdbede77f45",
+      "browserifyId": 30,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/processing/processing.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--processing\" xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\">' + '<g fill=\"none\" fill-rule=\"evenodd\">' + '<path fill=\"currentColor\" fill-opacity=\".2\" stroke=\"currentColor\" d=\"M9 17c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-3c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5z\"/>' + '<path fill=\"currentColor\" d=\"M4.774 11.673L2.52 13.69C3.972 15.697 6.333 17 9 17c4.418 0 8-3.582 8-8s-3.582-8-8-8v3c2.76 0 5 2.24 5 5s-2.24 5-5 5c-1.778 0-3.34-.93-4.226-2.327z\"/>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/processing/processing.js",
+      "hash": "8829ca89e8fa32e1e006b5d563a15daf",
+      "browserifyId": 31,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/progress/progress.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--progress\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zM3 7h2v2H3V7zm4 0h2v2H7V7zm4 0h2v2h-2V7z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/progress/progress.js",
+      "hash": "91ece12c46dd42f4f04ee7161153c5b2",
+      "browserifyId": 32,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/refresh/refresh.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.default = {\n    __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--refresh\" width=\"13px\" height=\"16px\" viewBox=\"0 0 13 16\">' + '<g class=\"carbon-icon__svg-group\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">' + '<g transform=\"translate(-1029.000000, -227.000000)\" fill=\"currentColor\">' + '<g id=\"Tags\" transform=\"translate(505.000000, 227.000000)\">' + '<g transform=\"translate(524.000000, 0.000000)\">' + '<path d=\"M7.00097862,2.70098912 C10.3528746,2.9650394 12.9924827,5.8368169 12.9924827,9.34059286 C12.9924827,13.0184819 10.0840164,16 6.49624136,16 C2.90846633,16 0,13.0184819 0,9.34059286 C0,8.86925873 0.0477666277,8.40936132 0.138608168,7.96571016 L1.99884343,7.96571016 C1.99884343,7.96571016 1.9988435,8.68664161 1.9988435,9.34059286 C1.9988435,11.8868237 4.01239711,13.9509517 6.49624136,13.9509517 C8.98008562,13.9509517 10.9936392,11.8868237 10.9936392,9.34059286 C10.9936392,6.96927971 9.24723222,5.01610685 7.00097862,4.75894453 L7.00097862,8 L2.00097862,3.5 L7.00097862,1.77635684e-14 L7.00097862,2.70098912 Z\" id=\"Icon-path\">' + '</path>' + '</g>' + '</g>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/refresh/refresh.js",
+      "hash": "85b9309963f0b85fcff9dbf105d25452",
+      "browserifyId": 33,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/remove/remove.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--remove\" xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<rect width=\"14\" height=\"2\" x=\"1\" y=\"7\" fill=\"currentColor\" fill-rule=\"evenodd\" rx=\"1\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/remove/remove.js",
+      "hash": "af1df5bccf6fe1d8b97949e15039ba16",
+      "browserifyId": 34,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-down/sort-down.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--sort-down\" width=\"10px\" height=\"11px\" viewBox=\"0 0 10 11\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\">' + '<title>sort-down</title>' + '<g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" sketch:type=\"MSPage\">' + '<g id=\"Paginated-Grid\" sketch:type=\"MSArtboardGroup\" transform=\"translate(-511.000000, -164.000000)\" fill=\"currentColor\">' + '<g id=\"Group\" sketch:type=\"MSLayerGroup\" transform=\"translate(90.000000, 150.000000)\">' + '<g id=\"Header\" transform=\"translate(-1.000000, -1.000000)\" sketch:type=\"MSShapeGroup\">' + '<path d=\"M426,20 L422,20 L427,26 L432,20 L428,20 L428,15 L426,15 L426,20 Z\" id=\"sort-down\"></path>' + '</g>' + '</g>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-down/sort-down.js",
+      "hash": "3ff51cc727af342ad09498a2fa5ce3e9",
+      "browserifyId": 35,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-up/sort-up.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--sort-up\" width=\"10px\" height=\"11px\" viewBox=\"0 0 10 11\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\">' + '<title>sort-up</title>' + '<g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" sketch:type=\"MSPage\">' + '<g id=\"Paginated-Grid\" sketch:type=\"MSArtboardGroup\" transform=\"translate(-511.000000, -164.000000)\" fill=\"currentColor\">' + '<g id=\"Group\" sketch:type=\"MSLayerGroup\" transform=\"translate(90.000000, 150.000000)\">' + '<g id=\"Header\" transform=\"translate(-1.000000, -1.000000)\" sketch:type=\"MSShapeGroup\">' + '<path d=\"M426,20 L422,20 L427,26 L432,20 L428,20 L428,15 L426,15 L426,20 Z\" id=\"sort-up\" transform=\"translate(427.000000, 20.500000) scale(1, -1) translate(-427.000000, -20.500000) \"></path>' + '</g>' + '</g>' + '</g>' + '</g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sort-up/sort-up.js",
+      "hash": "c18b119b4060b64a4523858474edbfd7",
+      "browserifyId": 36,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/submitted/submitted.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--submitted\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\">' + '<path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M9 7.038H1.007c-.557 0-1.007.448-1.007 1 0 .556.45 1 1.007 1H9v4.5c0 .552.336.705.75.342l5.9-5.172c.413-.363.414-.954 0-1.318l-5.9-5.192c-.413-.363-.75-.213-.75.338v4.502z\"/>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/submitted/submitted.js",
+      "hash": "a43f723e58a51bfb8b44c21feef45345",
+      "browserifyId": 37,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sync/sync.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--sync\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M2.343 2.343C3.79.895 5.79 0 8 0c4.08 0 7.446 3.054 7.938 7h-2.02C13.44 4.162 10.972 2 8 2c-1.657 0-3.157.672-4.243 1.757L7 7l-7 .005V0l2.343 2.343zm11.315 11.312C12.21 15.105 10.21 16 8 16 3.92 16 .554 12.946.062 9h2.02C2.56 11.838 5.028 14 8 14c1.657 0 3.158-.672 4.244-1.758L9 9h7v6.996l-2.342-2.34z\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/sync/sync.js",
+      "hash": "ce5f3acf53b100b41d130a3aec0f7cd3",
+      "browserifyId": 38,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/twitter/twitter.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--twitter\" xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"27\" viewBox=\"0 0 32 27\"><path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M31.66 3.12c-1.167.53-2.418.887-3.732 1.048 1.34-.824 2.37-2.128 2.857-3.682C29.53 1.25 28.14 1.803 26.66 2.1 25.475.81 23.787 0 21.92 0c-3.588 0-6.496 2.98-6.496 6.654 0 .52.057 1.03.168 1.516-5.398-.277-10.186-2.926-13.388-6.952-.56.983-.88 2.125-.88 3.345 0 2.308 1.147 4.344 2.89 5.538-1.065-.033-2.067-.332-2.942-.83v.083c0 3.224 2.238 5.913 5.21 6.524-.545.153-1.12.234-1.712.234-.418 0-.825-.04-1.222-.118.826 2.643 3.226 4.567 6.068 4.62-2.224 1.785-5.024 2.85-8.067 2.85-.525 0-1.042-.033-1.55-.095 2.874 1.888 6.287 2.99 9.957 2.99 11.946 0 18.48-10.14 18.48-18.933 0-.287-.006-.575-.02-.86 1.27-.938 2.37-2.11 3.242-3.444 0 0-.872 1.335 0 0\"/></svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/twitter/twitter.js",
+      "hash": "36f78a4ff0d3d7be080a4ea2467eb643",
+      "browserifyId": 39,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/white-tick/white-tick.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  __html: '<svg class=\"carbon-icon__svg carbon-icon__svg--white-tick\"  width=\"15px\" height=\"13px\" viewBox=\"0 0 15 13\">' + '  <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\" sketch:type=\"MSPage\">' + '    <g id=\"QSW---Step-2\" sketch:type=\"MSArtboardGroup\" transform=\"translate(-518.000000, -174.000000)\" fill=\"#FFFFFF\">' + '      <g id=\"Overlay\" sketch:type=\"MSLayerGroup\">' + '        <g id=\"Dialog\" transform=\"translate(433.000000, 60.000000)\" sketch:type=\"MSShapeGroup\">' + '          <g id=\"progress-bar\" transform=\"translate(77.000000, 87.000000)\">' + '            <g id=\"business-basics\">' + '              <path d=\"M12.1349063,38.4860814 L8.81960483,35.6607151 C8.4628233,35.3566587 8.41656446,34.8166977 8.71591615,34.454366 L9.79923038,33.1431352 C10.0989393,32.7803711 10.6303501,32.7334485 10.9869674,33.037365 L13.7895069,35.4257453 L19.7381802,28.2255413 C20.0374529,27.8633052 20.5692891,27.8160953 20.9260425,28.1201277 L22.2170862,29.220381 C22.5742654,29.5247762 22.6204272,30.0645427 22.3211424,30.4267934 L15.9731521,38.1103259 C15.9424206,38.1779211 15.9024384,38.2425382 15.8530479,38.3023198 L14.7697337,39.6135505 C14.5680446,39.8576726 14.2614267,39.9587622 13.9737606,39.9061537 C13.8218425,39.8848846 13.6737922,39.8212943 13.5476358,39.7137813 L12.2565922,38.613528 C12.2109212,38.5746063 12.1703353,38.5318364 12.1349063,38.4860814 L12.1349063,38.4860814 Z\" id=\"tick\"></path>' + '            </g>' + '          </g>' + '        </g>' + '      </g>' + '    </g>' + '  </g>' + '</svg>'\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icons/svgs/white-tick/white-tick.js",
+      "hash": "5facc6f446b0994d9e421d9a4f03ee6b",
+      "browserifyId": 40,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/link/link.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _icon = require('./../icon');\n\nvar _icon2 = _interopRequireDefault(_icon);\n\nvar _reactRouter = require('react-router');\n\nvar _events = require('./../../utils/helpers/events');\n\nvar _events2 = _interopRequireDefault(_events);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * A link widget.\n *\n * == How to use a Link in a component:\n *\n * In your file:\n *\n *   import Link from 'carbon/lib/components/link';\n *\n * To render the Link:\n *\n *  <Link href='foo'>Main Page</Link>\n *\n * For additional properties specific to this component, see propTypes.\n *\n * @class Link\n * @constructor\n */\nvar _Link = function (_React$Component) {\n  _inherits(_Link, _React$Component);\n\n  function _Link() {\n    _classCallCheck(this, _Link);\n\n    var _this = _possibleConstructorReturn(this, (_Link.__proto__ || Object.getPrototypeOf(_Link)).call(this));\n\n    _this.onKeyDown = _this.onKeyDown.bind(_this);\n    return _this;\n  }\n\n  _createClass(_Link, [{\n    key: 'onKeyDown',\n\n\n    /**\n     * Triggers the onClick event for the enter key\n     *\n     * @method onKeyDown\n     * @param {Object} ev\n     */\n    value: function onKeyDown(ev) {\n      if (this.props.onKeyDown) {\n        this.props.onKeyDown(ev);\n      }\n\n      // return early if there is no onClick or there is a href prop\n      if (!this.props.onClick || this.props.href) {\n        return;\n      }\n      // return early if the event is not an enter key\n      if (!_events2.default.isEnterKey(ev)) {\n        return;\n      }\n\n      this.props.onClick(ev);\n    }\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     */\n\n  }, {\n    key: 'render',\n    value: function render() {\n      return _react2.default.createElement(this.linkType.component, this.componentProps, _react2.default.createElement(\n        'span',\n        null,\n        this.iconLeft,\n        _react2.default.createElement(\n          'span',\n          { className: 'carbon-link__content' },\n          this.props.children\n        ),\n        this.iconRight\n      ));\n    }\n  }, {\n    key: 'componentProps',\n\n\n    /**\n     * Getter for componet properties.\n     *\n     * @method componentProps\n     * @return {Object} props\n     */\n    get: function get() {\n      var props = _objectWithoutProperties(this.props, []);\n\n      props.tabIndex = this.tabIndex;\n\n      delete props.href;\n      delete props.tabbable;\n      delete props.to;\n\n      props.className = this.componentClasses;\n      props[this.linkType.prop] = this.url;\n      props.onKeyDown = this.onKeyDown;\n\n      return props;\n    }\n\n    /**\n     * Getter for componet classes.\n     *\n     * @method componentClasses\n     * @return {String} class names\n     */\n\n  }, {\n    key: 'componentClasses',\n    get: function get() {\n      return (0, _classnames2.default)('carbon-link__anchor', this.props.className, { 'carbon-link__anchor--disabled': this.props.disabled });\n    }\n\n    /**\n     * Returns the icon if enabled and aligned to the left.\n     *\n     * @method iconLeft\n     * @return {Object} JSX\n     */\n\n  }, {\n    key: 'iconLeft',\n    get: function get() {\n      if (!this.props.icon || this.props.iconAlign !== 'left') {\n        return null;\n      }\n      return this.icon;\n    }\n\n    /**\n     * Returns the icon if enabled and aligned to the right.\n     *\n     * @method iconRight\n     * @return {Object} JSX\n     */\n\n  }, {\n    key: 'iconRight',\n    get: function get() {\n      if (!this.props.icon || this.props.iconAlign !== 'right') {\n        return null;\n      }\n      return this.icon;\n    }\n\n    /**\n     * Returns the markup for the icon.\n     *\n     * @method icon\n     * @return {Object} JSX\n     */\n\n  }, {\n    key: 'icon',\n    get: function get() {\n      var classes = (0, _classnames2.default)(\"carbon-link__icon\", 'carbon-link__icon--align-' + this.props.iconAlign);\n\n      return _react2.default.createElement(_icon2.default, {\n        type: this.props.icon,\n        className: classes,\n        tooltipMessage: this.props.tooltipMessage,\n        tooltipAlign: this.props.tooltipAlign,\n        tooltipPosition: this.props.tooltipPosition\n      });\n    }\n\n    /**\n     * Returns 0 or -1 for tabindex\n     *\n     * @method tabIndex\n     * @return {String} 0 or -1\n     */\n\n  }, {\n    key: 'tabIndex',\n    get: function get() {\n      return this.props.tabbable && !this.props.disabled ? '0' : '-1';\n    }\n\n    /**\n     * Regex for finding 'href:' or 'to:',\n     *\n     * @method typeRegex\n     * @return {Regex}\n     */\n\n  }, {\n    key: 'typeRegex',\n    get: function get() {\n      return (/^href:|^to:/\n      );\n    }\n\n    /**\n     * A hash of the different link types.\n     *\n     * @method linkTypes\n     * @return {Object}\n     */\n\n  }, {\n    key: 'linkTypes',\n    get: function get() {\n      return {\n        to: {\n          prop: \"to\",\n          component: _reactRouter.Link\n        },\n        href: {\n          prop: \"href\",\n          component: \"a\"\n        }\n      };\n    }\n\n    /**\n     * Returns the correct link type based on the given props.\n     *\n     * @method linkType\n     * @return {Object}\n     */\n\n  }, {\n    key: 'linkType',\n    get: function get() {\n      var url = this.props.href || this.props.to,\n          type = \"href\";\n\n      if (url) {\n        var match = url.match(this.typeRegex);\n\n        if (match) {\n          type = match[0].substr(0, match[0].length - 1);\n        } else if (this.props.href) {\n          type = \"href\";\n        } else {\n          type = \"to\";\n        }\n      }\n\n      return this.linkTypes[type];\n    }\n\n    /**\n     * Returns the parsed URL for the link.\n     *\n     * @method url\n     * @return {String}\n     */\n\n  }, {\n    key: 'url',\n    get: function get() {\n      var url = this.props.href || this.props.to;\n      if (!url) {\n        return null;\n      }\n\n      return url.replace(this.typeRegex, \"\");\n    }\n  }]);\n\n  return _Link;\n}(_react2.default.Component);\n\n_Link.propTypes = {\n\n  /**\n   * Gives the link a disabled state.\n   *\n   * @property disabled\n   * @type {Boolean}\n   * @default undefined\n   */\n  disabled: _react2.default.PropTypes.bool,\n\n  /**\n   * Renders an icon inline with the link.\n   *\n   * @property icon\n   * @type {String}\n   * @default undefined\n   */\n  icon: _react2.default.PropTypes.string,\n\n  /**\n   * Configures the alignment of the icon (left or right).\n   *\n   * @property iconAlign\n   * @type {String}\n   * @default left\n   */\n  iconAlign: _react2.default.PropTypes.string,\n\n  /**\n   * Allows the <a> tag to be set in or out of the tab order of the page\n   * Boolean is used as tabindex > 0 is not really necessary, HTML order should\n   * take precedence\n   *\n   * @property tabbable\n   * @type {Boolean}\n   * @default true\n   */\n  tabbable: _react2.default.PropTypes.bool,\n\n  /**\n   * Use `to` to use the React Router link. You can also prefix your value\n   * with `to:` or `href:` to override the prop type.\n   *\n   * @property to\n   * @type {String}\n   * @default undefined\n   */\n  to: _react2.default.PropTypes.string,\n\n  /**\n   * Use `href` to use a generic anchor. You can also prefix your value\n   * with `to:` or `href:` to override the prop type.\n   *\n   * @property href\n   * @type {String}\n   * @default undefined\n   */\n  href: _react2.default.PropTypes.string\n};\n_Link.defaultProps = {\n  iconAlign: 'left',\n  tabbable: true\n};\nexports.default = _Link;",
+    {
+      "./../icon": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js",
+      "./../../utils/helpers/events": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/events/events.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "react-router": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/index.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/link/link.js",
+      "hash": "b0a7f2308db557a0a86264fd8d3c6d2f",
+      "browserifyId": 41,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/textbox/textbox.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _input = require('./../../utils/decorators/input');\n\nvar _input2 = _interopRequireDefault(_input);\n\nvar _inputLabel = require('./../../utils/decorators/input-label');\n\nvar _inputLabel2 = _interopRequireDefault(_inputLabel);\n\nvar _inputValidation = require('./../../utils/decorators/input-validation');\n\nvar _inputValidation2 = _interopRequireDefault(_inputValidation);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * A textbox widget.\n *\n * == How to use a Textbox in a component:\n *\n * In your file\n *\n *   import Textbox from 'carbon/lib/components/textbox';\n *\n * To render a Textbox:\n *\n *   <Textbox name=\"myTextbox\" />\n *\n * @class Textbox\n * @constructor\n * @decorators {Input,InputLabel,InputValidation}\n */\nvar Textbox = (0, _input2.default)((0, _inputLabel2.default)((0, _inputValidation2.default)(function (_React$Component) {\n  _inherits(Textbox, _React$Component);\n\n  function Textbox() {\n    _classCallCheck(this, Textbox);\n\n    return _possibleConstructorReturn(this, (Textbox.__proto__ || Object.getPrototypeOf(Textbox)).apply(this, arguments));\n  }\n\n  _createClass(Textbox, [{\n    key: 'render',\n\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     * @return {Object} JSX\n     */\n    value: function render() {\n      var _this2 = this;\n\n      return _react2.default.createElement(\n        'div',\n        { className: this.mainClasses,\n          ref: function ref(comp) {\n            return _this2._target = comp;\n          } },\n        this.labelHTML,\n        this.inputHTML,\n        this.validationHTML,\n        this.fieldHelpHTML\n      );\n    }\n  }, {\n    key: 'mainClasses',\n\n\n    /**\n     * Main Class getter\n     *\n     * @method mainClasses\n     * @return {void}\n     */\n    get: function get() {\n      return 'carbon-textbox';\n    }\n\n    /**\n     * Input class getter\n     *\n     * @method inputClasses\n     */\n\n  }, {\n    key: 'inputClasses',\n    get: function get() {\n      return 'carbon-textbox__input';\n    }\n\n    /**\n     * A getter that combines props passed down from the input decorator with\n     * textbox specific props.\n     *\n     * @method inputProps\n     * @return {Object} props for the input\n     */\n\n  }, {\n    key: 'inputProps',\n    get: function get() {\n      var props = _objectWithoutProperties(this.props, []);\n\n      props.className = this.inputClasses;\n      return props;\n    }\n  }]);\n\n  return Textbox;\n}(_react2.default.Component))));\n\nexports.default = Textbox;",
+    {
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "./../../utils/decorators/input-label": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-label/input-label.js",
+      "./../../utils/decorators/input-validation": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-validation/input-validation.js",
+      "./../../utils/decorators/input": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input/input.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/textbox/textbox.js",
+      "hash": "bb9a416c2bbab1270f8fe5f33d28b553",
+      "browserifyId": 42,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/tooltip/tooltip.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n* A Tooltip widget.\n*\n* == How to use a Tooltip in a component:\n*\n* In your file:\n*\n*   import Tooltip from 'carbon/lib/components/tooltip'\n*\n* To render the Tooltip:\n*\n*   <Tooltip isVisible={ toggleTooltipHandler }>\n*     My tooltip content\n*   </Tooltip>\n*\n* You must pass a prop of 'isVisible' which is toggled to true or false.\n*\n* You can pass a prop of 'align' to the component which shifts the alignment of the pointer.\n* This defaults to 'center'.\n* You can also pass a prop of 'position' to the component which shifts the position of the pointer.\n* This defaults to 'bottom'\n*\n* @class Tooltip\n* @constructor\n*/\nvar Tooltip = function (_React$Component) {\n  _inherits(Tooltip, _React$Component);\n\n  function Tooltip() {\n    _classCallCheck(this, Tooltip);\n\n    return _possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).apply(this, arguments));\n  }\n\n  _createClass(Tooltip, [{\n    key: 'render',\n\n\n    /**\n     * Renders the component.\n     *\n     * @method render\n     */\n    value: function render() {\n      if (!this.props.isVisible) {\n        return null;\n      }\n\n      return this.tooltipHTML;\n    }\n  }, {\n    key: 'mainClasses',\n\n\n    /**\n     * Main classes\n     *\n     * @method mainClasses\n     * @return {String} classNames for tooltip\n     */\n    get: function get() {\n      return (0, _classnames2.default)('carbon-tooltip', 'carbon-tooltip--position-' + this.props.position, 'carbon-tooltip--pointer-align-' + this.props.align, this.props.className);\n    }\n\n    /**\n     * Return HTML for tooltip\n     *\n     * @method tooltipHTML\n     * @return {JSX}\n     */\n\n  }, {\n    key: 'tooltipHTML',\n    get: function get() {\n      var contents = [this.props.children, _react2.default.createElement('span', { key: 'pointer', className: 'carbon-tooltip__pointer' })];\n\n      return _react2.default.createElement(\n        'div',\n        { className: this.mainClasses },\n        _react2.default.createElement(\n          'div',\n          { className: 'carbon-tooltip__container' },\n          contents\n        )\n      );\n    }\n  }]);\n\n  return Tooltip;\n}(_react2.default.Component);\n\nTooltip.propTypes = {\n  /**\n   * Sets alignment of pointer on tooltip\n   *\n   * Options: top, bottom, center, right, left\n   *\n   * @property align\n   * @type {String}\n   * @default 'center'\n   */\n  align: _react2.default.PropTypes.string,\n\n  /**\n   * Sets position of the tooltip\n   *\n   *\n   * Options: top, bottom, right, left\n   *\n   * @property position\n   * @type {String}\n   * @default 'bottom'\n   */\n  position: _react2.default.PropTypes.string,\n\n  /**\n   * Whether to to show the Tooltip\n   *\n   * @property isVisible\n   * @type {Boolean}\n   * @default false\n   */\n  isVisible: _react2.default.PropTypes.bool\n};\nTooltip.defaultProps = {\n  align: 'center',\n  position: 'top',\n  isVisible: false\n};\nexports.default = Tooltip;",
+    {
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/tooltip/tooltip.js",
+      "hash": "c9e62c55a607abe68366fb887a7912f8",
+      "browserifyId": 43,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/css/css.js": [
+    "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = {\n  clearfix: \"clearfix\",\n  input: \"common-input\",\n  hidden: \"hidden\",\n  unselectable: \"unselectable\",\n  textTag: \"text--tag\",\n  textBold: \"text--bold\",\n  textItalic: \"text--italic\",\n  textSecondary: \"text--secondary\",\n  textInactive: \"text--inactive\"\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/css/css.js",
+      "hash": "4c2b74634e9fe9301ee337c7d235581b",
+      "browserifyId": 44,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-label/input-label.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if (\"value\" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _lodash = require('lodash');\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _help = require('./../../../components/help');\n\nvar _help2 = _interopRequireDefault(_help);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * InputLabel decorator.\n *\n * This decorator provides HTML for input labels.\n *\n * == How to use InputLabel decorator in a component:\n *\n * In your file:\n *\n *   import InputLabel from 'carbon/lib/utils/decorators/input-label';\n *\n * To use the decorator, wrap your component with it:\n *\n *   const MyComponent = InputLabel(\n *   class MyComponent extends React.Component {\n *     ...\n *   })\n *\n * In the render method for your component, you can now output the HTML:\n *\n *   render() {\n *     return (\n *       <div>\n *         { this.labelHTML() }\n *         <input />\n *       </div>\n *     );\n *   }\n *\n * The label decorator adds additional props to your component for:\n *\n *  * `label` - either a string or false to turn the label off\n *  * `labelInline` - pass true to format the input/label inline\n *  * `labelWidth` - pass a percentage to define the width of the label when it\n *  is displayed inline.\n *  * `inputWidth` - pass a percentage to define the width of the input when it\n *  is displayed inline.\n *\n * @method InputIcon\n * @param {Class} ComposedComponent class to decorate\n * @return {Object} Decorated Component\n */\nvar InputLabel = function InputLabel(ComposedComponent) {\n  var _class, _temp;\n\n  return _temp = _class = function (_ComposedComponent) {\n    _inherits(Component, _ComposedComponent);\n\n    function Component() {\n      var _ref;\n\n      _classCallCheck(this, Component);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      return _possibleConstructorReturn(this, (_ref = Component.__proto__ || Object.getPrototypeOf(Component)).call.apply(_ref, [this].concat(args)));\n    }\n\n    _createClass(Component, [{\n      key: 'mainClasses',\n\n\n      /**\n       * Extends the main classes with any validation classes.\n       *\n       * @method mainClasses\n       * @return {String} Main class names\n       */\n      get: function get() {\n        return (0, _classnames2.default)(_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'mainClasses', this), {\n          'common-input--label-inline': this.props.labelInline,\n          'common-input--has-label-help': this.props.labelHelp,\n          'common-input--has-field-help': this.props.fieldHelp\n        });\n      }\n\n      /**\n       * Classes to apply to the label\n       *\n       * @method labelClasses\n       * @return {String} classes\n       */\n\n    }, {\n      key: 'labelClasses',\n      get: function get() {\n        return (0, _classnames2.default)('common-input__label', {\n          'common-input__label--inline': this.props.labelInline,\n          'common-input__label--help': this.props.labelHelp,\n          'common-input__label--align-right': this.props.labelAlign === 'right'\n        });\n      }\n    }, {\n      key: 'fieldHelpClasses',\n      get: function get() {\n        return (0, _classnames2.default)(_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'fieldHelpClasses', this), 'common-input__help-text', {\n          'common-input__help-text--inline': this.props.labelInline\n        });\n      }\n\n      /**\n       * ID used for the label.\n       *\n       * @method labelID\n       * @return {String}\n       */\n\n    }, {\n      key: 'labelID',\n      get: function get() {\n        return this._guid;\n      }\n\n      /**\n       * Supplies the HTML for the label.\n       *\n       * @method labelHTML\n       * @return {HTML} HTML for label.\n       */\n\n    }, {\n      key: 'labelHTML',\n      get: function get() {\n        if (this.props.label === false) {\n          return;\n        }\n\n        // either use label supplied by dev, or automatically make one common on input name\n        var labelText = this.props.label || (0, _lodash.startCase)(this.props.name);\n\n        if (!labelText) {\n          return;\n        }\n\n        // set asterisk if validation is used which uses an asterisk\n        if ((0, _lodash.find)(this.props.validations, function (v) {\n          return v.asterisk;\n        })) {\n          labelText += \"*\";\n        }\n\n        // add label width if defined\n        var labelStyle = this.props.labelWidth ? { width: this.props.labelWidth + '%' } : null;\n        return _react2.default.createElement(\n          'label',\n          {\n            style: labelStyle,\n            className: this.labelClasses,\n            htmlFor: this.inputProps.id\n          },\n          labelText,\n          this.labelHelpHTML\n        );\n      }\n\n      /**\n       * Supplies the HTML for help component\n       *\n       * @method labelHelpHTML\n       * @return {Object} JSX for help\n       */\n\n    }, {\n      key: 'labelHelpHTML',\n      get: function get() {\n        if (this.props.labelHelp) {\n          return _react2.default.createElement(\n            _help2.default,\n            {\n              tooltipPosition: this.props.labelHelpPosition,\n              tooltipAlign: this.props.labelHelpAlign,\n              href: this.props.labelHelpHref\n            },\n            this.props.labelHelp\n          );\n        }\n      }\n\n      /**\n       * Supplies the HTML label help\n       *\n       * @method fieldHelpHTML\n       * @return {Object} JSX for label help\n       */\n\n    }, {\n      key: 'fieldHelpHTML',\n      get: function get() {\n        if (this.props.fieldHelp) {\n          var style = {};\n\n          if (this.props.labelInline) {\n            style.marginLeft = this.props.labelWidth + '%';\n          }\n\n          return _react2.default.createElement(\n            'span',\n            { className: this.fieldHelpClasses, style: style },\n            this.props.fieldHelp\n          );\n        }\n      }\n\n      /**\n       * Extends the input props to include the ID.\n       *\n       * @method inputProps\n       * @return {Object} Input props\n       */\n\n    }, {\n      key: 'inputProps',\n      get: function get() {\n        var inputProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputProps', this) || {};\n\n        // set id so label will focus on input when clicked\n        if (!inputProps.id) {\n          inputProps.id = this.labelID;\n        }\n\n        return inputProps;\n      }\n\n      /**\n       * Extends the field props to include width.\n       *\n       * @method fieldProps\n       * @return {Object} Field props\n       */\n\n    }, {\n      key: 'fieldProps',\n      get: function get() {\n        var fieldProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'fieldProps', this) || {};\n\n        var _props = this.props,\n            labelWidth = _props.labelWidth,\n            inputWidth = _props.inputWidth;\n\n\n        if (labelWidth && !inputWidth) {\n          inputWidth = 100 - labelWidth;\n        }\n\n        if (inputWidth) {\n          fieldProps.style = fieldProps.style || {};\n          fieldProps.style.width = inputWidth + '%';\n        }\n\n        return fieldProps;\n      }\n    }]);\n\n    return Component;\n  }(ComposedComponent), _class.contextTypes = (0, _lodash.assign)({}, ComposedComponent.contextTypes, {\n    form: _react2.default.PropTypes.object\n  }), _temp;\n};\n\nexports.default = InputLabel;",
+    {
+      "./../../../components/help": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/help/help.js",
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-label/input-label.js",
+      "hash": "069369edecf4f11d851db50caf9f9515",
+      "browserifyId": 45,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-validation/input-validation.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if (\"value\" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = require('react-dom');\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _icon = require('./../../../components/icon');\n\nvar _icon2 = _interopRequireDefault(_icon);\n\nvar _chainFunctions = require('./../../helpers/chain-functions');\n\nvar _chainFunctions2 = _interopRequireDefault(_chainFunctions);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _lodash = require('lodash');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * InputValidation decorator.\n *\n * This decorator provides functionality and HTML for validation on inputs.\n *\n * == How to use InputValidation decorator in a component:\n *\n * In your file:\n *\n *   import InputValidation from 'carbon/lib/utils/decorators/input-validation';\n *\n * To use the decorator, wrap your component with it:\n *\n *   const MyComponent = InputValidation(\n *   class MyComponent extends React.Component {\n *     ...\n *   })\n *\n * In the render method for your component, you can now output the HTML:\n *\n *   render() {\n *     return (\n *       <div>\n *         <input />\n *         { this.validationHTML() }\n *       </div>\n *     );\n *   }\n *\n * @method InputValidation\n * @param {Class} ComposedComponent class to decorate\n * @return {Object} Decorated Component\n */\nvar InputValidation = function InputValidation(ComposedComponent) {\n  var _class, _temp;\n\n  return _temp = _class = function (_ComposedComponent) {\n    _inherits(Component, _ComposedComponent);\n\n    function Component() {\n      var _ref;\n\n      _classCallCheck(this, Component);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      // use the super components state, or create an empty object\n      var _this = _possibleConstructorReturn(this, (_ref = Component.__proto__ || Object.getPrototypeOf(Component)).call.apply(_ref, [this].concat(args)));\n\n      _this._window = window;\n\n      _this.positionMessage = function () {\n        if (!_this.state.valid || _this.state.warning) {\n          // calculate the position for the message relative to the icon\n          var icon = _reactDom2.default.findDOMNode(_this.refs.validationIcon),\n              message = _this.refs.validationMessage;\n\n          if (icon && message && message.offsetHeight) {\n            var messagePositionLeft = icon.offsetLeft + icon.offsetWidth / 2,\n                topOffset = icon.offsetTop - icon.offsetHeight;\n\n            // set initial position for message\n            message.style.left = messagePositionLeft + 'px';\n            message.style.top = '-' + (message.offsetHeight - topOffset) + 'px';\n\n            // figure out if the message is positioned offscreen\n            var messageScreenPosition = message.getBoundingClientRect().left + message.offsetWidth;\n\n            // change the position if it is offscreen\n            if (messageScreenPosition > _this._window.innerWidth) {\n              messagePositionLeft -= message.offsetWidth;\n              message.style.left = messagePositionLeft + 'px';\n              message.className += \" common-input__message--flipped\";\n              _this.flipped = true;\n            } else {\n              message.classList.remove(\"common-input__message--flipped\");\n              _this.flipped = false;\n            }\n          }\n        }\n      };\n\n      _this.warning = function () {\n        var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _this.props.value;\n\n        var valid = true;\n        // if there are no warnings or there is an error on the input, return truthy\n        if (!_this.props.warnings || !_this.state.valid) {\n          return true;\n        }\n\n        // iterate through each validation applied to the input\n        for (var i = 0; i < _this.props.warnings.length; i++) {\n          var warning = _this.props.warnings[i];\n\n          // run this validation\n          valid = warning.validate(value, _this.props, _this.updateWarning);\n          _this.updateWarning(valid, value, warning);\n          if (!valid) {\n            break;\n          }\n        }\n\n        // return the result of the validation\n        return valid;\n      };\n\n      _this.updateWarning = function (valid, value, warning) {\n        // if validation fails\n        if (!valid) {\n          // if input currently thinks it is valid\n          if (!_this.state.warning) {\n            // if input has a form\n            if (_this.isAttachedToForm) {\n              // increment the error count on the form\n              _this.context.form.incrementWarningCount();\n            }\n\n            // if input has a tab\n            if (_this.context.tab) {\n              // Set the validity of the tab to true\n              _this.context.tab.setWarning(true);\n            }\n\n            // tell the input it is invalid\n            _this.setState({ warningMessage: warning.message(value, _this.props), warning: true });\n          }\n        }\n      };\n\n      _this.validate = function () {\n        var value = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _this.props.value;\n\n        var valid = false;\n\n        // if there are no validation, return truthy\n        if (!_this._validations() || _this.props._placeholder) {\n          return true;\n        }\n\n        // iterate through each validation applied to the input\n        for (var i = 0; i < _this._validations().length; i++) {\n          var validation = _this._validations()[i];\n\n          // run this validation\n          valid = validation.validate(value, _this.props, _this.updateValidation);\n          _this.updateValidation(valid, value, validation);\n          // if validation fails\n          if (!valid) {\n            // a validation has failed, so exit the loop at this point\n            break;\n          }\n        }\n\n        // return the result of the validation\n        return valid;\n      };\n\n      _this.updateValidation = function (valid, value, validation) {\n        // if validation fails\n        if (!valid) {\n          // if input currently thinks it is valid\n          if (_this.state.valid) {\n            // if input has a form\n            if (_this.isAttachedToForm) {\n              // increment the error count on the form\n              _this.context.form.incrementErrorCount();\n            }\n\n            // if input has a tab\n            if (_this.context.tab) {\n              // Set the validity of the tab to false\n              _this.context.tab.setValidity(false);\n            }\n\n            // tell the input it is invalid\n            _this.setState({ errorMessage: validation.message(value, _this.props), valid: false });\n          }\n        }\n      };\n\n      _this._handleBlur = function () {\n        if (!_this.blockBlur) {\n          // use setTimeout to drop in the callstack to ensure value has time to be set\n          setTimeout(function () {\n            _this.validate();\n            _this.warning();\n\n            if (_this.state.messageLocked) {\n              _this.setState({ messageLocked: false });\n            }\n          }, 0);\n        }\n      };\n\n      _this._handleFocus = function () {\n        if (!_this.state.valid || _this.state.warning) {\n          _this.positionMessage();\n\n          if (!_this.state.messageLocked) {\n            _this.setState({ messageLocked: true });\n          }\n        }\n      };\n\n      _this._handleContentChange = function () {\n        // if the field is in an invalid state\n        if (!_this.state.valid || _this.state.warning) {\n          // if there is a form, decrement the error count\n          if (_this.isAttachedToForm) {\n            if (!_this.state.valid) {\n              _this.context.form.decrementErrorCount();\n            }\n\n            if (_this.state.warning) {\n              _this.context.form.decrementWarningCount();\n            }\n          }\n\n          // if there is tab, remove invalid state\n          if (_this.context.tab) {\n            _this.resetTab();\n          }\n\n          // reset the error state\n          _this.setState({ errorMessage: null, valid: true, warning: false });\n        }\n      };\n\n      _this.resetTab = function () {\n        if (!_this.state.valid) {\n          _this.context.tab.setValidity(true);\n        }\n\n        if (_this.state.warning) {\n          _this.context.tab.setWarning(false);\n        }\n      };\n\n      _this.messageExists = function () {\n        return !_this.state.valid || _this.state.warning;\n      };\n\n      _this.showMessage = function () {\n        if (_this.messageExists()) {\n          _this.setState({\n            messageShown: true,\n            immediatelyHideMessage: false\n          });\n\n          if (_this.context.form) {\n            _this.context.form.setActiveInput(_this);\n          }\n        }\n      };\n\n      _this.hideMessage = function () {\n        if (_this.messageExists()) {\n          _this.setState({\n            messageShown: false\n          });\n        }\n      };\n\n      _this.immediatelyHideMessage = function () {\n        _this.setState({\n          messageShown: false,\n          immediatelyHideMessage: true\n        });\n      };\n\n      _this._isCurrentlyActiveInput = function () {\n        return _this.context.form && _this.context.form.getActiveInput() === _this;\n      };\n\n      _this._validations = function () {\n        var validations = (_this.props.validations || []).concat(_this.props.internalValidations || []);\n        return validations.length ? validations : null;\n      };\n\n      _this.state = _this.state || {};\n\n      /**\n       * The inputs valid state.\n       *\n       * @property valid\n       * @type {Boolean}\n       * @default true\n       */\n      _this.state.valid = true;\n\n      /**\n       * The inputs warning state.\n       * true: has warning\n       * false: has no warning\n       *\n       * @property warning\n       * @type {Boolean}\n       * @default false\n       */\n      _this.state.warning = false;\n\n      /**\n       * The inputs error message.\n       *\n       * @property errorMessage\n       * @type {String}\n       * @default null\n       */\n      _this.state.errorMessage = null;\n\n      /**\n       * The inputs warning message.\n       *\n       * @property warningMessage\n       * @type {String}\n       * @default null\n       */\n      _this.state.warningMessage = null;\n\n      /**\n       * Determines if the message should always be visible.\n       *\n       * @property messageLocked\n       * @type {Boolean}\n       * @default false\n       */\n      _this.state.messageLocked = false;\n\n      /**\n       * toggles whether the message for validation is immediately hidden to force it to disappear instantly\n       *\n       * @property immediatelyHideMessage\n       * @type {Boolean}\n       */\n      _this.state.immediatelyHideMessage = false;\n\n      /**\n       * toggles whether the message for validation is shown\n       *\n       * @property messageShown\n       * @type {Boolean}\n       */\n      _this.state.messageShown = false;\n      return _this;\n    }\n\n    _createClass(Component, [{\n      key: 'componentWillReceiveProps',\n\n\n      /**\n       * A lifecycle method for when the component has re-rendered.\n       *\n       * @method componentWillReceiveProps\n       * @return {void}\n       */\n      value: function componentWillReceiveProps(nextProps) {\n        // call the components super method if it exists\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillReceiveProps', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillReceiveProps', this).call(this, nextProps);\n        }\n\n        // if disabling the field, reset the validation on it\n        if (nextProps.disabled && this.messageExists()) {\n          this._handleContentChange();\n        }\n\n        // if value changes and the input is currently invalid, re-assess its validity\n        if (!this._isCurrentlyActiveInput()) {\n          if (this.messageExists() && nextProps.value !== this.props.value) {\n            var contentChanged = false;\n\n            if (this.state.warning && !this.warning(nextProps.value)) {\n              this.setState({ warning: false });\n              contentChanged = true;\n            }\n\n            if (!this.state.valid && this.validate(nextProps.value)) {\n              this.setState({ valid: true });\n              contentChanged = true;\n            }\n\n            if (contentChanged) {\n              this._handleContentChange();\n            }\n          }\n        }\n      }\n\n      /**\n       * A lifecycle method for when the component is added to the page.\n       *\n       * @method componentWillMount\n       * @return {void}\n       */\n\n    }, {\n      key: 'componentWillMount',\n      value: function componentWillMount() {\n        // call the components super method if it exists\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillMount', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillMount', this).call(this);\n        }\n\n        if (this.context.form && (this._validations() || this.props.warnings)) {\n          // attach the input to the form so the form can track what it needs to validate on submit\n          this.context.form.attachToForm(this);\n        }\n      }\n\n      /**\n       * A lifecycle method for when the component is removed from the page.\n       *\n       * @method componentWillUnmount\n       * @return {void}\n       */\n\n    }, {\n      key: 'componentWillUnmount',\n      value: function componentWillUnmount() {\n        // call the components super method if it exists\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillUnmount', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillUnmount', this).call(this);\n        }\n\n        if (this._validations() || this.props.warnings) {\n          this._handleContentChange();\n          if (this.isAttachedToForm) {\n            this.context.form.detachFromForm(this);\n          }\n        }\n      }\n\n      /**\n       * Positions the message relative to the icon.\n       *\n       * @method positionMessage\n       * @return {Void}\n       */\n\n\n      /**\n       * Checks for validations and returns boolean defining if field valid.\n       *\n       * @method warning\n       * @return {Boolean} if the field/fields is/are valid, this function returns true\n       */\n\n\n      /**\n       * Provides a callback method for warning to support Ajax\n       *\n       * @method updateWarning\n       * @return {void}\n       */\n\n\n      /**\n       * Checks for validations and returns boolean defining if field valid.\n       *\n       * @method validate\n       * @return {Boolean} if the field/fields is/are valid\n       */\n\n\n      /**\n       * Provides a callback method for validate to support Ajax\n       *\n       * @method updateValidation\n       * @return {Void}\n       */\n\n\n      /**\n       * On blur of the input we want to validate the field.\n       *\n       * @method _handleBlur\n       * @return {void}\n       */\n\n\n      /**\n       * On focus of the input.\n       *\n       * @method _handleFocus\n       * @return {void}\n       */\n\n\n      /**\n       * On content change of the input when we want to reset the validation.\n       *\n       * @method _handleContentChange\n       * @return {void}\n       */\n\n\n      /**\n       * Resets tab error state\n       *\n       * @method resetTab\n       * @return {Void}\n       */\n\n\n      /**\n       * does a message exist based on the current state of the input\n       *\n       * @method messageExist\n       * @return {Boolean} whether or not a message exists\n       */\n\n\n      /**\n       * sets the state for showing the message\n       *\n       * @method showMessage\n       * @return {void}\n       */\n\n\n      /**\n       * sets the state for hiding the message\n       *\n       * @method hideMessage\n       * @return {void}\n       */\n\n\n      /**\n       * sets the state for immediately hiding the message\n       *\n       * @method immediatelyHideMessage\n       * @return {void}\n       */\n\n    }, {\n      key: 'isAttachedToForm',\n\n\n      /**\n       * Determines if the input is attached to a form.\n       *\n       * @method isAttachedToForm\n       * @return {Boolean}\n       */\n      get: function get() {\n        return this.context.form && this.context.form.inputs[this._guid];\n      }\n\n      /**\n       * Returns the HTML for the validation, only if it is invalid.\n       *\n       * @method validationHTML\n       * @return {HTML} Validation HTML including icon & message\n       */\n\n    }, {\n      key: 'validationHTML',\n      get: function get() {\n        if (this.state.valid && !this.state.warning) {\n          return null;\n        }\n\n        var type = !this.state.valid ? \"error\" : \"warning\";\n\n        var messageClasses = 'common-input__message common-input__message--' + type,\n            iconClasses = 'common-input__icon common-input__icon--' + type;\n\n        // position icon relative to width of label\n        var iconStyle = this.props.labelWidth ? _defineProperty({}, '' + this.props.align, 100 - this.props.labelWidth + '%') : null;\n\n        if (this.state.messageLocked) {\n          messageClasses += \" common-input__message--locked\";\n        }\n        if (this.flipped) {\n          messageClasses += \" common-input__message--flipped\";\n        }\n\n        return [_react2.default.createElement(_icon2.default, { key: '0', ref: 'validationIcon', type: type, className: iconClasses, style: iconStyle }), _react2.default.createElement(\n          'div',\n          { key: '1', className: 'common-input__message-wrapper', onMouseOver: this.showMessage, onMouseOut: this.hideMessage },\n          _react2.default.createElement(\n            'div',\n            { ref: 'validationMessage', className: messageClasses },\n            this.state.errorMessage || this.state.warningMessage\n          )\n        )];\n      }\n\n      /**\n       * Extends the main classes with any validation classes.\n       *\n       * @method mainClasses\n       * @return {String} Main class names\n       */\n\n    }, {\n      key: 'mainClasses',\n      get: function get() {\n        return (0, _classnames2.default)(_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'mainClasses', this), {\n          'common-input--error': !this.state.valid,\n          'common-input--warning': this.state.warning,\n          'common-input--message-hidden': this.state.immediatelyHideMessage,\n          'common-input--message-shown': this.state.messageShown\n        });\n      }\n\n      /**\n       * Extends the input classes with any validation classes.\n       *\n       * @method inputClasses\n       * @return {String} Input class names\n       */\n\n    }, {\n      key: 'inputClasses',\n      get: function get() {\n        return (0, _classnames2.default)(_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputClasses', this), {\n          'common-input__input--error': !this.state.valid,\n          'common-input__input--warning': this.state.warning\n        });\n      }\n\n      /**\n       * Extends the input props with onBlur and onFocus events.\n       *\n       * @method inputProps\n       * @return {Object} Input props\n       */\n\n    }, {\n      key: 'inputProps',\n      get: function get() {\n        var inputProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputProps', this) || {};\n\n        inputProps.onMouseOver = (0, _chainFunctions2.default)(this.positionMessage, inputProps.onMouseOver);\n        inputProps.onFocus = (0, _chainFunctions2.default)(this._handleFocus, inputProps.onFocus);\n        inputProps.onBlur = (0, _chainFunctions2.default)(this._handleBlur, inputProps.onBlur);\n        inputProps.onKeyDown = (0, _chainFunctions2.default)(this._handleContentChange, inputProps.onKeyDown);\n        inputProps.onPaste = (0, _chainFunctions2.default)(this._handleContentChange, inputProps.onKeyDown);\n\n        return inputProps;\n      }\n    }, {\n      key: 'fieldProps',\n      get: function get() {\n        var fieldProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'fieldProps', this) || {};\n\n        fieldProps.onMouseOut = (0, _chainFunctions2.default)(this.hideMessage, fieldProps.onMouseOut);\n        fieldProps.onMouseOver = (0, _chainFunctions2.default)(this.showMessage, fieldProps.onMouseOver);\n\n        return fieldProps;\n      }\n\n      /**\n       * Determines if the currently active input is this input.\n       *\n       * @method _isCurrentlyActiveInput\n       * @return {Boolean}\n       */\n\n\n      /**\n       * Merges passed prop validations with internal component validations\n       *\n       * @method _validations\n       * @return {Array} validations\n       */\n\n    }]);\n\n    return Component;\n  }(ComposedComponent), _class.contextTypes = (0, _lodash.assign)({}, ComposedComponent.contextTypes, {\n    form: _react2.default.PropTypes.object,\n    tab: _react2.default.PropTypes.object\n  }), _temp;\n};\n\nexports.default = InputValidation;",
+    {
+      "./../../../components/icon": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js",
+      "./../../helpers/chain-functions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/chain-functions/chain-functions.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "react-dom": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-dom/index.js",
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input-validation/input-validation.js",
+      "hash": "725615cb200b13460db61912c3f527a0",
+      "browserifyId": 46,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input/input.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if (\"value\" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };\n\nvar _css = require('./../../css');\n\nvar _css2 = _interopRequireDefault(_css);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _shouldComponentUpdate2 = require('./../../helpers/should-component-update');\n\nvar _shouldComponentUpdate3 = _interopRequireDefault(_shouldComponentUpdate2);\n\nvar _lodash = require('lodash');\n\nvar _guid = require('./../../helpers/guid');\n\nvar _guid2 = _interopRequireDefault(_guid);\n\nvar _classnames = require('classnames');\n\nvar _classnames2 = _interopRequireDefault(_classnames);\n\nvar _icon = require('./../../../components/icon');\n\nvar _icon2 = _interopRequireDefault(_icon);\n\nvar _help = require('./../../../components/help');\n\nvar _help2 = _interopRequireDefault(_help);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * Input decorator.\n *\n * This decorator provides useful base operators for a typical input.\n *\n * == How to use Input decorator in a component:\n *\n * In your file:\n *\n *   import Input from 'carbon/lib/utils/decorators/input;\n *\n * To use the decorator, wrap your component with it:\n *\n *   const MyComponent = Input(\n *   class MyComponent extends React.Component {\n *     ...\n *   })\n *\n * This decorator provides methods you can use in your component class:\n *\n *  * `mainClasses` - classes to apply to the main component element\n *  * `inputClasses` - classes to apply to the input element\n *  * `inputProps` - props to apply to the input element\n *  * `inputHTML` - the html for the actual input\n *  * `additionalInputContent` - extension point to add additional content\n *  alongside the input\n *\n * You can also change the default input type from `input` to something else,\n * for example `textarea`, by defining a `inputType` getter method in your\n * components class.\n *\n * Inputs also accept a prop of `prefix` which outputs a prefix to the input:\n *\n *   <Textbox prefix=\"foo\" />\n *\n * Inputs also accept a prop of `icon` which outputs an icon inside the input:\n *\n *   <Textbox icon=\"foo\" />\n *\n * @method Input\n * @param {Class} ComposedComponent class to decorate\n * @return {Object} Decorated Component\n */\nvar Input = function Input(ComposedComponent) {\n  var _class, _temp;\n\n  return _temp = _class = function (_ComposedComponent) {\n    _inherits(Component, _ComposedComponent);\n\n    function Component() {\n      var _ref;\n\n      _classCallCheck(this, Component);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      /**\n       * A unique identifier for the input.\n       *\n       * @prop _guid\n       * @return {String}\n       */\n      var _this = _possibleConstructorReturn(this, (_ref = Component.__proto__ || Object.getPrototypeOf(Component)).call.apply(_ref, [this].concat(args)));\n\n      _this._handleOnChange = function (ev) {\n        if (_this.props.onChange) {\n          // we also send the props so more information can be extracted by the action\n          _this.props.onChange(ev, _this.props);\n        }\n      };\n\n      _this.setTextIndentation = function () {\n        if (_this._input) {\n          if (_this._prefix) {\n            _this._input.style.paddingLeft = _this._prefix.offsetWidth + 11 + 'px';\n          } else {\n            _this._input.style.paddingLeft = \"\";\n          }\n        }\n      };\n\n      _this._guid = (0, _guid2.default)();\n      return _this;\n    }\n\n    _createClass(Component, [{\n      key: 'componentDidMount',\n\n\n      /**\n       * A lifecycle method for when the component has rendered.\n       *\n       * @method componentWillReceiveProps\n       * @return {void}\n       */\n      value: function componentDidMount() {\n        // call the components super method if it exists\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidMount', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidMount', this).call(this);\n        }\n\n        if (this.props.prefix) {\n          this.setTextIndentation();\n        }\n      }\n\n      /**\n       * A lifecycle method for when the component has re-rendered.\n       *\n       * @method componentDidUpdate\n       * @return {void}\n       */\n\n    }, {\n      key: 'componentDidUpdate',\n      value: function componentDidUpdate(prevProps, prevState) {\n        // call the components super method if it exists\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidUpdate', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidUpdate', this).call(this, prevProps, prevState);\n        }\n\n        if (this.props.prefix != prevProps.prefix || this.props.icon != prevProps.icon) {\n          this.setTextIndentation();\n        }\n      }\n\n      /**\n       * A lifecycle method to determine if the component should re-render for better performance.\n       *\n       * @method shouldComponentUpdate\n       * @param {Object} nextProps the updated props\n       * @param {Object} nextState the updated state\n       * @return {Boolean} true if the component should update\n       */\n\n    }, {\n      key: 'shouldComponentUpdate',\n      value: function shouldComponentUpdate(nextProps, nextState) {\n        // call super method if one is defined\n        var changeDetected = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'shouldComponentUpdate', this) ? _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'shouldComponentUpdate', this).call(this, nextProps, nextState) : false;\n\n        // determine if anything has changed that should result in a re-render\n        if (changeDetected || (0, _shouldComponentUpdate3.default)(this, nextProps, nextState)) {\n          return true;\n        }\n\n        return false;\n      }\n\n      /**\n       * Calls the onChange event defined by the dev with more useful information.\n       *\n       * @method _handleChange\n       * @param {Event} ev the change event\n       * @returns {void}\n       */\n\n\n      /**\n       * Sets indentation of input value based on prefix width.\n       *\n       * @method setTextIndentation\n       * @return {void}\n       */\n\n    }, {\n      key: 'mainClasses',\n\n\n      /**\n       * Extends main classes to add ones for the input.\n       *\n       * @method mainClasses\n       * @return {String} Main class names\n       */\n      get: function get() {\n        var _classNames;\n\n        var classes = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'mainClasses', this);\n\n        return (0, _classnames2.default)(classes, this.props.className, _css2.default.input, (_classNames = {}, _defineProperty(_classNames, _css2.default.input + '--readonly', this.props.readOnly), _defineProperty(_classNames, _css2.default.input + '--align-' + this.props.align, this.props.align), _defineProperty(_classNames, _css2.default.input + '--with-prefix', this.props.prefix), _defineProperty(_classNames, _css2.default.input + '--with-input-help', this.props.inputHelp), _defineProperty(_classNames, _css2.default.input + '--disabled', this.props.disabled), _classNames));\n      }\n\n      /**\n       * Extends input classes to add ones for the input.\n       *\n       * @method inputClasses\n       * @return {String} Input class names\n       */\n\n    }, {\n      key: 'inputClasses',\n      get: function get() {\n        var classes = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputClasses', this) || \"\";\n        return classes + ' common-input__input';\n      }\n\n      /**\n       * Extends input props add additional properties for the input.\n       *\n       * @method inputProps\n       * @return {Object} Input props\n       */\n\n    }, {\n      key: 'inputProps',\n      get: function get() {\n        var _this2 = this;\n\n        var inputProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputProps', this) || {};\n\n        // store ref to input\n        inputProps.ref = function (c) {\n          _this2._input = c;\n        };\n\n        // disable autoComplete (causes performance issues in IE)\n        inputProps.autoComplete = this.props.autoComplete || \"off\";\n\n        // only thread the onChange event through the handler if the event is defined by the dev\n        if (this.props.onChange === inputProps.onChange) {\n          inputProps.onChange = this._handleOnChange;\n        }\n\n        // Pass onPaste action to input element\n        inputProps.onPaste = this.props.onPaste;\n\n        return inputProps;\n      }\n\n      /**\n       * Extends field props add additional properties for the containing field.\n       *\n       * @method fieldProps\n       * @return {Object} Field props\n       */\n\n    }, {\n      key: 'fieldProps',\n      get: function get() {\n        var fieldProps = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'fieldProps', this) || {};\n\n        fieldProps.className = 'common-input__field';\n\n        return fieldProps;\n      }\n\n      /**\n       * Defaults to `input`, but a developer can override it in their own class\n       * to something different.\n       *\n       * @method inputType\n       * @return {String} HTML input type\n       */\n\n    }, {\n      key: 'inputType',\n      get: function get() {\n        return _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'inputType', this) || 'input';\n      }\n\n      /**\n       * Extension point to add additional content to the input\n       *\n       * @method additionalInputContent\n       * @return {Object | HTML | String | Number} additional content from composed class\n       */\n\n    }, {\n      key: 'additionalInputContent',\n      get: function get() {\n        return _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'additionalInputContent', this) || null;\n      }\n\n      /**\n       * Adds a prefix if it is defined\n       *\n       * @method prefixHTML\n       * @return {Object}\n       */\n\n    }, {\n      key: 'prefixHTML',\n      get: function get() {\n        var _this3 = this;\n\n        if (this.props.prefix) {\n          return _react2.default.createElement(\n            'div',\n            { ref: function ref(c) {\n                _this3._prefix = c;\n              }, className: 'common-input__prefix' },\n            this.props.prefix\n          );\n        }\n      }\n\n      /**\n       * Adds an icon if it is defined\n       *\n       * @method iconHTML\n       * @return {Object}\n       */\n\n    }, {\n      key: 'iconHTML',\n      get: function get() {\n        if (this.props.icon) {\n          return _react2.default.createElement(\n            'div',\n            { className: 'common-input__input-icon' },\n            _react2.default.createElement(_icon2.default, { type: this.props.icon })\n          );\n        }\n      }\n\n      /**\n      * Supplies the HTML for inputHelp component\n      *\n      * @method inputHelpHTML\n      * @return {Object} JSX for help\n      */\n\n    }, {\n      key: 'inputHelpHTML',\n      get: function get() {\n        if (this.props.inputHelp) {\n          return _react2.default.createElement(\n            _help2.default,\n            {\n              className: 'common-input__input-help',\n              tooltipPosition: this.props.inputHelpPosition,\n              tooltipAlign: this.props.inputHelpAlign,\n              href: this.props.inputHelpHref\n            },\n            this.props.inputHelp\n          );\n        }\n      }\n\n      /**\n       * Returns HTML for the input.\n       *\n       * @method inputHTML\n       * @return {HTML} HTML for input\n       */\n\n    }, {\n      key: 'inputHTML',\n      get: function get() {\n        var input = void 0;\n        if (this.props.fakeInput) {\n          // renders a fake input - useful for screens with lots of inputs\n          var classes = (0, _classnames2.default)(this.inputProps.className, 'common-input__input--fake');\n          input = _react2.default.createElement(\n            'div',\n            { className: classes, onMouseOver: this.inputProps.onMouseOver },\n            this.inputProps.value || this.inputProps.placeholder\n          );\n        } else {\n          // builds the input with a variable input type - see `inputType`\n          input = _react2.default.createElement(this.inputType, _extends({}, this.inputProps));\n        }\n\n        return _react2.default.createElement(\n          'div',\n          this.fieldProps,\n          this.iconHTML,\n          this.prefixHTML,\n          input,\n          this.additionalInputContent,\n          this.inputHelpHTML\n        );\n      }\n    }]);\n\n    return Component;\n  }(ComposedComponent), _class.contextTypes = (0, _lodash.assign)({}, ComposedComponent.contextTypes, {\n    form: _react2.default.PropTypes.object\n  }), _temp;\n};\n\nexports.default = Input;",
+    {
+      "./../../css": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/css/css.js",
+      "./../../helpers/guid": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/guid/guid.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "classnames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "./../../../components/help": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/help/help.js",
+      "./../../helpers/should-component-update": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/should-component-update/should-component-update.js",
+      "./../../../components/icon": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/icon/icon.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/input/input.js",
+      "hash": "9ced67b214dbcb90ca81157cff1a6fc3",
+      "browserifyId": 47,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/tooltip-decorator/tooltip-decorator.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if (\"value\" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _tooltip = require('./../../../components/tooltip');\n\nvar _tooltip2 = _interopRequireDefault(_tooltip);\n\nvar _chainFunctions = require('./../../helpers/chain-functions');\n\nvar _chainFunctions2 = _interopRequireDefault(_chainFunctions);\n\nvar _reactDom = require('react-dom');\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _lodash = require('lodash');\n\nvar _ether = require('./../../ether');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * TooltipDecorator.\n *\n * This decorator attaches a tooltip to a component.\n *\n * == How to use Tooltip decorator in a component:\n *\n * In your file:\n *\n *   import TooltipDecorator from 'carbon/lib/utils/decorators/tooltip-decorator';\n *\n * To use the decorator, wrap your component with it:\n *\n *   const MyComponent = TooltipDecorator(\n *   class MyComponent extends React.Component {\n *     ...\n *   });\n *\n * You must also output the tooltip HTML in your component's render method:\n *\n * e.g.\n *\n * render() {\n *   return (\n *     <div>\n *       { this.tooltipHTML }\n *       ...your components JSX\n *     </div>\n *   );\n * }\n *\n * You must also give the surrounding div of the component a position of 'relative'\n *\n * e.g.\n *\n * render() {\n *   return (\n *     <div className='relative-class'>\n *       { this.tooltipHTML }\n *       ...your component's JSX\n *     </div>\n *   );\n * }\n *\n * The targetted JSX must also have a ref of _target and have the correct componentProps\n *\n * e.g.\n *\n * render() {\n *   return (\n *     <div className='relative-class'>\n *       <span\n *         ref={ (comp) => this._target = comp }\n *         { ...this.componentProps }\n *       />\n *       { this.tooltipHTML }\n *     </div>\n *   );\n * }\n *\n * To activate the tooltip, you must pass a prop of 'tooltipMessage' with some text content.\n *\n * render() {\n *   return (\n *     <MyComponent tooltipMessage='Some Helpful Content' />\n *   )\n * }\n *\n *\n * @method TooltipDecorator\n * @param {Class} ComposedComponent class to decorate\n * @return {Object} Decorated Component\n */\nvar TooltipDecorator = function TooltipDecorator(ComposedComponent) {\n  return function (_ComposedComponent) {\n    _inherits(Component, _ComposedComponent);\n\n    function Component() {\n      var _ref;\n\n      _classCallCheck(this, Component);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      var _this = _possibleConstructorReturn(this, (_ref = Component.__proto__ || Object.getPrototypeOf(Component)).call.apply(_ref, [this].concat(args)));\n\n      _this._tooltipTimeout = null;\n      _this._memoizedShifts = null;\n      _this.state = {\n        /**\n         * Whether tooltip currently showing\n         *\n         * @property isVisible\n         * @type {Boolean}\n         * @default false\n         */\n        isVisible: false\n      };\n\n      _this.onShow = function () {\n        _this._tooltipTimeout = setTimeout(function () {\n          _this.setState({ isVisible: true });\n          _this.positionTooltip();\n        }, 100);\n      };\n\n      _this.onHide = function () {\n        clearTimeout(_this._tooltipTimeout);\n        _this.setState({ isVisible: false });\n      };\n\n      _this.getTarget = function () {\n        return _reactDom2.default.findDOMNode(_this._target);\n      };\n\n      _this.getTooltip = function () {\n        return _reactDom2.default.findDOMNode(_this._tooltip);\n      };\n\n      _this.calculatePosition = function (tooltip, target) {\n        if (_this._memoizedShifts) {\n          return _this._memoizedShifts;\n        }\n\n        var tooltipWidth = tooltip.offsetWidth,\n            tooltipHeight = tooltip.offsetHeight,\n            pointerDimension = 15,\n\n        // hardcode height & width since span has no dimensions\n        pointerOffset = 11,\n            targetWidth = target.offsetWidth,\n            targetHeight = target.offsetHeight;\n\n        return {\n          verticalY: -tooltipHeight - pointerDimension * 0.5,\n          verticalCenter: -tooltipWidth * 0.5 + targetWidth * 0.5,\n          verticalRight: pointerDimension + pointerOffset - tooltipWidth,\n          verticalLeft: -pointerDimension * 0.5,\n          rightHorizontal: targetWidth + 0.5 * pointerDimension,\n          leftHorizontal: -pointerDimension * 0.5 - tooltipWidth,\n          sideTop: -pointerOffset,\n          sideBottom: -tooltipHeight + targetHeight + pointerOffset,\n          sideCenter: targetHeight * 0.5 - tooltipHeight * 0.5\n        };\n      };\n\n      _this.positionTooltip = function () {\n        if (_this.state.isVisible) {\n\n          var tooltip = _this.getTooltip(),\n              target = _this.getTarget();\n\n          if (!tooltip || !target) {\n            // Can't find the tooltip or target so hide\n            _this.setState({ isVisible: false });\n            return;\n          }\n\n          var alignment = _this.props.tooltipAlign || 'center',\n              position = _this.props.tooltipPosition || 'top',\n              shifts = _this.calculatePosition(tooltip, target);\n\n          switch (position) {\n            case \"top\":\n              (0, _ether.styleElement)(tooltip, 'top', (0, _ether.append)(shifts.verticalY, 'px'));\n              (0, _ether.styleElement)(tooltip, 'right', 'auto');\n              (0, _ether.styleElement)(tooltip, 'bottom', 'auto');\n              (0, _ether.styleElement)(tooltip, 'left', (0, _ether.append)(shifts['vertical' + (0, _lodash.startCase)(alignment)], 'px'));\n              break;\n\n            case \"bottom\":\n              (0, _ether.styleElement)(tooltip, 'top', 'auto');\n              (0, _ether.styleElement)(tooltip, 'bottom', (0, _ether.append)(shifts.verticalY, 'px'));\n              (0, _ether.styleElement)(tooltip, 'left', (0, _ether.append)(shifts['vertical' + (0, _lodash.startCase)(alignment)], 'px'));\n              break;\n\n            case \"left\":\n              (0, _ether.styleElement)(tooltip, 'top', (0, _ether.append)(shifts['side' + (0, _lodash.startCase)(alignment)], 'px'));\n              (0, _ether.styleElement)(tooltip, 'bottom', 'auto');\n              (0, _ether.styleElement)(tooltip, 'left', (0, _ether.append)(shifts[position + 'Horizontal'], 'px'));\n              break;\n\n            case \"right\":\n              (0, _ether.styleElement)(tooltip, 'top', (0, _ether.append)(shifts['side' + (0, _lodash.startCase)(alignment)], 'px'));\n              (0, _ether.styleElement)(tooltip, 'bottom', 'auto');\n              (0, _ether.styleElement)(tooltip, 'left', (0, _ether.append)(shifts[position + 'Horizontal'], 'px'));\n          }\n        }\n      };\n\n      return _this;\n    }\n\n    /**\n     * Timeout for firing ajax request\n     *\n     * @property _tooltipTimeout\n     */\n\n\n    /**\n     * Cache the shifts calculations (used for positioning)\n     *\n     * @property _memoizedShifts\n     */\n\n\n    _createClass(Component, [{\n      key: 'componentWillUpdate',\n\n\n      /**\n       * @method componentWillUpdate\n       * @return {Void}\n       */\n      value: function componentWillUpdate(nextProps, nextState) {\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillUpdate', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillUpdate', this).call(this, nextProps, nextState);\n        }\n\n        if (nextProps.tooltipMessage != this.props.tooltipMessage || nextProps.tooltipPosition != this.props.tooltipPosition || nextProps.tooltipAlign != this.props.tooltipAlign) {\n          this._memoizedShifts = null;\n        }\n      }\n\n      /**\n       * @method componentDidUpdate\n       * @return {Void}\n       */\n\n    }, {\n      key: 'componentDidUpdate',\n      value: function componentDidUpdate(prevProps) {\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidUpdate', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentDidUpdate', this).call(this, prevProps);\n        }\n\n        if (this.props.tooltipMessage && !this._memoizedShifts && this.state.isVisible) {\n          this.positionTooltip();\n        }\n      }\n\n      /**\n       * A lifecycle called immediatly before new props cause a re-render\n       * Resets the hover state if active\n       *\n       * @method componentWillReceiveProps\n       */\n\n    }, {\n      key: 'componentWillReceiveProps',\n      value: function componentWillReceiveProps(nextProps) {\n        if (_get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillReceiveProps', this)) {\n          _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentWillReceiveProps', this).call(this, nextProps);\n        }\n\n        if (this.state.isVisible) {\n          this.setState({ isVisible: false });\n        }\n      }\n\n      /**\n       * Shows tooltip\n       *\n       * @method onShow\n       * @return {void}\n       */\n\n\n      /**\n       * Hides tooltip\n       *\n       * @method onHide\n       * @return {void}\n       */\n\n\n      /**\n       * Returns the DOM node of the target.\n       *\n       * @method getTarget\n       * @return {DOM node}\n       */\n\n\n      /**\n       * Returns the DOM node of the tooltip.\n       *\n       * @method getTooltip\n       * @return {DOM node}\n       */\n\n\n      /**\n       * Calculates position for tooltip, first result cached.\n       *\n       * @method calculatePosition\n       * @param {Object} tooltip\n       * @param {Object} target\n       * @return {Object} shifts calculated\n       */\n\n\n      /**\n       * Positions tooltip relative to target\n       *\n       * @method positionTooltip\n       * @param {Object} tooltip\n       * @param {Object} target\n       * @return {Void}\n       */\n\n    }, {\n      key: 'componentProps',\n\n\n      /**\n       * Additional Props for decorated component\n       *\n       * @method componentProps\n       * @return {Object} props\n       */\n      get: function get() {\n        var props = _get(Component.prototype.__proto__ || Object.getPrototypeOf(Component.prototype), 'componentProps', this) || {};\n\n        if (this.props.tooltipMessage) {\n          props.onMouseEnter = (0, _chainFunctions2.default)(this.onShow, props.onMouseEnter);\n          props.onMouseLeave = (0, _chainFunctions2.default)(this.onHide, props.onMouseLeave);\n          props.onFocus = (0, _chainFunctions2.default)(this.onShow, props.onFocus);\n          props.onBlur = (0, _chainFunctions2.default)(this.onHide, props.onBlur);\n          props.onTouchEnd = this.state.isVisible ? this.onHide : this.onShow;\n        }\n        return props;\n      }\n\n      /**\n       * Supplies the HTML for tooltip\n       *\n       * @method tooltipHTML\n       * @return {Object} JSX for tooltip\n       */\n\n    }, {\n      key: 'tooltipHTML',\n      get: function get() {\n        var _this2 = this;\n\n        if (this.props.tooltipMessage) {\n          return _react2.default.createElement(\n            _tooltip2.default,\n            {\n              ref: function ref(comp) {\n                return _this2._tooltip = comp;\n              },\n              isVisible: this.state.isVisible,\n              position: this.props.tooltipPosition,\n              align: this.props.tooltipAlign\n            },\n            this.props.tooltipMessage\n          );\n        }\n      }\n    }]);\n\n    return Component;\n  }(ComposedComponent);\n};\n\nexports.default = TooltipDecorator;",
+    {
+      "./../../helpers/chain-functions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/chain-functions/chain-functions.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "react-dom": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-dom/index.js",
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "./../../ether": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/ether/ether.js",
+      "./../../../components/tooltip": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/tooltip/tooltip.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/decorators/tooltip-decorator/tooltip-decorator.js",
+      "hash": "59ebfd718450dc853be9c03d4a54f1f7",
+      "browserifyId": 48,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/ether/ether.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.insertAt = exports.validProps = exports.styleElement = exports.append = exports.acronymize = undefined;\n\nvar _lodash = require('lodash');\n\n/**\n * Ether\n *\n * Ether provides functional-like helper methods for Carbon specific tasks.\n * As we are dealing with stateful values (user input, browser state) Ether\n * does not provide pure functions in all cases.\n */\n\n/**\n * Creates an acronym from a given string.\n *\n * @method acronymize\n * @param {String} str\n * @return {String}\n */\nfunction acronymize(str) {\n  return str.match(/\\b\\w/g).join('');\n}\n\n/**\n * Stringifies and appends content to value.\n *\n * @method append\n * @param {String} value\n * @param {String} content\n * @return {String}\n */\nfunction append(value, content) {\n  return '' + value + content;\n}\n\n/**\n * Sets style on element\n *\n * @method styleElement\n * @param {Object} element\n * @param {String} attribute\n * @param {Number} value\n * @return {Object} Styled Element\n */\nfunction styleElement(element, attribute, value) {\n  return element.style[attribute] = value.toString();\n}\n\n/**\n * Returns the props of the given instance filtered by\n * the static safeProps or the optional safeProps argument\n *\n * @method validProps\n * @param {Object} instance\n * @param {Array?} _safeProps\n * @return {Object} props\n */\nfunction validProps(instance, safeProps) {\n  var klass = instance.constructor;\n  var unsafeProps = (0, _lodash.difference)(Object.keys(klass.propTypes), safeProps || klass.safeProps || []);\n  return (0, _lodash.omit)(instance.props, unsafeProps);\n}\n\n/**\n * Returns string with inserted character and specified indices\n *\n * @method insertAt\n * @param {String} string\n * @param {Number}  position - position at which to insert\n * @param {Object} options\n * * @param {String}  newChar  - character to insert\n * * @param {Boolean} repeat   - repeat the insertion at the specified interval\n * @return {String} result - formatted\n */\nfunction insertAt(string, position) {\n  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};\n\n  var result = string,\n      newChar = options.newChar || '-';\n\n  if (options.repeat) {\n    var insertionShift = position + newChar.length,\n        maxLength = string.length + Math.floor(string.length / position) - 1;\n\n    for (var i = position; i < maxLength; i += insertionShift) {\n      result = result.substr(0, i) + newChar + result.substr(i);\n    }\n  } else {\n    result = result.substr(0, position) + newChar + result.substr(position);\n  }\n  return result;\n}\n\nexports.acronymize = acronymize;\nexports.append = append;\nexports.styleElement = styleElement;\nexports.validProps = validProps;\nexports.insertAt = insertAt;",
+    {
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/ether/ether.js",
+      "hash": "39745bc086ed8bffdf7b6cc20decae7b",
+      "browserifyId": 49,
+      "sourcemap": ""
+    }
+  ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/flux/flux.js": [
     "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if (\"value\" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };\n\nexports.connect = connect;\n\nvar _lodash = require('lodash');\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\n/**\n * Connects a view component to one or more flux based stores.\n *\n * It handles the following:\n *\n * * Registering and de-registering the listeners between the component and the store(s).\n * * Making the data available to the component from the store.\n * * Updating the component with the new state when the store emits a change.\n *\n * You can import this function with the following:\n *\n *   import { connect } from 'carbon/lib/utils/flux';\n *\n * You can then use the function like this:\n *\n *   connect(MyView, MyStore);\n *\n * With multiple stores, this will look like:\n *\n *   connect(MyView, [StoreOne, StoreTwo, StoreThree]);\n *\n * @method connect\n * @param {ReactComponent} ComposedView The view component to interact with the store(s).\n * @param {Object|Array} stores The store(s) you want to connect to the ComposedView.\n * @return {Class} An enhanced version of the ComposedView to work with flux stores.\n */\nfunction connect(ComposedView, stores) {\n\n  // Build an object mapping any stores passed to the connect function, using\n  // the store's class name as the key.\n\n  var _stores = {};\n\n  function _addStore(store) {\n    _stores[store.name] = store;\n  }\n\n  if (stores.constructor === Array) {\n    // if there are multiple stores, iterate through them and add them\n    stores.forEach(function (store) {\n      _addStore(store);\n    });\n  } else {\n    // if there is a single store, just add it\n    _addStore(stores);\n  }\n\n  /**\n   * Extends the specified view component with additional functionality with working\n   * with flux stores.\n   *\n   * @class View\n   * @constructor\n   */\n\n  var View = function (_ComposedView) {\n    _inherits(View, _ComposedView);\n\n    function View() {\n      var _ref;\n\n      _classCallCheck(this, View);\n\n      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n        args[_key] = arguments[_key];\n      }\n\n      /**\n       * Combines the view component's state with the data from the store.\n       *\n       * @property state\n       * @type {Object}\n       */\n      var _this = _possibleConstructorReturn(this, (_ref = View.__proto__ || Object.getPrototypeOf(View)).call.apply(_ref, [this].concat(args)));\n\n      _this._onChange = function (key) {\n        // update the state with the data for the store that changed\n        _this.setState(_defineProperty({}, key, _stores[key].getState()));\n      };\n\n      _this._getStoreStates = function () {\n        var states = {};\n\n        for (var key in _stores) {\n          states[key] = _stores[key].getState();\n        }\n\n        return states;\n      };\n\n      _this.state = (0, _lodash.assign)({}, _this.state, _this._getStoreStates());\n      return _this;\n    }\n\n    /**\n     * Lifecycle method called by React when a component is mounted.\n     *\n     * @method componentDidMount\n     * @return {void}\n     */\n\n\n    _createClass(View, [{\n      key: 'componentDidMount',\n      value: function componentDidMount() {\n        // ensure that the super view calls its version of componentDidMount\n        if (_get(View.prototype.__proto__ || Object.getPrototypeOf(View.prototype), 'componentDidMount', this)) {\n          _get(View.prototype.__proto__ || Object.getPrototypeOf(View.prototype), 'componentDidMount', this).call(this);\n        }\n\n        // listen to each store when the view component mounts\n        for (var key in _stores) {\n          _stores[key].addChangeListener(this._onChange);\n        }\n      }\n\n      /**\n       * Lifecycle method called by React when a component is unmounted.\n       *\n       * @method componentWillUnmount\n       * @return {void}\n       */\n\n    }, {\n      key: 'componentWillUnmount',\n      value: function componentWillUnmount() {\n        // ensure that the super view calls its version of componentWillUnmount\n        if (_get(View.prototype.__proto__ || Object.getPrototypeOf(View.prototype), 'componentWillUnmount', this)) {\n          _get(View.prototype.__proto__ || Object.getPrototypeOf(View.prototype), 'componentWillUnmount', this).call(this);\n        }\n\n        // unlisten to each store when the view component unmounts\n        for (var key in _stores) {\n          _stores[key].removeChangeListener(this._onChange);\n        }\n      }\n\n      /**\n       * A callback for whenever a store that is listened to emits a change.\n       *\n       * @method _onChange\n       * @param {String} key The name for the store that changed.\n       * @return {void}\n       */\n\n\n      /**\n       * Collects the most up to date data from each store.\n       *\n       * @method _getStoreStates\n       * @return {Object} A collection of each store and it's data.\n       */\n\n    }]);\n\n    return View;\n  }(ComposedView);\n\n  return View;\n}",
     {
@@ -436,7 +1031,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/flux/flux.js",
       "hash": "f82876bddaf53ec168e8bb98a902d0b0",
-      "browserifyId": 1,
+      "browserifyId": 50,
       "sourcemap": ""
     }
   ],
@@ -448,7 +1043,37 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/flux/store/store.js",
       "hash": "2530b42e0d9e8358e2b0668c305fb5d3",
-      "browserifyId": 2,
+      "browserifyId": 51,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/chain-functions/chain-functions.js": [
+    "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n* Chain Functions\n*\n* Takes two functions, and return a new function which will call the two functions\n* in order.\n*\n* @method chainFunctions\n* @param {Function} newFunction function to be performed second\n* @param {Function} originalFunction function to be performed first\n* @return {Function} new function that called the two passed functions\n*/\nexports.default = function (newFunction, originalFunction) {\n  return function () {\n    if (originalFunction) {\n      originalFunction.apply(undefined, arguments);\n    }\n    newFunction.apply(undefined, arguments);\n  };\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/chain-functions/chain-functions.js",
+      "hash": "f20fca1258027008a9220539bc2ae3f3",
+      "browserifyId": 52,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/events/events.js": [
+    "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n/**\n* JavaScript Events\n*\n* A collection of functions to be used with events.\n*\n* E.g. The KeyPress event has different implementations accross browsers, so\n* this class contains methods to polyfill this functionality to ensure a standardised\n* implementation between browsers\n*\n* @object Events\n*/\nvar Events = {\n\n  /**\n  * A method to determine if an event is of a particular type\n  *\n  * @method isEventType\n  * @param {Event} ev A JavaScript event\n  * @param {Type} type A JavaScript event type\n  * @returns {Boolean} true if event type matches passed type\n  **/\n  isEventType: function isEventType(ev, type) {\n    return ev.type == type;\n  },\n\n  /**\n  * A method to determine whether a key down event was an arrow key\n  *\n  * @method isNavigationKeyup\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if key up event and a navigation key\n  **/\n  isNavigationKeyup: function isNavigationKeyup(ev) {\n    if (!Events.isEventType(ev, \"keyup\")) {\n      return false;\n    }\n\n    return Events.isNavigationKey(ev);\n  },\n\n  /**\n  * A method to determine whether a key down event was an enter key\n  *\n  * @method isEnterKeyup\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if keyup event and enter key\n  **/\n  isEnterKeyup: function isEnterKeyup(ev) {\n    if (!Events.isEventType(ev, \"keyup\")) {\n      return false;\n    }\n\n    return Events.isEnterKey(ev);\n  },\n\n  /**\n  * A method to determine whether a key up event is allowed or not.\n  *\n  * @method isValidKeypress\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if keyup and valid\n  **/\n  isValidKeypress: function isValidKeypress(ev) {\n    if (!Events.isEventType(ev, \"keyup\")) {\n      return false;\n    }\n    if (Events.isNumberKey(ev) || Events.isAlphabetKey(ev) || Events.isNumpadKey(ev) || Events.isSymbolKey(ev) || Events.isSpaceKey(ev) || Events.isDeletingKey(ev) || Events.isBackspaceKey(ev)) {\n      return true;\n    }\n\n    return false;\n  },\n\n  /**\n  * Determines if a number key along the top of the keyboard or a number key on the\n  * keypad is pressed\n  *\n  * @method isNumberKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if valid number key\n  **/\n  isNumberKey: function isNumberKey(ev) {\n    return ev.which >= 48 && ev.which <= 57 || ev.which >= 96 && ev.which <= 105;\n  },\n\n  /**\n  * Determines if the key pressed is part of the numpad\n  * includes symbols\n  *\n  * @method isNumberKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if key is part of numpad\n  **/\n  isNumpadKey: function isNumpadKey(ev) {\n    return ev.which >= 96 && ev.which <= 111;\n  },\n\n  /**\n  * Determines if the key pressed is a alphabet key\n  * Case insensitive\n  *\n  * @method isAlphabetKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if alphabet key is pressed\n  **/\n  isAlphabetKey: function isAlphabetKey(ev) {\n    return ev.which >= 65 && ev.which <= 90;\n  },\n\n  /**\n  * Determines if the key pressed is a valid symbol\n  *\n  * @method isSymbolKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if any symbol key is pressed\n  **/\n  isSymbolKey: function isSymbolKey(ev) {\n    return ev.which >= 58 && ev.which <= 64 || // : to @\n    ev.which >= 106 && ev.which <= 107 || // numpad * and +\n    ev.which >= 186 && ev.which <= 192 || // , .\n    ev.which >= 219 && ev.which <= 222; // \\ ]\n  },\n\n  /**\n  * Determines if the key pressed is a navigation key\n  *\n  * @method isNavigationKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if one of four arrow keys\n  **/\n  isNavigationKey: function isNavigationKey(ev) {\n    return ev.which >= 37 && ev.which <= 40;\n  },\n\n  /**\n  * Determines if the key pressed is a navigation left key\n  *\n  * @method isLeftKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if left arrow key\n  **/\n  isLeftKey: function isLeftKey(ev) {\n    return ev.which === 37;\n  },\n\n  /**\n  * Determines if the key pressed is a navigation up key\n  *\n  * @method isUpKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if up arrow key\n  **/\n  isUpKey: function isUpKey(ev) {\n    return ev.which === 38;\n  },\n\n  /**\n  * Determines if the key pressed is a navigation right key\n  *\n  * @method isRightKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if right arrow key\n  **/\n  isRightKey: function isRightKey(ev) {\n    return ev.which === 39;\n  },\n\n  /**\n  * Determines if the key pressed is a navigation down key\n  *\n  * @method isDownKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if down arrow key\n  **/\n  isDownKey: function isDownKey(ev) {\n    return ev.which === 40;\n  },\n\n  /**\n  * Determines if the key pressed is a meta key\n  *\n  * @method isMetaKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if any meta key is pressed\n  **/\n  isMetaKey: function isMetaKey(ev) {\n    return ev.metaKey;\n  },\n\n  /**\n  * Determines if the key pressed is the escape key\n  *\n  * @method isEscKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if esc key\n  **/\n  isEscKey: function isEscKey(ev) {\n    return ev.which === 27;\n  },\n\n  /**\n  * Determines if the key pressed is the enter key\n  *\n  * @method isEnterKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if enter key\n  **/\n  isEnterKey: function isEnterKey(ev) {\n    return ev.which === 13;\n  },\n\n  /**\n  * Determines if the key pressed is the tab key\n  *\n  * @method isTabKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if tab key\n  **/\n  isTabKey: function isTabKey(ev) {\n    return ev.which === 9;\n  },\n\n  /**\n  * Determines if the key pressed is the backspace key\n  *\n  * @method isBackspaceKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if backspace key\n  **/\n  isBackspaceKey: function isBackspaceKey(ev) {\n    return ev.which === 8;\n  },\n\n  /**\n  * Determines if the key pressed is the delete key\n  *\n  * @method isDeleteKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if delete key\n  **/\n  isDeleteKey: function isDeleteKey(ev) {\n    return ev.which === 46;\n  },\n\n  /**\n  * Determines if the key pressed is the backspace or delete key\n  *\n  * @method isDeletingKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if is delete key or backspace key\n  **/\n  isDeletingKey: function isDeletingKey(ev) {\n    return Events.isDeleteKey(ev) || Events.isBackspaceKey(ev);\n  },\n\n  /**\n  * Determines if the key pressed is the shift key\n  *\n  * @method isShiftKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if shift key\n  **/\n  isShiftKey: function isShiftKey(ev) {\n    return ev.shiftKey || ev.which === 16;\n  },\n\n  /**\n  * Determines if the key pressed is the space key\n  *\n  * @method isSpaceKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if space key\n  **/\n  isSpaceKey: function isSpaceKey(ev) {\n    return ev.which === 32;\n  },\n\n  /**\n  * Determines if the key pressed is the period key\n  *\n  * @method isPeriodKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if period key\n  **/\n  isPeriodKey: function isPeriodKey(ev) {\n    return ev.which === 190;\n  },\n\n  /**\n  * Determines if the key pressed is the comma key\n  *\n  * @method isCommaKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if comma key\n  **/\n  isCommaKey: function isCommaKey(ev) {\n    return ev.which === 188;\n  },\n\n  /**\n  * Determines if the key pressed is the minus key\n  *\n  * @method isMinusKey\n  * @param {Event} ev A JavaScript event\n  * @returns {Boolean} true if minus key\n  **/\n  isMinusKey: function isMinusKey(ev) {\n    return ev.which === 189;\n  }\n};\n\nexports.default = Events;",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/events/events.js",
+      "hash": "ce99c351a4e63051ace688a173d3a1cb",
+      "browserifyId": 53,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/guid/guid.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\n/**\n* Generates a random guid, useful for creating unique IDs.\n*\n* @method guid\n*/\nexports.default = function () {\n  function s4() {\n    return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);\n  }\n  return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();\n};",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/guid/guid.js",
+      "hash": "ea1bc304358af3978a89d15121f0f2eb",
+      "browserifyId": 54,
       "sourcemap": ""
     }
   ],
@@ -460,7 +1085,20 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/immutable/immutable.js",
       "hash": "8c4b72792ac258fd4d0f03f75edf0ec9",
-      "browserifyId": 3,
+      "browserifyId": 55,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/should-component-update/should-component-update.js": [
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function (scope, nextProps, nextState) {\n  return !(0, _lodash.isEqual)(scope.props, nextProps, customCheck) || !(0, _lodash.isEqual)(scope.state, nextState, customCheck);\n};\n\nvar _immutable = require('immutable');\n\nvar _immutable2 = _interopRequireDefault(_immutable);\n\nvar _lodash = require('lodash');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/**\n * Performs a custom check of parameters from the isEqual method.\n *\n * @method customCheck\n * @param current - could be any type\n * @param next - could be any type\n * @param {String} key\n * @private\n */\nfunction customCheck(current, next, key) {\n  if (key == \"validations\") {\n    // validations are new objects each time - and only need to update the component\n    // when the value changes so we can safely skip them.\n    return true;\n  }\n\n  // if immutable object, do custom comparison. otherwise return undefined to\n  // allow isEqual to continue as normal\n  if (_immutable2.default.Iterable.isIterable(current)) {\n    return _immutable2.default.is(current, next);\n  } else {\n    return void 0;\n  }\n}\n\n/**\n * A shouldComponentUpdate helper. Run this method with your instance, nextProps and nextState\n * and it will perform a deep comparison of the properties - handling immutable objects.\n *\n * @method\n * @param {Object} scope\n * @param {Object} nextProps\n * @param {Object} nextState\n * @return {Boolean}\n */",
+    {
+      "lodash": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
+      "immutable": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/immutable/dist/immutable.js"
+    },
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/helpers/should-component-update/should-component-update.js",
+      "hash": "1626d933419dc38962864467bacf3684",
+      "browserifyId": 56,
       "sourcemap": ""
     }
   ],
@@ -469,13 +1107,23 @@
     {
       "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "react-router": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/index.js",
-      "history/lib/createBrowserHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createBrowserHistory.js",
-      "react-dom": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-dom/index.js"
+      "react-dom": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-dom/index.js",
+      "history/lib/createBrowserHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createBrowserHistory.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/router/router.js",
       "hash": "cb8b7fa08c1a639ab9e6b520596f3a2e",
-      "browserifyId": 4,
+      "browserifyId": 57,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js": [
+    "/*!\n  Copyright (c) 2016 Jed Watson.\n  Licensed under the MIT License (MIT), see\n  http://jedwatson.github.io/classnames\n*/\n/* global define */\n\n(function () {\n\t'use strict';\n\n\tvar hasOwn = {}.hasOwnProperty;\n\n\tfunction classNames () {\n\t\tvar classes = [];\n\n\t\tfor (var i = 0; i < arguments.length; i++) {\n\t\t\tvar arg = arguments[i];\n\t\t\tif (!arg) continue;\n\n\t\t\tvar argType = typeof arg;\n\n\t\t\tif (argType === 'string' || argType === 'number') {\n\t\t\t\tclasses.push(arg);\n\t\t\t} else if (Array.isArray(arg)) {\n\t\t\t\tclasses.push(classNames.apply(null, arg));\n\t\t\t} else if (argType === 'object') {\n\t\t\t\tfor (var key in arg) {\n\t\t\t\t\tif (hasOwn.call(arg, key) && arg[key]) {\n\t\t\t\t\t\tclasses.push(key);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn classes.join(' ');\n\t}\n\n\tif (typeof module !== 'undefined' && module.exports) {\n\t\tmodule.exports = classNames;\n\t} else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {\n\t\t// register as 'classnames', consistent with npm package name\n\t\tdefine('classnames', [], function () {\n\t\t\treturn classNames;\n\t\t});\n\t} else {\n\t\twindow.classNames = classNames;\n\t}\n}());\n",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/classnames/index.js",
+      "hash": "757d3f1f159fa90976d88e6d6120cb68",
+      "browserifyId": 58,
       "sourcemap": ""
     }
   ],
@@ -485,7 +1133,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/component-emitter/index.js",
       "hash": "e5c181a907e3f8ec8c7d8b8d8273bec7",
-      "browserifyId": 5,
+      "browserifyId": 59,
       "sourcemap": ""
     }
   ],
@@ -498,7 +1146,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/deep-equal/index.js",
       "hash": "0fc78a0f6e9b3afc9e0d76699d89d606",
-      "browserifyId": 6,
+      "browserifyId": 60,
       "sourcemap": ""
     }
   ],
@@ -508,7 +1156,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/deep-equal/lib/is_arguments.js",
       "hash": "4427a3ad6b0d43ac07d07199672aa8ea",
-      "browserifyId": 7,
+      "browserifyId": 61,
       "sourcemap": ""
     }
   ],
@@ -518,7 +1166,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/deep-equal/lib/keys.js",
       "hash": "a51cde9801b19e125045736451f6750c",
-      "browserifyId": 8,
+      "browserifyId": 62,
       "sourcemap": ""
     }
   ],
@@ -528,7 +1176,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/events/events.js",
       "hash": "edcaa990d23daa9663d9504a05ea4fcd",
-      "browserifyId": 9,
+      "browserifyId": 63,
       "sourcemap": ""
     }
   ],
@@ -540,7 +1188,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/fbjs/lib/invariant.js",
       "hash": "f149a1e161f5088ca6f4c61cc8fc311b",
-      "browserifyId": 10,
+      "browserifyId": 64,
       "sourcemap": ""
     }
   ],
@@ -552,7 +1200,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/flux/index.js",
       "hash": "74c05f4977b5d7d6dba9ff18583980c3",
-      "browserifyId": 11,
+      "browserifyId": 65,
       "sourcemap": ""
     }
   ],
@@ -565,7 +1213,17 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/flux/lib/Dispatcher.js",
       "hash": "53515b9072d4c330beba0cbdebf11e5a",
-      "browserifyId": 12,
+      "browserifyId": 66,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/form-serialize/index.js": [
+    "// get successful control from form and assemble into object\n// http://www.w3.org/TR/html401/interact/forms.html#h-17.13.2\n\n// types which indicate a submit action and are not successful controls\n// these will be ignored\nvar k_r_submitter = /^(?:submit|button|image|reset|file)$/i;\n\n// node names which could be successful controls\nvar k_r_success_contrls = /^(?:input|select|textarea|keygen)/i;\n\n// Matches bracket notation.\nvar brackets = /(\\[[^\\[\\]]*\\])/g;\n\n// serializes form fields\n// @param form MUST be an HTMLForm element\n// @param options is an optional argument to configure the serialization. Default output\n// with no options specified is a url encoded string\n//    - hash: [true | false] Configure the output type. If true, the output will\n//    be a js object.\n//    - serializer: [function] Optional serializer function to override the default one.\n//    The function takes 3 arguments (result, key, value) and should return new result\n//    hash and url encoded str serializers are provided with this module\n//    - disabled: [true | false]. If true serialize disabled fields.\n//    - empty: [true | false]. If true serialize empty fields\nfunction serialize(form, options) {\n    if (typeof options != 'object') {\n        options = { hash: !!options };\n    }\n    else if (options.hash === undefined) {\n        options.hash = true;\n    }\n\n    var result = (options.hash) ? {} : '';\n    var serializer = options.serializer || ((options.hash) ? hash_serializer : str_serialize);\n\n    var elements = form && form.elements ? form.elements : [];\n\n    //Object store each radio and set if it's empty or not\n    var radio_store = Object.create(null);\n\n    for (var i=0 ; i<elements.length ; ++i) {\n        var element = elements[i];\n\n        // ingore disabled fields\n        if ((!options.disabled && element.disabled) || !element.name) {\n            continue;\n        }\n        // ignore anyhting that is not considered a success field\n        if (!k_r_success_contrls.test(element.nodeName) ||\n            k_r_submitter.test(element.type)) {\n            continue;\n        }\n\n        var key = element.name;\n        var val = element.value;\n\n        // we can't just use element.value for checkboxes cause some browsers lie to us\n        // they say \"on\" for value when the box isn't checked\n        if ((element.type === 'checkbox' || element.type === 'radio') && !element.checked) {\n            val = undefined;\n        }\n\n        // If we want empty elements\n        if (options.empty) {\n            // for checkbox\n            if (element.type === 'checkbox' && !element.checked) {\n                val = '';\n            }\n\n            // for radio\n            if (element.type === 'radio') {\n                if (!radio_store[element.name] && !element.checked) {\n                    radio_store[element.name] = false;\n                }\n                else if (element.checked) {\n                    radio_store[element.name] = true;\n                }\n            }\n\n            // if options empty is true, continue only if its radio\n            if (!val && element.type == 'radio') {\n                continue;\n            }\n        }\n        else {\n            // value-less fields are ignored unless options.empty is true\n            if (!val) {\n                continue;\n            }\n        }\n\n        // multi select boxes\n        if (element.type === 'select-multiple') {\n            val = [];\n\n            var selectOptions = element.options;\n            var isSelectedOptions = false;\n            for (var j=0 ; j<selectOptions.length ; ++j) {\n                var option = selectOptions[j];\n                var allowedEmpty = options.empty && !option.value;\n                var hasValue = (option.value || allowedEmpty);\n                if (option.selected && hasValue) {\n                    isSelectedOptions = true;\n\n                    // If using a hash serializer be sure to add the\n                    // correct notation for an array in the multi-select\n                    // context. Here the name attribute on the select element\n                    // might be missing the trailing bracket pair. Both names\n                    // \"foo\" and \"foo[]\" should be arrays.\n                    if (options.hash && key.slice(key.length - 2) !== '[]') {\n                        result = serializer(result, key + '[]', option.value);\n                    }\n                    else {\n                        result = serializer(result, key, option.value);\n                    }\n                }\n            }\n\n            // Serialize if no selected options and options.empty is true\n            if (!isSelectedOptions && options.empty) {\n                result = serializer(result, key, '');\n            }\n\n            continue;\n        }\n\n        result = serializer(result, key, val);\n    }\n\n    // Check for all empty radio buttons and serialize them with key=\"\"\n    if (options.empty) {\n        for (var key in radio_store) {\n            if (!radio_store[key]) {\n                result = serializer(result, key, '');\n            }\n        }\n    }\n\n    return result;\n}\n\nfunction parse_keys(string) {\n    var keys = [];\n    var prefix = /^([^\\[\\]]*)/;\n    var children = new RegExp(brackets);\n    var match = prefix.exec(string);\n\n    if (match[1]) {\n        keys.push(match[1]);\n    }\n\n    while ((match = children.exec(string)) !== null) {\n        keys.push(match[1]);\n    }\n\n    return keys;\n}\n\nfunction hash_assign(result, keys, value) {\n    if (keys.length === 0) {\n        result = value;\n        return result;\n    }\n\n    var key = keys.shift();\n    var between = key.match(/^\\[(.+?)\\]$/);\n\n    if (key === '[]') {\n        result = result || [];\n\n        if (Array.isArray(result)) {\n            result.push(hash_assign(null, keys, value));\n        }\n        else {\n            // This might be the result of bad name attributes like \"[][foo]\",\n            // in this case the original `result` object will already be\n            // assigned to an object literal. Rather than coerce the object to\n            // an array, or cause an exception the attribute \"_values\" is\n            // assigned as an array.\n            result._values = result._values || [];\n            result._values.push(hash_assign(null, keys, value));\n        }\n\n        return result;\n    }\n\n    // Key is an attribute name and can be assigned directly.\n    if (!between) {\n        result[key] = hash_assign(result[key], keys, value);\n    }\n    else {\n        var string = between[1];\n        // +var converts the variable into a number\n        // better than parseInt because it doesn't truncate away trailing\n        // letters and actually fails if whole thing is not a number\n        var index = +string;\n\n        // If the characters between the brackets is not a number it is an\n        // attribute name and can be assigned directly.\n        if (isNaN(index)) {\n            result = result || {};\n            result[string] = hash_assign(result[string], keys, value);\n        }\n        else {\n            result = result || [];\n            result[index] = hash_assign(result[index], keys, value);\n        }\n    }\n\n    return result;\n}\n\n// Object/hash encoding serializer.\nfunction hash_serializer(result, key, value) {\n    var matches = key.match(brackets);\n\n    // Has brackets? Use the recursive assignment function to walk the keys,\n    // construct any missing objects in the result tree and make the assignment\n    // at the end of the chain.\n    if (matches) {\n        var keys = parse_keys(key);\n        hash_assign(result, keys, value);\n    }\n    else {\n        // Non bracket notation can make assignments directly.\n        var existing = result[key];\n\n        // If the value has been assigned already (for instance when a radio and\n        // a checkbox have the same name attribute) convert the previous value\n        // into an array before pushing into it.\n        //\n        // NOTE: If this requirement were removed all hash creation and\n        // assignment could go through `hash_assign`.\n        if (existing) {\n            if (!Array.isArray(existing)) {\n                result[key] = [ existing ];\n            }\n\n            result[key].push(value);\n        }\n        else {\n            result[key] = value;\n        }\n    }\n\n    return result;\n}\n\n// urlform encoding serializer\nfunction str_serialize(result, key, value) {\n    // encode newlines as \\r\\n cause the html spec says so\n    value = value.replace(/(\\r)?\\n/g, '\\r\\n');\n    value = encodeURIComponent(value);\n\n    // spaces should be '+' rather than '%20'.\n    value = value.replace(/%20/g, '+');\n    return result + (result ? '&' : '') + encodeURIComponent(key) + '=' + value;\n}\n\nmodule.exports = serialize;\n",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/form-serialize/index.js",
+      "hash": "1b1e61ece20c39520adc845f31a0b14d",
+      "browserifyId": 67,
       "sourcemap": ""
     }
   ],
@@ -575,7 +1233,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/Actions.js",
       "hash": "234e72e02add444e72abe4c81253c453",
-      "browserifyId": 13,
+      "browserifyId": 68,
       "sourcemap": ""
     }
   ],
@@ -585,7 +1243,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/AsyncUtils.js",
       "hash": "97d64a749d6a8636ddd63f13e0741cbc",
-      "browserifyId": 14,
+      "browserifyId": 69,
       "sourcemap": ""
     }
   ],
@@ -598,7 +1256,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMStateStorage.js",
       "hash": "cd4a42766ae63073b4be8fda47add1c6",
-      "browserifyId": 15,
+      "browserifyId": 70,
       "sourcemap": ""
     }
   ],
@@ -608,7 +1266,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMUtils.js",
       "hash": "3615fd836a1d5f942b40b1353162fddd",
-      "browserifyId": 16,
+      "browserifyId": 71,
       "sourcemap": ""
     }
   ],
@@ -618,7 +1276,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/ExecutionEnvironment.js",
       "hash": "a7c11b48c96590f768a7224431374aa6",
-      "browserifyId": 17,
+      "browserifyId": 72,
       "sourcemap": ""
     }
   ],
@@ -629,15 +1287,15 @@
       "./Actions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/Actions.js",
       "./ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/ExecutionEnvironment.js",
       "./DOMUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMUtils.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "./DOMStateStorage": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMStateStorage.js",
+      "./createDOMHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createDOMHistory.js",
       "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
-      "./createDOMHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createDOMHistory.js"
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createBrowserHistory.js",
       "hash": "681032b86d9aa88dd14991ee6679bba5",
-      "browserifyId": 18,
+      "browserifyId": 73,
       "sourcemap": ""
     }
   ],
@@ -645,15 +1303,15 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _ExecutionEnvironment = require('./ExecutionEnvironment');\n\nvar _DOMUtils = require('./DOMUtils');\n\nvar _createHistory = require('./createHistory');\n\nvar _createHistory2 = _interopRequireDefault(_createHistory);\n\nfunction createDOMHistory(options) {\n  var history = _createHistory2['default'](_extends({\n    getUserConfirmation: _DOMUtils.getUserConfirmation\n  }, options, {\n    go: _DOMUtils.go\n  }));\n\n  function listen(listener) {\n    !_ExecutionEnvironment.canUseDOM ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'DOM history needs a DOM') : _invariant2['default'](false) : undefined;\n\n    return history.listen(listener);\n  }\n\n  return _extends({}, history, {\n    listen: listen\n  });\n}\n\nexports['default'] = createDOMHistory;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./DOMUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMUtils.js",
       "./ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/ExecutionEnvironment.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
-      "./createHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHistory.js"
+      "./DOMUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMUtils.js",
+      "./createHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHistory.js",
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createDOMHistory.js",
       "hash": "45528f9f0e8bd41d7c77311807d43e38",
-      "browserifyId": 19,
+      "browserifyId": 74,
       "sourcemap": ""
     }
   ],
@@ -666,14 +1324,14 @@
       "./DOMUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMUtils.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
       "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
-      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./DOMStateStorage": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/DOMStateStorage.js",
+      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./createDOMHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createDOMHistory.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHashHistory.js",
       "hash": "217affa2fc4f591e2b68133860fa157e",
-      "browserifyId": 20,
+      "browserifyId": 75,
       "sourcemap": ""
     }
   ],
@@ -691,7 +1349,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHistory.js",
       "hash": "d9dad0108fb3f093735543e24c397c25",
-      "browserifyId": 21,
+      "browserifyId": 76,
       "sourcemap": ""
     }
   ],
@@ -704,7 +1362,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createLocation.js",
       "hash": "346c4600c7b559d2c70e11a9c6beefc1",
-      "browserifyId": 22,
+      "browserifyId": 77,
       "sourcemap": ""
     }
   ],
@@ -712,16 +1370,16 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _Actions = require('./Actions');\n\nvar _createHistory = require('./createHistory');\n\nvar _createHistory2 = _interopRequireDefault(_createHistory);\n\nvar _parsePath = require('./parsePath');\n\nvar _parsePath2 = _interopRequireDefault(_parsePath);\n\nfunction createStateStorage(entries) {\n  return entries.filter(function (entry) {\n    return entry.state;\n  }).reduce(function (memo, entry) {\n    memo[entry.key] = entry.state;\n    return memo;\n  }, {});\n}\n\nfunction createMemoryHistory() {\n  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];\n\n  if (Array.isArray(options)) {\n    options = { entries: options };\n  } else if (typeof options === 'string') {\n    options = { entries: [options] };\n  }\n\n  var history = _createHistory2['default'](_extends({}, options, {\n    getCurrentLocation: getCurrentLocation,\n    finishTransition: finishTransition,\n    saveState: saveState,\n    go: go\n  }));\n\n  var _options = options;\n  var entries = _options.entries;\n  var current = _options.current;\n\n  if (typeof entries === 'string') {\n    entries = [entries];\n  } else if (!Array.isArray(entries)) {\n    entries = ['/'];\n  }\n\n  entries = entries.map(function (entry) {\n    var key = history.createKey();\n\n    if (typeof entry === 'string') return { pathname: entry, key: key };\n\n    if (typeof entry === 'object' && entry) return _extends({}, entry, { key: key });\n\n    !false ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'Unable to create history entry from %s', entry) : _invariant2['default'](false) : undefined;\n  });\n\n  if (current == null) {\n    current = entries.length - 1;\n  } else {\n    !(current >= 0 && current < entries.length) ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'Current index must be >= 0 and < %s, was %s', entries.length, current) : _invariant2['default'](false) : undefined;\n  }\n\n  var storage = createStateStorage(entries);\n\n  function saveState(key, state) {\n    storage[key] = state;\n  }\n\n  function readState(key) {\n    return storage[key];\n  }\n\n  function getCurrentLocation() {\n    var entry = entries[current];\n    var key = entry.key;\n    var basename = entry.basename;\n    var pathname = entry.pathname;\n    var search = entry.search;\n\n    var path = (basename || '') + pathname + (search || '');\n\n    var state = undefined;\n    if (key) {\n      state = readState(key);\n    } else {\n      state = null;\n      key = history.createKey();\n      entry.key = key;\n    }\n\n    var location = _parsePath2['default'](path);\n\n    return history.createLocation(_extends({}, location, { state: state }), undefined, key);\n  }\n\n  function canGo(n) {\n    var index = current + n;\n    return index >= 0 && index < entries.length;\n  }\n\n  function go(n) {\n    if (n) {\n      if (!canGo(n)) {\n        process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'Cannot go(%s) there is not enough history', n) : undefined;\n        return;\n      }\n\n      current += n;\n\n      var currentLocation = getCurrentLocation();\n\n      // change action to POP\n      history.transitionTo(_extends({}, currentLocation, { action: _Actions.POP }));\n    }\n  }\n\n  function finishTransition(location) {\n    switch (location.action) {\n      case _Actions.PUSH:\n        current += 1;\n\n        // if we are not on the top of stack\n        // remove rest and push new\n        if (current < entries.length) entries.splice(current);\n\n        entries.push(location);\n        saveState(location.key, location.state);\n        break;\n      case _Actions.REPLACE:\n        entries[current] = location;\n        saveState(location.key, location.state);\n        break;\n    }\n  }\n\n  return history;\n}\n\nexports['default'] = createMemoryHistory;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./Actions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/Actions.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
+      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "./createHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHistory.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createMemoryHistory.js",
       "hash": "427d5c08a19f961109175ebb01625b87",
-      "browserifyId": 23,
+      "browserifyId": 78,
       "sourcemap": ""
     }
   ],
@@ -731,7 +1389,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/deprecate.js",
       "hash": "391d656934ed82da435d01c685515baa",
-      "browserifyId": 24,
+      "browserifyId": 79,
       "sourcemap": ""
     }
   ],
@@ -741,7 +1399,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/extractPath.js",
       "hash": "625bbf5d297b1a2cf980dafd3b8b1832",
-      "browserifyId": 25,
+      "browserifyId": 80,
       "sourcemap": ""
     }
   ],
@@ -755,7 +1413,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "hash": "2c1156955127718d16290324415e2db0",
-      "browserifyId": 26,
+      "browserifyId": 81,
       "sourcemap": ""
     }
   ],
@@ -768,7 +1426,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/runTransitionHook.js",
       "hash": "918c016a60e6ba9b1c7fb8d0bfa64a7f",
-      "browserifyId": 27,
+      "browserifyId": 82,
       "sourcemap": ""
     }
   ],
@@ -776,15 +1434,15 @@
     "'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar _ExecutionEnvironment = require('./ExecutionEnvironment');\n\nvar _runTransitionHook = require('./runTransitionHook');\n\nvar _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);\n\nvar _extractPath = require('./extractPath');\n\nvar _extractPath2 = _interopRequireDefault(_extractPath);\n\nvar _parsePath = require('./parsePath');\n\nvar _parsePath2 = _interopRequireDefault(_parsePath);\n\nvar _deprecate = require('./deprecate');\n\nvar _deprecate2 = _interopRequireDefault(_deprecate);\n\nfunction useBasename(createHistory) {\n  return function () {\n    var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];\n    var basename = options.basename;\n\n    var historyOptions = _objectWithoutProperties(options, ['basename']);\n\n    var history = createHistory(historyOptions);\n\n    // Automatically use the value of <base href> in HTML\n    // documents as basename if it's not explicitly given.\n    if (basename == null && _ExecutionEnvironment.canUseDOM) {\n      var base = document.getElementsByTagName('base')[0];\n\n      if (base) basename = _extractPath2['default'](base.href);\n    }\n\n    function addBasename(location) {\n      if (basename && location.basename == null) {\n        if (location.pathname.indexOf(basename) === 0) {\n          location.pathname = location.pathname.substring(basename.length);\n          location.basename = basename;\n\n          if (location.pathname === '') location.pathname = '/';\n        } else {\n          location.basename = '';\n        }\n      }\n\n      return location;\n    }\n\n    function prependBasename(location) {\n      if (!basename) return location;\n\n      if (typeof location === 'string') location = _parsePath2['default'](location);\n\n      var pname = location.pathname;\n      var normalizedBasename = basename.slice(-1) === '/' ? basename : basename + '/';\n      var normalizedPathname = pname.charAt(0) === '/' ? pname.slice(1) : pname;\n      var pathname = normalizedBasename + normalizedPathname;\n\n      return _extends({}, location, {\n        pathname: pathname\n      });\n    }\n\n    // Override all read methods with basename-aware versions.\n    function listenBefore(hook) {\n      return history.listenBefore(function (location, callback) {\n        _runTransitionHook2['default'](hook, addBasename(location), callback);\n      });\n    }\n\n    function listen(listener) {\n      return history.listen(function (location) {\n        listener(addBasename(location));\n      });\n    }\n\n    // Override all write methods with basename-aware versions.\n    function push(location) {\n      history.push(prependBasename(location));\n    }\n\n    function replace(location) {\n      history.replace(prependBasename(location));\n    }\n\n    function createPath(location) {\n      return history.createPath(prependBasename(location));\n    }\n\n    function createHref(location) {\n      return history.createHref(prependBasename(location));\n    }\n\n    function createLocation() {\n      return addBasename(history.createLocation.apply(history, arguments));\n    }\n\n    // deprecated\n    function pushState(state, path) {\n      if (typeof path === 'string') path = _parsePath2['default'](path);\n\n      push(_extends({ state: state }, path));\n    }\n\n    // deprecated\n    function replaceState(state, path) {\n      if (typeof path === 'string') path = _parsePath2['default'](path);\n\n      replace(_extends({ state: state }, path));\n    }\n\n    return _extends({}, history, {\n      listenBefore: listenBefore,\n      listen: listen,\n      push: push,\n      replace: replace,\n      createPath: createPath,\n      createHref: createHref,\n      createLocation: createLocation,\n\n      pushState: _deprecate2['default'](pushState, 'pushState is deprecated; use push instead'),\n      replaceState: _deprecate2['default'](replaceState, 'replaceState is deprecated; use replace instead')\n    });\n  };\n}\n\nexports['default'] = useBasename;\nmodule.exports = exports['default'];",
     {
       "./ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/ExecutionEnvironment.js",
+      "./runTransitionHook": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/runTransitionHook.js",
       "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./deprecate": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/deprecate.js",
-      "./extractPath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/extractPath.js",
-      "./runTransitionHook": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/runTransitionHook.js"
+      "./extractPath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/extractPath.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/useBasename.js",
       "hash": "d3dd332859acd8f98de43da52fc353d5",
-      "browserifyId": 28,
+      "browserifyId": 83,
       "sourcemap": ""
     }
   ],
@@ -792,16 +1450,26 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _queryString = require('query-string');\n\nvar _runTransitionHook = require('./runTransitionHook');\n\nvar _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);\n\nvar _parsePath = require('./parsePath');\n\nvar _parsePath2 = _interopRequireDefault(_parsePath);\n\nvar _deprecate = require('./deprecate');\n\nvar _deprecate2 = _interopRequireDefault(_deprecate);\n\nvar SEARCH_BASE_KEY = '$searchBase';\n\nfunction defaultStringifyQuery(query) {\n  return _queryString.stringify(query).replace(/%20/g, '+');\n}\n\nvar defaultParseQueryString = _queryString.parse;\n\nfunction isNestedObject(object) {\n  for (var p in object) {\n    if (object.hasOwnProperty(p) && typeof object[p] === 'object' && !Array.isArray(object[p]) && object[p] !== null) return true;\n  }return false;\n}\n\n/**\n * Returns a new createHistory function that may be used to create\n * history objects that know how to handle URL queries.\n */\nfunction useQueries(createHistory) {\n  return function () {\n    var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];\n    var stringifyQuery = options.stringifyQuery;\n    var parseQueryString = options.parseQueryString;\n\n    var historyOptions = _objectWithoutProperties(options, ['stringifyQuery', 'parseQueryString']);\n\n    var history = createHistory(historyOptions);\n\n    if (typeof stringifyQuery !== 'function') stringifyQuery = defaultStringifyQuery;\n\n    if (typeof parseQueryString !== 'function') parseQueryString = defaultParseQueryString;\n\n    function addQuery(location) {\n      if (location.query == null) {\n        var search = location.search;\n\n        location.query = parseQueryString(search.substring(1));\n        location[SEARCH_BASE_KEY] = { search: search, searchBase: '' };\n      }\n\n      // TODO: Instead of all the book-keeping here, this should just strip the\n      // stringified query from the search.\n\n      return location;\n    }\n\n    function appendQuery(location, query) {\n      var _extends2;\n\n      var queryString = undefined;\n      if (!query || (queryString = stringifyQuery(query)) === '') return location;\n\n      process.env.NODE_ENV !== 'production' ? _warning2['default'](stringifyQuery !== defaultStringifyQuery || !isNestedObject(query), 'useQueries does not stringify nested query objects by default; ' + 'use a custom stringifyQuery function') : undefined;\n\n      if (typeof location === 'string') location = _parsePath2['default'](location);\n\n      var searchBaseSpec = location[SEARCH_BASE_KEY];\n      var searchBase = undefined;\n      if (searchBaseSpec && location.search === searchBaseSpec.search) {\n        searchBase = searchBaseSpec.searchBase;\n      } else {\n        searchBase = location.search || '';\n      }\n\n      var search = searchBase + (searchBase ? '&' : '?') + queryString;\n\n      return _extends({}, location, (_extends2 = {\n        search: search\n      }, _extends2[SEARCH_BASE_KEY] = { search: search, searchBase: searchBase }, _extends2));\n    }\n\n    // Override all read methods with query-aware versions.\n    function listenBefore(hook) {\n      return history.listenBefore(function (location, callback) {\n        _runTransitionHook2['default'](hook, addQuery(location), callback);\n      });\n    }\n\n    function listen(listener) {\n      return history.listen(function (location) {\n        listener(addQuery(location));\n      });\n    }\n\n    // Override all write methods with query-aware versions.\n    function push(location) {\n      history.push(appendQuery(location, location.query));\n    }\n\n    function replace(location) {\n      history.replace(appendQuery(location, location.query));\n    }\n\n    function createPath(location, query) {\n      //warning(\n      //  !query,\n      //  'the query argument to createPath is deprecated; use a location descriptor instead'\n      //)\n      return history.createPath(appendQuery(location, query || location.query));\n    }\n\n    function createHref(location, query) {\n      //warning(\n      //  !query,\n      //  'the query argument to createHref is deprecated; use a location descriptor instead'\n      //)\n      return history.createHref(appendQuery(location, query || location.query));\n    }\n\n    function createLocation() {\n      return addQuery(history.createLocation.apply(history, arguments));\n    }\n\n    // deprecated\n    function pushState(state, path, query) {\n      if (typeof path === 'string') path = _parsePath2['default'](path);\n\n      push(_extends({ state: state }, path, { query: query }));\n    }\n\n    // deprecated\n    function replaceState(state, path, query) {\n      if (typeof path === 'string') path = _parsePath2['default'](path);\n\n      replace(_extends({ state: state }, path, { query: query }));\n    }\n\n    return _extends({}, history, {\n      listenBefore: listenBefore,\n      listen: listen,\n      push: push,\n      replace: replace,\n      createPath: createPath,\n      createHref: createHref,\n      createLocation: createLocation,\n\n      pushState: _deprecate2['default'](pushState, 'pushState is deprecated; use push instead'),\n      replaceState: _deprecate2['default'](replaceState, 'replaceState is deprecated; use replace instead')\n    });\n  };\n}\n\nexports['default'] = useQueries;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./deprecate": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/deprecate.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
-      "./parsePath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/parsePath.js",
       "./runTransitionHook": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/runTransitionHook.js",
       "query-string": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/query-string/index.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/useQueries.js",
       "hash": "1bd184c5fda5e0067724fb43137ddc33",
-      "browserifyId": 29,
+      "browserifyId": 84,
+      "sourcemap": ""
+    }
+  ],
+  "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/i18n-js/app/assets/javascripts/i18n.js": [
+    "// I18n.js\n// =======\n//\n// This small library provides the Rails I18n API on the Javascript.\n// You don't actually have to use Rails (or even Ruby) to use I18n.js.\n// Just make sure you export all translations in an object like this:\n//\n//     I18n.translations.en = {\n//       hello: \"Hello World\"\n//     };\n//\n// See tests for specific formatting like numbers and dates.\n//\n\n;(function(factory) {\n  if (typeof module !== 'undefined' && module.exports) {\n    // Node/CommonJS\n    module.exports = factory(this);\n\n  } else if (typeof define === 'function' && define.amd) {\n    // AMD\n    define((function(global){ return function(){ factory(global); }})(this));\n\n  } else {\n    // Browser globals\n    this.I18n = factory(this);\n  }\n}(function(global) {\n  \"use strict\";\n\n  // Use previously defined object if exists in current scope\n  var I18n = global && global.I18n || {};\n\n  // Just cache the Array#slice function.\n  var slice = Array.prototype.slice;\n\n  // Apply number padding.\n  var padding = function(number) {\n    return (\"0\" + number.toString()).substr(-2);\n  };\n\n  // Set default days/months translations.\n  var DATE = {\n      day_names: [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"]\n    , abbr_day_names: [\"Sun\", \"Mon\", \"Tue\", \"Wed\", \"Thu\", \"Fri\", \"Sat\"]\n    , month_names: [null, \"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]\n    , abbr_month_names: [null, \"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"]\n    , meridian: [\"AM\", \"PM\"]\n  };\n\n  // Set default number format.\n  var NUMBER_FORMAT = {\n      precision: 3\n    , separator: \".\"\n    , delimiter: \",\"\n    , strip_insignificant_zeros: false\n  };\n\n  // Set default currency format.\n  var CURRENCY_FORMAT = {\n      unit: \"$\"\n    , precision: 2\n    , format: \"%u%n\"\n    , delimiter: \",\"\n    , separator: \".\"\n  };\n\n  // Set default percentage format.\n  var PERCENTAGE_FORMAT = {\n      precision: 3\n    , separator: \".\"\n    , delimiter: \"\"\n  };\n\n  // Set default size units.\n  var SIZE_UNITS = [null, \"kb\", \"mb\", \"gb\", \"tb\"];\n\n  // Other default options\n  var DEFAULT_OPTIONS = {\n    defaultLocale: \"en\",\n    locale: \"en\",\n    defaultSeparator: \".\",\n    placeholder: /(?:\\{\\{|%\\{)(.*?)(?:\\}\\}?)/gm,\n    fallbacks: false,\n    translations: {}\n  };\n\n  I18n.reset = function() {\n    // Set default locale. This locale will be used when fallback is enabled and\n    // the translation doesn't exist in a particular locale.\n    this.defaultLocale = DEFAULT_OPTIONS.defaultLocale;\n\n    // Set the current locale to `en`.\n    this.locale = DEFAULT_OPTIONS.locale;\n\n    // Set the translation key separator.\n    this.defaultSeparator = DEFAULT_OPTIONS.defaultSeparator;\n\n    // Set the placeholder format. Accepts `{{placeholder}}` and `%{placeholder}`.\n    this.placeholder = DEFAULT_OPTIONS.placeholder;\n\n    // Set if engine should fallback to the default locale when a translation\n    // is missing.\n    this.fallbacks = DEFAULT_OPTIONS.fallbacks;\n\n    // Set the default translation object.\n    this.translations = DEFAULT_OPTIONS.translations;\n  };\n\n  // Much like `reset`, but only assign options if not already assigned\n  I18n.initializeOptions = function() {\n    if (typeof(this.defaultLocale) === \"undefined\" && this.defaultLocale !== null)\n      this.defaultLocale = DEFAULT_OPTIONS.defaultLocale;\n\n    if (typeof(this.locale) === \"undefined\" && this.locale !== null)\n      this.locale = DEFAULT_OPTIONS.locale;\n\n    if (typeof(this.defaultSeparator) === \"undefined\" && this.defaultSeparator !== null)\n      this.defaultSeparator = DEFAULT_OPTIONS.defaultSeparator;\n\n    if (typeof(this.placeholder) === \"undefined\" && this.placeholder !== null)\n      this.placeholder = DEFAULT_OPTIONS.placeholder;\n\n    if (typeof(this.fallbacks) === \"undefined\" && this.fallbacks !== null)\n      this.fallbacks = DEFAULT_OPTIONS.fallbacks;\n\n    if (typeof(this.translations) === \"undefined\" && this.translations !== null)\n      this.translations = DEFAULT_OPTIONS.translations;\n  };\n  I18n.initializeOptions();\n\n  // Return a list of all locales that must be tried before returning the\n  // missing translation message. By default, this will consider the inline option,\n  // current locale and fallback locale.\n  //\n  //     I18n.locales.get(\"de-DE\");\n  //     // [\"de-DE\", \"de\", \"en\"]\n  //\n  // You can define custom rules for any locale. Just make sure you return a array\n  // containing all locales.\n  //\n  //     // Default the Wookie locale to English.\n  //     I18n.locales[\"wk\"] = function(locale) {\n  //       return [\"en\"];\n  //     };\n  //\n  I18n.locales = {};\n\n  // Retrieve locales based on inline locale, current locale or default to\n  // I18n's detection.\n  I18n.locales.get = function(locale) {\n    var result = this[locale] || this[I18n.locale] || this[\"default\"];\n\n    if (typeof(result) === \"function\") {\n      result = result(locale);\n    }\n\n    if (result instanceof Array === false) {\n      result = [result];\n    }\n\n    return result;\n  };\n\n  // The default locale list.\n  I18n.locales[\"default\"] = function(locale) {\n    var locales = []\n      , list = []\n      , countryCode\n      , count\n    ;\n\n    // Handle the inline locale option that can be provided to\n    // the `I18n.t` options.\n    if (locale) {\n      locales.push(locale);\n    }\n\n    // Add the current locale to the list.\n    if (!locale && I18n.locale) {\n      locales.push(I18n.locale);\n    }\n\n    // Add the default locale if fallback strategy is enabled.\n    if (I18n.fallbacks && I18n.defaultLocale) {\n      locales.push(I18n.defaultLocale);\n    }\n\n    // Compute each locale with its country code.\n    // So this will return an array containing both\n    // `de-DE` and `de` locales.\n    locales.forEach(function(locale){\n      countryCode = locale.split(\"-\")[0];\n\n      if (!~list.indexOf(locale)) {\n        list.push(locale);\n      }\n\n      if (I18n.fallbacks && countryCode && countryCode !== locale && !~list.indexOf(countryCode)) {\n        list.push(countryCode);\n      }\n    });\n\n    // No locales set? English it is.\n    if (!locales.length) {\n      locales.push(\"en\");\n    }\n\n    return list;\n  };\n\n  // Hold pluralization rules.\n  I18n.pluralization = {};\n\n  // Return the pluralizer for a specific locale.\n  // If no specify locale is found, then I18n's default will be used.\n  I18n.pluralization.get = function(locale) {\n    return this[locale] || this[I18n.locale] || this[\"default\"];\n  };\n\n  // The default pluralizer rule.\n  // It detects the `zero`, `one`, and `other` scopes.\n  I18n.pluralization[\"default\"] = function(count) {\n    switch (count) {\n      case 0: return [\"zero\", \"other\"];\n      case 1: return [\"one\"];\n      default: return [\"other\"];\n    }\n  };\n\n  // Return current locale. If no locale has been set, then\n  // the current locale will be the default locale.\n  I18n.currentLocale = function() {\n    return this.locale || this.defaultLocale;\n  };\n\n  // Check if value is different than undefined and null;\n  I18n.isSet = function(value) {\n    return value !== undefined && value !== null;\n  };\n\n  // Find and process the translation using the provided scope and options.\n  // This is used internally by some functions and should not be used as an\n  // public API.\n  I18n.lookup = function(scope, options) {\n    options = this.prepareOptions(options);\n\n    var locales = this.locales.get(options.locale).slice()\n      , requestedLocale = locales[0]\n      , locale\n      , scopes\n      , translations\n    ;\n\n    // Deal with the scope as an array.\n    if (scope.constructor === Array) {\n      scope = scope.join(this.defaultSeparator);\n    }\n\n    // Deal with the scope option provided through the second argument.\n    //\n    //    I18n.t('hello', {scope: 'greetings'});\n    //\n    if (options.scope) {\n      scope = [options.scope, scope].join(this.defaultSeparator);\n    }\n\n    while (locales.length) {\n      locale = locales.shift();\n      scopes = scope.split(this.defaultSeparator);\n      translations = this.translations[locale];\n\n      if (!translations) {\n        continue;\n      }\n\n      while (scopes.length) {\n        translations = translations[scopes.shift()];\n\n        if (translations === undefined || translations === null) {\n          break;\n        }\n      }\n\n      if (translations !== undefined && translations !== null) {\n        return translations;\n      }\n    }\n\n    if (this.isSet(options.defaultValue)) {\n      return options.defaultValue;\n    }\n  };\n\n  // Rails changed the way the meridian is stored.\n  // It started with `date.meridian` returning an array,\n  // then it switched to `time.am` and `time.pm`.\n  // This function abstracts this difference and returns\n  // the correct meridian or the default value when none is provided.\n  I18n.meridian = function() {\n    var time = this.lookup(\"time\");\n    var date = this.lookup(\"date\");\n\n    if (time && time.am && time.pm) {\n      return [time.am, time.pm];\n    } else if (date && date.meridian) {\n      return date.meridian;\n    } else {\n      return DATE.meridian;\n    }\n  };\n\n  // Merge serveral hash options, checking if value is set before\n  // overwriting any value. The precedence is from left to right.\n  //\n  //     I18n.prepareOptions({name: \"John Doe\"}, {name: \"Mary Doe\", role: \"user\"});\n  //     #=> {name: \"John Doe\", role: \"user\"}\n  //\n  I18n.prepareOptions = function() {\n    var args = slice.call(arguments)\n      , options = {}\n      , subject\n    ;\n\n    while (args.length) {\n      subject = args.shift();\n\n      if (typeof(subject) != \"object\") {\n        continue;\n      }\n\n      for (var attr in subject) {\n        if (!subject.hasOwnProperty(attr)) {\n          continue;\n        }\n\n        if (this.isSet(options[attr])) {\n          continue;\n        }\n\n        options[attr] = subject[attr];\n      }\n    }\n\n    return options;\n  };\n\n  // Generate a list of translation options for default fallbacks.\n  // `defaultValue` is also deleted from options as it is returned as part of\n  // the translationOptions array.\n  I18n.createTranslationOptions = function(scope, options) {\n    var translationOptions = [{scope: scope}];\n\n    // Defaults should be an array of hashes containing either\n    // fallback scopes or messages\n    if (this.isSet(options.defaults)) {\n      translationOptions = translationOptions.concat(options.defaults);\n    }\n\n    // Maintain support for defaultValue. Since it is always a message\n    // insert it in to the translation options as such.\n    if (this.isSet(options.defaultValue)) {\n      translationOptions.push({ message: options.defaultValue });\n      delete options.defaultValue;\n    }\n\n    return translationOptions;\n  };\n\n  // Translate the given scope with the provided options.\n  I18n.translate = function(scope, options) {\n    options = this.prepareOptions(options);\n\n    var translationOptions = this.createTranslationOptions(scope, options);\n\n    var translation;\n    // Iterate through the translation options until a translation\n    // or message is found.\n    var translationFound =\n      translationOptions.some(function(translationOption) {\n        if (this.isSet(translationOption.scope)) {\n          translation = this.lookup(translationOption.scope, options);\n        } else if (this.isSet(translationOption.message)) {\n          translation = translationOption.message;\n        }\n\n        if (translation !== undefined && translation !== null) {\n          return true;\n        }\n      }, this);\n\n    if (!translationFound) {\n      return this.missingTranslation(scope);\n    }\n\n    if (typeof(translation) === \"string\") {\n      translation = this.interpolate(translation, options);\n    } else if (translation instanceof Object && this.isSet(options.count)) {\n      translation = this.pluralize(options.count, translation, options);\n    }\n\n    return translation;\n  };\n\n  // This function interpolates the all variables in the given message.\n  I18n.interpolate = function(message, options) {\n    options = this.prepareOptions(options);\n    var matches = message.match(this.placeholder)\n      , placeholder\n      , value\n      , name\n      , regex\n    ;\n\n    if (!matches) {\n      return message;\n    }\n\n    var value;\n\n    while (matches.length) {\n      placeholder = matches.shift();\n      name = placeholder.replace(this.placeholder, \"$1\");\n\n      if (this.isSet(options[name])) {\n        value = options[name].toString().replace(/\\$/gm, \"_#$#_\");\n      } else if (name in options) {\n        value = this.nullPlaceholder(placeholder, message);\n      } else {\n        value = this.missingPlaceholder(placeholder, message);\n      }\n\n      regex = new RegExp(placeholder.replace(/\\{/gm, \"\\\\{\").replace(/\\}/gm, \"\\\\}\"));\n      message = message.replace(regex, value);\n    }\n\n    return message.replace(/_#\\$#_/g, \"$\");\n  };\n\n  // Pluralize the given scope using the `count` value.\n  // The pluralized translation may have other placeholders,\n  // which will be retrieved from `options`.\n  I18n.pluralize = function(count, scope, options) {\n    options = this.prepareOptions(options);\n    var translations, pluralizer, keys, key, message;\n\n    if (scope instanceof Object) {\n      translations = scope;\n    } else {\n      translations = this.lookup(scope, options);\n    }\n\n    if (!translations) {\n      return this.missingTranslation(scope);\n    }\n\n    pluralizer = this.pluralization.get(options.locale);\n    keys = pluralizer(count);\n\n    while (keys.length) {\n      key = keys.shift();\n\n      if (this.isSet(translations[key])) {\n        message = translations[key];\n        break;\n      }\n    }\n\n    options.count = String(count);\n    return this.interpolate(message, options);\n  };\n\n  // Return a missing translation message for the given parameters.\n  I18n.missingTranslation = function(scope) {\n    var message = '[missing \"';\n\n    message += this.currentLocale() + \".\";\n    message += slice.call(arguments).join(\".\");\n    message += '\" translation]';\n\n    return message;\n  };\n\n  // Return a missing placeholder message for given parameters\n  I18n.missingPlaceholder = function(placeholder, message) {\n    return \"[missing \" + placeholder + \" value]\";\n  };\n\n  I18n.nullPlaceholder = function() {\n    return I18n.missingPlaceholder.apply(I18n, arguments);\n  };\n\n  // Format number using localization rules.\n  // The options will be retrieved from the `number.format` scope.\n  // If this isn't present, then the following options will be used:\n  //\n  // - `precision`: `3`\n  // - `separator`: `\".\"`\n  // - `delimiter`: `\",\"`\n  // - `strip_insignificant_zeros`: `false`\n  //\n  // You can also override these options by providing the `options` argument.\n  //\n  I18n.toNumber = function(number, options) {\n    options = this.prepareOptions(\n        options\n      , this.lookup(\"number.format\")\n      , NUMBER_FORMAT\n    );\n\n    var negative = number < 0\n      , string = Math.abs(number).toFixed(options.precision).toString()\n      , parts = string.split(\".\")\n      , precision\n      , buffer = []\n      , formattedNumber\n    ;\n\n    number = parts[0];\n    precision = parts[1];\n\n    while (number.length > 0) {\n      buffer.unshift(number.substr(Math.max(0, number.length - 3), 3));\n      number = number.substr(0, number.length -3);\n    }\n\n    formattedNumber = buffer.join(options.delimiter);\n\n    if (options.strip_insignificant_zeros && precision) {\n      precision = precision.replace(/0+$/, \"\");\n    }\n\n    if (options.precision > 0 && precision) {\n      formattedNumber += options.separator + precision;\n    }\n\n    if (negative) {\n      formattedNumber = \"-\" + formattedNumber;\n    }\n\n    return formattedNumber;\n  };\n\n  // Format currency with localization rules.\n  // The options will be retrieved from the `number.currency.format` and\n  // `number.format` scopes, in that order.\n  //\n  // Any missing option will be retrieved from the `I18n.toNumber` defaults and\n  // the following options:\n  //\n  // - `unit`: `\"$\"`\n  // - `precision`: `2`\n  // - `format`: `\"%u%n\"`\n  // - `delimiter`: `\",\"`\n  // - `separator`: `\".\"`\n  //\n  // You can also override these options by providing the `options` argument.\n  //\n  I18n.toCurrency = function(number, options) {\n    options = this.prepareOptions(\n        options\n      , this.lookup(\"number.currency.format\")\n      , this.lookup(\"number.format\")\n      , CURRENCY_FORMAT\n    );\n\n    number = this.toNumber(number, options);\n    number = options.format\n      .replace(\"%u\", options.unit)\n      .replace(\"%n\", number)\n    ;\n\n    return number;\n  };\n\n  // Localize several values.\n  // You can provide the following scopes: `currency`, `number`, or `percentage`.\n  // If you provide a scope that matches the `/^(date|time)/` regular expression\n  // then the `value` will be converted by using the `I18n.toTime` function.\n  //\n  // It will default to the value's `toString` function.\n  //\n  I18n.localize = function(scope, value, options) {\n    options || (options = {});\n\n    switch (scope) {\n      case \"currency\":\n        return this.toCurrency(value);\n      case \"number\":\n        scope = this.lookup(\"number.format\");\n        return this.toNumber(value, scope);\n      case \"percentage\":\n        return this.toPercentage(value);\n      default:\n        var localizedValue;\n\n        if (scope.match(/^(date|time)/)) {\n          localizedValue = this.toTime(scope, value);\n        } else {\n          localizedValue = value.toString();\n        }\n\n        return this.interpolate(localizedValue, options);\n    }\n  };\n\n  // Parse a given `date` string into a JavaScript Date object.\n  // This function is time zone aware.\n  //\n  // The following string formats are recognized:\n  //\n  //    yyyy-mm-dd\n  //    yyyy-mm-dd[ T]hh:mm::ss\n  //    yyyy-mm-dd[ T]hh:mm::ss\n  //    yyyy-mm-dd[ T]hh:mm::ssZ\n  //    yyyy-mm-dd[ T]hh:mm::ss+0000\n  //    yyyy-mm-dd[ T]hh:mm::ss+00:00\n  //    yyyy-mm-dd[ T]hh:mm::ss.123Z\n  //\n  I18n.parseDate = function(date) {\n    var matches, convertedDate, fraction;\n    // we have a date, so just return it.\n    if (typeof(date) == \"object\") {\n      return date;\n    };\n\n    matches = date.toString().match(/(\\d{4})-(\\d{2})-(\\d{2})(?:[ T](\\d{2}):(\\d{2}):(\\d{2})([\\.,]\\d{1,3})?)?(Z|\\+00:?00)?/);\n\n    if (matches) {\n      for (var i = 1; i <= 6; i++) {\n        matches[i] = parseInt(matches[i], 10) || 0;\n      }\n\n      // month starts on 0\n      matches[2] -= 1;\n\n      fraction = matches[7] ? 1000 * (\"0\" + matches[7]) : null;\n\n      if (matches[8]) {\n        convertedDate = new Date(Date.UTC(matches[1], matches[2], matches[3], matches[4], matches[5], matches[6], fraction));\n      } else {\n        convertedDate = new Date(matches[1], matches[2], matches[3], matches[4], matches[5], matches[6], fraction);\n      }\n    } else if (typeof(date) == \"number\") {\n      // UNIX timestamp\n      convertedDate = new Date();\n      convertedDate.setTime(date);\n    } else if (date.match(/([A-Z][a-z]{2}) ([A-Z][a-z]{2}) (\\d+) (\\d+:\\d+:\\d+) ([+-]\\d+) (\\d+)/)) {\n      // This format `Wed Jul 20 13:03:39 +0000 2011` is parsed by\n      // webkit/firefox, but not by IE, so we must parse it manually.\n      convertedDate = new Date();\n      convertedDate.setTime(Date.parse([\n        RegExp.$1, RegExp.$2, RegExp.$3, RegExp.$6, RegExp.$4, RegExp.$5\n      ].join(\" \")));\n    } else if (date.match(/\\d+ \\d+:\\d+:\\d+ [+-]\\d+ \\d+/)) {\n      // a valid javascript format with timezone info\n      convertedDate = new Date();\n      convertedDate.setTime(Date.parse(date));\n    } else {\n      // an arbitrary javascript string\n      convertedDate = new Date();\n      convertedDate.setTime(Date.parse(date));\n    }\n\n    return convertedDate;\n  };\n\n  // Formats time according to the directives in the given format string.\n  // The directives begins with a percent (%) character. Any text not listed as a\n  // directive will be passed through to the output string.\n  //\n  // The accepted formats are:\n  //\n  //     %a  - The abbreviated weekday name (Sun)\n  //     %A  - The full weekday name (Sunday)\n  //     %b  - The abbreviated month name (Jan)\n  //     %B  - The full month name (January)\n  //     %c  - The preferred local date and time representation\n  //     %d  - Day of the month (01..31)\n  //     %-d - Day of the month (1..31)\n  //     %H  - Hour of the day, 24-hour clock (00..23)\n  //     %-H - Hour of the day, 24-hour clock (0..23)\n  //     %I  - Hour of the day, 12-hour clock (01..12)\n  //     %-I - Hour of the day, 12-hour clock (1..12)\n  //     %m  - Month of the year (01..12)\n  //     %-m - Month of the year (1..12)\n  //     %M  - Minute of the hour (00..59)\n  //     %-M - Minute of the hour (0..59)\n  //     %p  - Meridian indicator (AM  or  PM)\n  //     %S  - Second of the minute (00..60)\n  //     %-S - Second of the minute (0..60)\n  //     %w  - Day of the week (Sunday is 0, 0..6)\n  //     %y  - Year without a century (00..99)\n  //     %-y - Year without a century (0..99)\n  //     %Y  - Year with century\n  //     %z  - Timezone offset (+0545)\n  //\n  I18n.strftime = function(date, format) {\n    var options = this.lookup(\"date\")\n      , meridianOptions = I18n.meridian()\n    ;\n\n    if (!options) {\n      options = {};\n    }\n\n    options = this.prepareOptions(options, DATE);\n\n    var weekDay = date.getDay()\n      , day = date.getDate()\n      , year = date.getFullYear()\n      , month = date.getMonth() + 1\n      , hour = date.getHours()\n      , hour12 = hour\n      , meridian = hour > 11 ? 1 : 0\n      , secs = date.getSeconds()\n      , mins = date.getMinutes()\n      , offset = date.getTimezoneOffset()\n      , absOffsetHours = Math.floor(Math.abs(offset / 60))\n      , absOffsetMinutes = Math.abs(offset) - (absOffsetHours * 60)\n      , timezoneoffset = (offset > 0 ? \"-\" : \"+\") +\n          (absOffsetHours.toString().length < 2 ? \"0\" + absOffsetHours : absOffsetHours) +\n          (absOffsetMinutes.toString().length < 2 ? \"0\" + absOffsetMinutes : absOffsetMinutes)\n    ;\n\n    if (hour12 > 12) {\n      hour12 = hour12 - 12;\n    } else if (hour12 === 0) {\n      hour12 = 12;\n    }\n\n    format = format.replace(\"%a\", options.abbr_day_names[weekDay]);\n    format = format.replace(\"%A\", options.day_names[weekDay]);\n    format = format.replace(\"%b\", options.abbr_month_names[month]);\n    format = format.replace(\"%B\", options.month_names[month]);\n    format = format.replace(\"%d\", padding(day));\n    format = format.replace(\"%e\", day);\n    format = format.replace(\"%-d\", day);\n    format = format.replace(\"%H\", padding(hour));\n    format = format.replace(\"%-H\", hour);\n    format = format.replace(\"%I\", padding(hour12));\n    format = format.replace(\"%-I\", hour12);\n    format = format.replace(\"%m\", padding(month));\n    format = format.replace(\"%-m\", month);\n    format = format.replace(\"%M\", padding(mins));\n    format = format.replace(\"%-M\", mins);\n    format = format.replace(\"%p\", meridianOptions[meridian]);\n    format = format.replace(\"%S\", padding(secs));\n    format = format.replace(\"%-S\", secs);\n    format = format.replace(\"%w\", weekDay);\n    format = format.replace(\"%y\", padding(year));\n    format = format.replace(\"%-y\", padding(year).replace(/^0+/, \"\"));\n    format = format.replace(\"%Y\", year);\n    format = format.replace(\"%z\", timezoneoffset);\n\n    return format;\n  };\n\n  // Convert the given dateString into a formatted date.\n  I18n.toTime = function(scope, dateString) {\n    var date = this.parseDate(dateString)\n      , format = this.lookup(scope)\n    ;\n\n    if (date.toString().match(/invalid/i)) {\n      return date.toString();\n    }\n\n    if (!format) {\n      return date.toString();\n    }\n\n    return this.strftime(date, format);\n  };\n\n  // Convert a number into a formatted percentage value.\n  I18n.toPercentage = function(number, options) {\n    options = this.prepareOptions(\n        options\n      , this.lookup(\"number.percentage.format\")\n      , this.lookup(\"number.format\")\n      , PERCENTAGE_FORMAT\n    );\n\n    number = this.toNumber(number, options);\n    return number + \"%\";\n  };\n\n  // Convert a number into a readable size representation.\n  I18n.toHumanSize = function(number, options) {\n    var kb = 1024\n      , size = number\n      , iterations = 0\n      , unit\n      , precision\n    ;\n\n    while (size >= kb && iterations < 4) {\n      size = size / kb;\n      iterations += 1;\n    }\n\n    if (iterations === 0) {\n      unit = this.t(\"number.human.storage_units.units.byte\", {count: size});\n      precision = 0;\n    } else {\n      unit = this.t(\"number.human.storage_units.units.\" + SIZE_UNITS[iterations]);\n      precision = (size - Math.floor(size) === 0) ? 0 : 1;\n    }\n\n    options = this.prepareOptions(\n        options\n      , {precision: precision, format: \"%n%u\", delimiter: \"\"}\n    );\n\n    number = this.toNumber(size, options);\n    number = options.format\n      .replace(\"%u\", unit)\n      .replace(\"%n\", number)\n    ;\n\n    return number;\n  };\n\n  // Set aliases, so we can save some typing.\n  I18n.t = I18n.translate;\n  I18n.l = I18n.localize;\n  I18n.p = I18n.pluralize;\n\n  return I18n;\n}));\n",
+    {},
+    {
+      "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/i18n-js/app/assets/javascripts/i18n.js",
+      "hash": "348b3cb088a4ab6fd838f00ccf28d74b",
+      "browserifyId": 85,
       "sourcemap": ""
     }
   ],
@@ -811,7 +1479,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/immutable/dist/immutable.js",
       "hash": "460898c6d83e55dbeee50a0a1fa5dfe2",
-      "browserifyId": 30,
+      "browserifyId": 86,
       "sourcemap": ""
     }
   ],
@@ -823,7 +1491,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "hash": "af2175fa65ba1cb5871c91c72a3c421e",
-      "browserifyId": 31,
+      "browserifyId": 87,
       "sourcemap": ""
     }
   ],
@@ -835,7 +1503,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/livereactload/babel-transform.js",
       "hash": "99d8faae838af29dcfc225b57a488be1",
-      "browserifyId": 32,
+      "browserifyId": 88,
       "sourcemap": ""
     }
   ],
@@ -847,7 +1515,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/livereactload/lib/babel-transform/main.js",
       "hash": "7f119c88fd01f5fc0447b85bdfbaed91",
-      "browserifyId": 33,
+      "browserifyId": 89,
       "sourcemap": ""
     }
   ],
@@ -860,7 +1528,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_DataView.js",
       "hash": "53160c15f9901d944fcd60dc8d89a9f5",
-      "browserifyId": 34,
+      "browserifyId": 90,
       "sourcemap": ""
     }
   ],
@@ -869,14 +1537,14 @@
     {
       "./_hashDelete": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashDelete.js",
       "./_hashGet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashGet.js",
-      "./_hashClear": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashClear.js",
       "./_hashHas": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashHas.js",
-      "./_hashSet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashSet.js"
+      "./_hashSet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashSet.js",
+      "./_hashClear": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashClear.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Hash.js",
       "hash": "c528d5ef7f249597e9f4df1d8212ecc2",
-      "browserifyId": 35,
+      "browserifyId": 91,
       "sourcemap": ""
     }
   ],
@@ -884,15 +1552,15 @@
     "var listCacheClear = require('./_listCacheClear'),\n    listCacheDelete = require('./_listCacheDelete'),\n    listCacheGet = require('./_listCacheGet'),\n    listCacheHas = require('./_listCacheHas'),\n    listCacheSet = require('./_listCacheSet');\n\n/**\n * Creates an list cache object.\n *\n * @private\n * @constructor\n * @param {Array} [entries] The key-value pairs to cache.\n */\nfunction ListCache(entries) {\n  var index = -1,\n      length = entries ? entries.length : 0;\n\n  this.clear();\n  while (++index < length) {\n    var entry = entries[index];\n    this.set(entry[0], entry[1]);\n  }\n}\n\n// Add methods to `ListCache`.\nListCache.prototype.clear = listCacheClear;\nListCache.prototype['delete'] = listCacheDelete;\nListCache.prototype.get = listCacheGet;\nListCache.prototype.has = listCacheHas;\nListCache.prototype.set = listCacheSet;\n\nmodule.exports = ListCache;\n",
     {
       "./_listCacheClear": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheClear.js",
-      "./_listCacheDelete": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheDelete.js",
       "./_listCacheGet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheGet.js",
       "./_listCacheHas": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheHas.js",
-      "./_listCacheSet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheSet.js"
+      "./_listCacheSet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheSet.js",
+      "./_listCacheDelete": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheDelete.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_ListCache.js",
       "hash": "d00ac27f0067e63b0b6bc5a8d06fcd85",
-      "browserifyId": 36,
+      "browserifyId": 92,
       "sourcemap": ""
     }
   ],
@@ -905,7 +1573,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Map.js",
       "hash": "6e6db9e05e392a887cccd9cccb9fdbee",
-      "browserifyId": 37,
+      "browserifyId": 93,
       "sourcemap": ""
     }
   ],
@@ -913,15 +1581,15 @@
     "var mapCacheClear = require('./_mapCacheClear'),\n    mapCacheDelete = require('./_mapCacheDelete'),\n    mapCacheGet = require('./_mapCacheGet'),\n    mapCacheHas = require('./_mapCacheHas'),\n    mapCacheSet = require('./_mapCacheSet');\n\n/**\n * Creates a map cache object to store key-value pairs.\n *\n * @private\n * @constructor\n * @param {Array} [entries] The key-value pairs to cache.\n */\nfunction MapCache(entries) {\n  var index = -1,\n      length = entries ? entries.length : 0;\n\n  this.clear();\n  while (++index < length) {\n    var entry = entries[index];\n    this.set(entry[0], entry[1]);\n  }\n}\n\n// Add methods to `MapCache`.\nMapCache.prototype.clear = mapCacheClear;\nMapCache.prototype['delete'] = mapCacheDelete;\nMapCache.prototype.get = mapCacheGet;\nMapCache.prototype.has = mapCacheHas;\nMapCache.prototype.set = mapCacheSet;\n\nmodule.exports = MapCache;\n",
     {
       "./_mapCacheGet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheGet.js",
-      "./_mapCacheDelete": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheDelete.js",
       "./_mapCacheHas": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheHas.js",
       "./_mapCacheSet": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheSet.js",
+      "./_mapCacheDelete": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheDelete.js",
       "./_mapCacheClear": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheClear.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_MapCache.js",
       "hash": "e83fbd89a4da5691f6c1fee95679693b",
-      "browserifyId": 38,
+      "browserifyId": 94,
       "sourcemap": ""
     }
   ],
@@ -934,7 +1602,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Promise.js",
       "hash": "731f15cb043472b49924f03d77a973b7",
-      "browserifyId": 39,
+      "browserifyId": 95,
       "sourcemap": ""
     }
   ],
@@ -947,7 +1615,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Set.js",
       "hash": "19e16c9a6fdb4be5a6f311f604b00f47",
-      "browserifyId": 40,
+      "browserifyId": 96,
       "sourcemap": ""
     }
   ],
@@ -961,7 +1629,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_SetCache.js",
       "hash": "f22da91d43841655b1100e2db3e89ec4",
-      "browserifyId": 41,
+      "browserifyId": 97,
       "sourcemap": ""
     }
   ],
@@ -978,7 +1646,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Stack.js",
       "hash": "ae41ca1b1cedd4b16fb5078ca6a75637",
-      "browserifyId": 42,
+      "browserifyId": 98,
       "sourcemap": ""
     }
   ],
@@ -990,7 +1658,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Symbol.js",
       "hash": "64e6a9f8a8645940140263f7f38580b1",
-      "browserifyId": 43,
+      "browserifyId": 99,
       "sourcemap": ""
     }
   ],
@@ -1002,20 +1670,20 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Uint8Array.js",
       "hash": "156ff381c3de4ac3ca9f98d291942aa9",
-      "browserifyId": 44,
+      "browserifyId": 100,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_WeakMap.js": [
     "var getNative = require('./_getNative'),\n    root = require('./_root');\n\n/* Built-in method references that are verified to be native. */\nvar WeakMap = getNative(root, 'WeakMap');\n\nmodule.exports = WeakMap;\n",
     {
-      "./_getNative": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getNative.js",
-      "./_root": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_root.js"
+      "./_root": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_root.js",
+      "./_getNative": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getNative.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_WeakMap.js",
       "hash": "019a1ccd7ad5fa10b5cf335217d47e75",
-      "browserifyId": 45,
+      "browserifyId": 101,
       "sourcemap": ""
     }
   ],
@@ -1025,7 +1693,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_apply.js",
       "hash": "d3ef9e89ba499ebaba74672b935bcc26",
-      "browserifyId": 46,
+      "browserifyId": 102,
       "sourcemap": ""
     }
   ],
@@ -1037,7 +1705,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arrayIncludes.js",
       "hash": "e391b6e989d9b1f2a3f72b200493af2c",
-      "browserifyId": 47,
+      "browserifyId": 103,
       "sourcemap": ""
     }
   ],
@@ -1047,7 +1715,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arrayIncludesWith.js",
       "hash": "982138e6a27b0851dbc163e4896535d8",
-      "browserifyId": 48,
+      "browserifyId": 104,
       "sourcemap": ""
     }
   ],
@@ -1062,7 +1730,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arrayLikeKeys.js",
       "hash": "4b6a3be74c17909ac4bd8a20b5d99d86",
-      "browserifyId": 49,
+      "browserifyId": 105,
       "sourcemap": ""
     }
   ],
@@ -1072,7 +1740,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arrayMap.js",
       "hash": "22a7f0bf11b1d1e2e17bc39e6ff3038c",
-      "browserifyId": 50,
+      "browserifyId": 106,
       "sourcemap": ""
     }
   ],
@@ -1082,7 +1750,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arrayPush.js",
       "hash": "a5db107cf04803f7e02fb83a0cb9a4bf",
-      "browserifyId": 51,
+      "browserifyId": 107,
       "sourcemap": ""
     }
   ],
@@ -1092,7 +1760,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_arraySome.js",
       "hash": "ee546645cf99b742f103c8c35cfc1c5f",
-      "browserifyId": 52,
+      "browserifyId": 108,
       "sourcemap": ""
     }
   ],
@@ -1104,7 +1772,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_assignValue.js",
       "hash": "e8f9c0e6ab3b6d26679966933ed532c8",
-      "browserifyId": 53,
+      "browserifyId": 109,
       "sourcemap": ""
     }
   ],
@@ -1116,7 +1784,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_assocIndexOf.js",
       "hash": "e38b8af759142cb9a66dd619639ce152",
-      "browserifyId": 54,
+      "browserifyId": 110,
       "sourcemap": ""
     }
   ],
@@ -1133,7 +1801,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseDifference.js",
       "hash": "53d5e03c09ef66c60ee9f49ae9e57d87",
-      "browserifyId": 55,
+      "browserifyId": 111,
       "sourcemap": ""
     }
   ],
@@ -1143,7 +1811,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseFindIndex.js",
       "hash": "689b12caa47aa0d5c9968d04cc4de280",
-      "browserifyId": 56,
+      "browserifyId": 112,
       "sourcemap": ""
     }
   ],
@@ -1156,7 +1824,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseFlatten.js",
       "hash": "8f3a69900ef4a1075d25fef1e331edc3",
-      "browserifyId": 57,
+      "browserifyId": 113,
       "sourcemap": ""
     }
   ],
@@ -1170,7 +1838,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseGet.js",
       "hash": "af1333876d069b661dfa4a03287cd8a9",
-      "browserifyId": 58,
+      "browserifyId": 114,
       "sourcemap": ""
     }
   ],
@@ -1180,7 +1848,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseGetTag.js",
       "hash": "c9824a2730f1036a2dcb6252150ec932",
-      "browserifyId": 59,
+      "browserifyId": 115,
       "sourcemap": ""
     }
   ],
@@ -1190,7 +1858,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseHasIn.js",
       "hash": "f3d19687a693646c580de8115f845808",
-      "browserifyId": 60,
+      "browserifyId": 116,
       "sourcemap": ""
     }
   ],
@@ -1203,7 +1871,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIndexOf.js",
       "hash": "105fa47a7638836f8f53ef773d05c499",
-      "browserifyId": 61,
+      "browserifyId": 117,
       "sourcemap": ""
     }
   ],
@@ -1217,7 +1885,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsEqual.js",
       "hash": "f280b3efc4b8db0d7c0b327bf92a5de6",
-      "browserifyId": 62,
+      "browserifyId": 118,
       "sourcemap": ""
     }
   ],
@@ -1236,7 +1904,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsEqualDeep.js",
       "hash": "38435a54b27ea58ab8beb7fe9729c4f7",
-      "browserifyId": 63,
+      "browserifyId": 119,
       "sourcemap": ""
     }
   ],
@@ -1249,7 +1917,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsMatch.js",
       "hash": "18557af033a048a5f3ff072dd67177b3",
-      "browserifyId": 64,
+      "browserifyId": 120,
       "sourcemap": ""
     }
   ],
@@ -1259,7 +1927,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsNaN.js",
       "hash": "362ba09d6229645daa22006374da0778",
-      "browserifyId": 65,
+      "browserifyId": 121,
       "sourcemap": ""
     }
   ],
@@ -1275,7 +1943,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsNative.js",
       "hash": "a133c2ce3dc7920017f89d2735f1716f",
-      "browserifyId": 66,
+      "browserifyId": 122,
       "sourcemap": ""
     }
   ],
@@ -1288,7 +1956,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsTypedArray.js",
       "hash": "a36dcb180e3811cde929021a7c90fabc",
-      "browserifyId": 67,
+      "browserifyId": 123,
       "sourcemap": ""
     }
   ],
@@ -1297,14 +1965,14 @@
     {
       "./identity": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/identity.js",
       "./isArray": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
-      "./_baseMatchesProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseMatchesProperty.js",
+      "./property": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/property.js",
       "./_baseMatches": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseMatches.js",
-      "./property": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/property.js"
+      "./_baseMatchesProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseMatchesProperty.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIteratee.js",
       "hash": "c0afffd453201ac29e0ca75e0c7e1842",
-      "browserifyId": 68,
+      "browserifyId": 124,
       "sourcemap": ""
     }
   ],
@@ -1317,7 +1985,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseKeys.js",
       "hash": "7cbefd191c1a4bafe13780554813c130",
-      "browserifyId": 69,
+      "browserifyId": 125,
       "sourcemap": ""
     }
   ],
@@ -1331,7 +1999,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseMatches.js",
       "hash": "4a9f64ea0fddf7e0fe13033bed7b342d",
-      "browserifyId": 70,
+      "browserifyId": 126,
       "sourcemap": ""
     }
   ],
@@ -1339,17 +2007,17 @@
     "var baseIsEqual = require('./_baseIsEqual'),\n    get = require('./get'),\n    hasIn = require('./hasIn'),\n    isKey = require('./_isKey'),\n    isStrictComparable = require('./_isStrictComparable'),\n    matchesStrictComparable = require('./_matchesStrictComparable'),\n    toKey = require('./_toKey');\n\n/** Used to compose bitmasks for comparison styles. */\nvar UNORDERED_COMPARE_FLAG = 1,\n    PARTIAL_COMPARE_FLAG = 2;\n\n/**\n * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.\n *\n * @private\n * @param {string} path The path of the property to get.\n * @param {*} srcValue The value to match.\n * @returns {Function} Returns the new spec function.\n */\nfunction baseMatchesProperty(path, srcValue) {\n  if (isKey(path) && isStrictComparable(srcValue)) {\n    return matchesStrictComparable(toKey(path), srcValue);\n  }\n  return function(object) {\n    var objValue = get(object, path);\n    return (objValue === undefined && objValue === srcValue)\n      ? hasIn(object, path)\n      : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);\n  };\n}\n\nmodule.exports = baseMatchesProperty;\n",
     {
       "./_matchesStrictComparable": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_matchesStrictComparable.js",
-      "./_isKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKey.js",
-      "./_toKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toKey.js",
       "./_isStrictComparable": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isStrictComparable.js",
-      "./get": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/get.js",
+      "./_toKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toKey.js",
       "./hasIn": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/hasIn.js",
-      "./_baseIsEqual": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsEqual.js"
+      "./_isKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKey.js",
+      "./_baseIsEqual": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseIsEqual.js",
+      "./get": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/get.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseMatchesProperty.js",
       "hash": "fb7995afc1aa6260060b1593a9a5ecd2",
-      "browserifyId": 71,
+      "browserifyId": 127,
       "sourcemap": ""
     }
   ],
@@ -1359,7 +2027,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseProperty.js",
       "hash": "2c7afe7ea6bf3d325dc5c6444a3f9347",
-      "browserifyId": 72,
+      "browserifyId": 128,
       "sourcemap": ""
     }
   ],
@@ -1371,7 +2039,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_basePropertyDeep.js",
       "hash": "1a3e80fb7141e64267811a0eca982060",
-      "browserifyId": 73,
+      "browserifyId": 129,
       "sourcemap": ""
     }
   ],
@@ -1383,7 +2051,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseRest.js",
       "hash": "7893bd5dab49bbb359613219cba662bf",
-      "browserifyId": 74,
+      "browserifyId": 130,
       "sourcemap": ""
     }
   ],
@@ -1393,7 +2061,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseTimes.js",
       "hash": "dc3763002a7a61582bff4038218715c5",
-      "browserifyId": 75,
+      "browserifyId": 131,
       "sourcemap": ""
     }
   ],
@@ -1406,7 +2074,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseToString.js",
       "hash": "dd8b1670377eda0298c325ea5c297ca1",
-      "browserifyId": 76,
+      "browserifyId": 132,
       "sourcemap": ""
     }
   ],
@@ -1416,7 +2084,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseUnary.js",
       "hash": "feb78ff096f781e3a15b68b06d7b185e",
-      "browserifyId": 77,
+      "browserifyId": 133,
       "sourcemap": ""
     }
   ],
@@ -1426,7 +2094,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_cacheHas.js",
       "hash": "894c78005ee9569e585ed56ddfecbf83",
-      "browserifyId": 78,
+      "browserifyId": 134,
       "sourcemap": ""
     }
   ],
@@ -1439,7 +2107,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_castPath.js",
       "hash": "e371d4c241277040ae7c6ebd2c1820f7",
-      "browserifyId": 79,
+      "browserifyId": 135,
       "sourcemap": ""
     }
   ],
@@ -1451,7 +2119,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_copyObject.js",
       "hash": "4549113117d3271c3ff8f111abc81774",
-      "browserifyId": 80,
+      "browserifyId": 136,
       "sourcemap": ""
     }
   ],
@@ -1463,7 +2131,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_coreJsData.js",
       "hash": "73c31c0f1d9ed6bd5c34ab3b10ec96ae",
-      "browserifyId": 81,
+      "browserifyId": 137,
       "sourcemap": ""
     }
   ],
@@ -1476,7 +2144,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_createAssigner.js",
       "hash": "4483c936954ec5465295fcf818b04c1a",
-      "browserifyId": 82,
+      "browserifyId": 138,
       "sourcemap": ""
     }
   ],
@@ -1490,7 +2158,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_createFind.js",
       "hash": "777368719d7488e9b7615dbb055d765d",
-      "browserifyId": 83,
+      "browserifyId": 139,
       "sourcemap": ""
     }
   ],
@@ -1503,7 +2171,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_equalArrays.js",
       "hash": "b0b6bf066803e132a12178a2089f4a16",
-      "browserifyId": 84,
+      "browserifyId": 140,
       "sourcemap": ""
     }
   ],
@@ -1520,7 +2188,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_equalByTag.js",
       "hash": "256cdd34f77cc742fca993902af1d077",
-      "browserifyId": 85,
+      "browserifyId": 141,
       "sourcemap": ""
     }
   ],
@@ -1532,7 +2200,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_equalObjects.js",
       "hash": "4651d592e84592353c55f73561967a04",
-      "browserifyId": 86,
+      "browserifyId": 142,
       "sourcemap": ""
     }
   ],
@@ -1542,7 +2210,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_freeGlobal.js",
       "hash": "8ef593c0a1e2fa6ac874a9e530909c51",
-      "browserifyId": 87,
+      "browserifyId": 143,
       "sourcemap": ""
     }
   ],
@@ -1554,7 +2222,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getMapData.js",
       "hash": "ef89da875cff62394930fff7e1c7b72b",
-      "browserifyId": 88,
+      "browserifyId": 144,
       "sourcemap": ""
     }
   ],
@@ -1567,7 +2235,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getMatchData.js",
       "hash": "29182ea18868357ab0e3ab371af8d270",
-      "browserifyId": 89,
+      "browserifyId": 145,
       "sourcemap": ""
     }
   ],
@@ -1580,7 +2248,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getNative.js",
       "hash": "44b91452619202eb918ebc542f99e17f",
-      "browserifyId": 90,
+      "browserifyId": 146,
       "sourcemap": ""
     }
   ],
@@ -1598,7 +2266,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getTag.js",
       "hash": "edd023c34df13505f33e50860a6c6299",
-      "browserifyId": 91,
+      "browserifyId": 147,
       "sourcemap": ""
     }
   ],
@@ -1608,7 +2276,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_getValue.js",
       "hash": "ed9d27c1b50c2986d017c705bbab3408",
-      "browserifyId": 92,
+      "browserifyId": 148,
       "sourcemap": ""
     }
   ],
@@ -1616,8 +2284,8 @@
     "var castPath = require('./_castPath'),\n    isArguments = require('./isArguments'),\n    isArray = require('./isArray'),\n    isIndex = require('./_isIndex'),\n    isKey = require('./_isKey'),\n    isLength = require('./isLength'),\n    toKey = require('./_toKey');\n\n/**\n * Checks if `path` exists on `object`.\n *\n * @private\n * @param {Object} object The object to query.\n * @param {Array|string} path The path to check.\n * @param {Function} hasFunc The function to check properties.\n * @returns {boolean} Returns `true` if `path` exists, else `false`.\n */\nfunction hasPath(object, path, hasFunc) {\n  path = isKey(path, object) ? [path] : castPath(path);\n\n  var result,\n      index = -1,\n      length = path.length;\n\n  while (++index < length) {\n    var key = toKey(path[index]);\n    if (!(result = object != null && hasFunc(object, key))) {\n      break;\n    }\n    object = object[key];\n  }\n  if (result) {\n    return result;\n  }\n  var length = object ? object.length : 0;\n  return !!length && isLength(length) && isIndex(key, length) &&\n    (isArray(object) || isArguments(object));\n}\n\nmodule.exports = hasPath;\n",
     {
       "./_castPath": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_castPath.js",
-      "./isArray": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
       "./isArguments": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArguments.js",
+      "./isArray": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
       "./_isIndex": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isIndex.js",
       "./_isKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKey.js",
       "./isLength": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isLength.js",
@@ -1626,7 +2294,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hasPath.js",
       "hash": "d1a276d6d0148324cca4b3055b63a312",
-      "browserifyId": 93,
+      "browserifyId": 149,
       "sourcemap": ""
     }
   ],
@@ -1638,7 +2306,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashClear.js",
       "hash": "553202bea68a0ce347ce0d42d2d2cccb",
-      "browserifyId": 94,
+      "browserifyId": 150,
       "sourcemap": ""
     }
   ],
@@ -1648,7 +2316,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashDelete.js",
       "hash": "eb7ba8ee5310cb093c17e1661db04287",
-      "browserifyId": 95,
+      "browserifyId": 151,
       "sourcemap": ""
     }
   ],
@@ -1660,7 +2328,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashGet.js",
       "hash": "8c10268775312ae389b808aa99ce8614",
-      "browserifyId": 96,
+      "browserifyId": 152,
       "sourcemap": ""
     }
   ],
@@ -1672,7 +2340,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashHas.js",
       "hash": "407958f652e85053e4da0db35397df7c",
-      "browserifyId": 97,
+      "browserifyId": 153,
       "sourcemap": ""
     }
   ],
@@ -1684,21 +2352,21 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_hashSet.js",
       "hash": "2aed3bad368d0da63121376c70907406",
-      "browserifyId": 98,
+      "browserifyId": 154,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isFlattenable.js": [
     "var Symbol = require('./_Symbol'),\n    isArguments = require('./isArguments'),\n    isArray = require('./isArray');\n\n/** Built-in value references. */\nvar spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;\n\n/**\n * Checks if `value` is a flattenable `arguments` object or array.\n *\n * @private\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.\n */\nfunction isFlattenable(value) {\n  return isArray(value) || isArguments(value) ||\n    !!(spreadableSymbol && value && value[spreadableSymbol]);\n}\n\nmodule.exports = isFlattenable;\n",
     {
-      "./isArray": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
       "./isArguments": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArguments.js",
+      "./isArray": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
       "./_Symbol": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_Symbol.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isFlattenable.js",
       "hash": "b391d8104f23b5ae17188728af2d001c",
-      "browserifyId": 99,
+      "browserifyId": 155,
       "sourcemap": ""
     }
   ],
@@ -1708,7 +2376,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isHostObject.js",
       "hash": "9dc1aa9800667db457c3697dd6a7e478",
-      "browserifyId": 100,
+      "browserifyId": 156,
       "sourcemap": ""
     }
   ],
@@ -1718,7 +2386,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isIndex.js",
       "hash": "73276a64158b20d3f46511b4e71ab795",
-      "browserifyId": 101,
+      "browserifyId": 157,
       "sourcemap": ""
     }
   ],
@@ -1727,13 +2395,13 @@
     {
       "./eq": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/eq.js",
       "./isArrayLike": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArrayLike.js",
-      "./isObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObject.js",
-      "./_isIndex": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isIndex.js"
+      "./_isIndex": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isIndex.js",
+      "./isObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObject.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isIterateeCall.js",
       "hash": "cd11a8c2d4eee420c1a24e7663b65e56",
-      "browserifyId": 102,
+      "browserifyId": 158,
       "sourcemap": ""
     }
   ],
@@ -1746,7 +2414,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKey.js",
       "hash": "73230460ff274adc43275f913620d7af",
-      "browserifyId": 103,
+      "browserifyId": 159,
       "sourcemap": ""
     }
   ],
@@ -1756,7 +2424,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKeyable.js",
       "hash": "506d4cc350a31813f51f76b66ce34e61",
-      "browserifyId": 104,
+      "browserifyId": 160,
       "sourcemap": ""
     }
   ],
@@ -1768,7 +2436,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isMasked.js",
       "hash": "6376cafb15443462732be0fbcb8d1525",
-      "browserifyId": 105,
+      "browserifyId": 161,
       "sourcemap": ""
     }
   ],
@@ -1778,7 +2446,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isPrototype.js",
       "hash": "77ce496d84a19a9b44f0dc59b401da3c",
-      "browserifyId": 106,
+      "browserifyId": 162,
       "sourcemap": ""
     }
   ],
@@ -1790,7 +2458,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isStrictComparable.js",
       "hash": "2f18102118f44f42675fba0666cc96ef",
-      "browserifyId": 107,
+      "browserifyId": 163,
       "sourcemap": ""
     }
   ],
@@ -1800,7 +2468,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheClear.js",
       "hash": "d3cb83a7b70f4ec9910199af39d317e1",
-      "browserifyId": 108,
+      "browserifyId": 164,
       "sourcemap": ""
     }
   ],
@@ -1812,7 +2480,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheDelete.js",
       "hash": "d56121c0c14d3dfc315830996d3f35d4",
-      "browserifyId": 109,
+      "browserifyId": 165,
       "sourcemap": ""
     }
   ],
@@ -1824,7 +2492,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheGet.js",
       "hash": "22826f86a2982a79fd4f1ad241431f81",
-      "browserifyId": 110,
+      "browserifyId": 166,
       "sourcemap": ""
     }
   ],
@@ -1836,7 +2504,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheHas.js",
       "hash": "91959ec1928b6649edd62ecde1e5bab9",
-      "browserifyId": 111,
+      "browserifyId": 167,
       "sourcemap": ""
     }
   ],
@@ -1848,7 +2516,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_listCacheSet.js",
       "hash": "78583d25e0a7e719335f23d7158d4031",
-      "browserifyId": 112,
+      "browserifyId": 168,
       "sourcemap": ""
     }
   ],
@@ -1862,7 +2530,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheClear.js",
       "hash": "8c3f91b85c6f58ece21f9d612d0975a3",
-      "browserifyId": 113,
+      "browserifyId": 169,
       "sourcemap": ""
     }
   ],
@@ -1874,7 +2542,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheDelete.js",
       "hash": "1c10e4f6b897815d463f5b8ecf3e490e",
-      "browserifyId": 114,
+      "browserifyId": 170,
       "sourcemap": ""
     }
   ],
@@ -1886,7 +2554,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheGet.js",
       "hash": "53e942b3f273be90d6130f728bce7476",
-      "browserifyId": 115,
+      "browserifyId": 171,
       "sourcemap": ""
     }
   ],
@@ -1898,7 +2566,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheHas.js",
       "hash": "3544d370646d0d5bea0921dfcb5b22da",
-      "browserifyId": 116,
+      "browserifyId": 172,
       "sourcemap": ""
     }
   ],
@@ -1910,7 +2578,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapCacheSet.js",
       "hash": "0f1eaa8a3a7ae1ae0cd87f84a88bcbff",
-      "browserifyId": 117,
+      "browserifyId": 173,
       "sourcemap": ""
     }
   ],
@@ -1920,7 +2588,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_mapToArray.js",
       "hash": "44f44207175358b51bd63641074e6804",
-      "browserifyId": 118,
+      "browserifyId": 174,
       "sourcemap": ""
     }
   ],
@@ -1930,7 +2598,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_matchesStrictComparable.js",
       "hash": "c08e542aff414c5fd3cf4913a9a96328",
-      "browserifyId": 119,
+      "browserifyId": 175,
       "sourcemap": ""
     }
   ],
@@ -1942,7 +2610,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_nativeCreate.js",
       "hash": "9fb51b7d3f1c71d46b76a38c166609f8",
-      "browserifyId": 120,
+      "browserifyId": 176,
       "sourcemap": ""
     }
   ],
@@ -1954,7 +2622,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_nativeKeys.js",
       "hash": "d87c1b2d45c1668a6a18e0301fbfcf36",
-      "browserifyId": 121,
+      "browserifyId": 177,
       "sourcemap": ""
     }
   ],
@@ -1966,7 +2634,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_nodeUtil.js",
       "hash": "d5ae5471ec51275a36a0bf254ca9cc1c",
-      "browserifyId": 122,
+      "browserifyId": 178,
       "sourcemap": ""
     }
   ],
@@ -1976,7 +2644,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_overArg.js",
       "hash": "839179ed6de294c2145856183b3af8c3",
-      "browserifyId": 123,
+      "browserifyId": 179,
       "sourcemap": ""
     }
   ],
@@ -1988,7 +2656,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_root.js",
       "hash": "6d64819ae22ef4f545aa3502652e54f8",
-      "browserifyId": 124,
+      "browserifyId": 180,
       "sourcemap": ""
     }
   ],
@@ -1998,7 +2666,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_setCacheAdd.js",
       "hash": "ab76f826f56c3544a6eb035d51d3d03a",
-      "browserifyId": 125,
+      "browserifyId": 181,
       "sourcemap": ""
     }
   ],
@@ -2008,7 +2676,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_setCacheHas.js",
       "hash": "2c72603b0a0eca71965014b9e7d79c64",
-      "browserifyId": 126,
+      "browserifyId": 182,
       "sourcemap": ""
     }
   ],
@@ -2018,7 +2686,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_setToArray.js",
       "hash": "be494eed7ef92202ed77f3f44bfb8936",
-      "browserifyId": 127,
+      "browserifyId": 183,
       "sourcemap": ""
     }
   ],
@@ -2030,7 +2698,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stackClear.js",
       "hash": "46216ed835e319c956c5e0fa65201b6b",
-      "browserifyId": 128,
+      "browserifyId": 184,
       "sourcemap": ""
     }
   ],
@@ -2040,7 +2708,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stackDelete.js",
       "hash": "8e8ea08359500b207dde7bc9efcc2afb",
-      "browserifyId": 129,
+      "browserifyId": 185,
       "sourcemap": ""
     }
   ],
@@ -2050,7 +2718,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stackGet.js",
       "hash": "691fe6ce99d55fb5a5098e22dffbf755",
-      "browserifyId": 130,
+      "browserifyId": 186,
       "sourcemap": ""
     }
   ],
@@ -2060,7 +2728,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stackHas.js",
       "hash": "00b5022a10a19615a2cba6f65827b0cb",
-      "browserifyId": 131,
+      "browserifyId": 187,
       "sourcemap": ""
     }
   ],
@@ -2074,7 +2742,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stackSet.js",
       "hash": "508c052bcca3fb02c3f961ef93628e5e",
-      "browserifyId": 132,
+      "browserifyId": 188,
       "sourcemap": ""
     }
   ],
@@ -2087,7 +2755,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_stringToPath.js",
       "hash": "33f8f720132e4e63c38d5549e4e5ba42",
-      "browserifyId": 133,
+      "browserifyId": 189,
       "sourcemap": ""
     }
   ],
@@ -2099,7 +2767,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toKey.js",
       "hash": "fa125c857965a86b56d486c7096082b4",
-      "browserifyId": 134,
+      "browserifyId": 190,
       "sourcemap": ""
     }
   ],
@@ -2109,7 +2777,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toSource.js",
       "hash": "99d13f9cfc3b78e5bfba0087efdf7010",
-      "browserifyId": 135,
+      "browserifyId": 191,
       "sourcemap": ""
     }
   ],
@@ -2126,7 +2794,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/assign.js",
       "hash": "740f1503f757405f27ffe2a461690eba",
-      "browserifyId": 136,
+      "browserifyId": 192,
       "sourcemap": ""
     }
   ],
@@ -2141,7 +2809,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/difference.js",
       "hash": "05db98e663940c3c5a438ba9f8c53c8e",
-      "browserifyId": 137,
+      "browserifyId": 193,
       "sourcemap": ""
     }
   ],
@@ -2151,7 +2819,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/eq.js",
       "hash": "a645e467afa2982d5b46a98c99a31182",
-      "browserifyId": 138,
+      "browserifyId": 194,
       "sourcemap": ""
     }
   ],
@@ -2164,7 +2832,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/find.js",
       "hash": "7558454200ee47a5f9c7470e4a585044",
-      "browserifyId": 139,
+      "browserifyId": 195,
       "sourcemap": ""
     }
   ],
@@ -2178,7 +2846,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/findIndex.js",
       "hash": "707467f1d43172e28dd2d2eaac543be7",
-      "browserifyId": 140,
+      "browserifyId": 196,
       "sourcemap": ""
     }
   ],
@@ -2190,7 +2858,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/get.js",
       "hash": "70a81ce274d87d93c68635e7af98afae",
-      "browserifyId": 141,
+      "browserifyId": 197,
       "sourcemap": ""
     }
   ],
@@ -2203,7 +2871,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/hasIn.js",
       "hash": "b11d60c76c3f7c027fe56b647ee9bbb5",
-      "browserifyId": 142,
+      "browserifyId": 198,
       "sourcemap": ""
     }
   ],
@@ -2213,7 +2881,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/identity.js",
       "hash": "8dd2f4d084e0eed07ef8f0595ed55fe8",
-      "browserifyId": 143,
+      "browserifyId": 199,
       "sourcemap": ""
     }
   ],
@@ -2225,7 +2893,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArguments.js",
       "hash": "8e4bc8345a609ca39f8d73b63b40106b",
-      "browserifyId": 144,
+      "browserifyId": 200,
       "sourcemap": ""
     }
   ],
@@ -2235,7 +2903,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArray.js",
       "hash": "87882c5192216cc1034a21dc2f4ec69c",
-      "browserifyId": 145,
+      "browserifyId": 201,
       "sourcemap": ""
     }
   ],
@@ -2248,7 +2916,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArrayLike.js",
       "hash": "eb1853d01dde98b46ce5e86b3715b76f",
-      "browserifyId": 146,
+      "browserifyId": 202,
       "sourcemap": ""
     }
   ],
@@ -2261,7 +2929,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isArrayLikeObject.js",
       "hash": "7708a36e8b10b81ea2f7496749d9d722",
-      "browserifyId": 147,
+      "browserifyId": 203,
       "sourcemap": ""
     }
   ],
@@ -2273,7 +2941,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isFunction.js",
       "hash": "854ee31de11f1a0eda40a41e66f546e2",
-      "browserifyId": 148,
+      "browserifyId": 204,
       "sourcemap": ""
     }
   ],
@@ -2283,7 +2951,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isLength.js",
       "hash": "f0b8635e8bbb860f3915add57a19f0c2",
-      "browserifyId": 149,
+      "browserifyId": 205,
       "sourcemap": ""
     }
   ],
@@ -2293,7 +2961,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObject.js",
       "hash": "dd3bb33fd4e9fde33bf24e916404acc9",
-      "browserifyId": 150,
+      "browserifyId": 206,
       "sourcemap": ""
     }
   ],
@@ -2303,7 +2971,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObjectLike.js",
       "hash": "414cc6d653b3a059fa311799cc968a2e",
-      "browserifyId": 151,
+      "browserifyId": 207,
       "sourcemap": ""
     }
   ],
@@ -2315,7 +2983,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isSymbol.js",
       "hash": "aa3a92953aae7b270ec433a3939a94f2",
-      "browserifyId": 152,
+      "browserifyId": 208,
       "sourcemap": ""
     }
   ],
@@ -2329,7 +2997,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isTypedArray.js",
       "hash": "1b59cbfe1e88b1d679d138bbf006a90c",
-      "browserifyId": 153,
+      "browserifyId": 209,
       "sourcemap": ""
     }
   ],
@@ -2343,7 +3011,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/keys.js",
       "hash": "63f67e2c15dd3c0788132347a27894a3",
-      "browserifyId": 154,
+      "browserifyId": 210,
       "sourcemap": ""
     }
   ],
@@ -2353,7 +3021,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/lodash.js",
       "hash": "955a79df5edf99ae5e0ae9d5ce73e89e",
-      "browserifyId": 155,
+      "browserifyId": 211,
       "sourcemap": ""
     }
   ],
@@ -2365,22 +3033,22 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/memoize.js",
       "hash": "809d913c7154b78b1476b244a4ab09c9",
-      "browserifyId": 156,
+      "browserifyId": 212,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/property.js": [
     "var baseProperty = require('./_baseProperty'),\n    basePropertyDeep = require('./_basePropertyDeep'),\n    isKey = require('./_isKey'),\n    toKey = require('./_toKey');\n\n/**\n * Creates a function that returns the value at `path` of a given object.\n *\n * @static\n * @memberOf _\n * @since 2.4.0\n * @category Util\n * @param {Array|string} path The path of the property to get.\n * @returns {Function} Returns the new accessor function.\n * @example\n *\n * var objects = [\n *   { 'a': { 'b': 2 } },\n *   { 'a': { 'b': 1 } }\n * ];\n *\n * _.map(objects, _.property('a.b'));\n * // => [2, 1]\n *\n * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');\n * // => [1, 2]\n */\nfunction property(path) {\n  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);\n}\n\nmodule.exports = property;\n",
     {
-      "./_baseProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseProperty.js",
-      "./_toKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toKey.js",
       "./_isKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_isKey.js",
+      "./_toKey": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_toKey.js",
+      "./_baseProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_baseProperty.js",
       "./_basePropertyDeep": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/_basePropertyDeep.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/property.js",
       "hash": "1df54f8aab323900a23f283067b2a06d",
-      "browserifyId": 157,
+      "browserifyId": 213,
       "sourcemap": ""
     }
   ],
@@ -2392,7 +3060,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/toFinite.js",
       "hash": "9eaaaac9bcd246afb349c4b47ad8527f",
-      "browserifyId": 158,
+      "browserifyId": 214,
       "sourcemap": ""
     }
   ],
@@ -2404,20 +3072,20 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/toInteger.js",
       "hash": "e77fa1f31dbef0152e12736928ac4918",
-      "browserifyId": 159,
+      "browserifyId": 215,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/toNumber.js": [
     "var isObject = require('./isObject'),\n    isSymbol = require('./isSymbol');\n\n/** Used as references for various `Number` constants. */\nvar NAN = 0 / 0;\n\n/** Used to match leading and trailing whitespace. */\nvar reTrim = /^\\s+|\\s+$/g;\n\n/** Used to detect bad signed hexadecimal string values. */\nvar reIsBadHex = /^[-+]0x[0-9a-f]+$/i;\n\n/** Used to detect binary string values. */\nvar reIsBinary = /^0b[01]+$/i;\n\n/** Used to detect octal string values. */\nvar reIsOctal = /^0o[0-7]+$/i;\n\n/** Built-in method references without a dependency on `root`. */\nvar freeParseInt = parseInt;\n\n/**\n * Converts `value` to a number.\n *\n * @static\n * @memberOf _\n * @since 4.0.0\n * @category Lang\n * @param {*} value The value to process.\n * @returns {number} Returns the number.\n * @example\n *\n * _.toNumber(3.2);\n * // => 3.2\n *\n * _.toNumber(Number.MIN_VALUE);\n * // => 5e-324\n *\n * _.toNumber(Infinity);\n * // => Infinity\n *\n * _.toNumber('3.2');\n * // => 3.2\n */\nfunction toNumber(value) {\n  if (typeof value == 'number') {\n    return value;\n  }\n  if (isSymbol(value)) {\n    return NAN;\n  }\n  if (isObject(value)) {\n    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;\n    value = isObject(other) ? (other + '') : other;\n  }\n  if (typeof value != 'string') {\n    return value === 0 ? value : +value;\n  }\n  value = value.replace(reTrim, '');\n  var isBinary = reIsBinary.test(value);\n  return (isBinary || reIsOctal.test(value))\n    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)\n    : (reIsBadHex.test(value) ? NAN : +value);\n}\n\nmodule.exports = toNumber;\n",
     {
-      "./isSymbol": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isSymbol.js",
-      "./isObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObject.js"
+      "./isObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isObject.js",
+      "./isSymbol": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/isSymbol.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/toNumber.js",
       "hash": "c9deaf168b8f0a1bc2570e92d7e04e39",
-      "browserifyId": 160,
+      "browserifyId": 216,
       "sourcemap": ""
     }
   ],
@@ -2429,7 +3097,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/lodash/toString.js",
       "hash": "b40283c3872a32c155b74f673cfec388",
-      "browserifyId": 161,
+      "browserifyId": 217,
       "sourcemap": ""
     }
   ],
@@ -2439,7 +3107,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "hash": "66de5ca575681f18884fdb76c39c9b8d",
-      "browserifyId": 162,
+      "browserifyId": 218,
       "sourcemap": ""
     }
   ],
@@ -2451,7 +3119,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/query-string/index.js",
       "hash": "81a5f407fa32108da39aec31878ab42e",
-      "browserifyId": 163,
+      "browserifyId": 219,
       "sourcemap": ""
     }
   ],
@@ -2461,7 +3129,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-deep-force-update/lib/index.js",
       "hash": "14a6624067a28b0fad90a41f12ddd4e5",
-      "browserifyId": 164,
+      "browserifyId": 220,
       "sourcemap": ""
     }
   ],
@@ -2473,7 +3141,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-dom/index.js",
       "hash": "bf245da3481d65c635f682dd13f0473d",
-      "browserifyId": 165,
+      "browserifyId": 221,
       "sourcemap": ""
     }
   ],
@@ -2483,7 +3151,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/bindAutoBindMethods.js",
       "hash": "4ab47aaf75760ed0a0ea5cbbd6ac0669",
-      "browserifyId": 166,
+      "browserifyId": 222,
       "sourcemap": ""
     }
   ],
@@ -2499,7 +3167,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/createClassProxy.js",
       "hash": "b7dea0306c9390361700eeddb887df6f",
-      "browserifyId": 167,
+      "browserifyId": 223,
       "sourcemap": ""
     }
   ],
@@ -2512,7 +3180,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/createPrototypeProxy.js",
       "hash": "da81131e461600a098cbe94aa10c9863",
-      "browserifyId": 168,
+      "browserifyId": 224,
       "sourcemap": ""
     }
   ],
@@ -2522,7 +3190,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/deleteUnknownAutoBindMethods.js",
       "hash": "9452ace3983f2112ddc1796bd8d2ea1e",
-      "browserifyId": 169,
+      "browserifyId": 225,
       "sourcemap": ""
     }
   ],
@@ -2536,7 +3204,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/index.js",
       "hash": "34346097b02f0b1d648341fba68df1c4",
-      "browserifyId": 170,
+      "browserifyId": 226,
       "sourcemap": ""
     }
   ],
@@ -2546,7 +3214,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-proxy/modules/supportsProtoAssignment.js",
       "hash": "938b2a60744b3e88481f71fc01a09a0b",
-      "browserifyId": 171,
+      "browserifyId": 227,
       "sourcemap": ""
     }
   ],
@@ -2556,7 +3224,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/AsyncUtils.js",
       "hash": "c0f872c17156a1bfa31afa7c8a1eb911",
-      "browserifyId": 172,
+      "browserifyId": 228,
       "sourcemap": ""
     }
   ],
@@ -2568,7 +3236,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/History.js",
       "hash": "707e96062807fce61cd225fc2f3e280d",
-      "browserifyId": 173,
+      "browserifyId": 229,
       "sourcemap": ""
     }
   ],
@@ -2581,33 +3249,33 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexLink.js",
       "hash": "7ad8665599ebd97db49343a765914f2e",
-      "browserifyId": 174,
+      "browserifyId": 230,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRedirect.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Redirect = require('./Redirect');\n\nvar _Redirect2 = _interopRequireDefault(_Redirect);\n\nvar _PropTypes = require('./PropTypes');\n\nvar _React$PropTypes = _react2['default'].PropTypes;\nvar string = _React$PropTypes.string;\nvar object = _React$PropTypes.object;\n\n/**\n * An <IndexRedirect> is used to redirect from an indexRoute.\n */\n\nvar IndexRedirect = (function (_Component) {\n  _inherits(IndexRedirect, _Component);\n\n  function IndexRedirect() {\n    _classCallCheck(this, IndexRedirect);\n\n    _Component.apply(this, arguments);\n  }\n\n  /* istanbul ignore next: sanity check */\n\n  IndexRedirect.prototype.render = function render() {\n    !false ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<IndexRedirect> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;\n  };\n\n  return IndexRedirect;\n})(_react.Component);\n\nIndexRedirect.propTypes = {\n  to: string.isRequired,\n  query: object,\n  state: object,\n  onEnter: _PropTypes.falsy,\n  children: _PropTypes.falsy\n};\n\nIndexRedirect.createRouteFromReactElement = function (element, parentRoute) {\n  /* istanbul ignore else: sanity check */\n  if (parentRoute) {\n    parentRoute.indexRoute = _Redirect2['default'].createRouteFromReactElement(element);\n  } else {\n    process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRedirect> does not make sense at the root of your route config') : undefined;\n  }\n};\n\nexports['default'] = IndexRedirect;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
       "./Redirect": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Redirect.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
+      "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRedirect.js",
       "hash": "63e60cc39db2082b3e27c08435051c16",
-      "browserifyId": 175,
+      "browserifyId": 231,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRoute.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _PropTypes = require('./PropTypes');\n\nvar func = _react2['default'].PropTypes.func;\n\n/**\n * An <IndexRoute> is used to specify its parent's <Route indexRoute> in\n * a JSX route config.\n */\n\nvar IndexRoute = (function (_Component) {\n  _inherits(IndexRoute, _Component);\n\n  function IndexRoute() {\n    _classCallCheck(this, IndexRoute);\n\n    _Component.apply(this, arguments);\n  }\n\n  /* istanbul ignore next: sanity check */\n\n  IndexRoute.prototype.render = function render() {\n    !false ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<IndexRoute> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;\n  };\n\n  return IndexRoute;\n})(_react.Component);\n\nIndexRoute.propTypes = {\n  path: _PropTypes.falsy,\n  component: _PropTypes.component,\n  components: _PropTypes.components,\n  getComponent: func,\n  getComponents: func\n};\n\nIndexRoute.createRouteFromReactElement = function (element, parentRoute) {\n  /* istanbul ignore else: sanity check */\n  if (parentRoute) {\n    parentRoute.indexRoute = _RouteUtils.createRouteFromReactElement(element);\n  } else {\n    process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRoute> does not make sense at the root of your route config') : undefined;\n  }\n};\n\nexports['default'] = IndexRoute;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
       "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
@@ -2615,7 +3283,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRoute.js",
       "hash": "6f265202f9b1676c856d70978c299ee1",
-      "browserifyId": 176,
+      "browserifyId": 232,
       "sourcemap": ""
     }
   ],
@@ -2623,13 +3291,13 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar object = _react2['default'].PropTypes.object;\n\n/**\n * The Lifecycle mixin adds the routerWillLeave lifecycle method to a\n * component that may be used to cancel a transition or prompt the user\n * for confirmation.\n *\n * On standard transitions, routerWillLeave receives a single argument: the\n * location we're transitioning to. To cancel the transition, return false.\n * To prompt the user for confirmation, return a prompt message (string).\n *\n * During the beforeunload event (assuming you're using the useBeforeUnload\n * history enhancer), routerWillLeave does not receive a location object\n * because it isn't possible for us to know the location we're transitioning\n * to. In this case routerWillLeave must return a prompt message to prevent\n * the user from closing the window/tab.\n */\nvar Lifecycle = {\n\n  contextTypes: {\n    history: object.isRequired,\n    // Nested children receive the route as context, either\n    // set by the route component using the RouteContext mixin\n    // or by some other ancestor.\n    route: object\n  },\n\n  propTypes: {\n    // Route components receive the route object as a prop.\n    route: object\n  },\n\n  componentDidMount: function componentDidMount() {\n    !this.routerWillLeave ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'The Lifecycle mixin requires you to define a routerWillLeave method') : _invariant2['default'](false) : undefined;\n\n    var route = this.props.route || this.context.route;\n\n    !route ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'The Lifecycle mixin must be used on either a) a <Route component> or ' + 'b) a descendant of a <Route component> that uses the RouteContext mixin') : _invariant2['default'](false) : undefined;\n\n    this._unlistenBeforeLeavingRoute = this.context.history.listenBeforeLeavingRoute(route, this.routerWillLeave);\n  },\n\n  componentWillUnmount: function componentWillUnmount() {\n    if (this._unlistenBeforeLeavingRoute) this._unlistenBeforeLeavingRoute();\n  }\n\n};\n\nexports['default'] = Lifecycle;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js"
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Lifecycle.js",
       "hash": "820f281f91cab9f3aa06301849bb0c8f",
-      "browserifyId": 177,
+      "browserifyId": 233,
       "sourcemap": ""
     }
   ],
@@ -2641,7 +3309,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Link.js",
       "hash": "01c49f2920b088228122196ef8af70da",
-      "browserifyId": 178,
+      "browserifyId": 234,
       "sourcemap": ""
     }
   ],
@@ -2654,7 +3322,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PatternUtils.js",
       "hash": "320ff0dd1f147fbeab6b6b29174cc9eb",
-      "browserifyId": 179,
+      "browserifyId": 235,
       "sourcemap": ""
     }
   ],
@@ -2666,16 +3334,16 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
       "hash": "ff81a55ea8c641a3bbe334fb25e12c3a",
-      "browserifyId": 180,
+      "browserifyId": 236,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Redirect.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _PatternUtils = require('./PatternUtils');\n\nvar _PropTypes = require('./PropTypes');\n\nvar _React$PropTypes = _react2['default'].PropTypes;\nvar string = _React$PropTypes.string;\nvar object = _React$PropTypes.object;\n\n/**\n * A <Redirect> is used to declare another URL path a client should\n * be sent to when they request a given URL.\n *\n * Redirects are placed alongside routes in the route configuration\n * and are traversed in the same manner.\n */\n\nvar Redirect = (function (_Component) {\n  _inherits(Redirect, _Component);\n\n  function Redirect() {\n    _classCallCheck(this, Redirect);\n\n    _Component.apply(this, arguments);\n  }\n\n  /* istanbul ignore next: sanity check */\n\n  Redirect.prototype.render = function render() {\n    !false ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<Redirect> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;\n  };\n\n  return Redirect;\n})(_react.Component);\n\nRedirect.createRouteFromReactElement = function (element) {\n  var route = _RouteUtils.createRouteFromReactElement(element);\n\n  if (route.from) route.path = route.from;\n\n  route.onEnter = function (nextState, replaceState) {\n    var location = nextState.location;\n    var params = nextState.params;\n\n    var pathname = undefined;\n    if (route.to.charAt(0) === '/') {\n      pathname = _PatternUtils.formatPattern(route.to, params);\n    } else if (!route.to) {\n      pathname = location.pathname;\n    } else {\n      var routeIndex = nextState.routes.indexOf(route);\n      var parentPattern = Redirect.getRoutePattern(nextState.routes, routeIndex - 1);\n      var pattern = parentPattern.replace(/\\/*$/, '/') + route.to;\n      pathname = _PatternUtils.formatPattern(pattern, params);\n    }\n\n    replaceState(route.state || location.state, pathname, route.query || location.query);\n  };\n\n  return route;\n};\n\nRedirect.getRoutePattern = function (routes, routeIndex) {\n  var parentPattern = '';\n\n  for (var i = routeIndex; i >= 0; i--) {\n    var route = routes[i];\n    var pattern = route.path || '';\n    parentPattern = pattern.replace(/\\/*$/, '/') + parentPattern;\n\n    if (pattern.indexOf('/') === 0) break;\n  }\n\n  return '/' + parentPattern;\n};\n\nRedirect.propTypes = {\n  path: string,\n  from: string, // Alias for path\n  to: string.isRequired,\n  query: object,\n  state: object,\n  onEnter: _PropTypes.falsy,\n  children: _PropTypes.falsy\n};\n\nexports['default'] = Redirect;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "./PatternUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PatternUtils.js"
@@ -2683,23 +3351,23 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Redirect.js",
       "hash": "2188c9ba734beac1034f49d975ca4c2c",
-      "browserifyId": 181,
+      "browserifyId": 237,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Route.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _PropTypes = require('./PropTypes');\n\nvar _React$PropTypes = _react2['default'].PropTypes;\nvar string = _React$PropTypes.string;\nvar func = _React$PropTypes.func;\n\n/**\n * A <Route> is used to declare which components are rendered to the\n * page when the URL matches a given pattern.\n *\n * Routes are arranged in a nested tree structure. When a new URL is\n * requested, the tree is searched depth-first to find a route whose\n * path matches the URL.  When one is found, all routes in the tree\n * that lead to it are considered \"active\" and their components are\n * rendered into the DOM, nested in the same order as in the tree.\n */\n\nvar Route = (function (_Component) {\n  _inherits(Route, _Component);\n\n  function Route() {\n    _classCallCheck(this, Route);\n\n    _Component.apply(this, arguments);\n  }\n\n  /* istanbul ignore next: sanity check */\n\n  Route.prototype.render = function render() {\n    !false ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<Route> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;\n  };\n\n  return Route;\n})(_react.Component);\n\nRoute.createRouteFromReactElement = _RouteUtils.createRouteFromReactElement;\n\nRoute.propTypes = {\n  path: string,\n  component: _PropTypes.component,\n  components: _PropTypes.components,\n  getComponent: func,\n  getComponents: func\n};\n\nexports['default'] = Route;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
-      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js"
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Route.js",
       "hash": "5688005ce7ea3bcc8341f042811d80d6",
-      "browserifyId": 182,
+      "browserifyId": 238,
       "sourcemap": ""
     }
   ],
@@ -2711,7 +3379,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteContext.js",
       "hash": "0edaa1fdbc646e683c42f61603c7c1e1",
-      "browserifyId": 183,
+      "browserifyId": 239,
       "sourcemap": ""
     }
   ],
@@ -2719,24 +3387,24 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nexports.isReactChildren = isReactChildren;\nexports.createRouteFromReactElement = createRouteFromReactElement;\nexports.createRoutesFromReactChildren = createRoutesFromReactChildren;\nexports.createRoutes = createRoutes;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nfunction isValidChild(object) {\n  return object == null || _react2['default'].isValidElement(object);\n}\n\nfunction isReactChildren(object) {\n  return isValidChild(object) || Array.isArray(object) && object.every(isValidChild);\n}\n\nfunction checkPropTypes(componentName, propTypes, props) {\n  componentName = componentName || 'UnknownComponent';\n\n  for (var propName in propTypes) {\n    if (propTypes.hasOwnProperty(propName)) {\n      var error = propTypes[propName](props, propName, componentName);\n\n      /* istanbul ignore if: error logging */\n      if (error instanceof Error) process.env.NODE_ENV !== 'production' ? _warning2['default'](false, error.message) : undefined;\n    }\n  }\n}\n\nfunction createRoute(defaultProps, props) {\n  return _extends({}, defaultProps, props);\n}\n\nfunction createRouteFromReactElement(element) {\n  var type = element.type;\n  var route = createRoute(type.defaultProps, element.props);\n\n  if (type.propTypes) checkPropTypes(type.displayName || type.name, type.propTypes, route);\n\n  if (route.children) {\n    var childRoutes = createRoutesFromReactChildren(route.children, route);\n\n    if (childRoutes.length) route.childRoutes = childRoutes;\n\n    delete route.children;\n  }\n\n  return route;\n}\n\n/**\n * Creates and returns a routes object from the given ReactChildren. JSX\n * provides a convenient way to visualize how routes in the hierarchy are\n * nested.\n *\n *   import { Route, createRoutesFromReactChildren } from 'react-router'\n *   \n *   const routes = createRoutesFromReactChildren(\n *     <Route component={App}>\n *       <Route path=\"home\" component={Dashboard}/>\n *       <Route path=\"news\" component={NewsFeed}/>\n *     </Route>\n *   )\n *\n * Note: This method is automatically used when you provide <Route> children\n * to a <Router> component.\n */\n\nfunction createRoutesFromReactChildren(children, parentRoute) {\n  var routes = [];\n\n  _react2['default'].Children.forEach(children, function (element) {\n    if (_react2['default'].isValidElement(element)) {\n      // Component classes may have a static create* method.\n      if (element.type.createRouteFromReactElement) {\n        var route = element.type.createRouteFromReactElement(element, parentRoute);\n\n        if (route) routes.push(route);\n      } else {\n        routes.push(createRouteFromReactElement(element));\n      }\n    }\n  });\n\n  return routes;\n}\n\n/**\n * Creates and returns an array of routes from the given object which\n * may be a JSX route, a plain object route, or an array of either.\n */\n\nfunction createRoutes(routes) {\n  if (isReactChildren(routes)) {\n    routes = createRoutesFromReactChildren(routes);\n  } else if (routes && !Array.isArray(routes)) {\n    routes = [routes];\n  }\n\n  return routes;\n}\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
+      "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "hash": "2bbbca3732c3c12f1279105fc0bbe7e8",
-      "browserifyId": 184,
+      "browserifyId": 240,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Router.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _historyLibCreateHashHistory = require('history/lib/createHashHistory');\n\nvar _historyLibCreateHashHistory2 = _interopRequireDefault(_historyLibCreateHashHistory);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _RoutingContext = require('./RoutingContext');\n\nvar _RoutingContext2 = _interopRequireDefault(_RoutingContext);\n\nvar _useRoutes = require('./useRoutes');\n\nvar _useRoutes2 = _interopRequireDefault(_useRoutes);\n\nvar _PropTypes = require('./PropTypes');\n\nvar _React$PropTypes = _react2['default'].PropTypes;\nvar func = _React$PropTypes.func;\nvar object = _React$PropTypes.object;\n\n/**\n * A <Router> is a high-level API for automatically setting up\n * a router that renders a <RoutingContext> with all the props\n * it needs each time the URL changes.\n */\n\nvar Router = (function (_Component) {\n  _inherits(Router, _Component);\n\n  function Router(props, context) {\n    _classCallCheck(this, Router);\n\n    _Component.call(this, props, context);\n\n    this.state = {\n      location: null,\n      routes: null,\n      params: null,\n      components: null\n    };\n  }\n\n  Router.prototype.handleError = function handleError(error) {\n    if (this.props.onError) {\n      this.props.onError.call(this, error);\n    } else {\n      // Throw errors by default so we don't silently swallow them!\n      throw error; // This error probably occurred in getChildRoutes or getComponents.\n    }\n  };\n\n  Router.prototype.componentWillMount = function componentWillMount() {\n    var _this = this;\n\n    var _props = this.props;\n    var history = _props.history;\n    var children = _props.children;\n    var routes = _props.routes;\n    var parseQueryString = _props.parseQueryString;\n    var stringifyQuery = _props.stringifyQuery;\n\n    var createHistory = history ? function () {\n      return history;\n    } : _historyLibCreateHashHistory2['default'];\n\n    this.history = _useRoutes2['default'](createHistory)({\n      routes: _RouteUtils.createRoutes(routes || children),\n      parseQueryString: parseQueryString,\n      stringifyQuery: stringifyQuery\n    });\n\n    this._unlisten = this.history.listen(function (error, state) {\n      if (error) {\n        _this.handleError(error);\n      } else {\n        _this.setState(state, _this.props.onUpdate);\n      }\n    });\n  };\n\n  /* istanbul ignore next: sanity check */\n\n  Router.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {\n    process.env.NODE_ENV !== 'production' ? _warning2['default'](nextProps.history === this.props.history, 'You cannot change <Router history>; it will be ignored') : undefined;\n\n    process.env.NODE_ENV !== 'production' ? _warning2['default']((nextProps.routes || nextProps.children) === (this.props.routes || this.props.children), 'You cannot change <Router routes>; it will be ignored') : undefined;\n  };\n\n  Router.prototype.componentWillUnmount = function componentWillUnmount() {\n    if (this._unlisten) this._unlisten();\n  };\n\n  Router.prototype.render = function render() {\n    var _state = this.state;\n    var location = _state.location;\n    var routes = _state.routes;\n    var params = _state.params;\n    var components = _state.components;\n    var _props2 = this.props;\n    var RoutingContext = _props2.RoutingContext;\n    var createElement = _props2.createElement;\n\n    var props = _objectWithoutProperties(_props2, ['RoutingContext', 'createElement']);\n\n    if (location == null) return null; // Async match\n\n    // Only forward non-Router-specific props to routing context, as those are\n    // the only ones that might be custom routing context props.\n    Object.keys(Router.propTypes).forEach(function (propType) {\n      return delete props[propType];\n    });\n\n    return _react2['default'].createElement(RoutingContext, _extends({}, props, {\n      history: this.history,\n      createElement: createElement,\n      location: location,\n      routes: routes,\n      params: params,\n      components: components\n    }));\n  };\n\n  return Router;\n})(_react.Component);\n\nRouter.propTypes = {\n  history: object,\n  children: _PropTypes.routes,\n  routes: _PropTypes.routes, // alias for children\n  RoutingContext: func.isRequired,\n  createElement: func,\n  onError: func,\n  onUpdate: func,\n  parseQueryString: func,\n  stringifyQuery: func\n};\n\nRouter.defaultProps = {\n  RoutingContext: _RoutingContext2['default']\n};\n\nexports['default'] = Router;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./RoutingContext": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RoutingContext.js",
       "./useRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/useRoutes.js",
       "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
       "history/lib/createHashHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createHashHistory.js"
@@ -2744,23 +3412,23 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Router.js",
       "hash": "772326ed77f2da64535a32360d346a1d",
-      "browserifyId": 185,
+      "browserifyId": 241,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RoutingContext.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _getRouteParams = require('./getRouteParams');\n\nvar _getRouteParams2 = _interopRequireDefault(_getRouteParams);\n\nvar _React$PropTypes = _react2['default'].PropTypes;\nvar array = _React$PropTypes.array;\nvar func = _React$PropTypes.func;\nvar object = _React$PropTypes.object;\n\n/**\n * A <RoutingContext> renders the component tree for a given router state\n * and sets the history object and the current location in context.\n */\n\nvar RoutingContext = (function (_Component) {\n  _inherits(RoutingContext, _Component);\n\n  function RoutingContext() {\n    _classCallCheck(this, RoutingContext);\n\n    _Component.apply(this, arguments);\n  }\n\n  RoutingContext.prototype.getChildContext = function getChildContext() {\n    var _props = this.props;\n    var history = _props.history;\n    var location = _props.location;\n\n    return { history: history, location: location };\n  };\n\n  RoutingContext.prototype.createElement = function createElement(component, props) {\n    return component == null ? null : this.props.createElement(component, props);\n  };\n\n  RoutingContext.prototype.render = function render() {\n    var _this = this;\n\n    var _props2 = this.props;\n    var history = _props2.history;\n    var location = _props2.location;\n    var routes = _props2.routes;\n    var params = _props2.params;\n    var components = _props2.components;\n\n    var element = null;\n\n    if (components) {\n      element = components.reduceRight(function (element, components, index) {\n        if (components == null) return element; // Don't create new children; use the grandchildren.\n\n        var route = routes[index];\n        var routeParams = _getRouteParams2['default'](route, params);\n        var props = {\n          history: history,\n          location: location,\n          params: params,\n          route: route,\n          routeParams: routeParams,\n          routes: routes\n        };\n\n        if (_RouteUtils.isReactChildren(element)) {\n          props.children = element;\n        } else if (element) {\n          for (var prop in element) {\n            if (element.hasOwnProperty(prop)) props[prop] = element[prop];\n          }\n        }\n\n        if (typeof components === 'object') {\n          var elements = {};\n\n          for (var key in components) {\n            if (components.hasOwnProperty(key)) {\n              // Pass through the key as a prop to createElement to allow\n              // custom createElement functions to know which named component\n              // they're rendering, for e.g. matching up to fetched data.\n              elements[key] = _this.createElement(components[key], _extends({\n                key: key }, props));\n            }\n          }\n\n          return elements;\n        }\n\n        return _this.createElement(components, props);\n      }, element);\n    }\n\n    !(element === null || element === false || _react2['default'].isValidElement(element)) ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'The root route must render a single element') : _invariant2['default'](false) : undefined;\n\n    return element;\n  };\n\n  return RoutingContext;\n})(_react.Component);\n\nRoutingContext.propTypes = {\n  history: object.isRequired,\n  createElement: func.isRequired,\n  location: object.isRequired,\n  routes: array.isRequired,\n  params: object.isRequired,\n  components: array.isRequired\n};\n\nRoutingContext.defaultProps = {\n  createElement: _react2['default'].createElement\n};\n\nRoutingContext.childContextTypes = {\n  history: object.isRequired,\n  location: object.isRequired\n};\n\nexports['default'] = RoutingContext;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./getRouteParams": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/getRouteParams.js",
       "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
-      "./getRouteParams": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/getRouteParams.js"
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RoutingContext.js",
       "hash": "d44395c6417378f7d47d4ff275141f83",
-      "browserifyId": 186,
+      "browserifyId": 242,
       "sourcemap": ""
     }
   ],
@@ -2772,7 +3440,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/TransitionUtils.js",
       "hash": "f87d8669313a5af9b950c843b7fc6ddd",
-      "browserifyId": 187,
+      "browserifyId": 243,
       "sourcemap": ""
     }
   ],
@@ -2784,7 +3452,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/computeChangedRoutes.js",
       "hash": "b97ecb8b4aaadcdbb7cb69c4c52217a9",
-      "browserifyId": 188,
+      "browserifyId": 244,
       "sourcemap": ""
     }
   ],
@@ -2796,7 +3464,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/getComponents.js",
       "hash": "183e18dbe8421f049876a327e553bd10",
-      "browserifyId": 189,
+      "browserifyId": 245,
       "sourcemap": ""
     }
   ],
@@ -2808,7 +3476,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/getRouteParams.js",
       "hash": "d164f742c5dfbe48d2c8343f3dbfdc5b",
-      "browserifyId": 190,
+      "browserifyId": 246,
       "sourcemap": ""
     }
   ],
@@ -2816,25 +3484,25 @@
     "/* components */\n'use strict';\n\nexports.__esModule = true;\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _Router2 = require('./Router');\n\nvar _Router3 = _interopRequireDefault(_Router2);\n\nexports.Router = _Router3['default'];\n\nvar _Link2 = require('./Link');\n\nvar _Link3 = _interopRequireDefault(_Link2);\n\nexports.Link = _Link3['default'];\n\nvar _IndexLink2 = require('./IndexLink');\n\nvar _IndexLink3 = _interopRequireDefault(_IndexLink2);\n\nexports.IndexLink = _IndexLink3['default'];\n\n/* components (configuration) */\n\nvar _IndexRedirect2 = require('./IndexRedirect');\n\nvar _IndexRedirect3 = _interopRequireDefault(_IndexRedirect2);\n\nexports.IndexRedirect = _IndexRedirect3['default'];\n\nvar _IndexRoute2 = require('./IndexRoute');\n\nvar _IndexRoute3 = _interopRequireDefault(_IndexRoute2);\n\nexports.IndexRoute = _IndexRoute3['default'];\n\nvar _Redirect2 = require('./Redirect');\n\nvar _Redirect3 = _interopRequireDefault(_Redirect2);\n\nexports.Redirect = _Redirect3['default'];\n\nvar _Route2 = require('./Route');\n\nvar _Route3 = _interopRequireDefault(_Route2);\n\nexports.Route = _Route3['default'];\n\n/* mixins */\n\nvar _History2 = require('./History');\n\nvar _History3 = _interopRequireDefault(_History2);\n\nexports.History = _History3['default'];\n\nvar _Lifecycle2 = require('./Lifecycle');\n\nvar _Lifecycle3 = _interopRequireDefault(_Lifecycle2);\n\nexports.Lifecycle = _Lifecycle3['default'];\n\nvar _RouteContext2 = require('./RouteContext');\n\nvar _RouteContext3 = _interopRequireDefault(_RouteContext2);\n\nexports.RouteContext = _RouteContext3['default'];\n\n/* utils */\n\nvar _useRoutes2 = require('./useRoutes');\n\nvar _useRoutes3 = _interopRequireDefault(_useRoutes2);\n\nexports.useRoutes = _useRoutes3['default'];\n\nvar _RouteUtils = require('./RouteUtils');\n\nexports.createRoutes = _RouteUtils.createRoutes;\n\nvar _RoutingContext2 = require('./RoutingContext');\n\nvar _RoutingContext3 = _interopRequireDefault(_RoutingContext2);\n\nexports.RoutingContext = _RoutingContext3['default'];\n\nvar _PropTypes2 = require('./PropTypes');\n\nvar _PropTypes3 = _interopRequireDefault(_PropTypes2);\n\nexports.PropTypes = _PropTypes3['default'];\n\nvar _match2 = require('./match');\n\nvar _match3 = _interopRequireDefault(_match2);\n\nexports.match = _match3['default'];\n\nvar _Router4 = _interopRequireDefault(_Router2);\n\nexports['default'] = _Router4['default'];",
     {
       "./History": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/History.js",
-      "./IndexLink": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexLink.js",
-      "./IndexRedirect": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRedirect.js",
       "./Link": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Link.js",
+      "./IndexLink": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexLink.js",
       "./IndexRoute": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRoute.js",
-      "./RouteContext": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteContext.js",
-      "./Lifecycle": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Lifecycle.js",
-      "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
-      "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
       "./Route": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Route.js",
+      "./Lifecycle": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Lifecycle.js",
+      "./RouteContext": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteContext.js",
+      "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./RoutingContext": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RoutingContext.js",
+      "./PropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/PropTypes.js",
       "./Redirect": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Redirect.js",
+      "./IndexRedirect": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/IndexRedirect.js",
       "./Router": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/Router.js",
-      "./match": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/match.js",
-      "./useRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/useRoutes.js"
+      "./useRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/useRoutes.js",
+      "./match": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/match.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/index.js",
       "hash": "d253aa423ac2fcfbc6873526b0881197",
-      "browserifyId": 191,
+      "browserifyId": 247,
       "sourcemap": ""
     }
   ],
@@ -2846,16 +3514,16 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/isActive.js",
       "hash": "e4ad3c00f79eb1c233f2ec2f320de33f",
-      "browserifyId": 192,
+      "browserifyId": 248,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/match.js": [
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nvar _invariant = require('invariant');\n\nvar _invariant2 = _interopRequireDefault(_invariant);\n\nvar _historyLibCreateMemoryHistory = require('history/lib/createMemoryHistory');\n\nvar _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);\n\nvar _historyLibUseBasename = require('history/lib/useBasename');\n\nvar _historyLibUseBasename2 = _interopRequireDefault(_historyLibUseBasename);\n\nvar _RouteUtils = require('./RouteUtils');\n\nvar _useRoutes = require('./useRoutes');\n\nvar _useRoutes2 = _interopRequireDefault(_useRoutes);\n\nvar createHistory = _useRoutes2['default'](_historyLibUseBasename2['default'](_historyLibCreateMemoryHistory2['default']));\n\n/**\n * A high-level API to be used for server-side rendering.\n *\n * This function matches a location to a set of routes and calls\n * callback(error, redirectLocation, renderProps) when finished.\n *\n * Note: You probably don't want to use this in a browser. Use\n * the history.listen API instead.\n */\nfunction match(_ref, callback) {\n  var routes = _ref.routes;\n  var location = _ref.location;\n  var parseQueryString = _ref.parseQueryString;\n  var stringifyQuery = _ref.stringifyQuery;\n  var basename = _ref.basename;\n\n  !location ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, 'match needs a location') : _invariant2['default'](false) : undefined;\n\n  var history = createHistory({\n    routes: _RouteUtils.createRoutes(routes),\n    parseQueryString: parseQueryString,\n    stringifyQuery: stringifyQuery,\n    basename: basename\n  });\n\n  // Allow match({ location: '/the/path', ... })\n  if (typeof location === 'string') location = history.createLocation(location);\n\n  history.match(location, function (error, redirectLocation, nextState) {\n    callback(error, redirectLocation, nextState && _extends({}, nextState, { history: history }));\n  });\n}\n\nexports['default'] = match;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
-      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./RouteUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/RouteUtils.js",
       "./useRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/useRoutes.js",
+      "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/invariant/browser.js",
       "history/lib/useBasename": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/useBasename.js",
       "history/lib/createMemoryHistory": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/createMemoryHistory.js"
@@ -2863,7 +3531,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/match.js",
       "hash": "5be9213989954e0440eafec9e42ab52b",
-      "browserifyId": 193,
+      "browserifyId": 249,
       "sourcemap": ""
     }
   ],
@@ -2879,7 +3547,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/matchRoutes.js",
       "hash": "145addd7989bf62a08ea117270d70e1d",
-      "browserifyId": 194,
+      "browserifyId": 250,
       "sourcemap": ""
     }
   ],
@@ -2887,19 +3555,19 @@
     "(function (process){\n'use strict';\n\nexports.__esModule = true;\n\nvar _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }\n\nfunction _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }\n\nvar _warning = require('warning');\n\nvar _warning2 = _interopRequireDefault(_warning);\n\nvar _historyLibActions = require('history/lib/Actions');\n\nvar _historyLibUseQueries = require('history/lib/useQueries');\n\nvar _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);\n\nvar _computeChangedRoutes2 = require('./computeChangedRoutes');\n\nvar _computeChangedRoutes3 = _interopRequireDefault(_computeChangedRoutes2);\n\nvar _TransitionUtils = require('./TransitionUtils');\n\nvar _isActive2 = require('./isActive');\n\nvar _isActive3 = _interopRequireDefault(_isActive2);\n\nvar _getComponents = require('./getComponents');\n\nvar _getComponents2 = _interopRequireDefault(_getComponents);\n\nvar _matchRoutes = require('./matchRoutes');\n\nvar _matchRoutes2 = _interopRequireDefault(_matchRoutes);\n\nfunction hasAnyProperties(object) {\n  for (var p in object) {\n    if (object.hasOwnProperty(p)) return true;\n  }return false;\n}\n\n/**\n * Returns a new createHistory function that may be used to create\n * history objects that know about routing.\n *\n * Enhances history objects with the following methods:\n *\n * - listen((error, nextState) => {})\n * - listenBeforeLeavingRoute(route, (nextLocation) => {})\n * - match(location, (error, redirectLocation, nextState) => {})\n * - isActive(pathname, query, indexOnly=false)\n */\nfunction useRoutes(createHistory) {\n  return function () {\n    var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];\n    var routes = options.routes;\n\n    var historyOptions = _objectWithoutProperties(options, ['routes']);\n\n    var history = _historyLibUseQueries2['default'](createHistory)(historyOptions);\n    var state = {};\n\n    function isActive(pathname, query) {\n      var indexOnly = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];\n\n      return _isActive3['default'](pathname, query, indexOnly, state.location, state.routes, state.params);\n    }\n\n    function createLocationFromRedirectInfo(_ref) {\n      var pathname = _ref.pathname;\n      var query = _ref.query;\n      var state = _ref.state;\n\n      return history.createLocation(history.createPath(pathname, query), state, _historyLibActions.REPLACE);\n    }\n\n    var partialNextState = undefined;\n\n    function match(location, callback) {\n      if (partialNextState && partialNextState.location === location) {\n        // Continue from where we left off.\n        finishMatch(partialNextState, callback);\n      } else {\n        _matchRoutes2['default'](routes, location, function (error, nextState) {\n          if (error) {\n            callback(error);\n          } else if (nextState) {\n            finishMatch(_extends({}, nextState, { location: location }), callback);\n          } else {\n            callback();\n          }\n        });\n      }\n    }\n\n    function finishMatch(nextState, callback) {\n      var _computeChangedRoutes = _computeChangedRoutes3['default'](state, nextState);\n\n      var leaveRoutes = _computeChangedRoutes.leaveRoutes;\n      var enterRoutes = _computeChangedRoutes.enterRoutes;\n\n      _TransitionUtils.runLeaveHooks(leaveRoutes);\n\n      _TransitionUtils.runEnterHooks(enterRoutes, nextState, function (error, redirectInfo) {\n        if (error) {\n          callback(error);\n        } else if (redirectInfo) {\n          callback(null, createLocationFromRedirectInfo(redirectInfo));\n        } else {\n          // TODO: Fetch components after state is updated.\n          _getComponents2['default'](nextState, function (error, components) {\n            if (error) {\n              callback(error);\n            } else {\n              // TODO: Make match a pure function and have some other API\n              // for \"match and update state\".\n              callback(null, null, state = _extends({}, nextState, { components: components }));\n            }\n          });\n        }\n      });\n    }\n\n    var RouteGuid = 1;\n\n    function getRouteID(route) {\n      return route.__id__ || (route.__id__ = RouteGuid++);\n    }\n\n    var RouteHooks = {};\n\n    function getRouteHooksForRoutes(routes) {\n      return routes.reduce(function (hooks, route) {\n        hooks.push.apply(hooks, RouteHooks[getRouteID(route)]);\n        return hooks;\n      }, []);\n    }\n\n    function transitionHook(location, callback) {\n      _matchRoutes2['default'](routes, location, function (error, nextState) {\n        if (nextState == null) {\n          // TODO: We didn't actually match anything, but hang\n          // onto error/nextState so we don't have to matchRoutes\n          // again in the listen callback.\n          callback();\n          return;\n        }\n\n        // Cache some state here so we don't have to\n        // matchRoutes() again in the listen callback.\n        partialNextState = _extends({}, nextState, { location: location });\n\n        var hooks = getRouteHooksForRoutes(_computeChangedRoutes3['default'](state, partialNextState).leaveRoutes);\n\n        var result = undefined;\n        for (var i = 0, len = hooks.length; result == null && i < len; ++i) {\n          // Passing the location arg here indicates to\n          // the user that this is a transition hook.\n          result = hooks[i](location);\n        }\n\n        callback(result);\n      });\n    }\n\n    function beforeUnloadHook() {\n      // Synchronously check to see if any route hooks want\n      // to prevent the current window/tab from closing.\n      if (state.routes) {\n        var hooks = getRouteHooksForRoutes(state.routes);\n\n        var message = undefined;\n        for (var i = 0, len = hooks.length; typeof message !== 'string' && i < len; ++i) {\n          // Passing no args indicates to the user that this is a\n          // beforeunload hook. We don't know the next location.\n          message = hooks[i]();\n        }\n\n        return message;\n      }\n    }\n\n    var unlistenBefore = undefined,\n        unlistenBeforeUnload = undefined;\n\n    /**\n     * Registers the given hook function to run before leaving the given route.\n     *\n     * During a normal transition, the hook function receives the next location\n     * as its only argument and must return either a) a prompt message to show\n     * the user, to make sure they want to leave the page or b) false, to prevent\n     * the transition.\n     *\n     * During the beforeunload event (in browsers) the hook receives no arguments.\n     * In this case it must return a prompt message to prevent the transition.\n     *\n     * Returns a function that may be used to unbind the listener.\n     */\n    function listenBeforeLeavingRoute(route, hook) {\n      // TODO: Warn if they register for a route that isn't currently\n      // active. They're probably doing something wrong, like re-creating\n      // route objects on every location change.\n      var routeID = getRouteID(route);\n      var hooks = RouteHooks[routeID];\n\n      if (hooks == null) {\n        var thereWereNoRouteHooks = !hasAnyProperties(RouteHooks);\n\n        hooks = RouteHooks[routeID] = [hook];\n\n        if (thereWereNoRouteHooks) {\n          // setup transition & beforeunload hooks\n          unlistenBefore = history.listenBefore(transitionHook);\n\n          if (history.listenBeforeUnload) unlistenBeforeUnload = history.listenBeforeUnload(beforeUnloadHook);\n        }\n      } else if (hooks.indexOf(hook) === -1) {\n        hooks.push(hook);\n      }\n\n      return function () {\n        var hooks = RouteHooks[routeID];\n\n        if (hooks != null) {\n          var newHooks = hooks.filter(function (item) {\n            return item !== hook;\n          });\n\n          if (newHooks.length === 0) {\n            delete RouteHooks[routeID];\n\n            if (!hasAnyProperties(RouteHooks)) {\n              // teardown transition & beforeunload hooks\n              if (unlistenBefore) {\n                unlistenBefore();\n                unlistenBefore = null;\n              }\n\n              if (unlistenBeforeUnload) {\n                unlistenBeforeUnload();\n                unlistenBeforeUnload = null;\n              }\n            }\n          } else {\n            RouteHooks[routeID] = newHooks;\n          }\n        }\n      };\n    }\n\n    /**\n     * This is the API for stateful environments. As the location\n     * changes, we update state and call the listener. We can also\n     * gracefully handle errors and redirects.\n     */\n    function listen(listener) {\n      // TODO: Only use a single history listener. Otherwise we'll\n      // end up with multiple concurrent calls to match.\n      return history.listen(function (location) {\n        if (state.location === location) {\n          listener(null, state);\n        } else {\n          match(location, function (error, redirectLocation, nextState) {\n            if (error) {\n              listener(error);\n            } else if (redirectLocation) {\n              history.transitionTo(redirectLocation);\n            } else if (nextState) {\n              listener(null, nextState);\n            } else {\n              process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'Location \"%s\" did not match any routes', location.pathname + location.search + location.hash) : undefined;\n            }\n          });\n        }\n      });\n    }\n\n    return _extends({}, history, {\n      isActive: isActive,\n      match: match,\n      listenBeforeLeavingRoute: listenBeforeLeavingRoute,\n      listen: listen\n    });\n  };\n}\n\nexports['default'] = useRoutes;\nmodule.exports = exports['default'];\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
-      "history/lib/Actions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/Actions.js",
       "./computeChangedRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/computeChangedRoutes.js",
       "./isActive": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/isActive.js",
       "./getComponents": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/getComponents.js",
       "./TransitionUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/TransitionUtils.js",
+      "warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
       "./matchRoutes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/matchRoutes.js",
+      "history/lib/Actions": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/Actions.js",
       "history/lib/useQueries": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/history/lib/useQueries.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/useRoutes.js",
       "hash": "d0e050f043967b85512a5b0587ed028a",
-      "browserifyId": 195,
+      "browserifyId": 251,
       "sourcemap": ""
     }
   ],
@@ -2913,25 +3581,25 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/AutoFocusUtils.js",
       "hash": "cf8f8f154c479125f328e507fd53849e",
-      "browserifyId": 196,
+      "browserifyId": 252,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/BeforeInputEventPlugin.js": [
     "/**\n * Copyright 2013-2015 Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule BeforeInputEventPlugin\n * @typechecks static-only\n */\n\n'use strict';\n\nvar EventConstants = require('./EventConstants');\nvar EventPropagators = require('./EventPropagators');\nvar ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');\nvar FallbackCompositionState = require('./FallbackCompositionState');\nvar SyntheticCompositionEvent = require('./SyntheticCompositionEvent');\nvar SyntheticInputEvent = require('./SyntheticInputEvent');\n\nvar keyOf = require('fbjs/lib/keyOf');\n\nvar END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space\nvar START_KEYCODE = 229;\n\nvar canUseCompositionEvent = ExecutionEnvironment.canUseDOM && 'CompositionEvent' in window;\n\nvar documentMode = null;\nif (ExecutionEnvironment.canUseDOM && 'documentMode' in document) {\n  documentMode = document.documentMode;\n}\n\n// Webkit offers a very useful `textInput` event that can be used to\n// directly represent `beforeInput`. The IE `textinput` event is not as\n// useful, so we don't use it.\nvar canUseTextInputEvent = ExecutionEnvironment.canUseDOM && 'TextEvent' in window && !documentMode && !isPresto();\n\n// In IE9+, we have access to composition events, but the data supplied\n// by the native compositionend event may be incorrect. Japanese ideographic\n// spaces, for instance (\\u3000) are not recorded correctly.\nvar useFallbackCompositionData = ExecutionEnvironment.canUseDOM && (!canUseCompositionEvent || documentMode && documentMode > 8 && documentMode <= 11);\n\n/**\n * Opera <= 12 includes TextEvent in window, but does not fire\n * text input events. Rely on keypress instead.\n */\nfunction isPresto() {\n  var opera = window.opera;\n  return typeof opera === 'object' && typeof opera.version === 'function' && parseInt(opera.version(), 10) <= 12;\n}\n\nvar SPACEBAR_CODE = 32;\nvar SPACEBAR_CHAR = String.fromCharCode(SPACEBAR_CODE);\n\nvar topLevelTypes = EventConstants.topLevelTypes;\n\n// Events and their corresponding property names.\nvar eventTypes = {\n  beforeInput: {\n    phasedRegistrationNames: {\n      bubbled: keyOf({ onBeforeInput: null }),\n      captured: keyOf({ onBeforeInputCapture: null })\n    },\n    dependencies: [topLevelTypes.topCompositionEnd, topLevelTypes.topKeyPress, topLevelTypes.topTextInput, topLevelTypes.topPaste]\n  },\n  compositionEnd: {\n    phasedRegistrationNames: {\n      bubbled: keyOf({ onCompositionEnd: null }),\n      captured: keyOf({ onCompositionEndCapture: null })\n    },\n    dependencies: [topLevelTypes.topBlur, topLevelTypes.topCompositionEnd, topLevelTypes.topKeyDown, topLevelTypes.topKeyPress, topLevelTypes.topKeyUp, topLevelTypes.topMouseDown]\n  },\n  compositionStart: {\n    phasedRegistrationNames: {\n      bubbled: keyOf({ onCompositionStart: null }),\n      captured: keyOf({ onCompositionStartCapture: null })\n    },\n    dependencies: [topLevelTypes.topBlur, topLevelTypes.topCompositionStart, topLevelTypes.topKeyDown, topLevelTypes.topKeyPress, topLevelTypes.topKeyUp, topLevelTypes.topMouseDown]\n  },\n  compositionUpdate: {\n    phasedRegistrationNames: {\n      bubbled: keyOf({ onCompositionUpdate: null }),\n      captured: keyOf({ onCompositionUpdateCapture: null })\n    },\n    dependencies: [topLevelTypes.topBlur, topLevelTypes.topCompositionUpdate, topLevelTypes.topKeyDown, topLevelTypes.topKeyPress, topLevelTypes.topKeyUp, topLevelTypes.topMouseDown]\n  }\n};\n\n// Track whether we've ever handled a keypress on the space key.\nvar hasSpaceKeypress = false;\n\n/**\n * Return whether a native keypress event is assumed to be a command.\n * This is required because Firefox fires `keypress` events for key commands\n * (cut, copy, select-all, etc.) even though no character is inserted.\n */\nfunction isKeypressCommand(nativeEvent) {\n  return (nativeEvent.ctrlKey || nativeEvent.altKey || nativeEvent.metaKey) &&\n  // ctrlKey && altKey is equivalent to AltGr, and is not a command.\n  !(nativeEvent.ctrlKey && nativeEvent.altKey);\n}\n\n/**\n * Translate native top level events into event types.\n *\n * @param {string} topLevelType\n * @return {object}\n */\nfunction getCompositionEventType(topLevelType) {\n  switch (topLevelType) {\n    case topLevelTypes.topCompositionStart:\n      return eventTypes.compositionStart;\n    case topLevelTypes.topCompositionEnd:\n      return eventTypes.compositionEnd;\n    case topLevelTypes.topCompositionUpdate:\n      return eventTypes.compositionUpdate;\n  }\n}\n\n/**\n * Does our fallback best-guess model think this event signifies that\n * composition has begun?\n *\n * @param {string} topLevelType\n * @param {object} nativeEvent\n * @return {boolean}\n */\nfunction isFallbackCompositionStart(topLevelType, nativeEvent) {\n  return topLevelType === topLevelTypes.topKeyDown && nativeEvent.keyCode === START_KEYCODE;\n}\n\n/**\n * Does our fallback mode think that this event is the end of composition?\n *\n * @param {string} topLevelType\n * @param {object} nativeEvent\n * @return {boolean}\n */\nfunction isFallbackCompositionEnd(topLevelType, nativeEvent) {\n  switch (topLevelType) {\n    case topLevelTypes.topKeyUp:\n      // Command keys insert or clear IME input.\n      return END_KEYCODES.indexOf(nativeEvent.keyCode) !== -1;\n    case topLevelTypes.topKeyDown:\n      // Expect IME keyCode on each keydown. If we get any other\n      // code we must have exited earlier.\n      return nativeEvent.keyCode !== START_KEYCODE;\n    case topLevelTypes.topKeyPress:\n    case topLevelTypes.topMouseDown:\n    case topLevelTypes.topBlur:\n      // Events are not possible without cancelling IME.\n      return true;\n    default:\n      return false;\n  }\n}\n\n/**\n * Google Input Tools provides composition data via a CustomEvent,\n * with the `data` property populated in the `detail` object. If this\n * is available on the event object, use it. If not, this is a plain\n * composition event and we have nothing special to extract.\n *\n * @param {object} nativeEvent\n * @return {?string}\n */\nfunction getDataFromCustomEvent(nativeEvent) {\n  var detail = nativeEvent.detail;\n  if (typeof detail === 'object' && 'data' in detail) {\n    return detail.data;\n  }\n  return null;\n}\n\n// Track the current IME composition fallback object, if any.\nvar currentComposition = null;\n\n/**\n * @param {string} topLevelType Record from `EventConstants`.\n * @param {DOMEventTarget} topLevelTarget The listening component root node.\n * @param {string} topLevelTargetID ID of `topLevelTarget`.\n * @param {object} nativeEvent Native browser event.\n * @return {?object} A SyntheticCompositionEvent.\n */\nfunction extractCompositionEvent(topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget) {\n  var eventType;\n  var fallbackData;\n\n  if (canUseCompositionEvent) {\n    eventType = getCompositionEventType(topLevelType);\n  } else if (!currentComposition) {\n    if (isFallbackCompositionStart(topLevelType, nativeEvent)) {\n      eventType = eventTypes.compositionStart;\n    }\n  } else if (isFallbackCompositionEnd(topLevelType, nativeEvent)) {\n    eventType = eventTypes.compositionEnd;\n  }\n\n  if (!eventType) {\n    return null;\n  }\n\n  if (useFallbackCompositionData) {\n    // The current composition is stored statically and must not be\n    // overwritten while composition continues.\n    if (!currentComposition && eventType === eventTypes.compositionStart) {\n      currentComposition = FallbackCompositionState.getPooled(topLevelTarget);\n    } else if (eventType === eventTypes.compositionEnd) {\n      if (currentComposition) {\n        fallbackData = currentComposition.getData();\n      }\n    }\n  }\n\n  var event = SyntheticCompositionEvent.getPooled(eventType, topLevelTargetID, nativeEvent, nativeEventTarget);\n\n  if (fallbackData) {\n    // Inject data generated from fallback path into the synthetic event.\n    // This matches the property of native CompositionEventInterface.\n    event.data = fallbackData;\n  } else {\n    var customData = getDataFromCustomEvent(nativeEvent);\n    if (customData !== null) {\n      event.data = customData;\n    }\n  }\n\n  EventPropagators.accumulateTwoPhaseDispatches(event);\n  return event;\n}\n\n/**\n * @param {string} topLevelType Record from `EventConstants`.\n * @param {object} nativeEvent Native browser event.\n * @return {?string} The string corresponding to this `beforeInput` event.\n */\nfunction getNativeBeforeInputChars(topLevelType, nativeEvent) {\n  switch (topLevelType) {\n    case topLevelTypes.topCompositionEnd:\n      return getDataFromCustomEvent(nativeEvent);\n    case topLevelTypes.topKeyPress:\n      /**\n       * If native `textInput` events are available, our goal is to make\n       * use of them. However, there is a special case: the spacebar key.\n       * In Webkit, preventing default on a spacebar `textInput` event\n       * cancels character insertion, but it *also* causes the browser\n       * to fall back to its default spacebar behavior of scrolling the\n       * page.\n       *\n       * Tracking at:\n       * https://code.google.com/p/chromium/issues/detail?id=355103\n       *\n       * To avoid this issue, use the keypress event as if no `textInput`\n       * event is available.\n       */\n      var which = nativeEvent.which;\n      if (which !== SPACEBAR_CODE) {\n        return null;\n      }\n\n      hasSpaceKeypress = true;\n      return SPACEBAR_CHAR;\n\n    case topLevelTypes.topTextInput:\n      // Record the characters to be added to the DOM.\n      var chars = nativeEvent.data;\n\n      // If it's a spacebar character, assume that we have already handled\n      // it at the keypress level and bail immediately. Android Chrome\n      // doesn't give us keycodes, so we need to blacklist it.\n      if (chars === SPACEBAR_CHAR && hasSpaceKeypress) {\n        return null;\n      }\n\n      return chars;\n\n    default:\n      // For other native event types, do nothing.\n      return null;\n  }\n}\n\n/**\n * For browsers that do not provide the `textInput` event, extract the\n * appropriate string to use for SyntheticInputEvent.\n *\n * @param {string} topLevelType Record from `EventConstants`.\n * @param {object} nativeEvent Native browser event.\n * @return {?string} The fallback string for this `beforeInput` event.\n */\nfunction getFallbackBeforeInputChars(topLevelType, nativeEvent) {\n  // If we are currently composing (IME) and using a fallback to do so,\n  // try to extract the composed characters from the fallback object.\n  if (currentComposition) {\n    if (topLevelType === topLevelTypes.topCompositionEnd || isFallbackCompositionEnd(topLevelType, nativeEvent)) {\n      var chars = currentComposition.getData();\n      FallbackCompositionState.release(currentComposition);\n      currentComposition = null;\n      return chars;\n    }\n    return null;\n  }\n\n  switch (topLevelType) {\n    case topLevelTypes.topPaste:\n      // If a paste event occurs after a keypress, throw out the input\n      // chars. Paste events should not lead to BeforeInput events.\n      return null;\n    case topLevelTypes.topKeyPress:\n      /**\n       * As of v27, Firefox may fire keypress events even when no character\n       * will be inserted. A few possibilities:\n       *\n       * - `which` is `0`. Arrow keys, Esc key, etc.\n       *\n       * - `which` is the pressed key code, but no char is available.\n       *   Ex: 'AltGr + d` in Polish. There is no modified character for\n       *   this key combination and no character is inserted into the\n       *   document, but FF fires the keypress for char code `100` anyway.\n       *   No `input` event will occur.\n       *\n       * - `which` is the pressed key code, but a command combination is\n       *   being used. Ex: `Cmd+C`. No character is inserted, and no\n       *   `input` event will occur.\n       */\n      if (nativeEvent.which && !isKeypressCommand(nativeEvent)) {\n        return String.fromCharCode(nativeEvent.which);\n      }\n      return null;\n    case topLevelTypes.topCompositionEnd:\n      return useFallbackCompositionData ? null : nativeEvent.data;\n    default:\n      return null;\n  }\n}\n\n/**\n * Extract a SyntheticInputEvent for `beforeInput`, based on either native\n * `textInput` or fallback behavior.\n *\n * @param {string} topLevelType Record from `EventConstants`.\n * @param {DOMEventTarget} topLevelTarget The listening component root node.\n * @param {string} topLevelTargetID ID of `topLevelTarget`.\n * @param {object} nativeEvent Native browser event.\n * @return {?object} A SyntheticInputEvent.\n */\nfunction extractBeforeInputEvent(topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget) {\n  var chars;\n\n  if (canUseTextInputEvent) {\n    chars = getNativeBeforeInputChars(topLevelType, nativeEvent);\n  } else {\n    chars = getFallbackBeforeInputChars(topLevelType, nativeEvent);\n  }\n\n  // If no characters are being inserted, no BeforeInput event should\n  // be fired.\n  if (!chars) {\n    return null;\n  }\n\n  var event = SyntheticInputEvent.getPooled(eventTypes.beforeInput, topLevelTargetID, nativeEvent, nativeEventTarget);\n\n  event.data = chars;\n  EventPropagators.accumulateTwoPhaseDispatches(event);\n  return event;\n}\n\n/**\n * Create an `onBeforeInput` event to match\n * http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.\n *\n * This event plugin is based on the native `textInput` event\n * available in Chrome, Safari, Opera, and IE. This event fires after\n * `onKeyPress` and `onCompositionEnd`, but before `onInput`.\n *\n * `beforeInput` is spec'd but not implemented in any browsers, and\n * the `input` event does not provide any useful information about what has\n * actually been added, contrary to the spec. Thus, `textInput` is the best\n * available event to identify the characters that have actually been inserted\n * into the target node.\n *\n * This plugin is also responsible for emitting `composition` events, thus\n * allowing us to share composition fallback code for both `beforeInput` and\n * `composition` event types.\n */\nvar BeforeInputEventPlugin = {\n\n  eventTypes: eventTypes,\n\n  /**\n   * @param {string} topLevelType Record from `EventConstants`.\n   * @param {DOMEventTarget} topLevelTarget The listening component root node.\n   * @param {string} topLevelTargetID ID of `topLevelTarget`.\n   * @param {object} nativeEvent Native browser event.\n   * @return {*} An accumulation of synthetic events.\n   * @see {EventPluginHub.extractEvents}\n   */\n  extractEvents: function (topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget) {\n    return [extractCompositionEvent(topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget), extractBeforeInputEvent(topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget)];\n  }\n};\n\nmodule.exports = BeforeInputEventPlugin;",
     {
-      "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
-      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
       "./SyntheticCompositionEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticCompositionEvent.js",
       "./SyntheticInputEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticInputEvent.js",
-      "./FallbackCompositionState": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/FallbackCompositionState.js"
+      "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
+      "./FallbackCompositionState": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/FallbackCompositionState.js",
+      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/BeforeInputEventPlugin.js",
       "hash": "5291d9757209c74a7c518f03100a47fa",
-      "browserifyId": 197,
+      "browserifyId": 253,
       "sourcemap": ""
     }
   ],
@@ -2941,7 +3609,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CSSProperty.js",
       "hash": "afd0c73ee7f470732776ac9ad9e25b88",
-      "browserifyId": 198,
+      "browserifyId": 254,
       "sourcemap": ""
     }
   ],
@@ -2953,15 +3621,15 @@
       "./CSSProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CSSProperty.js",
       "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "fbjs/lib/memoizeStringOnly": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js",
       "./dangerousStyleValue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/dangerousStyleValue.js",
+      "fbjs/lib/memoizeStringOnly": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js",
       "fbjs/lib/hyphenateStyleName": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js",
       "fbjs/lib/camelizeStyleName": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CSSPropertyOperations.js",
       "hash": "ff0ea8fb411de11d7f1b0d20454d0e3d",
-      "browserifyId": 199,
+      "browserifyId": 255,
       "sourcemap": ""
     }
   ],
@@ -2969,14 +3637,14 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule CallbackQueue\n */\n\n'use strict';\n\nvar PooledClass = require('./PooledClass');\n\nvar assign = require('./Object.assign');\nvar invariant = require('fbjs/lib/invariant');\n\n/**\n * A specialized pseudo-event module to help keep track of components waiting to\n * be notified when their DOM representations are available for use.\n *\n * This implements `PooledClass`, so you should never need to instantiate this.\n * Instead, use `CallbackQueue.getPooled()`.\n *\n * @class ReactMountReady\n * @implements PooledClass\n * @internal\n */\nfunction CallbackQueue() {\n  this._callbacks = null;\n  this._contexts = null;\n}\n\nassign(CallbackQueue.prototype, {\n\n  /**\n   * Enqueues a callback to be invoked when `notifyAll` is invoked.\n   *\n   * @param {function} callback Invoked when `notifyAll` is invoked.\n   * @param {?object} context Context to call `callback` with.\n   * @internal\n   */\n  enqueue: function (callback, context) {\n    this._callbacks = this._callbacks || [];\n    this._contexts = this._contexts || [];\n    this._callbacks.push(callback);\n    this._contexts.push(context);\n  },\n\n  /**\n   * Invokes all enqueued callbacks and clears the queue. This is invoked after\n   * the DOM representation of a component has been created or updated.\n   *\n   * @internal\n   */\n  notifyAll: function () {\n    var callbacks = this._callbacks;\n    var contexts = this._contexts;\n    if (callbacks) {\n      !(callbacks.length === contexts.length) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Mismatched list of contexts in callback queue') : invariant(false) : undefined;\n      this._callbacks = null;\n      this._contexts = null;\n      for (var i = 0; i < callbacks.length; i++) {\n        callbacks[i].call(contexts[i]);\n      }\n      callbacks.length = 0;\n      contexts.length = 0;\n    }\n  },\n\n  /**\n   * Resets the internal queue.\n   *\n   * @internal\n   */\n  reset: function () {\n    this._callbacks = null;\n    this._contexts = null;\n  },\n\n  /**\n   * `PooledClass` looks for this.\n   */\n  destructor: function () {\n    this.reset();\n  }\n\n});\n\nPooledClass.addPoolingTo(CallbackQueue);\n\nmodule.exports = CallbackQueue;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "./PooledClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
+      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CallbackQueue.js",
       "hash": "f6ae338f5cac0e63febb69382fb541e1",
-      "browserifyId": 200,
+      "browserifyId": 256,
       "sourcemap": ""
     }
   ],
@@ -2984,20 +3652,20 @@
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ChangeEventPlugin\n */\n\n'use strict';\n\nvar EventConstants = require('./EventConstants');\nvar EventPluginHub = require('./EventPluginHub');\nvar EventPropagators = require('./EventPropagators');\nvar ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');\nvar ReactUpdates = require('./ReactUpdates');\nvar SyntheticEvent = require('./SyntheticEvent');\n\nvar getEventTarget = require('./getEventTarget');\nvar isEventSupported = require('./isEventSupported');\nvar isTextInputElement = require('./isTextInputElement');\nvar keyOf = require('fbjs/lib/keyOf');\n\nvar topLevelTypes = EventConstants.topLevelTypes;\n\nvar eventTypes = {\n  change: {\n    phasedRegistrationNames: {\n      bubbled: keyOf({ onChange: null }),\n      captured: keyOf({ onChangeCapture: null })\n    },\n    dependencies: [topLevelTypes.topBlur, topLevelTypes.topChange, topLevelTypes.topClick, topLevelTypes.topFocus, topLevelTypes.topInput, topLevelTypes.topKeyDown, topLevelTypes.topKeyUp, topLevelTypes.topSelectionChange]\n  }\n};\n\n/**\n * For IE shims\n */\nvar activeElement = null;\nvar activeElementID = null;\nvar activeElementValue = null;\nvar activeElementValueProp = null;\n\n/**\n * SECTION: handle `change` event\n */\nfunction shouldUseChangeEvent(elem) {\n  var nodeName = elem.nodeName && elem.nodeName.toLowerCase();\n  return nodeName === 'select' || nodeName === 'input' && elem.type === 'file';\n}\n\nvar doesChangeEventBubble = false;\nif (ExecutionEnvironment.canUseDOM) {\n  // See `handleChange` comment below\n  doesChangeEventBubble = isEventSupported('change') && (!('documentMode' in document) || document.documentMode > 8);\n}\n\nfunction manualDispatchChangeEvent(nativeEvent) {\n  var event = SyntheticEvent.getPooled(eventTypes.change, activeElementID, nativeEvent, getEventTarget(nativeEvent));\n  EventPropagators.accumulateTwoPhaseDispatches(event);\n\n  // If change and propertychange bubbled, we'd just bind to it like all the\n  // other events and have it go through ReactBrowserEventEmitter. Since it\n  // doesn't, we manually listen for the events and so we have to enqueue and\n  // process the abstract event manually.\n  //\n  // Batching is necessary here in order to ensure that all event handlers run\n  // before the next rerender (including event handlers attached to ancestor\n  // elements instead of directly on the input). Without this, controlled\n  // components don't work properly in conjunction with event bubbling because\n  // the component is rerendered and the value reverted before all the event\n  // handlers can run. See https://github.com/facebook/react/issues/708.\n  ReactUpdates.batchedUpdates(runEventInBatch, event);\n}\n\nfunction runEventInBatch(event) {\n  EventPluginHub.enqueueEvents(event);\n  EventPluginHub.processEventQueue(false);\n}\n\nfunction startWatchingForChangeEventIE8(target, targetID) {\n  activeElement = target;\n  activeElementID = targetID;\n  activeElement.attachEvent('onchange', manualDispatchChangeEvent);\n}\n\nfunction stopWatchingForChangeEventIE8() {\n  if (!activeElement) {\n    return;\n  }\n  activeElement.detachEvent('onchange', manualDispatchChangeEvent);\n  activeElement = null;\n  activeElementID = null;\n}\n\nfunction getTargetIDForChangeEvent(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topChange) {\n    return topLevelTargetID;\n  }\n}\nfunction handleEventsForChangeEventIE8(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topFocus) {\n    // stopWatching() should be a noop here but we call it just in case we\n    // missed a blur event somehow.\n    stopWatchingForChangeEventIE8();\n    startWatchingForChangeEventIE8(topLevelTarget, topLevelTargetID);\n  } else if (topLevelType === topLevelTypes.topBlur) {\n    stopWatchingForChangeEventIE8();\n  }\n}\n\n/**\n * SECTION: handle `input` event\n */\nvar isInputEventSupported = false;\nif (ExecutionEnvironment.canUseDOM) {\n  // IE9 claims to support the input event but fails to trigger it when\n  // deleting text, so we ignore its input events\n  isInputEventSupported = isEventSupported('input') && (!('documentMode' in document) || document.documentMode > 9);\n}\n\n/**\n * (For old IE.) Replacement getter/setter for the `value` property that gets\n * set on the active element.\n */\nvar newValueProp = {\n  get: function () {\n    return activeElementValueProp.get.call(this);\n  },\n  set: function (val) {\n    // Cast to a string so we can do equality checks.\n    activeElementValue = '' + val;\n    activeElementValueProp.set.call(this, val);\n  }\n};\n\n/**\n * (For old IE.) Starts tracking propertychange events on the passed-in element\n * and override the value property so that we can distinguish user events from\n * value changes in JS.\n */\nfunction startWatchingForValueChange(target, targetID) {\n  activeElement = target;\n  activeElementID = targetID;\n  activeElementValue = target.value;\n  activeElementValueProp = Object.getOwnPropertyDescriptor(target.constructor.prototype, 'value');\n\n  // Not guarded in a canDefineProperty check: IE8 supports defineProperty only\n  // on DOM elements\n  Object.defineProperty(activeElement, 'value', newValueProp);\n  activeElement.attachEvent('onpropertychange', handlePropertyChange);\n}\n\n/**\n * (For old IE.) Removes the event listeners from the currently-tracked element,\n * if any exists.\n */\nfunction stopWatchingForValueChange() {\n  if (!activeElement) {\n    return;\n  }\n\n  // delete restores the original property definition\n  delete activeElement.value;\n  activeElement.detachEvent('onpropertychange', handlePropertyChange);\n\n  activeElement = null;\n  activeElementID = null;\n  activeElementValue = null;\n  activeElementValueProp = null;\n}\n\n/**\n * (For old IE.) Handles a propertychange event, sending a `change` event if\n * the value of the active element has changed.\n */\nfunction handlePropertyChange(nativeEvent) {\n  if (nativeEvent.propertyName !== 'value') {\n    return;\n  }\n  var value = nativeEvent.srcElement.value;\n  if (value === activeElementValue) {\n    return;\n  }\n  activeElementValue = value;\n\n  manualDispatchChangeEvent(nativeEvent);\n}\n\n/**\n * If a `change` event should be fired, returns the target's ID.\n */\nfunction getTargetIDForInputEvent(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topInput) {\n    // In modern browsers (i.e., not IE8 or IE9), the input event is exactly\n    // what we want so fall through here and trigger an abstract event\n    return topLevelTargetID;\n  }\n}\n\n// For IE8 and IE9.\nfunction handleEventsForInputEventIE(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topFocus) {\n    // In IE8, we can capture almost all .value changes by adding a\n    // propertychange handler and looking for events with propertyName\n    // equal to 'value'\n    // In IE9, propertychange fires for most input events but is buggy and\n    // doesn't fire when text is deleted, but conveniently, selectionchange\n    // appears to fire in all of the remaining cases so we catch those and\n    // forward the event if the value has changed\n    // In either case, we don't want to call the event handler if the value\n    // is changed from JS so we redefine a setter for `.value` that updates\n    // our activeElementValue variable, allowing us to ignore those changes\n    //\n    // stopWatching() should be a noop here but we call it just in case we\n    // missed a blur event somehow.\n    stopWatchingForValueChange();\n    startWatchingForValueChange(topLevelTarget, topLevelTargetID);\n  } else if (topLevelType === topLevelTypes.topBlur) {\n    stopWatchingForValueChange();\n  }\n}\n\n// For IE8 and IE9.\nfunction getTargetIDForInputEventIE(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topSelectionChange || topLevelType === topLevelTypes.topKeyUp || topLevelType === topLevelTypes.topKeyDown) {\n    // On the selectionchange event, the target is just document which isn't\n    // helpful for us so just check activeElement instead.\n    //\n    // 99% of the time, keydown and keyup aren't necessary. IE8 fails to fire\n    // propertychange on the first input event after setting `value` from a\n    // script and fires only keydown, keypress, keyup. Catching keyup usually\n    // gets it and catching keydown lets us fire an event for the first\n    // keystroke if user does a key repeat (it'll be a little delayed: right\n    // before the second keystroke). Other input methods (e.g., paste) seem to\n    // fire selectionchange normally.\n    if (activeElement && activeElement.value !== activeElementValue) {\n      activeElementValue = activeElement.value;\n      return activeElementID;\n    }\n  }\n}\n\n/**\n * SECTION: handle `click` event\n */\nfunction shouldUseClickEvent(elem) {\n  // Use the `click` event to detect changes to checkbox and radio inputs.\n  // This approach works across all browsers, whereas `change` does not fire\n  // until `blur` in IE8.\n  return elem.nodeName && elem.nodeName.toLowerCase() === 'input' && (elem.type === 'checkbox' || elem.type === 'radio');\n}\n\nfunction getTargetIDForClickEvent(topLevelType, topLevelTarget, topLevelTargetID) {\n  if (topLevelType === topLevelTypes.topClick) {\n    return topLevelTargetID;\n  }\n}\n\n/**\n * This plugin creates an `onChange` event that normalizes change events\n * across form elements. This event fires at a time when it's possible to\n * change the element's value without seeing a flicker.\n *\n * Supported elements are:\n * - input (see `isTextInputElement`)\n * - textarea\n * - select\n */\nvar ChangeEventPlugin = {\n\n  eventTypes: eventTypes,\n\n  /**\n   * @param {string} topLevelType Record from `EventConstants`.\n   * @param {DOMEventTarget} topLevelTarget The listening component root node.\n   * @param {string} topLevelTargetID ID of `topLevelTarget`.\n   * @param {object} nativeEvent Native browser event.\n   * @return {*} An accumulation of synthetic events.\n   * @see {EventPluginHub.extractEvents}\n   */\n  extractEvents: function (topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget) {\n\n    var getTargetIDFunc, handleEventFunc;\n    if (shouldUseChangeEvent(topLevelTarget)) {\n      if (doesChangeEventBubble) {\n        getTargetIDFunc = getTargetIDForChangeEvent;\n      } else {\n        handleEventFunc = handleEventsForChangeEventIE8;\n      }\n    } else if (isTextInputElement(topLevelTarget)) {\n      if (isInputEventSupported) {\n        getTargetIDFunc = getTargetIDForInputEvent;\n      } else {\n        getTargetIDFunc = getTargetIDForInputEventIE;\n        handleEventFunc = handleEventsForInputEventIE;\n      }\n    } else if (shouldUseClickEvent(topLevelTarget)) {\n      getTargetIDFunc = getTargetIDForClickEvent;\n    }\n\n    if (getTargetIDFunc) {\n      var targetID = getTargetIDFunc(topLevelType, topLevelTarget, topLevelTargetID);\n      if (targetID) {\n        var event = SyntheticEvent.getPooled(eventTypes.change, targetID, nativeEvent, nativeEventTarget);\n        event.type = 'change';\n        EventPropagators.accumulateTwoPhaseDispatches(event);\n        return event;\n      }\n    }\n\n    if (handleEventFunc) {\n      handleEventFunc(topLevelType, topLevelTarget, topLevelTargetID);\n    }\n  }\n\n};\n\nmodule.exports = ChangeEventPlugin;",
     {
       "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
+      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./getEventTarget": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventTarget.js",
       "./isTextInputElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isTextInputElement.js",
-      "./isEventSupported": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isEventSupported.js",
-      "./EventPluginHub": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js",
       "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
-      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
-      "./SyntheticEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js"
+      "./isEventSupported": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isEventSupported.js",
+      "./SyntheticEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js",
+      "./EventPluginHub": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ChangeEventPlugin.js",
       "hash": "155ac9a47a132b03cae1da7b9d9d314a",
-      "browserifyId": 201,
+      "browserifyId": 257,
       "sourcemap": ""
     }
   ],
@@ -3007,7 +3675,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ClientReactRootIndex.js",
       "hash": "97e7fd2db9b38b050599043449334a9a",
-      "browserifyId": 202,
+      "browserifyId": 258,
       "sourcemap": ""
     }
   ],
@@ -3015,8 +3683,8 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule DOMChildrenOperations\n * @typechecks static-only\n */\n\n'use strict';\n\nvar Danger = require('./Danger');\nvar ReactMultiChildUpdateTypes = require('./ReactMultiChildUpdateTypes');\nvar ReactPerf = require('./ReactPerf');\n\nvar setInnerHTML = require('./setInnerHTML');\nvar setTextContent = require('./setTextContent');\nvar invariant = require('fbjs/lib/invariant');\n\n/**\n * Inserts `childNode` as a child of `parentNode` at the `index`.\n *\n * @param {DOMElement} parentNode Parent node in which to insert.\n * @param {DOMElement} childNode Child node to insert.\n * @param {number} index Index at which to insert the child.\n * @internal\n */\nfunction insertChildAt(parentNode, childNode, index) {\n  // By exploiting arrays returning `undefined` for an undefined index, we can\n  // rely exclusively on `insertBefore(node, null)` instead of also using\n  // `appendChild(node)`. However, using `undefined` is not allowed by all\n  // browsers so we must replace it with `null`.\n\n  // fix render order error in safari\n  // IE8 will throw error when index out of list size.\n  var beforeChild = index >= parentNode.childNodes.length ? null : parentNode.childNodes.item(index);\n\n  parentNode.insertBefore(childNode, beforeChild);\n}\n\n/**\n * Operations for updating with DOM children.\n */\nvar DOMChildrenOperations = {\n\n  dangerouslyReplaceNodeWithMarkup: Danger.dangerouslyReplaceNodeWithMarkup,\n\n  updateTextContent: setTextContent,\n\n  /**\n   * Updates a component's children by processing a series of updates. The\n   * update configurations are each expected to have a `parentNode` property.\n   *\n   * @param {array<object>} updates List of update configurations.\n   * @param {array<string>} markupList List of markup strings.\n   * @internal\n   */\n  processUpdates: function (updates, markupList) {\n    var update;\n    // Mapping from parent IDs to initial child orderings.\n    var initialChildren = null;\n    // List of children that will be moved or removed.\n    var updatedChildren = null;\n\n    for (var i = 0; i < updates.length; i++) {\n      update = updates[i];\n      if (update.type === ReactMultiChildUpdateTypes.MOVE_EXISTING || update.type === ReactMultiChildUpdateTypes.REMOVE_NODE) {\n        var updatedIndex = update.fromIndex;\n        var updatedChild = update.parentNode.childNodes[updatedIndex];\n        var parentID = update.parentID;\n\n        !updatedChild ? process.env.NODE_ENV !== 'production' ? invariant(false, 'processUpdates(): Unable to find child %s of element. This ' + 'probably means the DOM was unexpectedly mutated (e.g., by the ' + 'browser), usually due to forgetting a <tbody> when using tables, ' + 'nesting tags like <form>, <p>, or <a>, or using non-SVG elements ' + 'in an <svg> parent. Try inspecting the child nodes of the element ' + 'with React ID `%s`.', updatedIndex, parentID) : invariant(false) : undefined;\n\n        initialChildren = initialChildren || {};\n        initialChildren[parentID] = initialChildren[parentID] || [];\n        initialChildren[parentID][updatedIndex] = updatedChild;\n\n        updatedChildren = updatedChildren || [];\n        updatedChildren.push(updatedChild);\n      }\n    }\n\n    var renderedMarkup;\n    // markupList is either a list of markup or just a list of elements\n    if (markupList.length && typeof markupList[0] === 'string') {\n      renderedMarkup = Danger.dangerouslyRenderMarkup(markupList);\n    } else {\n      renderedMarkup = markupList;\n    }\n\n    // Remove updated children first so that `toIndex` is consistent.\n    if (updatedChildren) {\n      for (var j = 0; j < updatedChildren.length; j++) {\n        updatedChildren[j].parentNode.removeChild(updatedChildren[j]);\n      }\n    }\n\n    for (var k = 0; k < updates.length; k++) {\n      update = updates[k];\n      switch (update.type) {\n        case ReactMultiChildUpdateTypes.INSERT_MARKUP:\n          insertChildAt(update.parentNode, renderedMarkup[update.markupIndex], update.toIndex);\n          break;\n        case ReactMultiChildUpdateTypes.MOVE_EXISTING:\n          insertChildAt(update.parentNode, initialChildren[update.parentID][update.fromIndex], update.toIndex);\n          break;\n        case ReactMultiChildUpdateTypes.SET_MARKUP:\n          setInnerHTML(update.parentNode, update.content);\n          break;\n        case ReactMultiChildUpdateTypes.TEXT_CONTENT:\n          setTextContent(update.parentNode, update.content);\n          break;\n        case ReactMultiChildUpdateTypes.REMOVE_NODE:\n          // Already removed by the for-loop above.\n          break;\n      }\n    }\n  }\n\n};\n\nReactPerf.measureMethods(DOMChildrenOperations, 'DOMChildrenOperations', {\n  updateTextContent: 'updateTextContent'\n});\n\nmodule.exports = DOMChildrenOperations;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./setInnerHTML": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setInnerHTML.js",
       "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
+      "./setInnerHTML": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setInnerHTML.js",
       "./setTextContent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setTextContent.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "./ReactMultiChildUpdateTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMultiChildUpdateTypes.js",
@@ -3025,7 +3693,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMChildrenOperations.js",
       "hash": "d7f58a280239fe61a735cb47fa25f67e",
-      "browserifyId": 203,
+      "browserifyId": 259,
       "sourcemap": ""
     }
   ],
@@ -3038,7 +3706,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMProperty.js",
       "hash": "82a32a2919d49e468112c960f3dd25a6",
-      "browserifyId": 204,
+      "browserifyId": 260,
       "sourcemap": ""
     }
   ],
@@ -3046,15 +3714,15 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule DOMPropertyOperations\n * @typechecks static-only\n */\n\n'use strict';\n\nvar DOMProperty = require('./DOMProperty');\nvar ReactPerf = require('./ReactPerf');\n\nvar quoteAttributeValueForBrowser = require('./quoteAttributeValueForBrowser');\nvar warning = require('fbjs/lib/warning');\n\n// Simplified subset\nvar VALID_ATTRIBUTE_NAME_REGEX = /^[a-zA-Z_][\\w\\.\\-]*$/;\nvar illegalAttributeNameCache = {};\nvar validatedAttributeNameCache = {};\n\nfunction isAttributeNameSafe(attributeName) {\n  if (validatedAttributeNameCache.hasOwnProperty(attributeName)) {\n    return true;\n  }\n  if (illegalAttributeNameCache.hasOwnProperty(attributeName)) {\n    return false;\n  }\n  if (VALID_ATTRIBUTE_NAME_REGEX.test(attributeName)) {\n    validatedAttributeNameCache[attributeName] = true;\n    return true;\n  }\n  illegalAttributeNameCache[attributeName] = true;\n  process.env.NODE_ENV !== 'production' ? warning(false, 'Invalid attribute name: `%s`', attributeName) : undefined;\n  return false;\n}\n\nfunction shouldIgnoreValue(propertyInfo, value) {\n  return value == null || propertyInfo.hasBooleanValue && !value || propertyInfo.hasNumericValue && isNaN(value) || propertyInfo.hasPositiveNumericValue && value < 1 || propertyInfo.hasOverloadedBooleanValue && value === false;\n}\n\nif (process.env.NODE_ENV !== 'production') {\n  var reactProps = {\n    children: true,\n    dangerouslySetInnerHTML: true,\n    key: true,\n    ref: true\n  };\n  var warnedProperties = {};\n\n  var warnUnknownProperty = function (name) {\n    if (reactProps.hasOwnProperty(name) && reactProps[name] || warnedProperties.hasOwnProperty(name) && warnedProperties[name]) {\n      return;\n    }\n\n    warnedProperties[name] = true;\n    var lowerCasedName = name.toLowerCase();\n\n    // data-* attributes should be lowercase; suggest the lowercase version\n    var standardName = DOMProperty.isCustomAttribute(lowerCasedName) ? lowerCasedName : DOMProperty.getPossibleStandardName.hasOwnProperty(lowerCasedName) ? DOMProperty.getPossibleStandardName[lowerCasedName] : null;\n\n    // For now, only warn when we have a suggested correction. This prevents\n    // logging too much when using transferPropsTo.\n    process.env.NODE_ENV !== 'production' ? warning(standardName == null, 'Unknown DOM property %s. Did you mean %s?', name, standardName) : undefined;\n  };\n}\n\n/**\n * Operations for dealing with DOM properties.\n */\nvar DOMPropertyOperations = {\n\n  /**\n   * Creates markup for the ID property.\n   *\n   * @param {string} id Unescaped ID.\n   * @return {string} Markup string.\n   */\n  createMarkupForID: function (id) {\n    return DOMProperty.ID_ATTRIBUTE_NAME + '=' + quoteAttributeValueForBrowser(id);\n  },\n\n  setAttributeForID: function (node, id) {\n    node.setAttribute(DOMProperty.ID_ATTRIBUTE_NAME, id);\n  },\n\n  /**\n   * Creates markup for a property.\n   *\n   * @param {string} name\n   * @param {*} value\n   * @return {?string} Markup string, or null if the property was invalid.\n   */\n  createMarkupForProperty: function (name, value) {\n    var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;\n    if (propertyInfo) {\n      if (shouldIgnoreValue(propertyInfo, value)) {\n        return '';\n      }\n      var attributeName = propertyInfo.attributeName;\n      if (propertyInfo.hasBooleanValue || propertyInfo.hasOverloadedBooleanValue && value === true) {\n        return attributeName + '=\"\"';\n      }\n      return attributeName + '=' + quoteAttributeValueForBrowser(value);\n    } else if (DOMProperty.isCustomAttribute(name)) {\n      if (value == null) {\n        return '';\n      }\n      return name + '=' + quoteAttributeValueForBrowser(value);\n    } else if (process.env.NODE_ENV !== 'production') {\n      warnUnknownProperty(name);\n    }\n    return null;\n  },\n\n  /**\n   * Creates markup for a custom property.\n   *\n   * @param {string} name\n   * @param {*} value\n   * @return {string} Markup string, or empty string if the property was invalid.\n   */\n  createMarkupForCustomAttribute: function (name, value) {\n    if (!isAttributeNameSafe(name) || value == null) {\n      return '';\n    }\n    return name + '=' + quoteAttributeValueForBrowser(value);\n  },\n\n  /**\n   * Sets the value for a property on a node.\n   *\n   * @param {DOMElement} node\n   * @param {string} name\n   * @param {*} value\n   */\n  setValueForProperty: function (node, name, value) {\n    var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;\n    if (propertyInfo) {\n      var mutationMethod = propertyInfo.mutationMethod;\n      if (mutationMethod) {\n        mutationMethod(node, value);\n      } else if (shouldIgnoreValue(propertyInfo, value)) {\n        this.deleteValueForProperty(node, name);\n      } else if (propertyInfo.mustUseAttribute) {\n        var attributeName = propertyInfo.attributeName;\n        var namespace = propertyInfo.attributeNamespace;\n        // `setAttribute` with objects becomes only `[object]` in IE8/9,\n        // ('' + value) makes it output the correct toString()-value.\n        if (namespace) {\n          node.setAttributeNS(namespace, attributeName, '' + value);\n        } else if (propertyInfo.hasBooleanValue || propertyInfo.hasOverloadedBooleanValue && value === true) {\n          node.setAttribute(attributeName, '');\n        } else {\n          node.setAttribute(attributeName, '' + value);\n        }\n      } else {\n        var propName = propertyInfo.propertyName;\n        // Must explicitly cast values for HAS_SIDE_EFFECTS-properties to the\n        // property type before comparing; only `value` does and is string.\n        if (!propertyInfo.hasSideEffects || '' + node[propName] !== '' + value) {\n          // Contrary to `setAttribute`, object properties are properly\n          // `toString`ed by IE8/9.\n          node[propName] = value;\n        }\n      }\n    } else if (DOMProperty.isCustomAttribute(name)) {\n      DOMPropertyOperations.setValueForAttribute(node, name, value);\n    } else if (process.env.NODE_ENV !== 'production') {\n      warnUnknownProperty(name);\n    }\n  },\n\n  setValueForAttribute: function (node, name, value) {\n    if (!isAttributeNameSafe(name)) {\n      return;\n    }\n    if (value == null) {\n      node.removeAttribute(name);\n    } else {\n      node.setAttribute(name, '' + value);\n    }\n  },\n\n  /**\n   * Deletes the value for a property on a node.\n   *\n   * @param {DOMElement} node\n   * @param {string} name\n   */\n  deleteValueForProperty: function (node, name) {\n    var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;\n    if (propertyInfo) {\n      var mutationMethod = propertyInfo.mutationMethod;\n      if (mutationMethod) {\n        mutationMethod(node, undefined);\n      } else if (propertyInfo.mustUseAttribute) {\n        node.removeAttribute(propertyInfo.attributeName);\n      } else {\n        var propName = propertyInfo.propertyName;\n        var defaultValue = DOMProperty.getDefaultValueForProperty(node.nodeName, propName);\n        if (!propertyInfo.hasSideEffects || '' + node[propName] !== defaultValue) {\n          node[propName] = defaultValue;\n        }\n      }\n    } else if (DOMProperty.isCustomAttribute(name)) {\n      node.removeAttribute(name);\n    } else if (process.env.NODE_ENV !== 'production') {\n      warnUnknownProperty(name);\n    }\n  }\n\n};\n\nReactPerf.measureMethods(DOMPropertyOperations, 'DOMPropertyOperations', {\n  setValueForProperty: 'setValueForProperty',\n  setValueForAttribute: 'setValueForAttribute',\n  deleteValueForProperty: 'deleteValueForProperty'\n});\n\nmodule.exports = DOMPropertyOperations;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
       "./DOMProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMProperty.js",
+      "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "./quoteAttributeValueForBrowser": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/quoteAttributeValueForBrowser.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMPropertyOperations.js",
       "hash": "254f497f13e1ed1df2ab8e2d9f350a60",
-      "browserifyId": 205,
+      "browserifyId": 261,
       "sourcemap": ""
     }
   ],
@@ -3071,7 +3739,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Danger.js",
       "hash": "81f7cba42b254d6e9dba40cee388419e",
-      "browserifyId": 206,
+      "browserifyId": 262,
       "sourcemap": ""
     }
   ],
@@ -3083,7 +3751,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DefaultEventPluginOrder.js",
       "hash": "9f97cedd72614b2784f0f5d5e7f89cec",
-      "browserifyId": 207,
+      "browserifyId": 263,
       "sourcemap": ""
     }
   ],
@@ -3091,15 +3759,15 @@
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule EnterLeaveEventPlugin\n * @typechecks static-only\n */\n\n'use strict';\n\nvar EventConstants = require('./EventConstants');\nvar EventPropagators = require('./EventPropagators');\nvar SyntheticMouseEvent = require('./SyntheticMouseEvent');\n\nvar ReactMount = require('./ReactMount');\nvar keyOf = require('fbjs/lib/keyOf');\n\nvar topLevelTypes = EventConstants.topLevelTypes;\nvar getFirstReactDOM = ReactMount.getFirstReactDOM;\n\nvar eventTypes = {\n  mouseEnter: {\n    registrationName: keyOf({ onMouseEnter: null }),\n    dependencies: [topLevelTypes.topMouseOut, topLevelTypes.topMouseOver]\n  },\n  mouseLeave: {\n    registrationName: keyOf({ onMouseLeave: null }),\n    dependencies: [topLevelTypes.topMouseOut, topLevelTypes.topMouseOver]\n  }\n};\n\nvar extractedEvents = [null, null];\n\nvar EnterLeaveEventPlugin = {\n\n  eventTypes: eventTypes,\n\n  /**\n   * For almost every interaction we care about, there will be both a top-level\n   * `mouseover` and `mouseout` event that occurs. Only use `mouseout` so that\n   * we do not extract duplicate events. However, moving the mouse into the\n   * browser from outside will not fire a `mouseout` event. In this case, we use\n   * the `mouseover` top-level event.\n   *\n   * @param {string} topLevelType Record from `EventConstants`.\n   * @param {DOMEventTarget} topLevelTarget The listening component root node.\n   * @param {string} topLevelTargetID ID of `topLevelTarget`.\n   * @param {object} nativeEvent Native browser event.\n   * @return {*} An accumulation of synthetic events.\n   * @see {EventPluginHub.extractEvents}\n   */\n  extractEvents: function (topLevelType, topLevelTarget, topLevelTargetID, nativeEvent, nativeEventTarget) {\n    if (topLevelType === topLevelTypes.topMouseOver && (nativeEvent.relatedTarget || nativeEvent.fromElement)) {\n      return null;\n    }\n    if (topLevelType !== topLevelTypes.topMouseOut && topLevelType !== topLevelTypes.topMouseOver) {\n      // Must not be a mouse in or mouse out - ignoring.\n      return null;\n    }\n\n    var win;\n    if (topLevelTarget.window === topLevelTarget) {\n      // `topLevelTarget` is probably a window object.\n      win = topLevelTarget;\n    } else {\n      // TODO: Figure out why `ownerDocument` is sometimes undefined in IE8.\n      var doc = topLevelTarget.ownerDocument;\n      if (doc) {\n        win = doc.defaultView || doc.parentWindow;\n      } else {\n        win = window;\n      }\n    }\n\n    var from;\n    var to;\n    var fromID = '';\n    var toID = '';\n    if (topLevelType === topLevelTypes.topMouseOut) {\n      from = topLevelTarget;\n      fromID = topLevelTargetID;\n      to = getFirstReactDOM(nativeEvent.relatedTarget || nativeEvent.toElement);\n      if (to) {\n        toID = ReactMount.getID(to);\n      } else {\n        to = win;\n      }\n      to = to || win;\n    } else {\n      from = win;\n      to = topLevelTarget;\n      toID = topLevelTargetID;\n    }\n\n    if (from === to) {\n      // Nothing pertains to our managed components.\n      return null;\n    }\n\n    var leave = SyntheticMouseEvent.getPooled(eventTypes.mouseLeave, fromID, nativeEvent, nativeEventTarget);\n    leave.type = 'mouseleave';\n    leave.target = from;\n    leave.relatedTarget = to;\n\n    var enter = SyntheticMouseEvent.getPooled(eventTypes.mouseEnter, toID, nativeEvent, nativeEventTarget);\n    enter.type = 'mouseenter';\n    enter.target = to;\n    enter.relatedTarget = from;\n\n    EventPropagators.accumulateEnterLeaveDispatches(leave, enter, fromID, toID);\n\n    extractedEvents[0] = leave;\n    extractedEvents[1] = enter;\n\n    return extractedEvents;\n  }\n\n};\n\nmodule.exports = EnterLeaveEventPlugin;",
     {
       "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
+      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
-      "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "./SyntheticMouseEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticMouseEvent.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EnterLeaveEventPlugin.js",
       "hash": "3d90480d09b671390dc41cb9d54f7498",
-      "browserifyId": 208,
+      "browserifyId": 264,
       "sourcemap": ""
     }
   ],
@@ -3111,7 +3779,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
       "hash": "65f6df18fdef737b09b7b73ce20f41e8",
-      "browserifyId": 209,
+      "browserifyId": 265,
       "sourcemap": ""
     }
   ],
@@ -3120,17 +3788,17 @@
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./EventPluginRegistry": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginRegistry.js",
+      "./accumulateInto": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/accumulateInto.js",
       "./forEachAccumulated": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/forEachAccumulated.js",
-      "./ReactErrorUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactErrorUtils.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "./accumulateInto": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/accumulateInto.js",
+      "./ReactErrorUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactErrorUtils.js",
       "./EventPluginUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginUtils.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js",
       "hash": "0c4b14913d798b5025f5a4880be0b232",
-      "browserifyId": 210,
+      "browserifyId": 266,
       "sourcemap": ""
     }
   ],
@@ -3143,7 +3811,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginRegistry.js",
       "hash": "b69a3cc2d83271e6f2923b093a92a182",
-      "browserifyId": 211,
+      "browserifyId": 267,
       "sourcemap": ""
     }
   ],
@@ -3159,7 +3827,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginUtils.js",
       "hash": "42f3dfa09f939f2513bd6f6daed6d137",
-      "browserifyId": 212,
+      "browserifyId": 268,
       "sourcemap": ""
     }
   ],
@@ -3170,13 +3838,13 @@
       "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
       "./EventPluginHub": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js",
       "./forEachAccumulated": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/forEachAccumulated.js",
-      "./accumulateInto": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/accumulateInto.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
+      "./accumulateInto": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/accumulateInto.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "hash": "edb685c217fa99599cc0c1ae95ab71d3",
-      "browserifyId": 213,
+      "browserifyId": 269,
       "sourcemap": ""
     }
   ],
@@ -3190,7 +3858,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/FallbackCompositionState.js",
       "hash": "1902d64e1be0958cd0b1fd2ec20603dc",
-      "browserifyId": 214,
+      "browserifyId": 270,
       "sourcemap": ""
     }
   ],
@@ -3203,7 +3871,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/HTMLDOMPropertyConfig.js",
       "hash": "373ca90a838b34cc0bb7d1fc0f0c6e46",
-      "browserifyId": 215,
+      "browserifyId": 271,
       "sourcemap": ""
     }
   ],
@@ -3219,7 +3887,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/LinkedValueUtils.js",
       "hash": "f7f792c6ef0112a15b3425815eeb6158",
-      "browserifyId": 216,
+      "browserifyId": 272,
       "sourcemap": ""
     }
   ],
@@ -3229,7 +3897,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "hash": "523f9f89ea7c3d1c9501283de69caa52",
-      "browserifyId": 217,
+      "browserifyId": 273,
       "sourcemap": ""
     }
   ],
@@ -3242,7 +3910,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
       "hash": "2f4074a380eb376df3f05e7224678a9d",
-      "browserifyId": 218,
+      "browserifyId": 274,
       "sourcemap": ""
     }
   ],
@@ -3250,15 +3918,15 @@
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule React\n */\n\n'use strict';\n\nvar ReactDOM = require('./ReactDOM');\nvar ReactDOMServer = require('./ReactDOMServer');\nvar ReactIsomorphic = require('./ReactIsomorphic');\n\nvar assign = require('./Object.assign');\nvar deprecated = require('./deprecated');\n\n// `version` will be added here by ReactIsomorphic.\nvar React = {};\n\nassign(React, ReactIsomorphic);\n\nassign(React, {\n  // ReactDOM\n  findDOMNode: deprecated('findDOMNode', 'ReactDOM', 'react-dom', ReactDOM, ReactDOM.findDOMNode),\n  render: deprecated('render', 'ReactDOM', 'react-dom', ReactDOM, ReactDOM.render),\n  unmountComponentAtNode: deprecated('unmountComponentAtNode', 'ReactDOM', 'react-dom', ReactDOM, ReactDOM.unmountComponentAtNode),\n\n  // ReactDOMServer\n  renderToString: deprecated('renderToString', 'ReactDOMServer', 'react-dom/server', ReactDOMServer, ReactDOMServer.renderToString),\n  renderToStaticMarkup: deprecated('renderToStaticMarkup', 'ReactDOMServer', 'react-dom/server', ReactDOMServer, ReactDOMServer.renderToStaticMarkup)\n});\n\nReact.__SECRET_DOM_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOM;\nReact.__SECRET_DOM_SERVER_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactDOMServer;\n\nmodule.exports = React;",
     {
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
-      "./ReactDOM": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOM.js",
       "./deprecated": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/deprecated.js",
       "./ReactDOMServer": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMServer.js",
-      "./ReactIsomorphic": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactIsomorphic.js"
+      "./ReactIsomorphic": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactIsomorphic.js",
+      "./ReactDOM": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOM.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/React.js",
       "hash": "81152f9215a15cb19e347bc0c13a7c3a",
-      "browserifyId": 219,
+      "browserifyId": 275,
       "sourcemap": ""
     }
   ],
@@ -3266,33 +3934,33 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactBrowserComponentMixin\n */\n\n'use strict';\n\nvar ReactInstanceMap = require('./ReactInstanceMap');\n\nvar findDOMNode = require('./findDOMNode');\nvar warning = require('fbjs/lib/warning');\n\nvar didWarnKey = '_getDOMNodeDidWarn';\n\nvar ReactBrowserComponentMixin = {\n  /**\n   * Returns the DOM node rendered by this component.\n   *\n   * @return {DOMElement} The root node of this component.\n   * @final\n   * @protected\n   */\n  getDOMNode: function () {\n    process.env.NODE_ENV !== 'production' ? warning(this.constructor[didWarnKey], '%s.getDOMNode(...) is deprecated. Please use ' + 'ReactDOM.findDOMNode(instance) instead.', ReactInstanceMap.get(this).getName() || this.tagName || 'Unknown') : undefined;\n    this.constructor[didWarnKey] = true;\n    return findDOMNode(this);\n  }\n};\n\nmodule.exports = ReactBrowserComponentMixin;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./ReactInstanceMap": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceMap.js",
       "./findDOMNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/findDOMNode.js",
+      "./ReactInstanceMap": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceMap.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserComponentMixin.js",
       "hash": "c8207df5f05dec87011a1033a79b795c",
-      "browserifyId": 220,
+      "browserifyId": 276,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserEventEmitter.js": [
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactBrowserEventEmitter\n * @typechecks static-only\n */\n\n'use strict';\n\nvar EventConstants = require('./EventConstants');\nvar EventPluginHub = require('./EventPluginHub');\nvar EventPluginRegistry = require('./EventPluginRegistry');\nvar ReactEventEmitterMixin = require('./ReactEventEmitterMixin');\nvar ReactPerf = require('./ReactPerf');\nvar ViewportMetrics = require('./ViewportMetrics');\n\nvar assign = require('./Object.assign');\nvar isEventSupported = require('./isEventSupported');\n\n/**\n * Summary of `ReactBrowserEventEmitter` event handling:\n *\n *  - Top-level delegation is used to trap most native browser events. This\n *    may only occur in the main thread and is the responsibility of\n *    ReactEventListener, which is injected and can therefore support pluggable\n *    event sources. This is the only work that occurs in the main thread.\n *\n *  - We normalize and de-duplicate events to account for browser quirks. This\n *    may be done in the worker thread.\n *\n *  - Forward these native events (with the associated top-level type used to\n *    trap it) to `EventPluginHub`, which in turn will ask plugins if they want\n *    to extract any synthetic events.\n *\n *  - The `EventPluginHub` will then process each event by annotating them with\n *    \"dispatches\", a sequence of listeners and IDs that care about that event.\n *\n *  - The `EventPluginHub` then dispatches the events.\n *\n * Overview of React and the event system:\n *\n * +------------+    .\n * |    DOM     |    .\n * +------------+    .\n *       |           .\n *       v           .\n * +------------+    .\n * | ReactEvent |    .\n * |  Listener  |    .\n * +------------+    .                         +-----------+\n *       |           .               +--------+|SimpleEvent|\n *       |           .               |         |Plugin     |\n * +-----|------+    .               v         +-----------+\n * |     |      |    .    +--------------+                    +------------+\n * |     +-----------.--->|EventPluginHub|                    |    Event   |\n * |            |    .    |              |     +-----------+  | Propagators|\n * | ReactEvent |    .    |              |     |TapEvent   |  |------------|\n * |  Emitter   |    .    |              |<---+|Plugin     |  |other plugin|\n * |            |    .    |              |     +-----------+  |  utilities |\n * |     +-----------.--->|              |                    +------------+\n * |     |      |    .    +--------------+\n * +-----|------+    .                ^        +-----------+\n *       |           .                |        |Enter/Leave|\n *       +           .                +-------+|Plugin     |\n * +-------------+   .                         +-----------+\n * | application |   .\n * |-------------|   .\n * |             |   .\n * |             |   .\n * +-------------+   .\n *                   .\n *    React Core     .  General Purpose Event Plugin System\n */\n\nvar alreadyListeningTo = {};\nvar isMonitoringScrollValue = false;\nvar reactTopListenersCounter = 0;\n\n// For events like 'submit' which don't consistently bubble (which we trap at a\n// lower node than `document`), binding at `document` would cause duplicate\n// events so we don't include them here\nvar topEventMapping = {\n  topAbort: 'abort',\n  topBlur: 'blur',\n  topCanPlay: 'canplay',\n  topCanPlayThrough: 'canplaythrough',\n  topChange: 'change',\n  topClick: 'click',\n  topCompositionEnd: 'compositionend',\n  topCompositionStart: 'compositionstart',\n  topCompositionUpdate: 'compositionupdate',\n  topContextMenu: 'contextmenu',\n  topCopy: 'copy',\n  topCut: 'cut',\n  topDoubleClick: 'dblclick',\n  topDrag: 'drag',\n  topDragEnd: 'dragend',\n  topDragEnter: 'dragenter',\n  topDragExit: 'dragexit',\n  topDragLeave: 'dragleave',\n  topDragOver: 'dragover',\n  topDragStart: 'dragstart',\n  topDrop: 'drop',\n  topDurationChange: 'durationchange',\n  topEmptied: 'emptied',\n  topEncrypted: 'encrypted',\n  topEnded: 'ended',\n  topError: 'error',\n  topFocus: 'focus',\n  topInput: 'input',\n  topKeyDown: 'keydown',\n  topKeyPress: 'keypress',\n  topKeyUp: 'keyup',\n  topLoadedData: 'loadeddata',\n  topLoadedMetadata: 'loadedmetadata',\n  topLoadStart: 'loadstart',\n  topMouseDown: 'mousedown',\n  topMouseMove: 'mousemove',\n  topMouseOut: 'mouseout',\n  topMouseOver: 'mouseover',\n  topMouseUp: 'mouseup',\n  topPaste: 'paste',\n  topPause: 'pause',\n  topPlay: 'play',\n  topPlaying: 'playing',\n  topProgress: 'progress',\n  topRateChange: 'ratechange',\n  topScroll: 'scroll',\n  topSeeked: 'seeked',\n  topSeeking: 'seeking',\n  topSelectionChange: 'selectionchange',\n  topStalled: 'stalled',\n  topSuspend: 'suspend',\n  topTextInput: 'textInput',\n  topTimeUpdate: 'timeupdate',\n  topTouchCancel: 'touchcancel',\n  topTouchEnd: 'touchend',\n  topTouchMove: 'touchmove',\n  topTouchStart: 'touchstart',\n  topVolumeChange: 'volumechange',\n  topWaiting: 'waiting',\n  topWheel: 'wheel'\n};\n\n/**\n * To ensure no conflicts with other potential React instances on the page\n */\nvar topListenersIDKey = '_reactListenersID' + String(Math.random()).slice(2);\n\nfunction getListeningForDocument(mountAt) {\n  // In IE8, `mountAt` is a host object and doesn't have `hasOwnProperty`\n  // directly.\n  if (!Object.prototype.hasOwnProperty.call(mountAt, topListenersIDKey)) {\n    mountAt[topListenersIDKey] = reactTopListenersCounter++;\n    alreadyListeningTo[mountAt[topListenersIDKey]] = {};\n  }\n  return alreadyListeningTo[mountAt[topListenersIDKey]];\n}\n\n/**\n * `ReactBrowserEventEmitter` is used to attach top-level event listeners. For\n * example:\n *\n *   ReactBrowserEventEmitter.putListener('myID', 'onClick', myFunction);\n *\n * This would allocate a \"registration\" of `('onClick', myFunction)` on 'myID'.\n *\n * @internal\n */\nvar ReactBrowserEventEmitter = assign({}, ReactEventEmitterMixin, {\n\n  /**\n   * Injectable event backend\n   */\n  ReactEventListener: null,\n\n  injection: {\n    /**\n     * @param {object} ReactEventListener\n     */\n    injectReactEventListener: function (ReactEventListener) {\n      ReactEventListener.setHandleTopLevel(ReactBrowserEventEmitter.handleTopLevel);\n      ReactBrowserEventEmitter.ReactEventListener = ReactEventListener;\n    }\n  },\n\n  /**\n   * Sets whether or not any created callbacks should be enabled.\n   *\n   * @param {boolean} enabled True if callbacks should be enabled.\n   */\n  setEnabled: function (enabled) {\n    if (ReactBrowserEventEmitter.ReactEventListener) {\n      ReactBrowserEventEmitter.ReactEventListener.setEnabled(enabled);\n    }\n  },\n\n  /**\n   * @return {boolean} True if callbacks are enabled.\n   */\n  isEnabled: function () {\n    return !!(ReactBrowserEventEmitter.ReactEventListener && ReactBrowserEventEmitter.ReactEventListener.isEnabled());\n  },\n\n  /**\n   * We listen for bubbled touch events on the document object.\n   *\n   * Firefox v8.01 (and possibly others) exhibited strange behavior when\n   * mounting `onmousemove` events at some node that was not the document\n   * element. The symptoms were that if your mouse is not moving over something\n   * contained within that mount point (for example on the background) the\n   * top-level listeners for `onmousemove` won't be called. However, if you\n   * register the `mousemove` on the document object, then it will of course\n   * catch all `mousemove`s. This along with iOS quirks, justifies restricting\n   * top-level listeners to the document object only, at least for these\n   * movement types of events and possibly all events.\n   *\n   * @see http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html\n   *\n   * Also, `keyup`/`keypress`/`keydown` do not bubble to the window on IE, but\n   * they bubble to document.\n   *\n   * @param {string} registrationName Name of listener (e.g. `onClick`).\n   * @param {object} contentDocumentHandle Document which owns the container\n   */\n  listenTo: function (registrationName, contentDocumentHandle) {\n    var mountAt = contentDocumentHandle;\n    var isListening = getListeningForDocument(mountAt);\n    var dependencies = EventPluginRegistry.registrationNameDependencies[registrationName];\n\n    var topLevelTypes = EventConstants.topLevelTypes;\n    for (var i = 0; i < dependencies.length; i++) {\n      var dependency = dependencies[i];\n      if (!(isListening.hasOwnProperty(dependency) && isListening[dependency])) {\n        if (dependency === topLevelTypes.topWheel) {\n          if (isEventSupported('wheel')) {\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topWheel, 'wheel', mountAt);\n          } else if (isEventSupported('mousewheel')) {\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topWheel, 'mousewheel', mountAt);\n          } else {\n            // Firefox needs to capture a different mouse scroll event.\n            // @see http://www.quirksmode.org/dom/events/tests/scroll.html\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topWheel, 'DOMMouseScroll', mountAt);\n          }\n        } else if (dependency === topLevelTypes.topScroll) {\n\n          if (isEventSupported('scroll', true)) {\n            ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent(topLevelTypes.topScroll, 'scroll', mountAt);\n          } else {\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topScroll, 'scroll', ReactBrowserEventEmitter.ReactEventListener.WINDOW_HANDLE);\n          }\n        } else if (dependency === topLevelTypes.topFocus || dependency === topLevelTypes.topBlur) {\n\n          if (isEventSupported('focus', true)) {\n            ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent(topLevelTypes.topFocus, 'focus', mountAt);\n            ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent(topLevelTypes.topBlur, 'blur', mountAt);\n          } else if (isEventSupported('focusin')) {\n            // IE has `focusin` and `focusout` events which bubble.\n            // @see http://www.quirksmode.org/blog/archives/2008/04/delegating_the.html\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topFocus, 'focusin', mountAt);\n            ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelTypes.topBlur, 'focusout', mountAt);\n          }\n\n          // to make sure blur and focus event listeners are only attached once\n          isListening[topLevelTypes.topBlur] = true;\n          isListening[topLevelTypes.topFocus] = true;\n        } else if (topEventMapping.hasOwnProperty(dependency)) {\n          ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(dependency, topEventMapping[dependency], mountAt);\n        }\n\n        isListening[dependency] = true;\n      }\n    }\n  },\n\n  trapBubbledEvent: function (topLevelType, handlerBaseName, handle) {\n    return ReactBrowserEventEmitter.ReactEventListener.trapBubbledEvent(topLevelType, handlerBaseName, handle);\n  },\n\n  trapCapturedEvent: function (topLevelType, handlerBaseName, handle) {\n    return ReactBrowserEventEmitter.ReactEventListener.trapCapturedEvent(topLevelType, handlerBaseName, handle);\n  },\n\n  /**\n   * Listens to window scroll and resize events. We cache scroll values so that\n   * application code can access them without triggering reflows.\n   *\n   * NOTE: Scroll events do not bubble.\n   *\n   * @see http://www.quirksmode.org/dom/events/scroll.html\n   */\n  ensureScrollValueMonitoring: function () {\n    if (!isMonitoringScrollValue) {\n      var refresh = ViewportMetrics.refreshScrollValues;\n      ReactBrowserEventEmitter.ReactEventListener.monitorScrollValue(refresh);\n      isMonitoringScrollValue = true;\n    }\n  },\n\n  eventNameDispatchConfigs: EventPluginHub.eventNameDispatchConfigs,\n\n  registrationNameModules: EventPluginHub.registrationNameModules,\n\n  putListener: EventPluginHub.putListener,\n\n  getListener: EventPluginHub.getListener,\n\n  deleteListener: EventPluginHub.deleteListener,\n\n  deleteAllListeners: EventPluginHub.deleteAllListeners\n\n});\n\nReactPerf.measureMethods(ReactBrowserEventEmitter, 'ReactBrowserEventEmitter', {\n  putListener: 'putListener',\n  deleteListener: 'deleteListener'\n});\n\nmodule.exports = ReactBrowserEventEmitter;",
     {
+      "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
+      "./EventPluginHub": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js",
       "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
+      "./isEventSupported": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isEventSupported.js",
       "./ViewportMetrics": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ViewportMetrics.js",
       "./ReactEventEmitterMixin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEventEmitterMixin.js",
-      "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
-      "./isEventSupported": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isEventSupported.js",
-      "./EventPluginRegistry": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginRegistry.js",
-      "./EventPluginHub": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginHub.js"
+      "./EventPluginRegistry": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPluginRegistry.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserEventEmitter.js",
       "hash": "3fe2f6198169ccdfdaeb77a28326dc21",
-      "browserifyId": 221,
+      "browserifyId": 277,
       "sourcemap": ""
     }
   ],
@@ -3309,7 +3977,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactChildReconciler.js",
       "hash": "27c5db0244f99ca94a133dd3945dc486",
-      "browserifyId": 222,
+      "browserifyId": 278,
       "sourcemap": ""
     }
   ],
@@ -3324,7 +3992,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactChildren.js",
       "hash": "c6e617500d76dc5ebfdc601ebd8c7b49",
-      "browserifyId": 223,
+      "browserifyId": 279,
       "sourcemap": ""
     }
   ],
@@ -3334,20 +4002,20 @@
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./ReactComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponent.js",
       "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
-      "./ReactNoopUpdateQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNoopUpdateQueue.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
-      "./ReactPropTypeLocationNames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocationNames.js",
-      "./ReactPropTypeLocations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocations.js",
+      "./ReactNoopUpdateQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNoopUpdateQueue.js",
       "fbjs/lib/emptyObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyObject.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
+      "./ReactPropTypeLocationNames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocationNames.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
+      "./ReactPropTypeLocations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocations.js",
       "fbjs/lib/keyMirror": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyMirror.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactClass.js",
       "hash": "bd0d7cbfa8c9a3a9ba19b96e448acbb1",
-      "browserifyId": 224,
+      "browserifyId": 280,
       "sourcemap": ""
     }
   ],
@@ -3355,16 +4023,16 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactComponent\n */\n\n'use strict';\n\nvar ReactNoopUpdateQueue = require('./ReactNoopUpdateQueue');\n\nvar canDefineProperty = require('./canDefineProperty');\nvar emptyObject = require('fbjs/lib/emptyObject');\nvar invariant = require('fbjs/lib/invariant');\nvar warning = require('fbjs/lib/warning');\n\n/**\n * Base class helpers for the updating state of a component.\n */\nfunction ReactComponent(props, context, updater) {\n  this.props = props;\n  this.context = context;\n  this.refs = emptyObject;\n  // We initialize the default updater but the real one gets injected by the\n  // renderer.\n  this.updater = updater || ReactNoopUpdateQueue;\n}\n\nReactComponent.prototype.isReactComponent = {};\n\n/**\n * Sets a subset of the state. Always use this to mutate\n * state. You should treat `this.state` as immutable.\n *\n * There is no guarantee that `this.state` will be immediately updated, so\n * accessing `this.state` after calling this method may return the old value.\n *\n * There is no guarantee that calls to `setState` will run synchronously,\n * as they may eventually be batched together.  You can provide an optional\n * callback that will be executed when the call to setState is actually\n * completed.\n *\n * When a function is provided to setState, it will be called at some point in\n * the future (not synchronously). It will be called with the up to date\n * component arguments (state, props, context). These values can be different\n * from this.* because your function may be called after receiveProps but before\n * shouldComponentUpdate, and this new state, props, and context will not yet be\n * assigned to this.\n *\n * @param {object|function} partialState Next partial state or function to\n *        produce next partial state to be merged with current state.\n * @param {?function} callback Called after state is updated.\n * @final\n * @protected\n */\nReactComponent.prototype.setState = function (partialState, callback) {\n  !(typeof partialState === 'object' || typeof partialState === 'function' || partialState == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'setState(...): takes an object of state variables to update or a ' + 'function which returns an object of state variables.') : invariant(false) : undefined;\n  if (process.env.NODE_ENV !== 'production') {\n    process.env.NODE_ENV !== 'production' ? warning(partialState != null, 'setState(...): You passed an undefined or null state object; ' + 'instead, use forceUpdate().') : undefined;\n  }\n  this.updater.enqueueSetState(this, partialState);\n  if (callback) {\n    this.updater.enqueueCallback(this, callback);\n  }\n};\n\n/**\n * Forces an update. This should only be invoked when it is known with\n * certainty that we are **not** in a DOM transaction.\n *\n * You may want to call this when you know that some deeper aspect of the\n * component's state has changed but `setState` was not called.\n *\n * This will not invoke `shouldComponentUpdate`, but it will invoke\n * `componentWillUpdate` and `componentDidUpdate`.\n *\n * @param {?function} callback Called after update is complete.\n * @final\n * @protected\n */\nReactComponent.prototype.forceUpdate = function (callback) {\n  this.updater.enqueueForceUpdate(this);\n  if (callback) {\n    this.updater.enqueueCallback(this, callback);\n  }\n};\n\n/**\n * Deprecated APIs. These APIs used to exist on classic React classes but since\n * we would like to deprecate them, we're not going to move them over to this\n * modern base class. Instead, we define a getter that warns if it's accessed.\n */\nif (process.env.NODE_ENV !== 'production') {\n  var deprecatedAPIs = {\n    getDOMNode: ['getDOMNode', 'Use ReactDOM.findDOMNode(component) instead.'],\n    isMounted: ['isMounted', 'Instead, make sure to clean up subscriptions and pending requests in ' + 'componentWillUnmount to prevent memory leaks.'],\n    replaceProps: ['replaceProps', 'Instead, call render again at the top level.'],\n    replaceState: ['replaceState', 'Refactor your code to use setState instead (see ' + 'https://github.com/facebook/react/issues/3236).'],\n    setProps: ['setProps', 'Instead, call render again at the top level.']\n  };\n  var defineDeprecationWarning = function (methodName, info) {\n    if (canDefineProperty) {\n      Object.defineProperty(ReactComponent.prototype, methodName, {\n        get: function () {\n          process.env.NODE_ENV !== 'production' ? warning(false, '%s(...) is deprecated in plain JavaScript React classes. %s', info[0], info[1]) : undefined;\n          return undefined;\n        }\n      });\n    }\n  };\n  for (var fnName in deprecatedAPIs) {\n    if (deprecatedAPIs.hasOwnProperty(fnName)) {\n      defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);\n    }\n  }\n}\n\nmodule.exports = ReactComponent;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
-      "./canDefineProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/canDefineProperty.js",
       "fbjs/lib/emptyObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyObject.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
+      "./canDefineProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/canDefineProperty.js",
       "./ReactNoopUpdateQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNoopUpdateQueue.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponent.js",
       "hash": "c594624509072c7eda770f3f53b77892",
-      "browserifyId": 225,
+      "browserifyId": 281,
       "sourcemap": ""
     }
   ],
@@ -3377,7 +4045,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentBrowserEnvironment.js",
       "hash": "05b08d18904dc5f0254642d0aca68335",
-      "browserifyId": 226,
+      "browserifyId": 282,
       "sourcemap": ""
     }
   ],
@@ -3390,7 +4058,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentEnvironment.js",
       "hash": "8506389bc31a1519dc703ddf35cf439f",
-      "browserifyId": 227,
+      "browserifyId": 283,
       "sourcemap": ""
     }
   ],
@@ -3416,7 +4084,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCompositeComponent.js",
       "hash": "7a09fd33563f7158de37d384b77578f6",
-      "browserifyId": 228,
+      "browserifyId": 284,
       "sourcemap": ""
     }
   ],
@@ -3426,7 +4094,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCurrentOwner.js",
       "hash": "7c72e8919e24b56698587ead5ba42141",
-      "browserifyId": 229,
+      "browserifyId": 285,
       "sourcemap": ""
     }
   ],
@@ -3437,12 +4105,12 @@
       "./ReactCurrentOwner": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCurrentOwner.js",
       "./ReactVersion": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactVersion.js",
       "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
-      "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "./renderSubtreeIntoContainer": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/renderSubtreeIntoContainer.js",
-      "./ReactInstanceHandles": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceHandles.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
+      "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "./findDOMNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/findDOMNode.js",
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
+      "./ReactInstanceHandles": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceHandles.js",
       "./ReactReconciler": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconciler.js",
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
       "./ReactDefaultInjection": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultInjection.js",
@@ -3451,7 +4119,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOM.js",
       "hash": "35f76191b2b5f7c376018315bae13363",
-      "browserifyId": 230,
+      "browserifyId": 286,
       "sourcemap": ""
     }
   ],
@@ -3461,7 +4129,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMButton.js",
       "hash": "9d60e3eb70329145f0398d81b5d1fc23",
-      "browserifyId": 231,
+      "browserifyId": 287,
       "sourcemap": ""
     }
   ],
@@ -3490,9 +4158,9 @@
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "fbjs/lib/shallowEqual": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/shallowEqual.js",
       "./ReactDOMOption": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMOption.js",
-      "./AutoFocusUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/AutoFocusUtils.js",
       "./ReactDOMSelect": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMSelect.js",
       "./ReactDOMTextarea": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMTextarea.js",
+      "./AutoFocusUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/AutoFocusUtils.js",
       "./ReactDOMInput": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMInput.js",
       "./ReactMultiChild": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMultiChild.js",
       "./CSSPropertyOperations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CSSPropertyOperations.js"
@@ -3500,7 +4168,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMComponent.js",
       "hash": "054027b23048b4b910ff2c3e4ffb72b4",
-      "browserifyId": 232,
+      "browserifyId": 288,
       "sourcemap": ""
     }
   ],
@@ -3515,7 +4183,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMFactories.js",
       "hash": "bfe4c50e2dd15ff2ac904b33dc158a62",
-      "browserifyId": 233,
+      "browserifyId": 289,
       "sourcemap": ""
     }
   ],
@@ -3525,7 +4193,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMFeatureFlags.js",
       "hash": "9331d81a1abced1d0a4aa2b2220ca4d6",
-      "browserifyId": 234,
+      "browserifyId": 290,
       "sourcemap": ""
     }
   ],
@@ -3542,7 +4210,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMIDOperations.js",
       "hash": "9547ec64ac76059c1c345060a2a6607a",
-      "browserifyId": 235,
+      "browserifyId": 291,
       "sourcemap": ""
     }
   ],
@@ -3560,7 +4228,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMInput.js",
       "hash": "1b1e4e28a8bda42a3201c82b37bd9d18",
-      "browserifyId": 236,
+      "browserifyId": 292,
       "sourcemap": ""
     }
   ],
@@ -3576,7 +4244,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMOption.js",
       "hash": "b46dc473fd0ae8d9fd90ab8f43661c3a",
-      "browserifyId": 237,
+      "browserifyId": 293,
       "sourcemap": ""
     }
   ],
@@ -3584,16 +4252,16 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactDOMSelect\n */\n\n'use strict';\n\nvar LinkedValueUtils = require('./LinkedValueUtils');\nvar ReactMount = require('./ReactMount');\nvar ReactUpdates = require('./ReactUpdates');\n\nvar assign = require('./Object.assign');\nvar warning = require('fbjs/lib/warning');\n\nvar valueContextKey = '__ReactDOMSelect_value$' + Math.random().toString(36).slice(2);\n\nfunction updateOptionsIfPendingUpdateAndMounted() {\n  if (this._rootNodeID && this._wrapperState.pendingUpdate) {\n    this._wrapperState.pendingUpdate = false;\n\n    var props = this._currentElement.props;\n    var value = LinkedValueUtils.getValue(props);\n\n    if (value != null) {\n      updateOptions(this, Boolean(props.multiple), value);\n    }\n  }\n}\n\nfunction getDeclarationErrorAddendum(owner) {\n  if (owner) {\n    var name = owner.getName();\n    if (name) {\n      return ' Check the render method of `' + name + '`.';\n    }\n  }\n  return '';\n}\n\nvar valuePropNames = ['value', 'defaultValue'];\n\n/**\n * Validation function for `value` and `defaultValue`.\n * @private\n */\nfunction checkSelectPropTypes(inst, props) {\n  var owner = inst._currentElement._owner;\n  LinkedValueUtils.checkPropTypes('select', props, owner);\n\n  for (var i = 0; i < valuePropNames.length; i++) {\n    var propName = valuePropNames[i];\n    if (props[propName] == null) {\n      continue;\n    }\n    if (props.multiple) {\n      process.env.NODE_ENV !== 'production' ? warning(Array.isArray(props[propName]), 'The `%s` prop supplied to <select> must be an array if ' + '`multiple` is true.%s', propName, getDeclarationErrorAddendum(owner)) : undefined;\n    } else {\n      process.env.NODE_ENV !== 'production' ? warning(!Array.isArray(props[propName]), 'The `%s` prop supplied to <select> must be a scalar ' + 'value if `multiple` is false.%s', propName, getDeclarationErrorAddendum(owner)) : undefined;\n    }\n  }\n}\n\n/**\n * @param {ReactDOMComponent} inst\n * @param {boolean} multiple\n * @param {*} propValue A stringable (with `multiple`, a list of stringables).\n * @private\n */\nfunction updateOptions(inst, multiple, propValue) {\n  var selectedValue, i;\n  var options = ReactMount.getNode(inst._rootNodeID).options;\n\n  if (multiple) {\n    selectedValue = {};\n    for (i = 0; i < propValue.length; i++) {\n      selectedValue['' + propValue[i]] = true;\n    }\n    for (i = 0; i < options.length; i++) {\n      var selected = selectedValue.hasOwnProperty(options[i].value);\n      if (options[i].selected !== selected) {\n        options[i].selected = selected;\n      }\n    }\n  } else {\n    // Do not set `select.value` as exact behavior isn't consistent across all\n    // browsers for all cases.\n    selectedValue = '' + propValue;\n    for (i = 0; i < options.length; i++) {\n      if (options[i].value === selectedValue) {\n        options[i].selected = true;\n        return;\n      }\n    }\n    if (options.length) {\n      options[0].selected = true;\n    }\n  }\n}\n\n/**\n * Implements a <select> native component that allows optionally setting the\n * props `value` and `defaultValue`. If `multiple` is false, the prop must be a\n * stringable. If `multiple` is true, the prop must be an array of stringables.\n *\n * If `value` is not supplied (or null/undefined), user actions that change the\n * selected option will trigger updates to the rendered options.\n *\n * If it is supplied (and not null/undefined), the rendered options will not\n * update in response to user actions. Instead, the `value` prop must change in\n * order for the rendered options to update.\n *\n * If `defaultValue` is provided, any options with the supplied values will be\n * selected.\n */\nvar ReactDOMSelect = {\n  valueContextKey: valueContextKey,\n\n  getNativeProps: function (inst, props, context) {\n    return assign({}, props, {\n      onChange: inst._wrapperState.onChange,\n      value: undefined\n    });\n  },\n\n  mountWrapper: function (inst, props) {\n    if (process.env.NODE_ENV !== 'production') {\n      checkSelectPropTypes(inst, props);\n    }\n\n    var value = LinkedValueUtils.getValue(props);\n    inst._wrapperState = {\n      pendingUpdate: false,\n      initialValue: value != null ? value : props.defaultValue,\n      onChange: _handleChange.bind(inst),\n      wasMultiple: Boolean(props.multiple)\n    };\n  },\n\n  processChildContext: function (inst, props, context) {\n    // Pass down initial value so initial generated markup has correct\n    // `selected` attributes\n    var childContext = assign({}, context);\n    childContext[valueContextKey] = inst._wrapperState.initialValue;\n    return childContext;\n  },\n\n  postUpdateWrapper: function (inst) {\n    var props = inst._currentElement.props;\n\n    // After the initial mount, we control selected-ness manually so don't pass\n    // the context value down\n    inst._wrapperState.initialValue = undefined;\n\n    var wasMultiple = inst._wrapperState.wasMultiple;\n    inst._wrapperState.wasMultiple = Boolean(props.multiple);\n\n    var value = LinkedValueUtils.getValue(props);\n    if (value != null) {\n      inst._wrapperState.pendingUpdate = false;\n      updateOptions(inst, Boolean(props.multiple), value);\n    } else if (wasMultiple !== Boolean(props.multiple)) {\n      // For simplicity, reapply `defaultValue` if `multiple` is toggled.\n      if (props.defaultValue != null) {\n        updateOptions(inst, Boolean(props.multiple), props.defaultValue);\n      } else {\n        // Revert the select back to its default unselected state.\n        updateOptions(inst, Boolean(props.multiple), props.multiple ? [] : '');\n      }\n    }\n  }\n};\n\nfunction _handleChange(event) {\n  var props = this._currentElement.props;\n  var returnValue = LinkedValueUtils.executeOnChange(props, event);\n\n  this._wrapperState.pendingUpdate = true;\n  ReactUpdates.asap(updateOptionsIfPendingUpdateAndMounted, this);\n  return returnValue;\n}\n\nmodule.exports = ReactDOMSelect;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./LinkedValueUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/LinkedValueUtils.js",
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "./LinkedValueUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/LinkedValueUtils.js"
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMSelect.js",
       "hash": "7d472ac8d1fb93fbddd62f9a20b2f9d2",
-      "browserifyId": 238,
+      "browserifyId": 294,
       "sourcemap": ""
     }
   ],
@@ -3607,7 +4275,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMSelection.js",
       "hash": "fb6e724786287f045630d220700faa4e",
-      "browserifyId": 239,
+      "browserifyId": 295,
       "sourcemap": ""
     }
   ],
@@ -3621,7 +4289,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMServer.js",
       "hash": "7153cd56c652f09947ebab76650c4c6b",
-      "browserifyId": 240,
+      "browserifyId": 296,
       "sourcemap": ""
     }
   ],
@@ -3632,16 +4300,16 @@
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "./escapeTextContentForBrowser": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/escapeTextContentForBrowser.js",
-      "./validateDOMNesting": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/validateDOMNesting.js",
-      "./ReactComponentBrowserEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentBrowserEnvironment.js",
       "./setTextContent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setTextContent.js",
+      "./validateDOMNesting": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/validateDOMNesting.js",
       "./DOMPropertyOperations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMPropertyOperations.js",
+      "./ReactComponentBrowserEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentBrowserEnvironment.js",
       "./DOMChildrenOperations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMChildrenOperations.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMTextComponent.js",
       "hash": "0c9542c6b14b5943d613b19b9e81c1b2",
-      "browserifyId": 241,
+      "browserifyId": 297,
       "sourcemap": ""
     }
   ],
@@ -3649,17 +4317,17 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactDOMTextarea\n */\n\n'use strict';\n\nvar LinkedValueUtils = require('./LinkedValueUtils');\nvar ReactDOMIDOperations = require('./ReactDOMIDOperations');\nvar ReactUpdates = require('./ReactUpdates');\n\nvar assign = require('./Object.assign');\nvar invariant = require('fbjs/lib/invariant');\nvar warning = require('fbjs/lib/warning');\n\nfunction forceUpdateIfMounted() {\n  if (this._rootNodeID) {\n    // DOM component is still mounted; update\n    ReactDOMTextarea.updateWrapper(this);\n  }\n}\n\n/**\n * Implements a <textarea> native component that allows setting `value`, and\n * `defaultValue`. This differs from the traditional DOM API because value is\n * usually set as PCDATA children.\n *\n * If `value` is not supplied (or null/undefined), user actions that affect the\n * value will trigger updates to the element.\n *\n * If `value` is supplied (and not null/undefined), the rendered element will\n * not trigger updates to the element. Instead, the `value` prop must change in\n * order for the rendered element to be updated.\n *\n * The rendered element will be initialized with an empty value, the prop\n * `defaultValue` if specified, or the children content (deprecated).\n */\nvar ReactDOMTextarea = {\n  getNativeProps: function (inst, props, context) {\n    !(props.dangerouslySetInnerHTML == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, '`dangerouslySetInnerHTML` does not make sense on <textarea>.') : invariant(false) : undefined;\n\n    // Always set children to the same thing. In IE9, the selection range will\n    // get reset if `textContent` is mutated.\n    var nativeProps = assign({}, props, {\n      defaultValue: undefined,\n      value: undefined,\n      children: inst._wrapperState.initialValue,\n      onChange: inst._wrapperState.onChange\n    });\n\n    return nativeProps;\n  },\n\n  mountWrapper: function (inst, props) {\n    if (process.env.NODE_ENV !== 'production') {\n      LinkedValueUtils.checkPropTypes('textarea', props, inst._currentElement._owner);\n    }\n\n    var defaultValue = props.defaultValue;\n    // TODO (yungsters): Remove support for children content in <textarea>.\n    var children = props.children;\n    if (children != null) {\n      if (process.env.NODE_ENV !== 'production') {\n        process.env.NODE_ENV !== 'production' ? warning(false, 'Use the `defaultValue` or `value` props instead of setting ' + 'children on <textarea>.') : undefined;\n      }\n      !(defaultValue == null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'If you supply `defaultValue` on a <textarea>, do not pass children.') : invariant(false) : undefined;\n      if (Array.isArray(children)) {\n        !(children.length <= 1) ? process.env.NODE_ENV !== 'production' ? invariant(false, '<textarea> can only have at most one child.') : invariant(false) : undefined;\n        children = children[0];\n      }\n\n      defaultValue = '' + children;\n    }\n    if (defaultValue == null) {\n      defaultValue = '';\n    }\n    var value = LinkedValueUtils.getValue(props);\n\n    inst._wrapperState = {\n      // We save the initial value so that `ReactDOMComponent` doesn't update\n      // `textContent` (unnecessary since we update value).\n      // The initial value can be a boolean or object so that's why it's\n      // forced to be a string.\n      initialValue: '' + (value != null ? value : defaultValue),\n      onChange: _handleChange.bind(inst)\n    };\n  },\n\n  updateWrapper: function (inst) {\n    var props = inst._currentElement.props;\n    var value = LinkedValueUtils.getValue(props);\n    if (value != null) {\n      // Cast `value` to a string to ensure the value is set correctly. While\n      // browsers typically do this as necessary, jsdom doesn't.\n      ReactDOMIDOperations.updatePropertyByID(inst._rootNodeID, 'value', '' + value);\n    }\n  }\n};\n\nfunction _handleChange(event) {\n  var props = this._currentElement.props;\n  var returnValue = LinkedValueUtils.executeOnChange(props, event);\n  ReactUpdates.asap(forceUpdateIfMounted, this);\n  return returnValue;\n}\n\nmodule.exports = ReactDOMTextarea;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./LinkedValueUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/LinkedValueUtils.js",
       "./ReactDOMIDOperations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMIDOperations.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "./LinkedValueUtils": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/LinkedValueUtils.js"
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMTextarea.js",
       "hash": "25eb2195921e94a43cf21a31705a1533",
-      "browserifyId": 242,
+      "browserifyId": 298,
       "sourcemap": ""
     }
   ],
@@ -3667,14 +4335,14 @@
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactDefaultBatchingStrategy\n */\n\n'use strict';\n\nvar ReactUpdates = require('./ReactUpdates');\nvar Transaction = require('./Transaction');\n\nvar assign = require('./Object.assign');\nvar emptyFunction = require('fbjs/lib/emptyFunction');\n\nvar RESET_BATCHED_UPDATES = {\n  initialize: emptyFunction,\n  close: function () {\n    ReactDefaultBatchingStrategy.isBatchingUpdates = false;\n  }\n};\n\nvar FLUSH_BATCHED_UPDATES = {\n  initialize: emptyFunction,\n  close: ReactUpdates.flushBatchedUpdates.bind(ReactUpdates)\n};\n\nvar TRANSACTION_WRAPPERS = [FLUSH_BATCHED_UPDATES, RESET_BATCHED_UPDATES];\n\nfunction ReactDefaultBatchingStrategyTransaction() {\n  this.reinitializeTransaction();\n}\n\nassign(ReactDefaultBatchingStrategyTransaction.prototype, Transaction.Mixin, {\n  getTransactionWrappers: function () {\n    return TRANSACTION_WRAPPERS;\n  }\n});\n\nvar transaction = new ReactDefaultBatchingStrategyTransaction();\n\nvar ReactDefaultBatchingStrategy = {\n  isBatchingUpdates: false,\n\n  /**\n   * Call the provided function in a context within which calls to `setState`\n   * and friends are batched such that components aren't updated unnecessarily.\n   */\n  batchedUpdates: function (callback, a, b, c, d, e) {\n    var alreadyBatchingUpdates = ReactDefaultBatchingStrategy.isBatchingUpdates;\n\n    ReactDefaultBatchingStrategy.isBatchingUpdates = true;\n\n    // The code is written this way to avoid extra allocations\n    if (alreadyBatchingUpdates) {\n      callback(a, b, c, d, e);\n    } else {\n      transaction.perform(callback, null, a, b, c, d, e);\n    }\n  }\n};\n\nmodule.exports = ReactDefaultBatchingStrategy;",
     {
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
-      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "./Transaction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Transaction.js",
+      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/emptyFunction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultBatchingStrategy.js",
       "hash": "e91dd2f4427cf975da863d05ff88bd6b",
-      "browserifyId": 243,
+      "browserifyId": 299,
       "sourcemap": ""
     }
   ],
@@ -3682,6 +4350,7 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactDefaultInjection\n */\n\n'use strict';\n\nvar BeforeInputEventPlugin = require('./BeforeInputEventPlugin');\nvar ChangeEventPlugin = require('./ChangeEventPlugin');\nvar ClientReactRootIndex = require('./ClientReactRootIndex');\nvar DefaultEventPluginOrder = require('./DefaultEventPluginOrder');\nvar EnterLeaveEventPlugin = require('./EnterLeaveEventPlugin');\nvar ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');\nvar HTMLDOMPropertyConfig = require('./HTMLDOMPropertyConfig');\nvar ReactBrowserComponentMixin = require('./ReactBrowserComponentMixin');\nvar ReactComponentBrowserEnvironment = require('./ReactComponentBrowserEnvironment');\nvar ReactDefaultBatchingStrategy = require('./ReactDefaultBatchingStrategy');\nvar ReactDOMComponent = require('./ReactDOMComponent');\nvar ReactDOMTextComponent = require('./ReactDOMTextComponent');\nvar ReactEventListener = require('./ReactEventListener');\nvar ReactInjection = require('./ReactInjection');\nvar ReactInstanceHandles = require('./ReactInstanceHandles');\nvar ReactMount = require('./ReactMount');\nvar ReactReconcileTransaction = require('./ReactReconcileTransaction');\nvar SelectEventPlugin = require('./SelectEventPlugin');\nvar ServerReactRootIndex = require('./ServerReactRootIndex');\nvar SimpleEventPlugin = require('./SimpleEventPlugin');\nvar SVGDOMPropertyConfig = require('./SVGDOMPropertyConfig');\n\nvar alreadyInjected = false;\n\nfunction inject() {\n  if (alreadyInjected) {\n    // TODO: This is currently true because these injections are shared between\n    // the client and the server package. They should be built independently\n    // and not share any injection state. Then this problem will be solved.\n    return;\n  }\n  alreadyInjected = true;\n\n  ReactInjection.EventEmitter.injectReactEventListener(ReactEventListener);\n\n  /**\n   * Inject modules for resolving DOM hierarchy and plugin ordering.\n   */\n  ReactInjection.EventPluginHub.injectEventPluginOrder(DefaultEventPluginOrder);\n  ReactInjection.EventPluginHub.injectInstanceHandle(ReactInstanceHandles);\n  ReactInjection.EventPluginHub.injectMount(ReactMount);\n\n  /**\n   * Some important event plugins included by default (without having to require\n   * them).\n   */\n  ReactInjection.EventPluginHub.injectEventPluginsByName({\n    SimpleEventPlugin: SimpleEventPlugin,\n    EnterLeaveEventPlugin: EnterLeaveEventPlugin,\n    ChangeEventPlugin: ChangeEventPlugin,\n    SelectEventPlugin: SelectEventPlugin,\n    BeforeInputEventPlugin: BeforeInputEventPlugin\n  });\n\n  ReactInjection.NativeComponent.injectGenericComponentClass(ReactDOMComponent);\n\n  ReactInjection.NativeComponent.injectTextComponentClass(ReactDOMTextComponent);\n\n  ReactInjection.Class.injectMixin(ReactBrowserComponentMixin);\n\n  ReactInjection.DOMProperty.injectDOMPropertyConfig(HTMLDOMPropertyConfig);\n  ReactInjection.DOMProperty.injectDOMPropertyConfig(SVGDOMPropertyConfig);\n\n  ReactInjection.EmptyComponent.injectEmptyComponent('noscript');\n\n  ReactInjection.Updates.injectReconcileTransaction(ReactReconcileTransaction);\n  ReactInjection.Updates.injectBatchingStrategy(ReactDefaultBatchingStrategy);\n\n  ReactInjection.RootIndex.injectCreateReactRootIndex(ExecutionEnvironment.canUseDOM ? ClientReactRootIndex.createReactRootIndex : ServerReactRootIndex.createReactRootIndex);\n\n  ReactInjection.Component.injectEnvironment(ReactComponentBrowserEnvironment);\n\n  if (process.env.NODE_ENV !== 'production') {\n    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';\n    if (/[?&]react_perf\\b/.test(url)) {\n      var ReactDefaultPerf = require('./ReactDefaultPerf');\n      ReactDefaultPerf.start();\n    }\n  }\n}\n\nmodule.exports = {\n  inject: inject\n};\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./ReactComponentBrowserEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentBrowserEnvironment.js",
       "./ReactDOMTextComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMTextComponent.js",
       "./ReactInstanceHandles": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceHandles.js",
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
@@ -3690,25 +4359,24 @@
       "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "./SVGDOMPropertyConfig": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SVGDOMPropertyConfig.js",
       "./DefaultEventPluginOrder": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DefaultEventPluginOrder.js",
-      "./ReactBrowserComponentMixin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserComponentMixin.js",
       "./HTMLDOMPropertyConfig": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/HTMLDOMPropertyConfig.js",
+      "./ReactBrowserComponentMixin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserComponentMixin.js",
       "./ReactDefaultBatchingStrategy": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultBatchingStrategy.js",
       "./SelectEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SelectEventPlugin.js",
-      "./ReactEventListener": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEventListener.js",
-      "./ChangeEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ChangeEventPlugin.js",
-      "./ReactComponentBrowserEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentBrowserEnvironment.js",
       "./EnterLeaveEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EnterLeaveEventPlugin.js",
       "./ReactInjection": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInjection.js",
-      "./ReactReconcileTransaction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconcileTransaction.js",
-      "./BeforeInputEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/BeforeInputEventPlugin.js",
       "./SimpleEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SimpleEventPlugin.js",
-      "./ReactDOMComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMComponent.js",
-      "./ReactDefaultPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultPerf.js"
+      "./ReactEventListener": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEventListener.js",
+      "./BeforeInputEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/BeforeInputEventPlugin.js",
+      "./ChangeEventPlugin": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ChangeEventPlugin.js",
+      "./ReactReconcileTransaction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconcileTransaction.js",
+      "./ReactDefaultPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultPerf.js",
+      "./ReactDOMComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMComponent.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultInjection.js",
       "hash": "bea1269237d31eb5ad1c9dae6435568d",
-      "browserifyId": 244,
+      "browserifyId": 300,
       "sourcemap": ""
     }
   ],
@@ -3724,7 +4392,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultPerf.js",
       "hash": "8e4a184c68777f841597e886a4841891",
-      "browserifyId": 245,
+      "browserifyId": 301,
       "sourcemap": ""
     }
   ],
@@ -3736,7 +4404,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDefaultPerfAnalysis.js",
       "hash": "c7851134ecd291b7e3b4255fd5a271c5",
-      "browserifyId": 246,
+      "browserifyId": 302,
       "sourcemap": ""
     }
   ],
@@ -3751,7 +4419,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
       "hash": "0ba3cbc2accab7d98f3a68296bd7b335",
-      "browserifyId": 247,
+      "browserifyId": 303,
       "sourcemap": ""
     }
   ],
@@ -3760,33 +4428,33 @@
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
+      "./ReactPropTypeLocations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocations.js",
       "./ReactPropTypeLocationNames": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocationNames.js",
       "./ReactCurrentOwner": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCurrentOwner.js",
       "./canDefineProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/canDefineProperty.js",
       "./getIteratorFn": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getIteratorFn.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "./ReactPropTypeLocations": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocations.js"
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElementValidator.js",
       "hash": "df3880c043aa530a90c64579e762f743",
-      "browserifyId": 248,
+      "browserifyId": 304,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponent.js": [
     "/**\n * Copyright 2014-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactEmptyComponent\n */\n\n'use strict';\n\nvar ReactElement = require('./ReactElement');\nvar ReactEmptyComponentRegistry = require('./ReactEmptyComponentRegistry');\nvar ReactReconciler = require('./ReactReconciler');\n\nvar assign = require('./Object.assign');\n\nvar placeholderElement;\n\nvar ReactEmptyComponentInjection = {\n  injectEmptyComponent: function (component) {\n    placeholderElement = ReactElement.createElement(component);\n  }\n};\n\nfunction registerNullComponentID() {\n  ReactEmptyComponentRegistry.registerNullComponentID(this._rootNodeID);\n}\n\nvar ReactEmptyComponent = function (instantiate) {\n  this._currentElement = null;\n  this._rootNodeID = null;\n  this._renderedComponent = instantiate(placeholderElement);\n};\nassign(ReactEmptyComponent.prototype, {\n  construct: function (element) {},\n  mountComponent: function (rootID, transaction, context) {\n    transaction.getReactMountReady().enqueue(registerNullComponentID, this);\n    this._rootNodeID = rootID;\n    return ReactReconciler.mountComponent(this._renderedComponent, rootID, transaction, context);\n  },\n  receiveComponent: function () {},\n  unmountComponent: function (rootID, transaction, context) {\n    ReactReconciler.unmountComponent(this._renderedComponent);\n    ReactEmptyComponentRegistry.deregisterNullComponentID(this._rootNodeID);\n    this._rootNodeID = null;\n    this._renderedComponent = null;\n  }\n});\n\nReactEmptyComponent.injection = ReactEmptyComponentInjection;\n\nmodule.exports = ReactEmptyComponent;",
     {
-      "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
       "./ReactEmptyComponentRegistry": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponentRegistry.js",
+      "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
       "./ReactReconciler": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconciler.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponent.js",
       "hash": "9f363069044da3889e257bfd143f1c51",
-      "browserifyId": 249,
+      "browserifyId": 305,
       "sourcemap": ""
     }
   ],
@@ -3796,7 +4464,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponentRegistry.js",
       "hash": "68551e2bacaeb11df6e4ca40fa7197ee",
-      "browserifyId": 250,
+      "browserifyId": 306,
       "sourcemap": ""
     }
   ],
@@ -3808,7 +4476,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactErrorUtils.js",
       "hash": "bcabf31680c0ebb98503f20bc4a88c09",
-      "browserifyId": 251,
+      "browserifyId": 307,
       "sourcemap": ""
     }
   ],
@@ -3820,7 +4488,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEventEmitterMixin.js",
       "hash": "eb36f69d48ce7d88e9f1d309d21e6ebf",
-      "browserifyId": 252,
+      "browserifyId": 308,
       "sourcemap": ""
     }
   ],
@@ -3840,7 +4508,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEventListener.js",
       "hash": "a693c567c04a447a74ca613111e4de39",
-      "browserifyId": 253,
+      "browserifyId": 309,
       "sourcemap": ""
     }
   ],
@@ -3855,28 +4523,28 @@
       "./ReactRootIndex": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactRootIndex.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./ReactEmptyComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponent.js",
-      "./ReactNativeComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNativeComponent.js",
-      "./ReactComponentEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentEnvironment.js"
+      "./ReactComponentEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponentEnvironment.js",
+      "./ReactNativeComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNativeComponent.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInjection.js",
       "hash": "afa5083f33995c59e61135bb9a19b5cc",
-      "browserifyId": 254,
+      "browserifyId": 310,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInputSelection.js": [
     "/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactInputSelection\n */\n\n'use strict';\n\nvar ReactDOMSelection = require('./ReactDOMSelection');\n\nvar containsNode = require('fbjs/lib/containsNode');\nvar focusNode = require('fbjs/lib/focusNode');\nvar getActiveElement = require('fbjs/lib/getActiveElement');\n\nfunction isInDocument(node) {\n  return containsNode(document.documentElement, node);\n}\n\n/**\n * @ReactInputSelection: React input selection module. Based on Selection.js,\n * but modified to be suitable for react and has a couple of bug fixes (doesn't\n * assume buttons have range selections allowed).\n * Input selection module for React.\n */\nvar ReactInputSelection = {\n\n  hasSelectionCapabilities: function (elem) {\n    var nodeName = elem && elem.nodeName && elem.nodeName.toLowerCase();\n    return nodeName && (nodeName === 'input' && elem.type === 'text' || nodeName === 'textarea' || elem.contentEditable === 'true');\n  },\n\n  getSelectionInformation: function () {\n    var focusedElem = getActiveElement();\n    return {\n      focusedElem: focusedElem,\n      selectionRange: ReactInputSelection.hasSelectionCapabilities(focusedElem) ? ReactInputSelection.getSelection(focusedElem) : null\n    };\n  },\n\n  /**\n   * @restoreSelection: If any selection information was potentially lost,\n   * restore it. This is useful when performing operations that could remove dom\n   * nodes and place them back in, resulting in focus being lost.\n   */\n  restoreSelection: function (priorSelectionInformation) {\n    var curFocusedElem = getActiveElement();\n    var priorFocusedElem = priorSelectionInformation.focusedElem;\n    var priorSelectionRange = priorSelectionInformation.selectionRange;\n    if (curFocusedElem !== priorFocusedElem && isInDocument(priorFocusedElem)) {\n      if (ReactInputSelection.hasSelectionCapabilities(priorFocusedElem)) {\n        ReactInputSelection.setSelection(priorFocusedElem, priorSelectionRange);\n      }\n      focusNode(priorFocusedElem);\n    }\n  },\n\n  /**\n   * @getSelection: Gets the selection bounds of a focused textarea, input or\n   * contentEditable node.\n   * -@input: Look up selection bounds of this input\n   * -@return {start: selectionStart, end: selectionEnd}\n   */\n  getSelection: function (input) {\n    var selection;\n\n    if ('selectionStart' in input) {\n      // Modern browser with input or textarea.\n      selection = {\n        start: input.selectionStart,\n        end: input.selectionEnd\n      };\n    } else if (document.selection && (input.nodeName && input.nodeName.toLowerCase() === 'input')) {\n      // IE8 input.\n      var range = document.selection.createRange();\n      // There can only be one selection per document in IE, so it must\n      // be in our element.\n      if (range.parentElement() === input) {\n        selection = {\n          start: -range.moveStart('character', -input.value.length),\n          end: -range.moveEnd('character', -input.value.length)\n        };\n      }\n    } else {\n      // Content editable or old IE textarea.\n      selection = ReactDOMSelection.getOffsets(input);\n    }\n\n    return selection || { start: 0, end: 0 };\n  },\n\n  /**\n   * @setSelection: Sets the selection bounds of a textarea or input and focuses\n   * the input.\n   * -@input     Set selection bounds of this input or textarea\n   * -@offsets   Object of same form that is returned from get*\n   */\n  setSelection: function (input, offsets) {\n    var start = offsets.start;\n    var end = offsets.end;\n    if (typeof end === 'undefined') {\n      end = start;\n    }\n\n    if ('selectionStart' in input) {\n      input.selectionStart = start;\n      input.selectionEnd = Math.min(end, input.value.length);\n    } else if (document.selection && (input.nodeName && input.nodeName.toLowerCase() === 'input')) {\n      var range = input.createTextRange();\n      range.collapse(true);\n      range.moveStart('character', start);\n      range.moveEnd('character', end - start);\n      range.select();\n    } else {\n      ReactDOMSelection.setOffsets(input, offsets);\n    }\n  }\n};\n\nmodule.exports = ReactInputSelection;",
     {
-      "fbjs/lib/getActiveElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getActiveElement.js",
       "fbjs/lib/containsNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/containsNode.js",
+      "fbjs/lib/getActiveElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getActiveElement.js",
       "fbjs/lib/focusNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/focusNode.js",
       "./ReactDOMSelection": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMSelection.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInputSelection.js",
       "hash": "ec295cd1681219e791dcdc05beb2441a",
-      "browserifyId": 255,
+      "browserifyId": 311,
       "sourcemap": ""
     }
   ],
@@ -3890,7 +4558,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceHandles.js",
       "hash": "4fc5b2fe5cff5cc46501c7fa73ee4317",
-      "browserifyId": 256,
+      "browserifyId": 312,
       "sourcemap": ""
     }
   ],
@@ -3900,7 +4568,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceMap.js",
       "hash": "9d27c2628712c1a224804819c41a480f",
-      "browserifyId": 257,
+      "browserifyId": 313,
       "sourcemap": ""
     }
   ],
@@ -3913,8 +4581,8 @@
       "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
       "./ReactPropTypes": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypes.js",
       "./onlyChild": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/onlyChild.js",
-      "./ReactDOMFactories": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMFactories.js",
       "./ReactElementValidator": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElementValidator.js",
+      "./ReactDOMFactories": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMFactories.js",
       "./ReactComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactComponent.js",
       "./ReactChildren": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactChildren.js",
       "./ReactClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactClass.js"
@@ -3922,7 +4590,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactIsomorphic.js",
       "hash": "a0fdb154176ac7686041c3c6b3412fae",
-      "browserifyId": 258,
+      "browserifyId": 314,
       "sourcemap": ""
     }
   ],
@@ -3934,7 +4602,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMarkupChecksum.js",
       "hash": "aae8e574e4f1fcbb72dc1803957e5c92",
-      "browserifyId": 259,
+      "browserifyId": 315,
       "sourcemap": ""
     }
   ],
@@ -3943,32 +4611,32 @@
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./ReactCurrentOwner": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCurrentOwner.js",
+      "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
       "./ReactInstanceHandles": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceHandles.js",
       "./ReactPerf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
       "./ReactReconciler": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconciler.js",
       "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
+      "./validateDOMNesting": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/validateDOMNesting.js",
       "./ReactDOMFeatureFlags": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactDOMFeatureFlags.js",
       "./ReactEmptyComponentRegistry": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponentRegistry.js",
       "./ReactInstanceMap": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceMap.js",
       "./shouldUpdateReactComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/shouldUpdateReactComponent.js",
-      "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "fbjs/lib/emptyObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyObject.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "./ReactMarkupChecksum": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMarkupChecksum.js",
-      "./validateDOMNesting": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/validateDOMNesting.js",
       "./DOMProperty": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/DOMProperty.js",
       "./ReactUpdateQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdateQueue.js",
       "./setInnerHTML": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setInnerHTML.js",
+      "fbjs/lib/emptyObject": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyObject.js",
+      "./ReactBrowserEventEmitter": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserEventEmitter.js",
       "./instantiateReactComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/instantiateReactComponent.js",
-      "fbjs/lib/containsNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/containsNode.js",
-      "./ReactBrowserEventEmitter": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactBrowserEventEmitter.js"
+      "fbjs/lib/containsNode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/containsNode.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
       "hash": "f1b5e25ccd6c99b5aac3cd8d11b7f896",
-      "browserifyId": 260,
+      "browserifyId": 316,
       "sourcemap": ""
     }
   ],
@@ -3986,7 +4654,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMultiChild.js",
       "hash": "0f6f8c0e60c0485c8fae2a9239b16cd0",
-      "browserifyId": 261,
+      "browserifyId": 317,
       "sourcemap": ""
     }
   ],
@@ -3998,7 +4666,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMultiChildUpdateTypes.js",
       "hash": "b441f1f1c37565b1d9b0f208b4646c88",
-      "browserifyId": 262,
+      "browserifyId": 318,
       "sourcemap": ""
     }
   ],
@@ -4012,7 +4680,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNativeComponent.js",
       "hash": "d77592b1268f6e41e076f6e7f533ab0f",
-      "browserifyId": 263,
+      "browserifyId": 319,
       "sourcemap": ""
     }
   ],
@@ -4025,7 +4693,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNoopUpdateQueue.js",
       "hash": "12d70db4229431d9c846b76f949c1942",
-      "browserifyId": 264,
+      "browserifyId": 320,
       "sourcemap": ""
     }
   ],
@@ -4038,7 +4706,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactOwner.js",
       "hash": "0ffcdcfe6cf858b97a1d7577c37e939f",
-      "browserifyId": 265,
+      "browserifyId": 321,
       "sourcemap": ""
     }
   ],
@@ -4050,7 +4718,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPerf.js",
       "hash": "f32328e4232d821d486b1969d304f1f7",
-      "browserifyId": 266,
+      "browserifyId": 322,
       "sourcemap": ""
     }
   ],
@@ -4062,7 +4730,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocationNames.js",
       "hash": "4fe0ad5791ff20e6657adf183a4626d2",
-      "browserifyId": 267,
+      "browserifyId": 323,
       "sourcemap": ""
     }
   ],
@@ -4074,7 +4742,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypeLocations.js",
       "hash": "f5597410c33a874458672abf3ab51b4c",
-      "browserifyId": 268,
+      "browserifyId": 324,
       "sourcemap": ""
     }
   ],
@@ -4089,7 +4757,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactPropTypes.js",
       "hash": "c3e554118e150c4ad567fdb8f297013a",
-      "browserifyId": 269,
+      "browserifyId": 325,
       "sourcemap": ""
     }
   ],
@@ -4107,7 +4775,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconcileTransaction.js",
       "hash": "bef1183faf7dff3d829313e6b105b7aa",
-      "browserifyId": 270,
+      "browserifyId": 326,
       "sourcemap": ""
     }
   ],
@@ -4119,7 +4787,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconciler.js",
       "hash": "273602b1dc8ee1693d370882f51e5065",
-      "browserifyId": 271,
+      "browserifyId": 327,
       "sourcemap": ""
     }
   ],
@@ -4131,7 +4799,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactRef.js",
       "hash": "96df21ceb62e774c498523e553a32cd0",
-      "browserifyId": 272,
+      "browserifyId": 328,
       "sourcemap": ""
     }
   ],
@@ -4141,7 +4809,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactRootIndex.js",
       "hash": "b92b171252407aee328fdf02ad43bf73",
-      "browserifyId": 273,
+      "browserifyId": 329,
       "sourcemap": ""
     }
   ],
@@ -4151,7 +4819,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactServerBatchingStrategy.js",
       "hash": "adae1d77477675248efaed7addabeb93",
-      "browserifyId": 274,
+      "browserifyId": 330,
       "sourcemap": ""
     }
   ],
@@ -4173,7 +4841,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactServerRendering.js",
       "hash": "99dafd7a13fe5186d39770bfcc6f73a0",
-      "browserifyId": 275,
+      "browserifyId": 331,
       "sourcemap": ""
     }
   ],
@@ -4181,15 +4849,15 @@
     "/**\n * Copyright 2014-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule ReactServerRenderingTransaction\n * @typechecks\n */\n\n'use strict';\n\nvar PooledClass = require('./PooledClass');\nvar CallbackQueue = require('./CallbackQueue');\nvar Transaction = require('./Transaction');\n\nvar assign = require('./Object.assign');\nvar emptyFunction = require('fbjs/lib/emptyFunction');\n\n/**\n * Provides a `CallbackQueue` queue for collecting `onDOMReady` callbacks\n * during the performing of the transaction.\n */\nvar ON_DOM_READY_QUEUEING = {\n  /**\n   * Initializes the internal `onDOMReady` queue.\n   */\n  initialize: function () {\n    this.reactMountReady.reset();\n  },\n\n  close: emptyFunction\n};\n\n/**\n * Executed within the scope of the `Transaction` instance. Consider these as\n * being member methods, but with an implied ordering while being isolated from\n * each other.\n */\nvar TRANSACTION_WRAPPERS = [ON_DOM_READY_QUEUEING];\n\n/**\n * @class ReactServerRenderingTransaction\n * @param {boolean} renderToStaticMarkup\n */\nfunction ReactServerRenderingTransaction(renderToStaticMarkup) {\n  this.reinitializeTransaction();\n  this.renderToStaticMarkup = renderToStaticMarkup;\n  this.reactMountReady = CallbackQueue.getPooled(null);\n  this.useCreateElement = false;\n}\n\nvar Mixin = {\n  /**\n   * @see Transaction\n   * @abstract\n   * @final\n   * @return {array} Empty list of operation wrap procedures.\n   */\n  getTransactionWrappers: function () {\n    return TRANSACTION_WRAPPERS;\n  },\n\n  /**\n   * @return {object} The queue to collect `onDOMReady` callbacks with.\n   */\n  getReactMountReady: function () {\n    return this.reactMountReady;\n  },\n\n  /**\n   * `PooledClass` looks for this, and will invoke this before allowing this\n   * instance to be reused.\n   */\n  destructor: function () {\n    CallbackQueue.release(this.reactMountReady);\n    this.reactMountReady = null;\n  }\n};\n\nassign(ReactServerRenderingTransaction.prototype, Transaction.Mixin, Mixin);\n\nPooledClass.addPoolingTo(ReactServerRenderingTransaction);\n\nmodule.exports = ReactServerRenderingTransaction;",
     {
       "./PooledClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
+      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "./CallbackQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CallbackQueue.js",
       "./Transaction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Transaction.js",
-      "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/emptyFunction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactServerRenderingTransaction.js",
       "hash": "504ffc04595de4adf70cb560409e592a",
-      "browserifyId": 276,
+      "browserifyId": 332,
       "sourcemap": ""
     }
   ],
@@ -4199,8 +4867,8 @@
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./ReactCurrentOwner": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCurrentOwner.js",
       "./ReactElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactElement.js",
-      "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./ReactInstanceMap": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInstanceMap.js",
+      "./ReactUpdates": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
@@ -4208,7 +4876,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdateQueue.js",
       "hash": "84a44b6c164ac488f590ab459d982d6d",
-      "browserifyId": 277,
+      "browserifyId": 333,
       "sourcemap": ""
     }
   ],
@@ -4220,14 +4888,14 @@
       "./ReactReconciler": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactReconciler.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
-      "./PooledClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
       "./CallbackQueue": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/CallbackQueue.js",
+      "./PooledClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
       "./Transaction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Transaction.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactUpdates.js",
       "hash": "71cfb2b3b981268e48c4d26084d5e5f7",
-      "browserifyId": 278,
+      "browserifyId": 334,
       "sourcemap": ""
     }
   ],
@@ -4237,7 +4905,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactVersion.js",
       "hash": "f82c62d6494bea7e6e6ee598c8c7b3ba",
-      "browserifyId": 279,
+      "browserifyId": 335,
       "sourcemap": ""
     }
   ],
@@ -4249,7 +4917,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SVGDOMPropertyConfig.js",
       "hash": "ebb8ef913ebf9fc7040d3743eda4890d",
-      "browserifyId": 280,
+      "browserifyId": 336,
       "sourcemap": ""
     }
   ],
@@ -4258,18 +4926,18 @@
     {
       "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
       "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
+      "./ReactInputSelection": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInputSelection.js",
       "./SyntheticEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js",
       "./isTextInputElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isTextInputElement.js",
       "fbjs/lib/ExecutionEnvironment": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
       "fbjs/lib/shallowEqual": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/shallowEqual.js",
-      "fbjs/lib/getActiveElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getActiveElement.js",
-      "./ReactInputSelection": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactInputSelection.js"
+      "fbjs/lib/getActiveElement": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getActiveElement.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SelectEventPlugin.js",
       "hash": "7a998bf85f434bccce8979e17348fa7f",
-      "browserifyId": 281,
+      "browserifyId": 337,
       "sourcemap": ""
     }
   ],
@@ -4279,7 +4947,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ServerReactRootIndex.js",
       "hash": "4bf6e25eb21de04c9671b2dfbfeb1d87",
-      "browserifyId": 282,
+      "browserifyId": 338,
       "sourcemap": ""
     }
   ],
@@ -4290,13 +4958,13 @@
       "./EventConstants": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventConstants.js",
       "./EventPropagators": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/EventPropagators.js",
       "./ReactMount": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactMount.js",
+      "./SyntheticEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js",
       "./SyntheticMouseEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticMouseEvent.js",
       "./getEventCharCode": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventCharCode.js",
+      "fbjs/lib/EventListener": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/EventListener.js",
       "fbjs/lib/emptyFunction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "fbjs/lib/keyOf": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
-      "./SyntheticEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js",
-      "fbjs/lib/EventListener": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/EventListener.js",
       "./SyntheticClipboardEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticClipboardEvent.js",
       "./SyntheticFocusEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticFocusEvent.js",
       "./SyntheticDragEvent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticDragEvent.js",
@@ -4308,7 +4976,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SimpleEventPlugin.js",
       "hash": "91482bb600f79cb70b32210549ff76d1",
-      "browserifyId": 283,
+      "browserifyId": 339,
       "sourcemap": ""
     }
   ],
@@ -4320,7 +4988,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticClipboardEvent.js",
       "hash": "caa76625f2f5eea123641490124931b2",
-      "browserifyId": 284,
+      "browserifyId": 340,
       "sourcemap": ""
     }
   ],
@@ -4332,7 +5000,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticCompositionEvent.js",
       "hash": "51b44db2ef997755d07db53247c2d4e9",
-      "browserifyId": 285,
+      "browserifyId": 341,
       "sourcemap": ""
     }
   ],
@@ -4344,7 +5012,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticDragEvent.js",
       "hash": "419dae688dbf84de3fa6e139886c3f4d",
-      "browserifyId": 286,
+      "browserifyId": 342,
       "sourcemap": ""
     }
   ],
@@ -4354,13 +5022,13 @@
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
       "./PooledClass": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/PooledClass.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
-      "fbjs/lib/emptyFunction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js",
-      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js"
+      "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
+      "fbjs/lib/emptyFunction": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticEvent.js",
       "hash": "e0833ec393f8ba10899624fbdd5ae9ff",
-      "browserifyId": 287,
+      "browserifyId": 343,
       "sourcemap": ""
     }
   ],
@@ -4372,7 +5040,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticFocusEvent.js",
       "hash": "7ff14d334799605d51850be16f2db9dd",
-      "browserifyId": 288,
+      "browserifyId": 344,
       "sourcemap": ""
     }
   ],
@@ -4384,7 +5052,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticInputEvent.js",
       "hash": "087d67365042cb804aa93c7b8ef829a7",
-      "browserifyId": 289,
+      "browserifyId": 345,
       "sourcemap": ""
     }
   ],
@@ -4399,7 +5067,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticKeyboardEvent.js",
       "hash": "03e477adc2e3cfeff44b38ced573a8de",
-      "browserifyId": 290,
+      "browserifyId": 346,
       "sourcemap": ""
     }
   ],
@@ -4413,7 +5081,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticMouseEvent.js",
       "hash": "5ef32f3487bf64033f4781dcf2d93e07",
-      "browserifyId": 291,
+      "browserifyId": 347,
       "sourcemap": ""
     }
   ],
@@ -4426,7 +5094,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticTouchEvent.js",
       "hash": "0541e772ee59533f77fce5e295e8c389",
-      "browserifyId": 292,
+      "browserifyId": 348,
       "sourcemap": ""
     }
   ],
@@ -4439,7 +5107,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticUIEvent.js",
       "hash": "ba607521710edaf45ac0054717efa789",
-      "browserifyId": 293,
+      "browserifyId": 349,
       "sourcemap": ""
     }
   ],
@@ -4451,7 +5119,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/SyntheticWheelEvent.js",
       "hash": "4364d338717595e09188f247866ed909",
-      "browserifyId": 294,
+      "browserifyId": 350,
       "sourcemap": ""
     }
   ],
@@ -4464,7 +5132,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Transaction.js",
       "hash": "794054e9a90cf32ac4691696f5cf7691",
-      "browserifyId": 295,
+      "browserifyId": 351,
       "sourcemap": ""
     }
   ],
@@ -4474,7 +5142,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ViewportMetrics.js",
       "hash": "d9690d721dd8fc1d2c8f7c6d5c98a00c",
-      "browserifyId": 296,
+      "browserifyId": 352,
       "sourcemap": ""
     }
   ],
@@ -4487,7 +5155,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/accumulateInto.js",
       "hash": "aebbcdb6b8228c23b45ac1b0b779075b",
-      "browserifyId": 297,
+      "browserifyId": 353,
       "sourcemap": ""
     }
   ],
@@ -4497,7 +5165,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/adler32.js",
       "hash": "ed4d7fca6e2e7acac9e61b6f3a0dd7ee",
-      "browserifyId": 298,
+      "browserifyId": 354,
       "sourcemap": ""
     }
   ],
@@ -4509,7 +5177,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/canDefineProperty.js",
       "hash": "94240d0e1be612c46f0f4c2883dfa848",
-      "browserifyId": 299,
+      "browserifyId": 355,
       "sourcemap": ""
     }
   ],
@@ -4521,7 +5189,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/dangerousStyleValue.js",
       "hash": "159fd193ef1d679de60dcfa8ec26e2df",
-      "browserifyId": 300,
+      "browserifyId": 356,
       "sourcemap": ""
     }
   ],
@@ -4535,7 +5203,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/deprecated.js",
       "hash": "6b23217e6174e86b2997d9f455019cf9",
-      "browserifyId": 301,
+      "browserifyId": 357,
       "sourcemap": ""
     }
   ],
@@ -4545,7 +5213,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/escapeTextContentForBrowser.js",
       "hash": "2e2a1b6d8d3c56a495f75b392d1f19a9",
-      "browserifyId": 302,
+      "browserifyId": 358,
       "sourcemap": ""
     }
   ],
@@ -4562,7 +5230,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/findDOMNode.js",
       "hash": "c21bc2a371b21a6e05ea49761196f7a1",
-      "browserifyId": 303,
+      "browserifyId": 359,
       "sourcemap": ""
     }
   ],
@@ -4576,7 +5244,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/flattenChildren.js",
       "hash": "00daa1c379ee1e615ab6fb9dcc8797b1",
-      "browserifyId": 304,
+      "browserifyId": 360,
       "sourcemap": ""
     }
   ],
@@ -4586,7 +5254,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/forEachAccumulated.js",
       "hash": "68d47eb33be200b2f6c835862ed1e64a",
-      "browserifyId": 305,
+      "browserifyId": 361,
       "sourcemap": ""
     }
   ],
@@ -4596,7 +5264,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventCharCode.js",
       "hash": "3ef2c08c36f968622ed39bd112c77d1a",
-      "browserifyId": 306,
+      "browserifyId": 362,
       "sourcemap": ""
     }
   ],
@@ -4608,7 +5276,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventKey.js",
       "hash": "5d4282ac85b1deda4ec6cc440df401dd",
-      "browserifyId": 307,
+      "browserifyId": 363,
       "sourcemap": ""
     }
   ],
@@ -4618,7 +5286,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventModifierState.js",
       "hash": "fbb65d646dcb58232b6160b39f795d40",
-      "browserifyId": 308,
+      "browserifyId": 364,
       "sourcemap": ""
     }
   ],
@@ -4628,7 +5296,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getEventTarget.js",
       "hash": "7352f43fec2526f86c5a31140b53dddb",
-      "browserifyId": 309,
+      "browserifyId": 365,
       "sourcemap": ""
     }
   ],
@@ -4638,7 +5306,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getIteratorFn.js",
       "hash": "1138d710f8f3711dfbd18d56a2f8d7b2",
-      "browserifyId": 310,
+      "browserifyId": 366,
       "sourcemap": ""
     }
   ],
@@ -4648,7 +5316,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getNodeForCharacterOffset.js",
       "hash": "603ad814580fb425553524a0d01626a1",
-      "browserifyId": 311,
+      "browserifyId": 367,
       "sourcemap": ""
     }
   ],
@@ -4660,7 +5328,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/getTextContentAccessor.js",
       "hash": "2f15d57ad5c39be5170ec1fa155a5e1b",
-      "browserifyId": 312,
+      "browserifyId": 368,
       "sourcemap": ""
     }
   ],
@@ -4668,17 +5336,17 @@
     "(function (process){\n/**\n * Copyright 2013-2015, Facebook, Inc.\n * All rights reserved.\n *\n * This source code is licensed under the BSD-style license found in the\n * LICENSE file in the root directory of this source tree. An additional grant\n * of patent rights can be found in the PATENTS file in the same directory.\n *\n * @providesModule instantiateReactComponent\n * @typechecks static-only\n */\n\n'use strict';\n\nvar ReactCompositeComponent = require('./ReactCompositeComponent');\nvar ReactEmptyComponent = require('./ReactEmptyComponent');\nvar ReactNativeComponent = require('./ReactNativeComponent');\n\nvar assign = require('./Object.assign');\nvar invariant = require('fbjs/lib/invariant');\nvar warning = require('fbjs/lib/warning');\n\n// To avoid a cyclic dependency, we create the final class in this module\nvar ReactCompositeComponentWrapper = function () {};\nassign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent.Mixin, {\n  _instantiateReactComponent: instantiateReactComponent\n});\n\nfunction getDeclarationErrorAddendum(owner) {\n  if (owner) {\n    var name = owner.getName();\n    if (name) {\n      return ' Check the render method of `' + name + '`.';\n    }\n  }\n  return '';\n}\n\n/**\n * Check if the type reference is a known internal type. I.e. not a user\n * provided composite type.\n *\n * @param {function} type\n * @return {boolean} Returns true if this is a valid internal type.\n */\nfunction isInternalComponentType(type) {\n  return typeof type === 'function' && typeof type.prototype !== 'undefined' && typeof type.prototype.mountComponent === 'function' && typeof type.prototype.receiveComponent === 'function';\n}\n\n/**\n * Given a ReactNode, create an instance that will actually be mounted.\n *\n * @param {ReactNode} node\n * @return {object} A new instance of the element's constructor.\n * @protected\n */\nfunction instantiateReactComponent(node) {\n  var instance;\n\n  if (node === null || node === false) {\n    instance = new ReactEmptyComponent(instantiateReactComponent);\n  } else if (typeof node === 'object') {\n    var element = node;\n    !(element && (typeof element.type === 'function' || typeof element.type === 'string')) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Element type is invalid: expected a string (for built-in components) ' + 'or a class/function (for composite components) but got: %s.%s', element.type == null ? element.type : typeof element.type, getDeclarationErrorAddendum(element._owner)) : invariant(false) : undefined;\n\n    // Special case string values\n    if (typeof element.type === 'string') {\n      instance = ReactNativeComponent.createInternalComponent(element);\n    } else if (isInternalComponentType(element.type)) {\n      // This is temporarily available for custom components that are not string\n      // representations. I.e. ART. Once those are updated to use the string\n      // representation, we can drop this code path.\n      instance = new element.type(element);\n    } else {\n      instance = new ReactCompositeComponentWrapper();\n    }\n  } else if (typeof node === 'string' || typeof node === 'number') {\n    instance = ReactNativeComponent.createInstanceForText(node);\n  } else {\n    !false ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Encountered invalid React node of type %s', typeof node) : invariant(false) : undefined;\n  }\n\n  if (process.env.NODE_ENV !== 'production') {\n    process.env.NODE_ENV !== 'production' ? warning(typeof instance.construct === 'function' && typeof instance.mountComponent === 'function' && typeof instance.receiveComponent === 'function' && typeof instance.unmountComponent === 'function', 'Only React Components can be mounted.') : undefined;\n  }\n\n  // Sets up the instance. This can probably just move into the constructor now.\n  instance.construct(node);\n\n  // These two fields are used by the DOM and ART diffing algorithms\n  // respectively. Instead of using expandos on components, we should be\n  // storing the state needed by the diffing algorithms elsewhere.\n  instance._mountIndex = 0;\n  instance._mountImage = null;\n\n  if (process.env.NODE_ENV !== 'production') {\n    instance._isOwnerNecessary = false;\n    instance._warnedAboutRefsInRender = false;\n  }\n\n  // Internal instances should fully constructed at this point, so they should\n  // not get any new fields added to them at this point.\n  if (process.env.NODE_ENV !== 'production') {\n    if (Object.preventExtensions) {\n      Object.preventExtensions(instance);\n    }\n  }\n\n  return instance;\n}\n\nmodule.exports = instantiateReactComponent;\n}).call(this,require('_process'))",
     {
       "_process": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/process/browser.js",
+      "./ReactEmptyComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponent.js",
+      "./ReactNativeComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNativeComponent.js",
       "./Object.assign": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/Object.assign.js",
       "fbjs/lib/invariant": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "fbjs/lib/warning": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
-      "./ReactEmptyComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactEmptyComponent.js",
-      "./ReactNativeComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactNativeComponent.js",
       "./ReactCompositeComponent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/ReactCompositeComponent.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/instantiateReactComponent.js",
       "hash": "acb281da1c81b124fff0c4812cda39ca",
-      "browserifyId": 313,
+      "browserifyId": 369,
       "sourcemap": ""
     }
   ],
@@ -4690,7 +5358,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isEventSupported.js",
       "hash": "725527ad776a02f54f32e08c221b41c9",
-      "browserifyId": 314,
+      "browserifyId": 370,
       "sourcemap": ""
     }
   ],
@@ -4700,7 +5368,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/isTextInputElement.js",
       "hash": "673e95af0b88f3a008331f7a93dea3f5",
-      "browserifyId": 315,
+      "browserifyId": 371,
       "sourcemap": ""
     }
   ],
@@ -4714,7 +5382,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/onlyChild.js",
       "hash": "8e39733773833a78339fef8d2d0d8a10",
-      "browserifyId": 316,
+      "browserifyId": 372,
       "sourcemap": ""
     }
   ],
@@ -4726,7 +5394,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/quoteAttributeValueForBrowser.js",
       "hash": "e851b2f827a857150c17c24b7542a6b8",
-      "browserifyId": 317,
+      "browserifyId": 373,
       "sourcemap": ""
     }
   ],
@@ -4738,7 +5406,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/renderSubtreeIntoContainer.js",
       "hash": "7e7e45f5e1ab1bace06dee57c480787f",
-      "browserifyId": 318,
+      "browserifyId": 374,
       "sourcemap": ""
     }
   ],
@@ -4750,7 +5418,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setInnerHTML.js",
       "hash": "c7f7489f83328f04cf7c169e412b050c",
-      "browserifyId": 319,
+      "browserifyId": 375,
       "sourcemap": ""
     }
   ],
@@ -4764,7 +5432,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/setTextContent.js",
       "hash": "4c7bf56cad806fb8b685732175eb5124",
-      "browserifyId": 320,
+      "browserifyId": 376,
       "sourcemap": ""
     }
   ],
@@ -4774,7 +5442,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/shouldUpdateReactComponent.js",
       "hash": "7b16c552d5f1a7da2d52ebb5552d31bc",
-      "browserifyId": 321,
+      "browserifyId": 377,
       "sourcemap": ""
     }
   ],
@@ -4792,7 +5460,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/traverseAllChildren.js",
       "hash": "a3d172c896e112ad92272b157b08eee2",
-      "browserifyId": 322,
+      "browserifyId": 378,
       "sourcemap": ""
     }
   ],
@@ -4807,7 +5475,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/lib/validateDOMNesting.js",
       "hash": "9e0bb0f3a75468a503556c18353f28f0",
-      "browserifyId": 323,
+      "browserifyId": 379,
       "sourcemap": ""
     }
   ],
@@ -4820,7 +5488,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/EventListener.js",
       "hash": "1cc9e5874e48d33fb9650ceb4eb2f203",
-      "browserifyId": 324,
+      "browserifyId": 380,
       "sourcemap": ""
     }
   ],
@@ -4830,7 +5498,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/ExecutionEnvironment.js",
       "hash": "a950a1475144e6a34e4bc03d1fb23eba",
-      "browserifyId": 325,
+      "browserifyId": 381,
       "sourcemap": ""
     }
   ],
@@ -4840,7 +5508,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/camelize.js",
       "hash": "c0e2c21be8ca2d7bb853629bcd4efd5e",
-      "browserifyId": 326,
+      "browserifyId": 382,
       "sourcemap": ""
     }
   ],
@@ -4852,7 +5520,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/camelizeStyleName.js",
       "hash": "6a7e503b49cf05479f10aa9e9ff1c056",
-      "browserifyId": 327,
+      "browserifyId": 383,
       "sourcemap": ""
     }
   ],
@@ -4864,7 +5532,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/containsNode.js",
       "hash": "536be11511217f890c6bae633ee879a4",
-      "browserifyId": 328,
+      "browserifyId": 384,
       "sourcemap": ""
     }
   ],
@@ -4876,7 +5544,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/createArrayFromMixed.js",
       "hash": "982615a684afc1d104159660b492562d",
-      "browserifyId": 329,
+      "browserifyId": 385,
       "sourcemap": ""
     }
   ],
@@ -4892,7 +5560,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/createNodesFromMarkup.js",
       "hash": "dd6dbafce8067285bafdf00645dc8299",
-      "browserifyId": 330,
+      "browserifyId": 386,
       "sourcemap": ""
     }
   ],
@@ -4902,7 +5570,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyFunction.js",
       "hash": "0c6948f3b8ddd87967b8221b2d653e33",
-      "browserifyId": 331,
+      "browserifyId": 387,
       "sourcemap": ""
     }
   ],
@@ -4914,7 +5582,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/emptyObject.js",
       "hash": "ec2ebf2e889ad7bb5d3d9fe852fbce30",
-      "browserifyId": 332,
+      "browserifyId": 388,
       "sourcemap": ""
     }
   ],
@@ -4924,7 +5592,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/focusNode.js",
       "hash": "2905f7e0dad4c79532be78c9094d2328",
-      "browserifyId": 333,
+      "browserifyId": 389,
       "sourcemap": ""
     }
   ],
@@ -4934,7 +5602,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getActiveElement.js",
       "hash": "aa3be57dc7e8688f2bd094202ba392f6",
-      "browserifyId": 334,
+      "browserifyId": 390,
       "sourcemap": ""
     }
   ],
@@ -4948,7 +5616,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getMarkupWrap.js",
       "hash": "0172a005d40007582ab11c3a0a255be8",
-      "browserifyId": 335,
+      "browserifyId": 391,
       "sourcemap": ""
     }
   ],
@@ -4958,7 +5626,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/getUnboundedScrollPosition.js",
       "hash": "b1758ebdce621e7038466aaa25a47b41",
-      "browserifyId": 336,
+      "browserifyId": 392,
       "sourcemap": ""
     }
   ],
@@ -4968,7 +5636,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/hyphenate.js",
       "hash": "a45508964b869b4752e3de9c0094cf18",
-      "browserifyId": 337,
+      "browserifyId": 393,
       "sourcemap": ""
     }
   ],
@@ -4980,7 +5648,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/hyphenateStyleName.js",
       "hash": "89cc1b190a59039e068b3779b6a3e5bf",
-      "browserifyId": 338,
+      "browserifyId": 394,
       "sourcemap": ""
     }
   ],
@@ -4992,7 +5660,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/invariant.js",
       "hash": "479ab47ded8baab45c56711b86ed154e",
-      "browserifyId": 339,
+      "browserifyId": 395,
       "sourcemap": ""
     }
   ],
@@ -5002,7 +5670,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/isNode.js",
       "hash": "bea7ccd1da7772d53660331f218bb91d",
-      "browserifyId": 340,
+      "browserifyId": 396,
       "sourcemap": ""
     }
   ],
@@ -5014,7 +5682,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/isTextNode.js",
       "hash": "e380c60947a891153fe3dd9d9f089587",
-      "browserifyId": 341,
+      "browserifyId": 397,
       "sourcemap": ""
     }
   ],
@@ -5027,7 +5695,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyMirror.js",
       "hash": "c1105cb0eb798774e9403966e109915d",
-      "browserifyId": 342,
+      "browserifyId": 398,
       "sourcemap": ""
     }
   ],
@@ -5037,7 +5705,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/keyOf.js",
       "hash": "cd76b92c0b7a11e78181161d08bec6fb",
-      "browserifyId": 343,
+      "browserifyId": 399,
       "sourcemap": ""
     }
   ],
@@ -5047,7 +5715,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/mapObject.js",
       "hash": "9875bd3226b96e0e556368e58ac74dd4",
-      "browserifyId": 344,
+      "browserifyId": 400,
       "sourcemap": ""
     }
   ],
@@ -5057,7 +5725,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/memoizeStringOnly.js",
       "hash": "1f0e6fb373f07ee09876ba9f56b1a41e",
-      "browserifyId": 345,
+      "browserifyId": 401,
       "sourcemap": ""
     }
   ],
@@ -5069,7 +5737,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/performance.js",
       "hash": "cf47788ce7863ef27152bef0cecc7919",
-      "browserifyId": 346,
+      "browserifyId": 402,
       "sourcemap": ""
     }
   ],
@@ -5081,7 +5749,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/performanceNow.js",
       "hash": "a1ec2ad1b742edd5eb769dfd64c1f148",
-      "browserifyId": 347,
+      "browserifyId": 403,
       "sourcemap": ""
     }
   ],
@@ -5091,7 +5759,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/shallowEqual.js",
       "hash": "66bdc058ce71958fce02f093f1a643f2",
-      "browserifyId": 348,
+      "browserifyId": 404,
       "sourcemap": ""
     }
   ],
@@ -5104,7 +5772,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/toArray.js",
       "hash": "96a6a7fbf24e4f3ff27baedeef61f028",
-      "browserifyId": 349,
+      "browserifyId": 405,
       "sourcemap": ""
     }
   ],
@@ -5117,7 +5785,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/node_modules/fbjs/lib/warning.js",
       "hash": "42ecf9139ae13e90705b380937fe8943",
-      "browserifyId": 350,
+      "browserifyId": 406,
       "sourcemap": ""
     }
   ],
@@ -5129,7 +5797,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "hash": "f813dc4697f359327d301774a612ceb2",
-      "browserifyId": 351,
+      "browserifyId": 407,
       "sourcemap": ""
     }
   ],
@@ -5139,7 +5807,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/strict-uri-encode/index.js",
       "hash": "d05cc48aa3be806376e6c8bd2ae1c72c",
-      "browserifyId": 352,
+      "browserifyId": 408,
       "sourcemap": ""
     }
   ],
@@ -5154,7 +5822,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/superagent/lib/client.js",
       "hash": "fea26376ae85e9357d199ec3fefce333",
-      "browserifyId": 353,
+      "browserifyId": 409,
       "sourcemap": ""
     }
   ],
@@ -5164,7 +5832,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/superagent/lib/is-object.js",
       "hash": "051ed940fb24a63feb0ebaeb7a03a23a",
-      "browserifyId": 354,
+      "browserifyId": 410,
       "sourcemap": ""
     }
   ],
@@ -5176,7 +5844,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/superagent/lib/request-base.js",
       "hash": "374896a2288543c588eb55ba39881086",
-      "browserifyId": 355,
+      "browserifyId": 411,
       "sourcemap": ""
     }
   ],
@@ -5186,7 +5854,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/superagent/lib/request.js",
       "hash": "4982a43bd580f1db7903a3d15cbf6fd1",
-      "browserifyId": 356,
+      "browserifyId": 412,
       "sourcemap": ""
     }
   ],
@@ -5198,12 +5866,12 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/warning/browser.js",
       "hash": "51c2750dde8a8126525f16063926a52b",
-      "browserifyId": 357,
+      "browserifyId": 413,
       "sourcemap": ""
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/src/actions/user/user.js": [
-    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _dispatcher = require('dispatcher');\n\nvar _dispatcher2 = _interopRequireDefault(_dispatcher);\n\nvar _user = require('constants/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _superagent = require('superagent');\n\nvar _superagent2 = _interopRequireDefault(_superagent);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar userActions = {\n  getData: function getData() {\n    _superagent2.default.get('/').set('Accept', 'application/json').end(function (err, response) {\n      if (!err) {\n        _dispatcher2.default.dispatch({\n          actionType: _user2.default.GET_DATA,\n          data: response.body\n        });\n      }\n    });\n  }\n}; // ui/src/actions/user/user.js\n\nexports.default = userActions;\n",
+    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _dispatcher = require('dispatcher');\n\nvar _dispatcher2 = _interopRequireDefault(_dispatcher);\n\nvar _user = require('constants/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _superagent = require('superagent');\n\nvar _superagent2 = _interopRequireDefault(_superagent);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar csrfToken = document.getElementsByName('csrf-token')[0].content;\n\nvar userActions = {\n  getData: function getData() {\n    _superagent2.default.get('/').set('Accept', 'application/json').end(function (err, response) {\n      if (!err) {\n        _dispatcher2.default.dispatch({\n          actionType: _user2.default.GET_DATA,\n          data: response.body\n        });\n      }\n    });\n  },\n\n  postData: function postData(data) {\n    _superagent2.default.post('/update').send(data).set('Accept', 'application/json').set('X-CSRF-Token', csrfToken).end(function (err, response) {\n      if (!err) {\n        _dispatcher2.default.dispatch({\n          actionType: _user2.default.POST_DATA,\n          data: response.body\n        });\n      }\n    });\n  },\n\n  updateValue: function updateValue(key, ev) {\n    _dispatcher2.default.dispatch({\n      actionType: _user2.default.VALUE_UPDATED,\n      key: key,\n      value: ev.target.value\n    });\n  }\n};\n\nexports.default = userActions;\n",
     {
       "superagent": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/superagent/lib/client.js",
       "dispatcher": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/dispatcher/index.js",
@@ -5211,19 +5879,19 @@
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/actions/user/user.js",
-      "hash": "953f23db8e701bd97ed5efac6a2a7c0e",
-      "browserifyId": 358,
-      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsidXNlckFjdGlvbnMiLCJnZXREYXRhIiwiZ2V0Iiwic2V0IiwiZW5kIiwiZXJyIiwicmVzcG9uc2UiLCJkaXNwYXRjaCIsImFjdGlvblR5cGUiLCJHRVRfREFUQSIsImRhdGEiLCJib2R5Il0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBRUE7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7QUFFQSxJQUFJQSxjQUFjO0FBQ2hCQyxXQUFTLG1CQUFNO0FBQ2IseUJBQ0dDLEdBREgsQ0FDTyxHQURQLEVBRUdDLEdBRkgsQ0FFTyxRQUZQLEVBRWlCLGtCQUZqQixFQUdHQyxHQUhILENBR08sVUFBQ0MsR0FBRCxFQUFNQyxRQUFOLEVBQW1CO0FBQ3RCLFVBQUksQ0FBQ0QsR0FBTCxFQUFVO0FBQ1IsNkJBQVdFLFFBQVgsQ0FBb0I7QUFDbEJDLHNCQUFZLGVBQWNDLFFBRFI7QUFFbEJDLGdCQUFNSixTQUFTSztBQUZHLFNBQXBCO0FBSUQ7QUFDRixLQVZIO0FBV0Q7QUFiZSxDQUFsQixFQU5BOztrQkFzQmVYIiwiZmlsZSI6InVzZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyB1aS9zcmMvYWN0aW9ucy91c2VyL3VzZXIuanNcblxuaW1wb3J0IERpc3BhdGNoZXIgZnJvbSAnZGlzcGF0Y2hlcic7XG5pbXBvcnQgVXNlckNvbnN0YW50cyBmcm9tICdjb25zdGFudHMvdXNlcic7XG5pbXBvcnQgUmVxdWVzdCBmcm9tICdzdXBlcmFnZW50JztcblxubGV0IHVzZXJBY3Rpb25zID0ge1xuICBnZXREYXRhOiAoKSA9PiB7XG4gICAgUmVxdWVzdFxuICAgICAgLmdldCgnLycpXG4gICAgICAuc2V0KCdBY2NlcHQnLCAnYXBwbGljYXRpb24vanNvbicpXG4gICAgICAuZW5kKChlcnIsIHJlc3BvbnNlKSA9PiB7XG4gICAgICAgIGlmICghZXJyKSB7XG4gICAgICAgICAgRGlzcGF0Y2hlci5kaXNwYXRjaCh7XG4gICAgICAgICAgICBhY3Rpb25UeXBlOiBVc2VyQ29uc3RhbnRzLkdFVF9EQVRBLFxuICAgICAgICAgICAgZGF0YTogcmVzcG9uc2UuYm9keVxuICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgICB9KTtcbiAgfVxufTtcblxuZXhwb3J0IGRlZmF1bHQgdXNlckFjdGlvbnM7XG4iXX0="
+      "hash": "a23fd99352c5e7af9d3aa1a86634d161",
+      "browserifyId": 414,
+      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiY3NyZlRva2VuIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50c0J5TmFtZSIsImNvbnRlbnQiLCJ1c2VyQWN0aW9ucyIsImdldERhdGEiLCJnZXQiLCJzZXQiLCJlbmQiLCJlcnIiLCJyZXNwb25zZSIsImRpc3BhdGNoIiwiYWN0aW9uVHlwZSIsIkdFVF9EQVRBIiwiZGF0YSIsImJvZHkiLCJwb3N0RGF0YSIsInBvc3QiLCJzZW5kIiwiUE9TVF9EQVRBIiwidXBkYXRlVmFsdWUiLCJrZXkiLCJldiIsIlZBTFVFX1VQREFURUQiLCJ2YWx1ZSIsInRhcmdldCJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOzs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRUEsSUFBSUEsWUFBWUMsU0FBU0MsaUJBQVQsQ0FBMkIsWUFBM0IsRUFBeUMsQ0FBekMsRUFBNENDLE9BQTVEOztBQUVBLElBQUlDLGNBQWM7QUFDaEJDLFdBQVMsbUJBQU07QUFDYix5QkFDR0MsR0FESCxDQUNPLEdBRFAsRUFFR0MsR0FGSCxDQUVPLFFBRlAsRUFFaUIsa0JBRmpCLEVBR0dDLEdBSEgsQ0FHTyxVQUFDQyxHQUFELEVBQU1DLFFBQU4sRUFBbUI7QUFDdEIsVUFBSSxDQUFDRCxHQUFMLEVBQVU7QUFDUiw2QkFBV0UsUUFBWCxDQUFvQjtBQUNsQkMsc0JBQVksZUFBY0MsUUFEUjtBQUVsQkMsZ0JBQU1KLFNBQVNLO0FBRkcsU0FBcEI7QUFJRDtBQUNGLEtBVkg7QUFXRCxHQWJlOztBQWVoQkMsWUFBVSxrQkFBQ0YsSUFBRCxFQUFVO0FBQ2xCLHlCQUNHRyxJQURILENBQ1EsU0FEUixFQUVHQyxJQUZILENBRVFKLElBRlIsRUFHR1AsR0FISCxDQUdPLFFBSFAsRUFHaUIsa0JBSGpCLEVBSUdBLEdBSkgsQ0FJTyxjQUpQLEVBSXVCUCxTQUp2QixFQUtHUSxHQUxILENBS08sVUFBQ0MsR0FBRCxFQUFNQyxRQUFOLEVBQW1CO0FBQ3RCLFVBQUksQ0FBQ0QsR0FBTCxFQUFVO0FBQ1IsNkJBQVdFLFFBQVgsQ0FBb0I7QUFDbEJDLHNCQUFZLGVBQWNPLFNBRFI7QUFFbEJMLGdCQUFNSixTQUFTSztBQUZHLFNBQXBCO0FBSUQ7QUFDRixLQVpIO0FBYUQsR0E3QmU7O0FBK0JoQkssZUFBYSxxQkFBQ0MsR0FBRCxFQUFNQyxFQUFOLEVBQWE7QUFDeEIseUJBQVdYLFFBQVgsQ0FBb0I7QUFDbEJDLGtCQUFZLGVBQWNXLGFBRFI7QUFFbEJGLFdBQUtBLEdBRmE7QUFHbEJHLGFBQU9GLEdBQUdHLE1BQUgsQ0FBVUQ7QUFIQyxLQUFwQjtBQUtEO0FBckNlLENBQWxCOztrQkF3Q2VwQiIsImZpbGUiOiJ1c2VyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IERpc3BhdGNoZXIgZnJvbSAnZGlzcGF0Y2hlcic7XG5pbXBvcnQgVXNlckNvbnN0YW50cyBmcm9tICdjb25zdGFudHMvdXNlcic7XG5pbXBvcnQgUmVxdWVzdCBmcm9tICdzdXBlcmFnZW50JztcblxubGV0IGNzcmZUb2tlbiA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlOYW1lKCdjc3JmLXRva2VuJylbMF0uY29udGVudDtcblxubGV0IHVzZXJBY3Rpb25zID0ge1xuICBnZXREYXRhOiAoKSA9PiB7XG4gICAgUmVxdWVzdFxuICAgICAgLmdldCgnLycpXG4gICAgICAuc2V0KCdBY2NlcHQnLCAnYXBwbGljYXRpb24vanNvbicpXG4gICAgICAuZW5kKChlcnIsIHJlc3BvbnNlKSA9PiB7XG4gICAgICAgIGlmICghZXJyKSB7XG4gICAgICAgICAgRGlzcGF0Y2hlci5kaXNwYXRjaCh7XG4gICAgICAgICAgICBhY3Rpb25UeXBlOiBVc2VyQ29uc3RhbnRzLkdFVF9EQVRBLFxuICAgICAgICAgICAgZGF0YTogcmVzcG9uc2UuYm9keVxuICAgICAgICAgIH0pO1xuICAgICAgICB9XG4gICAgICB9KTtcbiAgfSxcblxuICBwb3N0RGF0YTogKGRhdGEpID0+IHtcbiAgICBSZXF1ZXN0XG4gICAgICAucG9zdCgnL3VwZGF0ZScpXG4gICAgICAuc2VuZChkYXRhKVxuICAgICAgLnNldCgnQWNjZXB0JywgJ2FwcGxpY2F0aW9uL2pzb24nKVxuICAgICAgLnNldCgnWC1DU1JGLVRva2VuJywgY3NyZlRva2VuKVxuICAgICAgLmVuZCgoZXJyLCByZXNwb25zZSkgPT4ge1xuICAgICAgICBpZiAoIWVycikge1xuICAgICAgICAgIERpc3BhdGNoZXIuZGlzcGF0Y2goe1xuICAgICAgICAgICAgYWN0aW9uVHlwZTogVXNlckNvbnN0YW50cy5QT1NUX0RBVEEsXG4gICAgICAgICAgICBkYXRhOiByZXNwb25zZS5ib2R5XG4gICAgICAgICAgfSk7XG4gICAgICAgIH1cbiAgICAgIH0pO1xuICB9LFxuXG4gIHVwZGF0ZVZhbHVlOiAoa2V5LCBldikgPT4ge1xuICAgIERpc3BhdGNoZXIuZGlzcGF0Y2goe1xuICAgICAgYWN0aW9uVHlwZTogVXNlckNvbnN0YW50cy5WQUxVRV9VUERBVEVELFxuICAgICAga2V5OiBrZXksXG4gICAgICB2YWx1ZTogZXYudGFyZ2V0LnZhbHVlXG4gICAgfSk7XG4gIH1cbn07XG5cbmV4cG9ydCBkZWZhdWx0IHVzZXJBY3Rpb25zO1xuIl19"
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/src/constants/user.js": [
-    "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// ui/src/constants/user.js\n\nexports.default = {\n  GET_DATA: \"USER_GET_DATA\"\n};\n",
+    "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// ui/src/constants/user.js\n\nexports.default = {\n  GET_DATA: \"USER_GET_DATA\",\n  POST_DATA: \"USER_POST_DATA\",\n  VALUE_UPDATED: \"USER_VALUE_UPDATED\"\n};\n",
     {},
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/constants/user.js",
-      "hash": "ceccdb31569e8f6a3adccdc2f9d92371",
-      "browserifyId": 359,
-      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiR0VUX0RBVEEiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBOztrQkFFZTtBQUNiQSxZQUFVO0FBREciLCJmaWxlIjoidXNlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHVpL3NyYy9jb25zdGFudHMvdXNlci5qc1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIEdFVF9EQVRBOiBcIlVTRVJfR0VUX0RBVEFcIlxufTtcbiJdfQ=="
+      "hash": "58607c094b0d61a5fdfc71c86b8c5f91",
+      "browserifyId": 415,
+      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiR0VUX0RBVEEiLCJQT1NUX0RBVEEiLCJWQUxVRV9VUERBVEVEIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTs7a0JBRWU7QUFDYkEsWUFBVSxlQURHO0FBRWJDLGFBQVcsZ0JBRkU7QUFHYkMsaUJBQWU7QUFIRiIsImZpbGUiOiJ1c2VyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gdWkvc3JjL2NvbnN0YW50cy91c2VyLmpzXG5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgR0VUX0RBVEE6IFwiVVNFUl9HRVRfREFUQVwiLFxuICBQT1NUX0RBVEE6IFwiVVNFUl9QT1NUX0RBVEFcIixcbiAgVkFMVUVfVVBEQVRFRDogXCJVU0VSX1ZBTFVFX1VQREFURURcIlxufTtcbiJdfQ=="
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/src/dispatcher/index.js": [
@@ -5234,7 +5902,7 @@
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/dispatcher/index.js",
       "hash": "062c449abb331f8ae8cbf0d95d7f99fd",
-      "browserifyId": 360,
+      "browserifyId": 416,
       "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIkFwcERpc3BhdGNoZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7QUFFQTtBQUNBLElBQUlBLGdCQUFnQixzQkFBcEI7O2tCQUVlQSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IERpc3BhdGNoZXIgfSBmcm9tICdmbHV4JztcblxuLy8gaW5pdGlhbGl6ZSB0aGUgZGlzcGF0Y2hlciAoYSBzaW5nbGV0b24gZm9yIHlvdXIgYXBwbGljYXRpb24pXG5sZXQgQXBwRGlzcGF0Y2hlciA9IG5ldyBEaXNwYXRjaGVyKCk7XG5cbmV4cG9ydCBkZWZhdWx0IEFwcERpc3BhdGNoZXI7XG4iXX0="
     }
   ],
@@ -5242,19 +5910,19 @@
     "'use strict';\n\nvar _react = require('react');\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactRouter = require('react-router');\n\nvar _router = require('carbon/lib/utils/router');\n\nvar _user = require('views/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// ui/src/main.js\n\nvar routes = _react2.default.createElement(_reactRouter.Route, { path: '/', component: _user2.default });\n\n(0, _router.startRouter)(routes);\n",
     {
       "react-router": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react-router/lib/index.js",
-      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "carbon/lib/utils/router": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/router/router.js",
+      "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "views/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/views/user/user.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/main.js",
       "hash": "c681d2caee5356be8b5d6652175e543b",
-      "browserifyId": 361,
+      "browserifyId": 417,
       "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsicm91dGVzIl0sIm1hcHBpbmdzIjoiOzs7QUFFQTs7OztBQUNBOztBQUNBOztBQUVBOzs7Ozs7QUFOQTs7QUFRQSxJQUFJQSxTQUNGLG9EQUFPLE1BQUssR0FBWixFQUFnQix5QkFBaEIsR0FERjs7QUFJQSx5QkFBWUEsTUFBWiIsImZpbGUiOiJtYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gdWkvc3JjL21haW4uanNcblxuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IFJvdXRlIH0gZnJvbSAncmVhY3Qtcm91dGVyJztcbmltcG9ydCB7IHN0YXJ0Um91dGVyIH0gZnJvbSAnY2FyYm9uL2xpYi91dGlscy9yb3V0ZXInO1xuXG5pbXBvcnQgVXNlciBmcm9tICd2aWV3cy91c2VyJztcblxubGV0IHJvdXRlcyA9IChcbiAgPFJvdXRlIHBhdGg9XCIvXCIgY29tcG9uZW50PXsgVXNlciB9IC8+XG4pO1xuXG5zdGFydFJvdXRlcihyb3V0ZXMpO1xuIl19"
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/src/stores/user/user.js": [
-    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dispatcher = require('dispatcher');\n\nvar _dispatcher2 = _interopRequireDefault(_dispatcher);\n\nvar _store = require('carbon/lib/utils/flux/store');\n\nvar _store2 = _interopRequireDefault(_store);\n\nvar _immutable = require('carbon/lib/utils/helpers/immutable');\n\nvar _immutable2 = _interopRequireDefault(_immutable);\n\nvar _user = require('constants/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar data = _immutable2.default.parseJSON({\n  user: {\n    first_name: \"\",\n    last_name: \"\"\n  }\n});\n\nvar UserStore = function (_Store) {\n  _inherits(UserStore, _Store);\n\n  function UserStore() {\n    _classCallCheck(this, UserStore);\n\n    return _possibleConstructorReturn(this, (UserStore.__proto__ || Object.getPrototypeOf(UserStore)).apply(this, arguments));\n  }\n\n  _createClass(UserStore, [{\n    key: _user2.default.GET_DATA,\n    value: function value(action) {\n      this.data = this.data.set('user', _immutable2.default.parseJSON(action.data));\n    }\n  }]);\n\n  return UserStore;\n}(_store2.default);\n\nexports.default = new UserStore('userStore', data, _dispatcher2.default);\n",
+    "(function (global){\n'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _dispatcher = require('dispatcher');\n\nvar _dispatcher2 = _interopRequireDefault(_dispatcher);\n\nvar _store = require('carbon/lib/utils/flux/store');\n\nvar _store2 = _interopRequireDefault(_store);\n\nvar _immutable = require('carbon/lib/utils/helpers/immutable');\n\nvar _immutable2 = _interopRequireDefault(_immutable);\n\nvar _user = require('constants/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar data = _immutable2.default.parseJSON({\n  user: global.USER_DATA\n});\n\nvar UserStore = function (_Store) {\n  _inherits(UserStore, _Store);\n\n  function UserStore() {\n    _classCallCheck(this, UserStore);\n\n    return _possibleConstructorReturn(this, (UserStore.__proto__ || Object.getPrototypeOf(UserStore)).apply(this, arguments));\n  }\n\n  _createClass(UserStore, [{\n    key: _user2.default.GET_DATA,\n    value: function value(action) {\n      this.data = this.data.set('user', _immutable2.default.parseJSON(action.data));\n    }\n  }, {\n    key: _user2.default.VALUE_UPDATED,\n    value: function value(action) {\n      this.data = this.data.setIn(['user', action.key], action.value);\n    }\n  }]);\n\n  return UserStore;\n}(_store2.default);\n\nexports.default = new UserStore('userStore', data, _dispatcher2.default);\n\n}).call(this,typeof global !== \"undefined\" ? global : typeof self !== \"undefined\" ? self : typeof window !== \"undefined\" ? window : {})",
     {
       "carbon/lib/utils/flux/store": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/flux/store/store.js",
       "constants/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/constants/user.js",
@@ -5263,25 +5931,27 @@
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/stores/user/user.js",
-      "hash": "527ed439228c0370bb6302ac90f99350",
-      "browserifyId": 362,
-      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiZGF0YSIsInBhcnNlSlNPTiIsInVzZXIiLCJmaXJzdF9uYW1lIiwibGFzdF9uYW1lIiwiVXNlclN0b3JlIiwiR0VUX0RBVEEiLCJhY3Rpb24iLCJzZXQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUVBOzs7Ozs7Ozs7Ozs7QUFFQSxJQUFJQSxPQUFPLG9CQUFnQkMsU0FBaEIsQ0FBMEI7QUFDbkNDLFFBQU07QUFDSkMsZ0JBQVksRUFEUjtBQUVKQyxlQUFXO0FBRlA7QUFENkIsQ0FBMUIsQ0FBWDs7SUFPTUM7Ozs7Ozs7Ozs7U0FDSCxlQUFjQzswQkFBVUMsUUFBUTtBQUMvQixXQUFLUCxJQUFMLEdBQVksS0FBS0EsSUFBTCxDQUFVUSxHQUFWLENBQWMsTUFBZCxFQUFzQixvQkFBZ0JQLFNBQWhCLENBQTBCTSxPQUFPUCxJQUFqQyxDQUF0QixDQUFaO0FBQ0Q7Ozs7OztrQkFHWSxJQUFJSyxTQUFKLENBQWMsV0FBZCxFQUEyQkwsSUFBM0IiLCJmaWxlIjoidXNlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBEaXNwYXRjaGVyIGZyb20gJ2Rpc3BhdGNoZXInO1xuaW1wb3J0IFN0b3JlIGZyb20gJ2NhcmJvbi9saWIvdXRpbHMvZmx1eC9zdG9yZSc7XG5pbXBvcnQgSW1tdXRhYmxlSGVscGVyIGZyb20gJ2NhcmJvbi9saWIvdXRpbHMvaGVscGVycy9pbW11dGFibGUnO1xuXG5pbXBvcnQgVXNlckNvbnN0YW50cyBmcm9tICdjb25zdGFudHMvdXNlcic7XG5cbmxldCBkYXRhID0gSW1tdXRhYmxlSGVscGVyLnBhcnNlSlNPTih7XG4gIHVzZXI6IHtcbiAgICBmaXJzdF9uYW1lOiBcIlwiLFxuICAgIGxhc3RfbmFtZTogXCJcIlxuICB9XG59KTtcblxuY2xhc3MgVXNlclN0b3JlIGV4dGVuZHMgU3RvcmUge1xuICBbVXNlckNvbnN0YW50cy5HRVRfREFUQV0oYWN0aW9uKSB7XG4gICAgdGhpcy5kYXRhID0gdGhpcy5kYXRhLnNldCgndXNlcicsIEltbXV0YWJsZUhlbHBlci5wYXJzZUpTT04oYWN0aW9uLmRhdGEpKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBuZXcgVXNlclN0b3JlKCd1c2VyU3RvcmUnLCBkYXRhLCBEaXNwYXRjaGVyKTtcbiJdfQ=="
+      "hash": "1249d9d79fd0aba8cc5da7c853b0a44d",
+      "browserifyId": 418,
+      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiZGF0YSIsInBhcnNlSlNPTiIsInVzZXIiLCJnbG9iYWwiLCJVU0VSX0RBVEEiLCJVc2VyU3RvcmUiLCJHRVRfREFUQSIsImFjdGlvbiIsInNldCIsIlZBTFVFX1VQREFURUQiLCJzZXRJbiIsImtleSIsInZhbHVlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFFQTs7Ozs7Ozs7Ozs7O0FBRUEsSUFBSUEsT0FBTyxvQkFBZ0JDLFNBQWhCLENBQTBCO0FBQ25DQyxRQUFNQyxPQUFPQztBQURzQixDQUExQixDQUFYOztJQUlNQzs7Ozs7Ozs7OztTQUNILGVBQWNDOzBCQUFVQyxRQUFRO0FBQy9CLFdBQUtQLElBQUwsR0FBWSxLQUFLQSxJQUFMLENBQVVRLEdBQVYsQ0FBYyxNQUFkLEVBQXNCLG9CQUFnQlAsU0FBaEIsQ0FBMEJNLE9BQU9QLElBQWpDLENBQXRCLENBQVo7QUFDRDs7U0FFQSxlQUFjUzswQkFBZUYsUUFBUTtBQUNwQyxXQUFLUCxJQUFMLEdBQVksS0FBS0EsSUFBTCxDQUFVVSxLQUFWLENBQWdCLENBQUMsTUFBRCxFQUFTSCxPQUFPSSxHQUFoQixDQUFoQixFQUFzQ0osT0FBT0ssS0FBN0MsQ0FBWjtBQUNEOzs7Ozs7a0JBR1ksSUFBSVAsU0FBSixDQUFjLFdBQWQsRUFBMkJMLElBQTNCIiwiZmlsZSI6InVzZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgRGlzcGF0Y2hlciBmcm9tICdkaXNwYXRjaGVyJztcbmltcG9ydCBTdG9yZSBmcm9tICdjYXJib24vbGliL3V0aWxzL2ZsdXgvc3RvcmUnO1xuaW1wb3J0IEltbXV0YWJsZUhlbHBlciBmcm9tICdjYXJib24vbGliL3V0aWxzL2hlbHBlcnMvaW1tdXRhYmxlJztcblxuaW1wb3J0IFVzZXJDb25zdGFudHMgZnJvbSAnY29uc3RhbnRzL3VzZXInO1xuXG5sZXQgZGF0YSA9IEltbXV0YWJsZUhlbHBlci5wYXJzZUpTT04oe1xuICB1c2VyOiBnbG9iYWwuVVNFUl9EQVRBXG59KTtcblxuY2xhc3MgVXNlclN0b3JlIGV4dGVuZHMgU3RvcmUge1xuICBbVXNlckNvbnN0YW50cy5HRVRfREFUQV0oYWN0aW9uKSB7XG4gICAgdGhpcy5kYXRhID0gdGhpcy5kYXRhLnNldCgndXNlcicsIEltbXV0YWJsZUhlbHBlci5wYXJzZUpTT04oYWN0aW9uLmRhdGEpKTtcbiAgfVxuXG4gIFtVc2VyQ29uc3RhbnRzLlZBTFVFX1VQREFURURdKGFjdGlvbikge1xuICAgIHRoaXMuZGF0YSA9IHRoaXMuZGF0YS5zZXRJbihbJ3VzZXInLCBhY3Rpb24ua2V5XSwgYWN0aW9uLnZhbHVlKTtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCBuZXcgVXNlclN0b3JlKCd1c2VyU3RvcmUnLCBkYXRhLCBEaXNwYXRjaGVyKTtcbiJdfQ=="
     }
   ],
   "/Users/paul.regnart/dev/carbon-rails-test/ui/src/views/user/user.js": [
-    "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react2 = require('react');\n\nvar _react3 = _interopRequireDefault(_react2);\n\nvar _babelTransform = require('livereactload/babel-transform');\n\nvar _babelTransform2 = _interopRequireDefault(_babelTransform);\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _flux = require('carbon/lib/utils/flux');\n\nvar _user = require('stores/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _user3 = require('actions/user');\n\nvar _user4 = _interopRequireDefault(_user3);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _components = {\n  User: {\n    displayName: 'User'\n  }\n};\n\nvar _livereactloadBabelTransform2 = (0, _babelTransform2.default)({\n  filename: '/Users/paul.regnart/dev/carbon-rails-test/ui/src/views/user/user.js',\n  components: _components,\n  locals: [],\n  imports: [_react3.default]\n});\n\nfunction _wrapComponent(id) {\n  return function (Component) {\n    return _livereactloadBabelTransform2(Component, id);\n  };\n} // ui/src/views/user/user.js\n\nvar User = _wrapComponent('User')(function (_React$Component) {\n  _inherits(User, _React$Component);\n\n  function User() {\n    _classCallCheck(this, User);\n\n    return _possibleConstructorReturn(this, (User.__proto__ || Object.getPrototypeOf(User)).apply(this, arguments));\n  }\n\n  _createClass(User, [{\n    key: 'componentWillMount',\n    value: function componentWillMount() {\n      _user4.default.getData();\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      var userStore = this.state.userStore,\n          firstName = userStore.getIn([\"user\", \"first_name\"]),\n          lastName = userStore.getIn([\"user\", \"last_name\"]);\n\n      return _react3.default.createElement(\n        'h1',\n        null,\n        'Hello, ',\n        firstName,\n        ' ',\n        lastName\n      );\n    }\n  }]);\n\n  return User;\n}(_react3.default.Component));\n\nexports.default = (0, _flux.connect)(User, _user2.default);\n",
+    "(function (global){\n'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react2 = require('react');\n\nvar _react3 = _interopRequireDefault(_react2);\n\nvar _babelTransform = require('livereactload/babel-transform');\n\nvar _babelTransform2 = _interopRequireDefault(_babelTransform);\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nvar _flux = require('carbon/lib/utils/flux');\n\nvar _user = require('stores/user');\n\nvar _user2 = _interopRequireDefault(_user);\n\nvar _user3 = require('actions/user');\n\nvar _user4 = _interopRequireDefault(_user3);\n\nvar _form = require('carbon/lib/components/form');\n\nvar _form2 = _interopRequireDefault(_form);\n\nvar _textbox = require('carbon/lib/components/textbox');\n\nvar _textbox2 = _interopRequireDefault(_textbox);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return call && (typeof call === \"object\" || typeof call === \"function\") ? call : self; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function, not \" + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }\n\nvar _components = {\n  User: {\n    displayName: 'User'\n  }\n};\n\nvar _livereactloadBabelTransform2 = (0, _babelTransform2.default)({\n  filename: '/Users/paul.regnart/dev/carbon-rails-test/ui/src/views/user/user.js',\n  components: _components,\n  locals: [],\n  imports: [_react3.default]\n});\n\nfunction _wrapComponent(id) {\n  return function (Component) {\n    return _livereactloadBabelTransform2(Component, id);\n  };\n}\n\nvar User = _wrapComponent('User')(function (_React$Component) {\n  _inherits(User, _React$Component);\n\n  function User() {\n    var _ref;\n\n    var _temp, _this, _ret;\n\n    _classCallCheck(this, User);\n\n    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {\n      args[_key] = arguments[_key];\n    }\n\n    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = User.__proto__ || Object.getPrototypeOf(User)).call.apply(_ref, [this].concat(args))), _this), _this.submit = function (ev, valid) {\n      ev.preventDefault();\n\n      if (valid) {\n        _user4.default.postData(_this.state.userStore.get('user'));\n      }\n    }, _temp), _possibleConstructorReturn(_this, _ret);\n  }\n\n  _createClass(User, [{\n    key: 'componentWillMount',\n    value: function componentWillMount() {\n      if (!global.USER_DATA) {\n        _user4.default.getData();\n      }\n    }\n  }, {\n    key: 'render',\n    value: function render() {\n      var userStore = this.state.userStore,\n          firstName = userStore.getIn([\"user\", \"first_name\"]),\n          lastName = userStore.getIn([\"user\", \"last_name\"]);\n\n      return _react3.default.createElement(\n        _form2.default,\n        { afterFormValidation: this.submit },\n        _react3.default.createElement(\n          'h1',\n          null,\n          'Hello, ',\n          firstName,\n          ' ',\n          lastName\n        ),\n        _react3.default.createElement(_textbox2.default, {\n          label: 'First Name',\n          value: firstName,\n          onChange: _user4.default.updateValue.bind(this, 'first_name')\n        }),\n        _react3.default.createElement(_textbox2.default, {\n          label: 'Last Name',\n          value: lastName,\n          onChange: _user4.default.updateValue.bind(this, 'last_name')\n        })\n      );\n    }\n  }]);\n\n  return User;\n}(_react3.default.Component));\n\nexports.default = (0, _flux.connect)(User, _user2.default);\n\n}).call(this,typeof global !== \"undefined\" ? global : typeof self !== \"undefined\" ? self : typeof window !== \"undefined\" ? window : {})",
     {
       "react": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/react/react.js",
       "carbon/lib/utils/flux": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/utils/flux/flux.js",
-      "stores/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/stores/user/user.js",
+      "carbon/lib/components/form": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/form/form.js",
+      "carbon/lib/components/textbox": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/carbon/lib/components/textbox/textbox.js",
+      "actions/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/actions/user/user.js",
       "livereactload/babel-transform": "/Users/paul.regnart/dev/carbon-rails-test/ui/node_modules/livereactload/babel-transform.js",
-      "actions/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/actions/user/user.js"
+      "stores/user": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/stores/user/user.js"
     },
     {
       "id": "/Users/paul.regnart/dev/carbon-rails-test/ui/src/views/user/user.js",
-      "hash": "d6c6309b7c56f92e0190d959e3f5860c",
-      "browserifyId": 363,
-      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsiZ2V0RGF0YSIsInVzZXJTdG9yZSIsInN0YXRlIiwiZmlyc3ROYW1lIiwiZ2V0SW4iLCJsYXN0TmFtZSIsIkNvbXBvbmVudCIsIlVzZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0E7O0FBQ0E7Ozs7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFMQTs7Ozs7Ozs7Ozs7Ozt5Q0FRdUI7QUFDbkIscUJBQVlBLE9BQVo7QUFDRDs7OzZCQUVRO0FBQ1AsVUFBSUMsWUFBWSxLQUFLQyxLQUFMLENBQVdELFNBQTNCO0FBQUEsVUFDSUUsWUFBWUYsVUFBVUcsS0FBVixDQUFnQixDQUFDLE1BQUQsRUFBUyxZQUFULENBQWhCLENBRGhCO0FBQUEsVUFFSUMsV0FBV0osVUFBVUcsS0FBVixDQUFnQixDQUFDLE1BQUQsRUFBUyxXQUFULENBQWhCLENBRmY7O0FBSUEsYUFDRTtBQUFBO0FBQUE7QUFBQTtBQUFhRCxpQkFBYjtBQUFBO0FBQTJCRTtBQUEzQixPQURGO0FBR0Q7Ozs7RUFiZ0IsZ0JBQU1DOztrQkFnQlYsbUJBQVFDLElBQVIiLCJmaWxlIjoidXNlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHVpL3NyYy92aWV3cy91c2VyL3VzZXIuanNcblxuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdjYXJib24vbGliL3V0aWxzL2ZsdXgnO1xuaW1wb3J0IFVzZXJTdG9yZSBmcm9tICdzdG9yZXMvdXNlcic7XG5pbXBvcnQgVXNlckFjdGlvbnMgZnJvbSAnYWN0aW9ucy91c2VyJztcblxuY2xhc3MgVXNlciBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG4gIGNvbXBvbmVudFdpbGxNb3VudCgpIHtcbiAgICBVc2VyQWN0aW9ucy5nZXREYXRhKCk7XG4gIH1cblxuICByZW5kZXIoKSB7XG4gICAgbGV0IHVzZXJTdG9yZSA9IHRoaXMuc3RhdGUudXNlclN0b3JlLFxuICAgICAgICBmaXJzdE5hbWUgPSB1c2VyU3RvcmUuZ2V0SW4oW1widXNlclwiLCBcImZpcnN0X25hbWVcIl0pLFxuICAgICAgICBsYXN0TmFtZSA9IHVzZXJTdG9yZS5nZXRJbihbXCJ1c2VyXCIsIFwibGFzdF9uYW1lXCJdKTtcblxuICAgIHJldHVybiAoXG4gICAgICA8aDE+SGVsbG8sIHsgZmlyc3ROYW1lIH0geyBsYXN0TmFtZSB9PC9oMT5cbiAgICApO1xuICB9XG59XG5cbmV4cG9ydCBkZWZhdWx0IGNvbm5lY3QoVXNlciwgVXNlclN0b3JlKTtcbiJdfQ=="
+      "hash": "efc3394fd34a049d7c731293f9afbf2a",
+      "browserifyId": 419,
+      "sourcemap": "//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVzZXIuanMiXSwibmFtZXMiOlsic3VibWl0IiwiZXYiLCJ2YWxpZCIsInByZXZlbnREZWZhdWx0IiwicG9zdERhdGEiLCJzdGF0ZSIsInVzZXJTdG9yZSIsImdldCIsImdsb2JhbCIsIlVTRVJfREFUQSIsImdldERhdGEiLCJmaXJzdE5hbWUiLCJnZXRJbiIsImxhc3ROYW1lIiwidXBkYXRlVmFsdWUiLCJiaW5kIiwiQ29tcG9uZW50IiwiVXNlciJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFDQTs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7QUFDQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O2tMQVNFQSxTQUFTLFVBQUNDLEVBQUQsRUFBS0MsS0FBTCxFQUFlO0FBQ3RCRCxTQUFHRSxjQUFIOztBQUVBLFVBQUlELEtBQUosRUFBVztBQUNULHVCQUFZRSxRQUFaLENBQXFCLE1BQUtDLEtBQUwsQ0FBV0MsU0FBWCxDQUFxQkMsR0FBckIsQ0FBeUIsTUFBekIsQ0FBckI7QUFDRDtBQUNGOzs7Ozt5Q0Fab0I7QUFDbkIsVUFBSSxDQUFDQyxPQUFPQyxTQUFaLEVBQXVCO0FBQ3JCLHVCQUFZQyxPQUFaO0FBQ0Q7QUFDRjs7OzZCQVVRO0FBQ1AsVUFBSUosWUFBWSxLQUFLRCxLQUFMLENBQVdDLFNBQTNCO0FBQUEsVUFDSUssWUFBWUwsVUFBVU0sS0FBVixDQUFnQixDQUFDLE1BQUQsRUFBUyxZQUFULENBQWhCLENBRGhCO0FBQUEsVUFFSUMsV0FBV1AsVUFBVU0sS0FBVixDQUFnQixDQUFDLE1BQUQsRUFBUyxXQUFULENBQWhCLENBRmY7O0FBSUEsYUFDRTtBQUFBO0FBQUEsVUFBTSxxQkFBc0IsS0FBS1osTUFBakM7QUFDRTtBQUFBO0FBQUE7QUFBQTtBQUFhVyxtQkFBYjtBQUFBO0FBQTJCRTtBQUEzQixTQURGO0FBR0U7QUFDRSxpQkFBTSxZQURSO0FBRUUsaUJBQVFGLFNBRlY7QUFHRSxvQkFBVyxlQUFZRyxXQUFaLENBQXdCQyxJQUF4QixDQUE2QixJQUE3QixFQUFtQyxZQUFuQztBQUhiLFVBSEY7QUFTRTtBQUNFLGlCQUFNLFdBRFI7QUFFRSxpQkFBUUYsUUFGVjtBQUdFLG9CQUFXLGVBQVlDLFdBQVosQ0FBd0JDLElBQXhCLENBQTZCLElBQTdCLEVBQW1DLFdBQW5DO0FBSGI7QUFURixPQURGO0FBaUJEOzs7O0VBckNnQixnQkFBTUM7O2tCQXdDVixtQkFBUUMsSUFBUiIsImZpbGUiOiJ1c2VyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tICdjYXJib24vbGliL3V0aWxzL2ZsdXgnO1xuaW1wb3J0IFVzZXJTdG9yZSBmcm9tICdzdG9yZXMvdXNlcic7XG5pbXBvcnQgVXNlckFjdGlvbnMgZnJvbSAnYWN0aW9ucy91c2VyJztcblxuaW1wb3J0IEZvcm0gZnJvbSAnY2FyYm9uL2xpYi9jb21wb25lbnRzL2Zvcm0nO1xuaW1wb3J0IFRleHRib3ggZnJvbSAnY2FyYm9uL2xpYi9jb21wb25lbnRzL3RleHRib3gnO1xuXG5jbGFzcyBVc2VyIGV4dGVuZHMgUmVhY3QuQ29tcG9uZW50IHtcbiAgY29tcG9uZW50V2lsbE1vdW50KCkge1xuICAgIGlmICghZ2xvYmFsLlVTRVJfREFUQSkge1xuICAgICAgVXNlckFjdGlvbnMuZ2V0RGF0YSgpO1xuICAgIH1cbiAgfVxuXG4gIHN1Ym1pdCA9IChldiwgdmFsaWQpID0+IHtcbiAgICBldi5wcmV2ZW50RGVmYXVsdCgpO1xuXG4gICAgaWYgKHZhbGlkKSB7XG4gICAgICBVc2VyQWN0aW9ucy5wb3N0RGF0YSh0aGlzLnN0YXRlLnVzZXJTdG9yZS5nZXQoJ3VzZXInKSk7XG4gICAgfVxuICB9XG5cbiAgcmVuZGVyKCkge1xuICAgIGxldCB1c2VyU3RvcmUgPSB0aGlzLnN0YXRlLnVzZXJTdG9yZSxcbiAgICAgICAgZmlyc3ROYW1lID0gdXNlclN0b3JlLmdldEluKFtcInVzZXJcIiwgXCJmaXJzdF9uYW1lXCJdKSxcbiAgICAgICAgbGFzdE5hbWUgPSB1c2VyU3RvcmUuZ2V0SW4oW1widXNlclwiLCBcImxhc3RfbmFtZVwiXSk7XG5cbiAgICByZXR1cm4gKFxuICAgICAgPEZvcm0gYWZ0ZXJGb3JtVmFsaWRhdGlvbj17IHRoaXMuc3VibWl0IH0+XG4gICAgICAgIDxoMT5IZWxsbywgeyBmaXJzdE5hbWUgfSB7IGxhc3ROYW1lIH08L2gxPlxuXG4gICAgICAgIDxUZXh0Ym94XG4gICAgICAgICAgbGFiZWw9XCJGaXJzdCBOYW1lXCJcbiAgICAgICAgICB2YWx1ZT17IGZpcnN0TmFtZSB9XG4gICAgICAgICAgb25DaGFuZ2U9eyBVc2VyQWN0aW9ucy51cGRhdGVWYWx1ZS5iaW5kKHRoaXMsICdmaXJzdF9uYW1lJykgfVxuICAgICAgICAvPlxuXG4gICAgICAgIDxUZXh0Ym94XG4gICAgICAgICAgbGFiZWw9XCJMYXN0IE5hbWVcIlxuICAgICAgICAgIHZhbHVlPXsgbGFzdE5hbWUgfVxuICAgICAgICAgIG9uQ2hhbmdlPXsgVXNlckFjdGlvbnMudXBkYXRlVmFsdWUuYmluZCh0aGlzLCAnbGFzdF9uYW1lJykgfVxuICAgICAgICAvPlxuICAgICAgPC9Gb3JtPlxuICAgICk7XG4gIH1cbn1cblxuZXhwb3J0IGRlZmF1bHQgY29ubmVjdChVc2VyLCBVc2VyU3RvcmUpO1xuIl19"
     }
   ]
 }, [

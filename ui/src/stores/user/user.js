@@ -5,15 +5,16 @@ import ImmutableHelper from 'carbon/lib/utils/helpers/immutable';
 import UserConstants from 'constants/user';
 
 let data = ImmutableHelper.parseJSON({
-  user: {
-    first_name: "",
-    last_name: ""
-  }
+  user: global.USER_DATA
 });
 
 class UserStore extends Store {
   [UserConstants.GET_DATA](action) {
     this.data = this.data.set('user', ImmutableHelper.parseJSON(action.data));
+  }
+
+  [UserConstants.VALUE_UPDATED](action) {
+    this.data = this.data.setIn(['user', action.key], action.value);
   }
 }
 

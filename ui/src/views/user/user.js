@@ -1,13 +1,24 @@
-// ui/src/views/user/user.js
-
 import React from 'react';
 import { connect } from 'carbon/lib/utils/flux';
 import UserStore from 'stores/user';
 import UserActions from 'actions/user';
 
+import Form from 'carbon/lib/components/form';
+import Textbox from 'carbon/lib/components/textbox';
+
 class User extends React.Component {
   componentWillMount() {
-    UserActions.getData();
+    if (!global.USER_DATA) {
+      UserActions.getData();
+    }
+  }
+
+  submit = (ev, valid) => {
+    ev.preventDefault();
+
+    if (valid) {
+      UserActions.postData(this.state.userStore.get('user'));
+    }
   }
 
   render() {
@@ -16,7 +27,21 @@ class User extends React.Component {
         lastName = userStore.getIn(["user", "last_name"]);
 
     return (
-      <h1>Hello, { firstName } { lastName }</h1>
+      <Form afterFormValidation={ this.submit }>
+        <h1>Hello, { firstName } { lastName }</h1>
+
+        <Textbox
+          label="First Name"
+          value={ firstName }
+          onChange={ UserActions.updateValue.bind(this, 'first_name') }
+        />
+
+        <Textbox
+          label="Last Name"
+          value={ lastName }
+          onChange={ UserActions.updateValue.bind(this, 'last_name') }
+        />
+      </Form>
     );
   }
 }
